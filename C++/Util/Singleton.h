@@ -6,6 +6,10 @@
 #define __RESETCORE_SINGLETON_H__
 
 namespace ResetCore{
+    /**
+     * 通用单例模板
+     * @tparam T
+     */
     template < typename T >
 class Singleton {
 public:
