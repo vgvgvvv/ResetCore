@@ -10,130 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="RGBSepration.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/RGBSepration.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1516526229859" expanded="true" signature="6:78" ph="..." />
-                <marker date="1516526229859" expanded="true" signature="110:599" ph="{...}" />
-                <marker date="1516526229859" expanded="true" signature="198:595" ph="{...}" />
-                <marker date="1516526229859" expanded="true" signature="406:589" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestPostEffect.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/TestPostEffect.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <marker date="1516527498651" expanded="true" signature="6:72" ph="..." />
-                <marker date="1516527498651" expanded="true" signature="104:742" ph="{...}" />
-                <marker date="1516527498651" expanded="true" signature="194:739" ph="{...}" />
-                <marker date="1516527498651" expanded="true" signature="403:733" ph="{...}" />
-                <marker date="1516527498651" expanded="true" signature="447:551" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bloom.shader" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/Bloom/Bloom.shader">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1516526229850" expanded="true" signature="106:1956" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="119:291" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="303:1938" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="319:1492" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="1557:1673" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="1573:1662" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="1835:1934" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="1851:1923" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlackWhite.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/BlackWhite/BlackWhite.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <marker date="1516526229849" expanded="true" signature="6:78" ph="..." />
-                <marker date="1516526229849" expanded="true" signature="110:648" ph="{...}" />
-                <marker date="1516526229849" expanded="true" signature="203:644" ph="{...}" />
-                <marker date="1516526229849" expanded="true" signature="290:638" ph="{...}" />
-                <marker date="1516526229849" expanded="true" signature="334:431" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bloom.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/Bloom/Bloom.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="30" />
-              <folding>
-                <marker date="1516526229850" expanded="true" signature="6:78" ph="..." />
-                <marker date="1516526229850" expanded="true" signature="110:2018" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="193:2016" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="505:2009" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="549:1901" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="1005:1707" ph="{...}" />
-                <marker date="1516526229850" expanded="true" signature="1918:1998" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rgb.shader" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/Rgb.shader">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-293">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="18" />
-              <folding>
-                <marker date="1516526229860" expanded="true" signature="104:1388" ph="{...}" />
-                <marker date="1516526229860" expanded="true" signature="119:245" ph="{...}" />
-                <marker date="1516526229860" expanded="true" signature="258:1386" ph="{...}" />
-                <marker date="1516526229860" expanded="true" signature="330:1383" ph="{...}" />
-                <marker date="1516526229860" expanded="true" signature="344:1374" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rgbsepration.shader" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/Rgbsepration.shader">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1146">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1516526229861" expanded="true" signature="0:290" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
-                <marker date="1516526229861" expanded="true" signature="1305:5450" ph="{...}" />
-                <marker date="1516526229861" expanded="true" signature="1322:1390" ph="{...}" />
-                <marker date="1516526229861" expanded="true" signature="1405:5400" ph="{...}" />
-                <marker date="1516526229861" expanded="true" signature="1420:1535" ph="{...}" />
-                <marker date="1516526229861" expanded="true" signature="1549:3603" ph="{...}" />
-                <marker date="1516526229861" expanded="true" signature="1595:1652" ph="{...}" />
-                <marker date="1516526229861" expanded="true" signature="1788:3588" ph="{...}" />
-                <marker date="1516526229861" expanded="true" signature="3617:5394" ph="{...}" />
-                <marker date="1516526229861" expanded="true" signature="3660:3710" ph="{...}" />
-                <marker date="1516526229861" expanded="true" signature="3766:5379" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/Rgb.shader" root0="FORCE_HIGHLIGHTING" />
@@ -284,12 +161,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516527208426</updated>
-      <workItem from="1516527210691" duration="312000" />
+      <workItem from="1516527210691" duration="737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312000" />
+    <option name="totallyTimeSpent" value="737000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,7 +179,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="823" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -312,7 +188,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
