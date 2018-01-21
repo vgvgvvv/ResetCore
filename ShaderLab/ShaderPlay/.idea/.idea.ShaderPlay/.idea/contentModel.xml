@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="DebugShader" t="Include">
+            <e p="UVDebug.shader" t="Include" />
+          </e>
+          <e p="PostEffect" t="Include">
+            <e p="AntialiasingFXAA" t="Include">
+              <e p="AntialiasingFXAA.cs" t="Include" />
+              <e p="FXAA.shader" t="Include" />
+              <e p="FXAA3.cginc" t="Include" />
+            </e>
+            <e p="BlackWhite" t="Include">
+              <e p="BlackWhite.cs" t="Include" />
+              <e p="BlackWhite.shader" t="Include" />
+            </e>
+            <e p="Bloom" t="Include">
+              <e p="Bloom.cs" t="Include" />
+              <e p="Bloom.shader" t="Include" />
+              <e p="BlurEffect.shader" t="Include" />
+            </e>
+            <e p="BlurEffectConeTap" t="Include">
+              <e p="BlurEffectConeTap.cs" t="Include" />
+              <e p="BlurEffectConeTaps.shader" t="Include" />
+            </e>
+            <e p="Common" t="Include">
+              <e p="ImageEffectBase.cs" t="Include" />
+            </e>
+            <e p="Contrast" t="Include">
+              <e p="Contrast.cs" t="Include" />
+              <e p="Contrast.shader" t="Include" />
+            </e>
+            <e p="RadialBlur" t="Include">
+              <e p="RadialBlur.cs" t="Include" />
+              <e p="RadialBlur.shader" t="Include" />
+            </e>
+            <e p="RGBSepration" t="Include">
+              <e p="Rgb.shader" t="Include" />
+              <e p="RGBSepration.cs" t="Include" />
+              <e p="Rgbsepration.shader" t="Include" />
+              <e p="TestPostEffect.cs" t="Include" />
+            </e>
+            <e p="Saturation" t="Include">
+              <e p="Saturation.cs" t="Include" />
+              <e p="Saturation.shader" t="Include" />
+            </e>
+          </e>
+          <e p="RoShaders" t="Include">
+            <e p="Common" t="Include">
+              <e p="AdditiveColor.shader" t="Include" />
+              <e p="CutoutAdditiveColor.shader" t="Include" />
+              <e p="CutoutDiffuse.shader" t="Include" />
+              <e p="CutoutDiffuseCol.shader" t="Include" />
+              <e p="CutoutDiffuseColNoLight.shader" t="Include" />
+              <e p="CutoutDiffuseMaskR.shader" t="Include" />
+              <e p="CutoutDiffuseMaskRNoLight.shader" t="Include" />
+              <e p="CutoutSpecCol.shader" t="Include" />
+              <e p="MobileDiffuse.shader" t="Include" />
+              <e p="MobileDiffuseCol.shader" t="Include" />
+              <e p="MobileDiffuseColMask.shader" t="Include" />
+              <e p="TransparentDiffuse.shader" t="Include" />
+              <e p="TransparentDiffuseCol.shader" t="Include" />
+              <e p="TransparentDiffuseColNoLight.shader" t="Include" />
+              <e p="TransparentDiffuseMaskR.shader" t="Include" />
+              <e p="TransparentDiffuseMaskRCube.shader" t="Include" />
+              <e p="TransparentDiffuseMaskRNoLight.shader" t="Include" />
+              <e p="TransparentGrayMaskRNoLight.shader" t="Include" />
+            </e>
+            <e p="Include" t="Include">
+              <e p="CommonBasic_Include.cginc" t="Include" />
+              <e p="CommonHead_Include.cginc" t="Include" />
+              <e p="LightMap_Include.cginc" t="Include" />
+              <e p="OutLine_Include.cginc" t="Include" />
+              <e p="PBS_Include.cginc" t="Include" />
+              <e p="PBSHead_Include.cginc" t="Include" />
+              <e p="ROColorEffect_Include.cginc" t="Include" />
+              <e p="ROCommonBasic_Include.cginc" t="Include" />
+              <e p="ROCommonHead_Include.cginc" t="Include" />
+              <e p="ROLighting_Include.cginc" t="Include" />
+              <e p="ROLightingBasic_Include.cginc" t="Include" />
+              <e p="ROOutLine_Include.cginc" t="Include" />
+              <e p="ROShadow_Include.cginc" t="Include" />
+              <e p="ROSkinBlend_Include.cginc" t="Include" />
+              <e p="Shadow_Include.cginc" t="Include" />
+              <e p="SkinBlend_Include.cginc" t="Include" />
+            </e>
+            <e p="Interal" t="Include">
+              <e p="CGIncludes" t="Include">
+                <e p="AutoLight.cginc" t="Include" />
+                <e p="GLSLSupport.glslinc" t="Include" />
+                <e p="HLSLSupport.cginc" t="Include" />
+                <e p="Lighting.cginc" t="Include" />
+                <e p="SpeedTreeBillboardCommon.cginc" t="Include" />
+                <e p="SpeedTreeCommon.cginc" t="Include" />
+                <e p="SpeedTreeVertex.cginc" t="Include" />
+                <e p="SpeedTreeWind.cginc" t="Include" />
+                <e p="TerrainEngine.cginc" t="Include" />
+                <e p="TerrainSplatmapCommon.cginc" t="Include" />
+                <e p="Tessellation.cginc" t="Include" />
+                <e p="UnityBuiltin2xTreeLibrary.cginc" t="Include" />
+                <e p="UnityBuiltin3xTreeLibrary.cginc" t="Include" />
+                <e p="UnityCG.cginc" t="Include" />
+                <e p="UnityCG.glslinc" t="Include" />
+                <e p="UnityCustomRenderTexture.cginc" t="Include" />
+                <e p="UnityDeferredLibrary.cginc" t="Include" />
+                <e p="UnityDeprecated.cginc" t="Include" />
+                <e p="UnityGBuffer.cginc" t="Include" />
+                <e p="UnityGlobalIllumination.cginc" t="Include" />
+                <e p="UnityImageBasedLighting.cginc" t="Include" />
+                <e p="UnityInstancing.cginc" t="Include" />
+                <e p="UnityLightingCommon.cginc" t="Include" />
+                <e p="UnityMetaPass.cginc" t="Include" />
+                <e p="UnityPBSLighting.cginc" t="Include" />
+                <e p="UnityShaderUtilities.cginc" t="Include" />
+                <e p="UnityShaderVariables.cginc" t="Include" />
+                <e p="UnityShadowLibrary.cginc" t="Include" />
+                <e p="UnitySprites.cginc" t="Include" />
+                <e p="UnityStandardBRDF.cginc" t="Include" />
+                <e p="UnityStandardConfig.cginc" t="Include" />
+                <e p="UnityStandardCore.cginc" t="Include" />
+                <e p="UnityStandardCoreForward.cginc" t="Include" />
+                <e p="UnityStandardCoreForwardSimple.cginc" t="Include" />
+                <e p="UnityStandardInput.cginc" t="Include" />
+                <e p="UnityStandardMeta.cginc" t="Include" />
+                <e p="UnityStandardShadow.cginc" t="Include" />
+                <e p="UnityStandardUtils.cginc" t="Include" />
+                <e p="UnityUI.cginc" t="Include" />
+              </e>
+              <e p="DefaultResources" t="Include">
+                <e p="Font.shader" t="Include" />
+                <e p="Internal-Clear.shader" t="Include" />
+                <e p="Internal-Colored.shader" t="Include" />
+                <e p="Internal-ErrorShader.shader" t="Include" />
+                <e p="PerformanceTools" t="Include">
+                  <e p="FrameDebuggerRenderTargetDisplay.shader" t="Include" />
+                </e>
+              </e>
+              <e p="DefaultResourcesExtra" t="Include">
+                <e p="Alpha-Bumped.shader" t="Include" />
+                <e p="Alpha-BumpSpec.shader" t="Include" />
+                <e p="Alpha-Diffuse.shader" t="Include" />
+                <e p="Alpha-Glossy.shader" t="Include" />
+                <e p="Alpha-Parallax.shader" t="Include" />
+                <e p="Alpha-ParallaxSpec.shader" t="Include" />
+                <e p="Alpha-VertexLit.shader" t="Include" />
+                <e p="AlphaTest-Bumped.shader" t="Include" />
+                <e p="AlphaTest-BumpSpec.shader" t="Include" />
+                <e p="AlphaTest-Diffuse.shader" t="Include" />
+                <e p="AlphaTest-Glossy.shader" t="Include" />
+                <e p="AlphaTest-SoftEdgeUnlit.shader" t="Include" />
+                <e p="AlphaTest-VertexLit.shader" t="Include" />
+                <e p="Cubemaps" t="Include">
+                  <e p="CubeBlend.shader" t="Include" />
+                  <e p="CubeBlur.shader" t="Include" />
+                  <e p="CubeBlurOdd.shader" t="Include" />
+                  <e p="CubeCopy.shader" t="Include" />
+                </e>
+                <e p="Decal.shader" t="Include" />
+                <e p="Flare.shader" t="Include" />
+                <e p="GIDebug" t="Include">
+                  <e p="ShowLightMask.shader" t="Include" />
+                  <e p="TextureUV.shader" t="Include" />
+                  <e p="UV1sAsPositions.shader" t="Include" />
+                  <e p="VertexColors.shader" t="Include" />
+                </e>
+                <e p="Illumin-Bumped.shader" t="Include" />
+                <e p="Illumin-BumpSpec.shader" t="Include" />
+                <e p="Illumin-Diffuse.shader" t="Include" />
+                <e p="Illumin-Glossy.shader" t="Include" />
+                <e p="Illumin-Parallax.shader" t="Include" />
+                <e p="Illumin-ParallaxSpec.shader" t="Include" />
+                <e p="Illumin-VertexLit.shader" t="Include" />
+                <e p="Internal-BlitCopy.shader" t="Include" />
+                <e p="Internal-BlitCopyDepth.shader" t="Include" />
+                <e p="Internal-CombineDepthNormals.shader" t="Include" />
+                <e p="Internal-ConvertTexture.shader" t="Include" />
+                <e p="Internal-DeferredReflections.shader" t="Include" />
+                <e p="Internal-DeferredShading.shader" t="Include" />
+                <e p="Internal-DepthNormalsTexture.shader" t="Include" />
+                <e p="Internal-Flare.shader" t="Include" />
+                <e p="Internal-GUIRoundedRect.shader" t="Include" />
+                <e p="Internal-GUITexture.shader" t="Include" />
+                <e p="Internal-GUITextureBlit.shader" t="Include" />
+                <e p="Internal-GUITextureClip.shader" t="Include" />
+                <e p="Internal-GUITextureClipText.shader" t="Include" />
+                <e p="Internal-Halo.shader" t="Include" />
+                <e p="Internal-MotionVectors.shader" t="Include" />
+                <e p="Internal-PrePassLighting.shader" t="Include" />
+                <e p="Internal-ScreenSpaceShadows.shader" t="Include" />
+                <e p="Internal-StencilWrite.shader" t="Include" />
+                <e p="Lightmap-Bumped.shader" t="Include" />
+                <e p="Lightmap-BumpSpec.shader" t="Include" />
+                <e p="Lightmap-Diffuse.shader" t="Include" />
+                <e p="Lightmap-Glossy.shader" t="Include" />
+                <e p="Lightmap-VertexLit.shader" t="Include" />
+                <e p="Mobile" t="Include">
+                  <e p="Mobile-Bumped.shader" t="Include" />
+                  <e p="Mobile-BumpSpec-1DirectionalLight.shader" t="Include" />
+                  <e p="Mobile-BumpSpec.shader" t="Include" />
+                  <e p="Mobile-Diffuse.shader" t="Include" />
+                  <e p="Mobile-Lightmap-Unlit.shader" t="Include" />
+                  <e p="Mobile-Particle-Add.shader" t="Include" />
+                  <e p="Mobile-Particle-Alpha-VertexLit.shader" t="Include" />
+                  <e p="Mobile-Particle-Alpha.shader" t="Include" />
+                  <e p="Mobile-Particle-Multiply.shader" t="Include" />
+                  <e p="Mobile-Skybox.shader" t="Include" />
+                  <e p="Mobile-VertexLit-OnlyDirectionalLights.shader" t="Include" />
+                  <e p="Mobile-VertexLit.shader" t="Include" />
+                </e>
+                <e p="Nature" t="Include">
+                  <e p="SoftOcclusion" t="Include">
+                    <e p="TreeSoftOcclusionBark.shader" t="Include" />
+                    <e p="TreeSoftOcclusionBarkRendertex.shader" t="Include" />
+                    <e p="TreeSoftOcclusionLeaves.shader" t="Include" />
+                    <e p="TreeSoftOcclusionLeavesRendertex.shader" t="Include" />
+                  </e>
+                  <e p="SpeedTree.shader" t="Include" />
+                  <e p="SpeedTreeBillboard.shader" t="Include" />
+                  <e p="TreeCreator" t="Include">
+                    <e p="TreeCreatorBark.shader" t="Include" />
+                    <e p="TreeCreatorBarkOptimized.shader" t="Include" />
+                    <e p="TreeCreatorBarkRendertex.shader" t="Include" />
+                    <e p="TreeCreatorLeaves.shader" t="Include" />
+                    <e p="TreeCreatorLeavesFast.shader" t="Include" />
+                    <e p="TreeCreatorLeavesFastOptimized.shader" t="Include" />
+                    <e p="TreeCreatorLeavesOptimized.shader" t="Include" />
+                    <e p="TreeCreatorLeavesRendertex.shader" t="Include" />
+                  </e>
+                </e>
+                <e p="Normal-Bumped.shader" t="Include" />
+                <e p="Normal-BumpSpec.shader" t="Include" />
+                <e p="Normal-Diffuse.shader" t="Include" />
+                <e p="Normal-DiffuseDetail.shader" t="Include" />
+                <e p="Normal-DiffuseFast.shader" t="Include" />
+                <e p="Normal-Glossy.shader" t="Include" />
+                <e p="Normal-Parallax.shader" t="Include" />
+                <e p="Normal-ParallaxSpec.shader" t="Include" />
+                <e p="Normal-VertexLit.shader" t="Include" />
+                <e p="Particle Add.shader" t="Include" />
+                <e p="Particle AddMultiply.shader" t="Include" />
+                <e p="Particle AddSmooth.shader" t="Include" />
+                <e p="Particle Alpha Blend.shader" t="Include" />
+                <e p="Particle Anim Alpha Blend.shader" t="Include" />
+                <e p="Particle Blend.shader" t="Include" />
+                <e p="Particle Multiply.shader" t="Include" />
+                <e p="Particle MultiplyDouble.shader" t="Include" />
+                <e p="Particle Premultiply Blend.shader" t="Include" />
+                <e p="Particle VertexLit Blended.shader" t="Include" />
+                <e p="Reflect-Bumped.shader" t="Include" />
+                <e p="Reflect-BumpNolight.shader" t="Include" />
+                <e p="Reflect-BumpSpec.shader" t="Include" />
+                <e p="Reflect-BumpVertexLit.shader" t="Include" />
+                <e p="Reflect-Diffuse.shader" t="Include" />
+                <e p="Reflect-Glossy.shader" t="Include" />
+                <e p="Reflect-Parallax.shader" t="Include" />
+                <e p="Reflect-ParallaxSpec.shader" t="Include" />
+                <e p="Reflect-VertexLit.shader" t="Include" />
+                <e p="Skybox-Cubed.shader" t="Include" />
+                <e p="Skybox-Procedural.shader" t="Include" />
+                <e p="Skybox.shader" t="Include" />
+                <e p="Sprites-Default.shader" t="Include" />
+                <e p="Sprites-Diffuse.shader" t="Include" />
+                <e p="Sprites-Mask.shader" t="Include" />
+                <e p="Standard.shader" t="Include" />
+                <e p="StandardSpecular.shader" t="Include" />
+                <e p="TerrainShaders" t="Include">
+                  <e p="Details" t="Include">
+                    <e p="VertexLit.shader" t="Include" />
+                    <e p="WavingGrass.shader" t="Include" />
+                    <e p="WavingGrassBillboard.shader" t="Include" />
+                  </e>
+                  <e p="Splats" t="Include">
+                    <e p="AddPass.shader" t="Include" />
+                    <e p="FirstPass.shader" t="Include" />
+                    <e p="Specular-AddPass.shader" t="Include" />
+                    <e p="Specular-Base.shader" t="Include" />
+                    <e p="Specular-FirstPass.shader" t="Include" />
+                    <e p="Standard-AddPass.shader" t="Include" />
+                    <e p="Standard-Base.shader" t="Include" />
+                    <e p="Standard-FirstPass.shader" t="Include" />
+                  </e>
+                  <e p="Trees" t="Include">
+                    <e p="BillboardTree.shader" t="Include" />
+                  </e>
+                </e>
+                <e p="UI" t="Include">
+                  <e p="UI-CompositeOverdraw.shader" t="Include" />
+                  <e p="UI-Default.shader" t="Include" />
+                  <e p="UI-DefaultETC1.shader" t="Include" />
+                  <e p="UI-DefaultFont.shader" t="Include" />
+                  <e p="UI-Lit-Bumped.shader" t="Include" />
+                  <e p="UI-Lit-Detail.shader" t="Include" />
+                  <e p="UI-Lit-Refraction.shader" t="Include" />
+                  <e p="UI-Lit-RefractionDetail.shader" t="Include" />
+                  <e p="UI-Lit-Transparent.shader" t="Include" />
+                  <e p="UI-Overdraw.shader" t="Include" />
+                  <e p="UI-Unlit-Detail.shader" t="Include" />
+                  <e p="UI-Unlit-Text.shader" t="Include" />
+                  <e p="UI-Unlit-TextDetail.shader" t="Include" />
+                  <e p="UI-Unlit-Transparent.shader" t="Include" />
+                </e>
+                <e p="Unlit" t="Include">
+                  <e p="Unlit-Alpha.shader" t="Include" />
+                  <e p="Unlit-AlphaTest.shader" t="Include" />
+                  <e p="Unlit-Color.shader" t="Include" />
+                  <e p="Unlit-Normal.shader" t="Include" />
+                </e>
+                <e p="VideoDecode.shader" t="Include" />
+                <e p="VideoDecodeAndroid.shader" t="Include" />
+                <e p="VideoDecodeOSX.shader" t="Include" />
+                <e p="VR" t="Include">
+                  <e p="Shaders" t="Include">
+                    <e p="BlitCopyFromTexArray.shader" t="Include" />
+                    <e p="Internal-VRDistortion.shader" t="Include" />
+                    <e p="SpatialMappingOcclusion.shader" t="Include" />
+                    <e p="SpatialMappingWireframe.shader" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Editor" t="Include">
+                <e p="StandardShaderGUI.cs" t="Include" />
+              </e>
+              <e p="license.txt" t="Include" />
+            </e>
+            <e p="Particle" t="Include">
+              <e p="Particle-Add(4Tex).shader" t="Include" />
+              <e p="Particle-Add(clip).shader" t="Include" />
+              <e p="Particle-Add(clipRGB).shader" t="Include" />
+              <e p="Particle-Add(RGB).shader" t="Include" />
+              <e p="Particle-AddColor(RGB).shader" t="Include" />
+              <e p="ParticleAdd.shader" t="Include" />
+              <e p="ParticleAddNoColor.shader" t="Include" />
+              <e p="ParticleAlphaBlend.shader" t="Include" />
+              <e p="ParticleAlphaBlendNoColor.shader" t="Include" />
+              <e p="ParticleTransparent.shader" t="Include" />
+            </e>
+            <e p="PostEffects" t="Include">
+              <e p="Include" t="Include">
+                <e p="ACES.cginc" t="Include" />
+                <e p="ColorGrading.cginc" t="Include" />
+                <e p="Common.cginc" t="Include" />
+                <e p="UberSecondPass.cginc" t="Include" />
+              </e>
+            </e>
+            <e p="Projector" t="Include">
+              <e p="AnnulusBlend.shader" t="Include" />
+              <e p="CircleAdd.shader" t="Include" />
+              <e p="CircleBlend.shader" t="Include" />
+              <e p="FanAdd.shader" t="Include" />
+              <e p="FanBlend.shader" t="Include" />
+              <e p="Projector-Alpha.shader" t="Include" />
+              <e p="Projector-Color.shader" t="Include" />
+              <e p="Projector-Multiply.shader" t="Include" />
+              <e p="RectAdd.shader" t="Include" />
+              <e p="RectBlend.shader" t="Include" />
+            </e>
+            <e p="RimLight" t="Include">
+              <e p="CutoutDiffuseMaskR.shader" t="Include" />
+              <e p="CutoutDiffuseMaskRCap.shader" t="Include" />
+              <e p="CutoutDiffuseMaskREmsPanner.shader" t="Include" />
+              <e p="Diffuse.shader" t="Include" />
+              <e p="DiffuseCap.shader" t="Include" />
+              <e p="DiffuseEmsPanner.shader" t="Include" />
+              <e p="DiffuseOutline.shader" t="Include" />
+            </e>
+            <e p="RO" t="Include">
+              <e p="U_Y_AP_1.shader" t="Include" />
+            </e>
+            <e p="Scene" t="Include">
+              <e p="Custom_Add.shader" t="Include" />
+              <e p="CustomLightSphere.shader" t="Include" />
+              <e p="CustomShadowA.shader" t="Include" />
+              <e p="CustomShadowB.shader" t="Include" />
+              <e p="CustomShadowG.shader" t="Include" />
+              <e p="CustomShadowR.shader" t="Include" />
+              <e p="CutoutDiffuseMaskLM.shader" t="Include" />
+              <e p="CutoutDiffuseMaskLM_VMove.shader" t="Include" />
+              <e p="CutoutFade.shader" t="Include" />
+              <e p="CutoutFadeLM.shader" t="Include" />
+              <e p="DiffuseEmisSin.shader" t="Include" />
+              <e p="DiffuseEmission_FlowVC.shader" t="Include" />
+              <e p="Fade.shader" t="Include" />
+              <e p="ParticleAlphaBlendC_UVPanner.shader" t="Include" />
+              <e p="SceneAdd_DoubleRot.shader" t="Include" />
+              <e p="skybox cubed.shader" t="Include" />
+              <e p="TransparentDiffuseMaskLM.shader" t="Include" />
+              <e p="WarpMoon.shader" t="Include" />
+              <e p="WaterAlphaBlend.shader" t="Include" />
+              <e p="WaterWarpPlane.shader" t="Include" />
+            </e>
+            <e p="Skin" t="Include">
+              <e p="CutoutDiffuseMaskRFlow.shader" t="Include" />
+              <e p="Skin-Cube.shader" t="Include" />
+              <e p="Skin-CubeNoMask.shader" t="Include" />
+              <e p="Skin-FlowTexCutout.shader" t="Include" />
+              <e p="Skin-FlowTexDiff.shader" t="Include" />
+              <e p="Skin-RimLightBlend8.shader" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="UI-SeparateAlpha.shader" t="Include" />
+              <e p="UI-SeparateAlphaForDiscolor.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Water1" t="Include">
+            <e p="Water1.shader" t="Include" />
+          </e>
+          <e p="Water2" t="Include">
+            <e p="Water2.shader" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="ShaderPlay.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2017.2/resharper-host/local/Transient/ReSharperHost/v10/SolutionCaches/_ShaderPlay.-1994001795.00" t="ExcludeRecursive" />
+  </component>
+</project>

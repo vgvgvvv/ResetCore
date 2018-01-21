@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="47cb032f-f8c7-4e44-b388-34d367a5cccb" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="RGBSepration.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/RGBSepration.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1516526229859" expanded="true" signature="6:78" ph="..." />
+                <marker date="1516526229859" expanded="true" signature="110:599" ph="{...}" />
+                <marker date="1516526229859" expanded="true" signature="198:595" ph="{...}" />
+                <marker date="1516526229859" expanded="true" signature="406:589" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestPostEffect.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/TestPostEffect.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <marker date="1516527498651" expanded="true" signature="6:72" ph="..." />
+                <marker date="1516527498651" expanded="true" signature="104:742" ph="{...}" />
+                <marker date="1516527498651" expanded="true" signature="194:739" ph="{...}" />
+                <marker date="1516527498651" expanded="true" signature="403:733" ph="{...}" />
+                <marker date="1516527498651" expanded="true" signature="447:551" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bloom.shader" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/Bloom/Bloom.shader">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1516526229850" expanded="true" signature="106:1956" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="119:291" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="303:1938" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="319:1492" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="1557:1673" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="1573:1662" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="1835:1934" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="1851:1923" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlackWhite.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/BlackWhite/BlackWhite.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <marker date="1516526229849" expanded="true" signature="6:78" ph="..." />
+                <marker date="1516526229849" expanded="true" signature="110:648" ph="{...}" />
+                <marker date="1516526229849" expanded="true" signature="203:644" ph="{...}" />
+                <marker date="1516526229849" expanded="true" signature="290:638" ph="{...}" />
+                <marker date="1516526229849" expanded="true" signature="334:431" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bloom.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/Bloom/Bloom.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="30" />
+              <folding>
+                <marker date="1516526229850" expanded="true" signature="6:78" ph="..." />
+                <marker date="1516526229850" expanded="true" signature="110:2018" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="193:2016" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="505:2009" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="549:1901" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="1005:1707" ph="{...}" />
+                <marker date="1516526229850" expanded="true" signature="1918:1998" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rgb.shader" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/Rgb.shader">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-293">
+              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="18" />
+              <folding>
+                <marker date="1516526229860" expanded="true" signature="104:1388" ph="{...}" />
+                <marker date="1516526229860" expanded="true" signature="119:245" ph="{...}" />
+                <marker date="1516526229860" expanded="true" signature="258:1386" ph="{...}" />
+                <marker date="1516526229860" expanded="true" signature="330:1383" ph="{...}" />
+                <marker date="1516526229860" expanded="true" signature="344:1374" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rgbsepration.shader" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/Rgbsepration.shader">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1146">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1516526229861" expanded="true" signature="0:290" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
+                <marker date="1516526229861" expanded="true" signature="1305:5450" ph="{...}" />
+                <marker date="1516526229861" expanded="true" signature="1322:1390" ph="{...}" />
+                <marker date="1516526229861" expanded="true" signature="1405:5400" ph="{...}" />
+                <marker date="1516526229861" expanded="true" signature="1420:1535" ph="{...}" />
+                <marker date="1516526229861" expanded="true" signature="1549:3603" ph="{...}" />
+                <marker date="1516526229861" expanded="true" signature="1595:1652" ph="{...}" />
+                <marker date="1516526229861" expanded="true" signature="1788:3588" ph="{...}" />
+                <marker date="1516526229861" expanded="true" signature="3617:5394" ph="{...}" />
+                <marker date="1516526229861" expanded="true" signature="3660:3710" ph="{...}" />
+                <marker date="1516526229861" expanded="true" signature="3766:5379" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/Rgb.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/BlackWhite/BlackWhite.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/RoShaders/Interal/Editor/StandardShaderGUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/TestPostEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/Rgbsepration.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/Bloom/Bloom.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/RGBSepration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/Bloom/Bloom.shader" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/TestPostEffect.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Shaders" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp-Editor" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp-Editor" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp-Editor" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Shaders" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp-Editor" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Shaders" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="RoShaders" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp-Editor" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Shaders" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="RoShaders" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Interal" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp-Editor" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Shaders" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="RoShaders" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Interal" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Editor" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Unity Debug.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47cb032f-f8c7-4e44-b388-34d367a5cccb" name="Default" comment="" />
+      <created>1516527208426</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516527208426</updated>
+      <workItem from="1516527210691" duration="312000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="312000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="823" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Editor/ImageEffects/AntialiasingEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/Rgbsepration.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1146">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1516526229861" expanded="true" signature="0:290" ph="/* Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld' ... */" />
+            <marker date="1516526229861" expanded="true" signature="1305:5450" ph="{...}" />
+            <marker date="1516526229861" expanded="true" signature="1322:1390" ph="{...}" />
+            <marker date="1516526229861" expanded="true" signature="1405:5400" ph="{...}" />
+            <marker date="1516526229861" expanded="true" signature="1420:1535" ph="{...}" />
+            <marker date="1516526229861" expanded="true" signature="1549:3603" ph="{...}" />
+            <marker date="1516526229861" expanded="true" signature="1595:1652" ph="{...}" />
+            <marker date="1516526229861" expanded="true" signature="1788:3588" ph="{...}" />
+            <marker date="1516526229861" expanded="true" signature="3617:5394" ph="{...}" />
+            <marker date="1516526229861" expanded="true" signature="3660:3710" ph="{...}" />
+            <marker date="1516526229861" expanded="true" signature="3766:5379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/RGBSepration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1516526229859" expanded="true" signature="6:78" ph="..." />
+            <marker date="1516526229859" expanded="true" signature="110:599" ph="{...}" />
+            <marker date="1516526229859" expanded="true" signature="198:595" ph="{...}" />
+            <marker date="1516526229859" expanded="true" signature="406:589" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/BlackWhite/BlackWhite.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <marker date="1516526229849" expanded="true" signature="6:78" ph="..." />
+            <marker date="1516526229849" expanded="true" signature="110:648" ph="{...}" />
+            <marker date="1516526229849" expanded="true" signature="203:644" ph="{...}" />
+            <marker date="1516526229849" expanded="true" signature="290:638" ph="{...}" />
+            <marker date="1516526229849" expanded="true" signature="334:431" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/Bloom/Bloom.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1516526229850" expanded="true" signature="106:1956" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="119:291" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="303:1938" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="319:1492" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="1557:1673" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="1573:1662" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="1835:1934" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="1851:1923" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/Rgb.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-293">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1516526229860" expanded="true" signature="104:1388" ph="{...}" />
+            <marker date="1516526229860" expanded="true" signature="119:245" ph="{...}" />
+            <marker date="1516526229860" expanded="true" signature="258:1386" ph="{...}" />
+            <marker date="1516526229860" expanded="true" signature="330:1383" ph="{...}" />
+            <marker date="1516526229860" expanded="true" signature="344:1374" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/Bloom/Bloom.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="30" />
+          <folding>
+            <marker date="1516526229850" expanded="true" signature="6:78" ph="..." />
+            <marker date="1516526229850" expanded="true" signature="110:2018" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="193:2016" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="505:2009" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="549:1901" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="1005:1707" ph="{...}" />
+            <marker date="1516526229850" expanded="true" signature="1918:1998" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/RoShaders/Interal/Editor/StandardShaderGUI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1516526230011" expanded="false" signature="109:135" ph="..." />
+            <marker date="1516526230011" expanded="true" signature="158:21662" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="209:21660" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="249:336" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="367:630" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="672:752" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="789:3324" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="4841:6922" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="7015:7821" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="7325:7604" ph="/* Make sure that needed setup (ie keywords/renderqueue) are set up if we're switching some existing ... */" />
+            <marker date="1516526230011" expanded="true" signature="7638:7767" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="7881:10730" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="10246:10397" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="10797:11254" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="11365:12672" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="11388:11529" ph="/* _Emission property is lost after assigning Standard shader to the material ... */" />
+            <marker date="1516526230011" expanded="true" signature="11580:11693" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="11853:11998" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="12116:12190" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="12253:12450" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="12284:12392" ph="/* NOTE: legacy shaders did not provide physically based transparency ... */" />
+            <marker date="1516526230011" expanded="true" signature="12703:13241" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="13025:13184" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="13287:13656" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="13473:13646" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="13704:14677" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="13806:14667" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="14716:16123" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="14821:15046" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="15108:15328" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="15427:15661" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="16218:18931" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="16259:18921" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="19011:19307" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="19394:21187" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="19417:19618" ph="/* Note: keywords must be based on Material value not on MaterialProperty due to multi-edit &amp; material animation ... */" />
+            <marker date="1516526230011" expanded="true" signature="20287:20670" ph="/* A material's GI flag internally keeps track of whether emission is enabled at all, it's enabled but has no eff ... */" />
+            <marker date="1516526230011" expanded="true" signature="21000:21177" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="21270:21437" ph="{...}" />
+            <marker date="1516526230011" expanded="true" signature="21509:21654" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/TestPostEffect.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <marker date="1516527498651" expanded="true" signature="6:72" ph="..." />
+            <marker date="1516527498651" expanded="true" signature="104:742" ph="{...}" />
+            <marker date="1516527498651" expanded="true" signature="194:739" ph="{...}" />
+            <marker date="1516527498651" expanded="true" signature="403:733" ph="{...}" />
+            <marker date="1516527498651" expanded="true" signature="447:551" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderPlay", "Assembly-CSharp.csproj", "{8751F4ED-03FD-CE14-B3DA-C2B57153E3D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderPlay", "Assembly-CSharp-Editor.csproj", "{5518E2BF-FF5D-8947-7354-5898D23490A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderPlay", "Assembly-CSharp-Editor-firstpass.csproj", "{C9D6392A-6AA0-7599-D1C7-15288673BC08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8751F4ED-03FD-CE14-B3DA-C2B57153E3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8751F4ED-03FD-CE14-B3DA-C2B57153E3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8751F4ED-03FD-CE14-B3DA-C2B57153E3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8751F4ED-03FD-CE14-B3DA-C2B57153E3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5518E2BF-FF5D-8947-7354-5898D23490A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5518E2BF-FF5D-8947-7354-5898D23490A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5518E2BF-FF5D-8947-7354-5898D23490A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5518E2BF-FF5D-8947-7354-5898D23490A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D6392A-6AA0-7599-D1C7-15288673BC08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D6392A-6AA0-7599-D1C7-15288673BC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D6392A-6AA0-7599-D1C7-15288673BC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D6392A-6AA0-7599-D1C7-15288673BC08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
