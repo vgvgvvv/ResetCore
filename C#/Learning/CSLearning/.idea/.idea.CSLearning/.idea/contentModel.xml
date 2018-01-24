@@ -19,6 +19,10 @@
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="SpecialGenerics" t="Include">
+          <e p="ReadMe.mk" t="Include" />
+          <e p="TestClass.cs" t="Include" />
+        </e>
       </e>
       <e p="CSLearning.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
