@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BE370819-9DE9-42A6-8BF8-B3195DB0A752}</ProjectGuid>
+    <ProjectGuid>{2B8849F9-9AE9-469B-8863-09722667335C}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ReFrame.Util</RootNamespace>
-    <AssemblyName>ReFrame.Util</AssemblyName>
+    <RootNamespace>ReFrame.Network</RootNamespace>
+    <AssemblyName>ReFrame.Network</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,13 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\InterfaceBinder.cs" />
-    <Compile Include="Debug\IDebuger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility\HashUtil.cs" />
-    <Compile Include="Utility\ObjectPool.cs" />
-    <Compile Include="Utility\Reusable.cs" />
-    <Compile Include="Utility\Singleton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReFrame.Util\ReFrame.Util.csproj">
+      <Project>{be370819-9de9-42a6-8bf8-b3195db0a752}</Project>
+      <Name>ReFrame.Util</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

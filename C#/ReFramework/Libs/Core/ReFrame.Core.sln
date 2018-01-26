@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReFrame.Core", "ReFrame.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReFrame.Util", "ReFrame.Util\ReFrame.Util.csproj", "{BE370819-9DE9-42A6-8BF8-B3195DB0A752}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReFrame.Network", "ReFrame.Network\ReFrame.Network.csproj", "{2B8849F9-9AE9-469B-8863-09722667335C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BE370819-9DE9-42A6-8BF8-B3195DB0A752}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE370819-9DE9-42A6-8BF8-B3195DB0A752}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE370819-9DE9-42A6-8BF8-B3195DB0A752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B8849F9-9AE9-469B-8863-09722667335C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8849F9-9AE9-469B-8863-09722667335C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8849F9-9AE9-469B-8863-09722667335C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8849F9-9AE9-469B-8863-09722667335C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
