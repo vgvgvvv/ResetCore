@@ -51,6 +51,7 @@
         </e>
         <e p="ReFrame.Util.csproj" t="IncludeRecursive" />
         <e p="Utility" t="Include">
+          <e p="ActionQueue.cs" t="Include" />
           <e p="HashUtil.cs" t="Include" />
           <e p="ObjectPool.cs" t="Include" />
           <e p="Reusable.cs" t="Include" />

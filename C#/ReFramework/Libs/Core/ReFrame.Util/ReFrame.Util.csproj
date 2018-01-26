@@ -42,6 +42,7 @@
     <Compile Include="Context\InterfaceBinder.cs" />
     <Compile Include="Debug\IDebuger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\ActionQueue.cs" />
     <Compile Include="Utility\HashUtil.cs" />
     <Compile Include="Utility\ObjectPool.cs" />
     <Compile Include="Utility\Reusable.cs" />

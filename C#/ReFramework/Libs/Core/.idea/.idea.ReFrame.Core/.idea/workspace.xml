@@ -11,19 +11,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RComponent.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RComponent.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1515924407513" expanded="true" signature="56:198" ph="{...}" />
-                <marker date="1515924407513" expanded="true" signature="105:196" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="REntity.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntity.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -151,7 +138,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NetContext.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NetContext.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReFrame.Network/Context/NetContext.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -164,24 +151,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InterfaceBinder.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReFrame.Util/Context/InterfaceBinder.cs">
+      <file leaf-file-name="ActionQueue.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/ActionQueue.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+            <state relative-caret-position="555">
+              <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
               <folding>
-                <marker date="1516983059521" expanded="true" signature="6:47" ph="..." />
-                <marker date="1516983059521" expanded="true" signature="79:2006" ph="{...}" />
-                <marker date="1516983059521" expanded="true" signature="121:2004" ph="{...}" />
-                <marker date="1516983059521" expanded="true" signature="292:475" ph="/// 绑定接口 ... " />
-                <marker date="1516983059521" expanded="true" signature="565:1273" ph="{...}" />
-                <marker date="1516983059521" expanded="true" signature="765:936" ph="{...}" />
-                <marker date="1516983059521" expanded="true" signature="1044:1165" ph="{...}" />
-                <marker date="1516983059521" expanded="true" signature="1182:1263" ph="{...}" />
-                <marker date="1516983059521" expanded="true" signature="1283:1457" ph="/// 获得绑定的相应类 ... " />
-                <marker date="1516983059521" expanded="true" signature="1529:1998" ph="{...}" />
-                <marker date="1516983059521" expanded="true" signature="1729:1786" ph="{...}" />
-                <marker date="1516983059521" expanded="true" signature="1893:1950" ph="{...}" />
+                <marker date="1516984152904" expanded="false" signature="6:73" ph="..." />
+                <marker date="1516984152904" expanded="true" signature="99:2638" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="106:167" ph="/// 即时触发式行为队列，入队的同时就开始调用 ... " />
+                <marker date="1516984152904" expanded="true" signature="196:2636" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="368:419" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="429:2468" ph="主要逻辑" />
+                <marker date="1516984152904" expanded="true" signature="450:603" ph="/// 插入行为，用户可以控制下一个行为在该的行为中调用的位置。 ... " />
+                <marker date="1516984152904" expanded="true" signature="665:1129" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="702:886" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="788:870" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="903:1094" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="1186:1268" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="1303:1581" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="1349:1455" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="1472:1571" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="1591:1738" ph="/// 插入行为（下个动作流程自动加到该动作的后面） ... " />
+                <marker date="1516984152904" expanded="true" signature="1792:2284" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="1829:2027" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="1915:2011" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="2044:2249" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="2350:2448" ph="{...}" />
+                <marker date="1516984152904" expanded="true" signature="2507:2630" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Singleton.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Singleton.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1515924510834" expanded="true" signature="30:628" ph="{...}" />
+                <marker date="1515924510834" expanded="true" signature="101:625" ph="{...}" />
+                <marker date="1515924510834" expanded="true" signature="192:245" ph="{...}" />
+                <marker date="1515924510834" expanded="true" signature="279:578" ph="{...}" />
+                <marker date="1515924510834" expanded="true" signature="305:568" ph="{...}" />
+                <marker date="1515924510834" expanded="true" signature="358:520" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -197,11 +211,13 @@
     <setting file="file://$PROJECT_DIR$/ReFrame.Network/Presentation/IPresentation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISession.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Network/Context/NetContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/ActionQueue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/RComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/HashUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Debug/IDebuger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Context/InterfaceBinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Reusable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -216,6 +232,7 @@
         <option value="$PROJECT_DIR$/ReFrame.Network/Session/ISession.cs" />
         <option value="$PROJECT_DIR$/ReFrame.Network/Presentation/IPresentation.cs" />
         <option value="$PROJECT_DIR$/ReFrame.Network/Context/NetContext.cs" />
+        <option value="$PROJECT_DIR$/ReFrame.Util/Utility/ActionQueue.cs" />
       </list>
     </option>
   </component>
@@ -256,12 +273,6 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="ReFrame.Core (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="ReFrame.Core" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="ReFrame.Core (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="ReFrame.Core" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Base" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
@@ -320,12 +331,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516809854611</updated>
       <workItem from="1516809857016" duration="112000" />
-      <workItem from="1516981773722" duration="1931000" />
+      <workItem from="1516981773722" duration="2595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2043000" />
+    <option name="totallyTimeSpent" value="2707000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -609,6 +620,52 @@
           <folding>
             <marker date="1516983725935" expanded="true" signature="33:86" ph="{...}" />
             <marker date="1516983725935" expanded="true" signature="63:84" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/ActionQueue.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding>
+            <marker date="1516984152904" expanded="false" signature="6:73" ph="..." />
+            <marker date="1516984152904" expanded="true" signature="99:2638" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="106:167" ph="/// 即时触发式行为队列，入队的同时就开始调用 ... " />
+            <marker date="1516984152904" expanded="true" signature="196:2636" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="368:419" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="429:2468" ph="主要逻辑" />
+            <marker date="1516984152904" expanded="true" signature="450:603" ph="/// 插入行为，用户可以控制下一个行为在该的行为中调用的位置。 ... " />
+            <marker date="1516984152904" expanded="true" signature="665:1129" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="702:886" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="788:870" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="903:1094" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="1186:1268" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="1303:1581" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="1349:1455" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="1472:1571" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="1591:1738" ph="/// 插入行为（下个动作流程自动加到该动作的后面） ... " />
+            <marker date="1516984152904" expanded="true" signature="1792:2284" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="1829:2027" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="1915:2011" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="2044:2249" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="2350:2448" ph="{...}" />
+            <marker date="1516984152904" expanded="true" signature="2507:2630" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Singleton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1515924510834" expanded="true" signature="30:628" ph="{...}" />
+            <marker date="1515924510834" expanded="true" signature="101:625" ph="{...}" />
+            <marker date="1515924510834" expanded="true" signature="192:245" ph="{...}" />
+            <marker date="1515924510834" expanded="true" signature="279:578" ph="{...}" />
+            <marker date="1515924510834" expanded="true" signature="305:568" ph="{...}" />
+            <marker date="1515924510834" expanded="true" signature="358:520" ph="{...}" />
           </folding>
         </state>
       </provider>
