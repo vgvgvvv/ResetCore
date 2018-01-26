@@ -39,7 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\NetContext.cs" />
+    <Compile Include="Presentation\IPresentation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session\ISession.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReFrame.Util\ReFrame.Util.csproj">

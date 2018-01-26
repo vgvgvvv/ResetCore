@@ -24,20 +24,147 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IDebuger.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReFrame.Util/Debug/IDebuger.cs">
+      <file leaf-file-name="REntity.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntity.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="291">
+              <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
               <folding>
-                <marker date="1516982102015" expanded="true" signature="28:146" ph="{...}" />
-                <marker date="1516982102015" expanded="true" signature="60:144" ph="{...}" />
+                <marker date="1515926287275" expanded="true" signature="6:61" ph="..." />
+                <marker date="1515926287275" expanded="true" signature="90:2437" ph="{...}" />
+                <marker date="1515926287275" expanded="true" signature="136:2435" ph="{...}" />
+                <marker date="1515926287275" expanded="true" signature="208:1207" ph="组件操作" />
+                <marker date="1515926287275" expanded="true" signature="230:285" ph="/// 包含所有组件 ... " />
+                <marker date="1515926287275" expanded="true" signature="352:406" ph="/// 等待被移除 ... " />
+                <marker date="1515926287275" expanded="true" signature="505:642" ph="/// 添加Component ... " />
+                <marker date="1515926287275" expanded="true" signature="705:871" ph="{...}" />
+                <marker date="1515926287275" expanded="true" signature="881:1018" ph="/// 获取Component ... " />
+                <marker date="1515926287275" expanded="true" signature="1072:1178" ph="{...}" />
+                <marker date="1515926287275" expanded="true" signature="1244:1313" ph="{...}" />
+                <marker date="1515926287275" expanded="true" signature="1323:2420" ph="生命周期" />
+                <marker date="1515926287275" expanded="true" signature="1417:1551" ph="{...}" />
+                <marker date="1515926287275" expanded="true" signature="1589:2046" ph="{...}" />
+                <marker date="1515926287275" expanded="true" signature="1679:1758" ph="{...}" />
+                <marker date="1515926287275" expanded="true" signature="1846:2036" ph="{...}" />
+                <marker date="1515926287275" expanded="true" signature="2064:2117" ph="/// 销毁对象 ... " />
+                <marker date="1515926287275" expanded="true" signature="2161:2400" ph="{...}" />
+                <marker date="1515926287275" expanded="true" signature="2226:2295" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InterfaceBinder.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Reusable.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Reusable.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+              <folding>
+                <marker date="1515926769903" expanded="true" signature="30:1147" ph="{...}" />
+                <marker date="1515926769903" expanded="true" signature="58:1145" ph="{...}" />
+                <marker date="1515926769903" expanded="true" signature="112:172" ph="/// 每个类型的Hash ... " />
+                <marker date="1515926769903" expanded="true" signature="216:272" ph="/// 是否已经被销毁 ... " />
+                <marker date="1515926769903" expanded="true" signature="354:517" ph="{...}" />
+                <marker date="1515926769903" expanded="true" signature="391:476" ph="{...}" />
+                <marker date="1515926769903" expanded="true" signature="561:611" ph="{...}" />
+                <marker date="1515926769903" expanded="true" signature="653:704" ph="{...}" />
+                <marker date="1515926769903" expanded="true" signature="722:807" ph="/// 获得新的 ... " />
+                <marker date="1515926769903" expanded="true" signature="864:1011" ph="{...}" />
+                <marker date="1515926769903" expanded="true" signature="1050:1138" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="REntityManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntityManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1515926480836" expanded="true" signature="6:86" ph="..." />
+                <marker date="1515926480836" expanded="true" signature="115:1844" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="160:1842" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="362:494" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="512:658" ph="/// 添加新的Entity ... " />
+                <marker date="1515926480836" expanded="true" signature="731:824" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="869:987" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="1026:1548" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="1129:1216" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="1314:1538" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="1587:1836" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="1684:1753" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1515924318127" expanded="true" signature="27:213" ph="{...}" />
+                <marker date="1515924318127" expanded="true" signature="64:211" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RObject.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1515926802188" expanded="true" signature="56:118" ph="{...}" />
+                <marker date="1515926802188" expanded="true" signature="94:116" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ISession.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISession.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+              <folding>
+                <marker date="1516983701080" expanded="true" signature="33:84" ph="{...}" />
+                <marker date="1516983701080" expanded="true" signature="61:82" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IPresentation.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Network/Presentation/IPresentation.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+              <folding>
+                <marker date="1516983715669" expanded="true" signature="38:94" ph="{...}" />
+                <marker date="1516983715669" expanded="true" signature="71:92" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NetContext.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Network/Context/NetContext.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+              <folding>
+                <marker date="1516983725935" expanded="true" signature="33:86" ph="{...}" />
+                <marker date="1516983725935" expanded="true" signature="63:84" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterfaceBinder.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReFrame.Util/Context/InterfaceBinder.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -60,63 +187,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashUtil.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/HashUtil.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1515924199896" expanded="true" signature="50:955" ph="{...}" />
-                <marker date="1515924199896" expanded="true" signature="85:953" ph="{...}" />
-                <marker date="1515924199896" expanded="true" signature="145:387" ph="{...}" />
-                <marker date="1515924199896" expanded="true" signature="271:351" ph="{...}" />
-                <marker date="1515924199896" expanded="true" signature="397:658" ph="/// times33算法（快速哈希算法） ... " />
-                <marker date="1515924199896" expanded="true" signature="705:947" ph="{...}" />
-                <marker date="1515924199896" expanded="true" signature="831:911" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectPool.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/ObjectPool.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1515925401748" expanded="true" signature="65:1242" ph="{...}" />
-                <marker date="1515925401748" expanded="true" signature="102:1240" ph="{...}" />
-                <marker date="1515925401748" expanded="true" signature="250:375" ph="/// 获取对象 ... " />
-                <marker date="1515925401748" expanded="true" signature="447:810" ph="{...}" />
-                <marker date="1515925401748" expanded="true" signature="549:665" ph="{...}" />
-                <marker date="1515925401748" expanded="true" signature="699:759" ph="{...}" />
-                <marker date="1515925401748" expanded="true" signature="820:912" ph="/// 归还对象 ... " />
-                <marker date="1515925401748" expanded="true" signature="966:1234" ph="{...}" />
-                <marker date="1515925401748" expanded="true" signature="1072:1192" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReFrame.Core.csproj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReFrame.Core/ReFrame.Core.csproj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Network/TcpSocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/RObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/RManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntityManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Presentation/IPresentation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISession.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Context/NetContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/RComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/HashUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Debug/IDebuger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Context/InterfaceBinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Reusable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -127,6 +213,9 @@
         <option value="$PROJECT_DIR$/ReFrame.Util/Debug/IDebuger.cs" />
         <option value="$PROJECT_DIR$/ReFrame.Network/Class1.cs" />
         <option value="$PROJECT_DIR$/ReFrame.Util/Context/InterfaceBinder.cs" />
+        <option value="$PROJECT_DIR$/ReFrame.Network/Session/ISession.cs" />
+        <option value="$PROJECT_DIR$/ReFrame.Network/Presentation/IPresentation.cs" />
+        <option value="$PROJECT_DIR$/ReFrame.Network/Context/NetContext.cs" />
       </list>
     </option>
   </component>
@@ -231,12 +320,12 @@
       <option name="presentableId" value="Default" />
       <updated>1516809854611</updated>
       <workItem from="1516809857016" duration="112000" />
-      <workItem from="1516981773722" duration="1357000" />
+      <workItem from="1516981773722" duration="1931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1469000" />
+    <option name="totallyTimeSpent" value="2043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -257,7 +346,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -345,10 +434,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding>
-            <marker date="1516982131772" expanded="true" signature="25:77" ph="{...}" />
-            <marker date="1516982131772" expanded="true" signature="54:75" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -359,17 +445,6 @@
           <folding>
             <marker date="1516982102015" expanded="true" signature="28:146" ph="{...}" />
             <marker date="1516982102015" expanded="true" signature="60:144" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RComponent.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1515924407513" expanded="true" signature="56:198" ph="{...}" />
-            <marker date="1515924407513" expanded="true" signature="105:196" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -399,6 +474,141 @@
             <marker date="1516983059521" expanded="true" signature="1529:1998" ph="{...}" />
             <marker date="1516983059521" expanded="true" signature="1729:1786" ph="{...}" />
             <marker date="1516983059521" expanded="true" signature="1893:1950" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1515924407513" expanded="true" signature="56:198" ph="{...}" />
+            <marker date="1515924407513" expanded="true" signature="105:196" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <marker date="1515926287275" expanded="true" signature="6:61" ph="..." />
+            <marker date="1515926287275" expanded="true" signature="90:2437" ph="{...}" />
+            <marker date="1515926287275" expanded="true" signature="136:2435" ph="{...}" />
+            <marker date="1515926287275" expanded="true" signature="208:1207" ph="组件操作" />
+            <marker date="1515926287275" expanded="true" signature="230:285" ph="/// 包含所有组件 ... " />
+            <marker date="1515926287275" expanded="true" signature="352:406" ph="/// 等待被移除 ... " />
+            <marker date="1515926287275" expanded="true" signature="505:642" ph="/// 添加Component ... " />
+            <marker date="1515926287275" expanded="true" signature="705:871" ph="{...}" />
+            <marker date="1515926287275" expanded="true" signature="881:1018" ph="/// 获取Component ... " />
+            <marker date="1515926287275" expanded="true" signature="1072:1178" ph="{...}" />
+            <marker date="1515926287275" expanded="true" signature="1244:1313" ph="{...}" />
+            <marker date="1515926287275" expanded="true" signature="1323:2420" ph="生命周期" />
+            <marker date="1515926287275" expanded="true" signature="1417:1551" ph="{...}" />
+            <marker date="1515926287275" expanded="true" signature="1589:2046" ph="{...}" />
+            <marker date="1515926287275" expanded="true" signature="1679:1758" ph="{...}" />
+            <marker date="1515926287275" expanded="true" signature="1846:2036" ph="{...}" />
+            <marker date="1515926287275" expanded="true" signature="2064:2117" ph="/// 销毁对象 ... " />
+            <marker date="1515926287275" expanded="true" signature="2161:2400" ph="{...}" />
+            <marker date="1515926287275" expanded="true" signature="2226:2295" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Reusable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding>
+            <marker date="1515926769903" expanded="true" signature="30:1147" ph="{...}" />
+            <marker date="1515926769903" expanded="true" signature="58:1145" ph="{...}" />
+            <marker date="1515926769903" expanded="true" signature="112:172" ph="/// 每个类型的Hash ... " />
+            <marker date="1515926769903" expanded="true" signature="216:272" ph="/// 是否已经被销毁 ... " />
+            <marker date="1515926769903" expanded="true" signature="354:517" ph="{...}" />
+            <marker date="1515926769903" expanded="true" signature="391:476" ph="{...}" />
+            <marker date="1515926769903" expanded="true" signature="561:611" ph="{...}" />
+            <marker date="1515926769903" expanded="true" signature="653:704" ph="{...}" />
+            <marker date="1515926769903" expanded="true" signature="722:807" ph="/// 获得新的 ... " />
+            <marker date="1515926769903" expanded="true" signature="864:1011" ph="{...}" />
+            <marker date="1515926769903" expanded="true" signature="1050:1138" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntityManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1515926480836" expanded="true" signature="6:86" ph="..." />
+            <marker date="1515926480836" expanded="true" signature="115:1844" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="160:1842" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="362:494" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="512:658" ph="/// 添加新的Entity ... " />
+            <marker date="1515926480836" expanded="true" signature="731:824" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="869:987" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="1026:1548" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="1129:1216" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="1314:1538" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="1587:1836" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="1684:1753" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1515924318127" expanded="true" signature="27:213" ph="{...}" />
+            <marker date="1515924318127" expanded="true" signature="64:211" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1515926802188" expanded="true" signature="56:118" ph="{...}" />
+            <marker date="1515926802188" expanded="true" signature="94:116" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISession.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding>
+            <marker date="1516983701080" expanded="true" signature="33:84" ph="{...}" />
+            <marker date="1516983701080" expanded="true" signature="61:82" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Network/Presentation/IPresentation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding>
+            <marker date="1516983715669" expanded="true" signature="38:94" ph="{...}" />
+            <marker date="1516983715669" expanded="true" signature="71:92" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Network/Context/NetContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding>
+            <marker date="1516983725935" expanded="true" signature="33:86" ph="{...}" />
+            <marker date="1516983725935" expanded="true" signature="63:84" ph="{...}" />
           </folding>
         </state>
       </provider>
