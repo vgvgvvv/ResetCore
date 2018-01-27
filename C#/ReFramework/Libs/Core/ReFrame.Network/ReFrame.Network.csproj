@@ -33,22 +33,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Google.Protobuf">
+      <HintPath>..\..\..\..\Libs\Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\IReciver.cs" />
     <Compile Include="Context\NetContext.cs" />
-    <Compile Include="Presentation\IPresentation.cs" />
+    <Compile Include="Context\IPresentation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Session\ISession.cs" />
+    <Compile Include="Context\ISession.cs" />
+    <Compile Include="Session\SocketEnum.cs" />
+    <Compile Include="Session\SocketEventConst.cs" />
+    <Compile Include="Session\TcpSocket.cs" />
+    <Compile Include="Session\UdpSocket.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReFrame.Util\ReFrame.Util.csproj">
       <Project>{be370819-9de9-42a6-8bf8-b3195db0a752}</Project>
       <Name>ReFrame.Util</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Presentation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

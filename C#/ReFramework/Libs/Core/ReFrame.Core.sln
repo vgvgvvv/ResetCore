@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.0.0
-MinimumVisualStudioVersion = 10.0.0.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReFrame.Core", "ReFrame.Core\ReFrame.Core.csproj", "{4EF2254D-F9B6-4409-BA29-8F3EC044D7D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReFrame.Util", "ReFrame.Util\ReFrame.Util.csproj", "{BE370819-9DE9-42A6-8BF8-B3195DB0A752}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReFrame.Network", "ReFrame.Network\ReFrame.Network.csproj", "{2B8849F9-9AE9-469B-8863-09722667335C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reframe.Unity", "Reframe.Unity\Reframe.Unity.csproj", "{FCA5E6B7-FA12-4618-8FC8-4EC148980411}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +29,15 @@ Global
 		{2B8849F9-9AE9-469B-8863-09722667335C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B8849F9-9AE9-469B-8863-09722667335C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B8849F9-9AE9-469B-8863-09722667335C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCA5E6B7-FA12-4618-8FC8-4EC148980411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCA5E6B7-FA12-4618-8FC8-4EC148980411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCA5E6B7-FA12-4618-8FC8-4EC148980411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCA5E6B7-FA12-4618-8FC8-4EC148980411}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27E300D8-B685-490C-9716-C717484B65EB}
 	EndGlobalSection
 EndGlobal

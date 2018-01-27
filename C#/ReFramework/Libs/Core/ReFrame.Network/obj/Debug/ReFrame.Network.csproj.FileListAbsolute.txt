@@ -1,0 +1,9 @@
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\ReFrame.Network\bin\Debug\ReFrame.Network.dll
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\ReFrame.Network\bin\Debug\ReFrame.Network.pdb
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\ReFrame.Network\bin\Debug\Google.Protobuf.dll
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\ReFrame.Network\bin\Debug\ReFrame.Util.dll
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\ReFrame.Network\bin\Debug\ReFrame.Util.pdb
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\ReFrame.Network\obj\Debug\ReFrame.Network.csprojResolveAssemblyReference.cache
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\ReFrame.Network\obj\Debug\ReFrame.Network.csproj.CoreCompileInputs.cache
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\ReFrame.Network\obj\Debug\ReFrame.Network.dll
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\ReFrame.Network\obj\Debug\ReFrame.Network.pdb

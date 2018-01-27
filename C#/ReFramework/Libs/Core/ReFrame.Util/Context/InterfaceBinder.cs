@@ -5,8 +5,8 @@ namespace ReFrame.Util.Context
 {
     public static class InterfaceBinder
     {
-        private static Dictionary<Type, Dictionary<string, object>> 
-            contextPool = new Dictionary<Type, Dictionary<string, object>>();
+        private static readonly Dictionary<Type, Dictionary<string, object>> 
+            ContextPool = new Dictionary<Type, Dictionary<string, object>>();
         
         /// <summary>
         /// 绑定接口
@@ -18,10 +18,10 @@ namespace ReFrame.Util.Context
         {
             Dictionary<string, object> targetInterfaceDict;
             Type targetInterface = typeof(T);
-            if (!contextPool.TryGetValue(targetInterface, out targetInterfaceDict))
+            if (!ContextPool.TryGetValue(targetInterface, out targetInterfaceDict))
             {
                 targetInterfaceDict = new Dictionary<string, object>();
-                contextPool.Add(targetInterface, targetInterfaceDict);
+                ContextPool.Add(targetInterface, targetInterfaceDict);
             }
 
             object targetObject;
@@ -46,7 +46,7 @@ namespace ReFrame.Util.Context
         {
             Dictionary<string, object> targetInterfaceDict;
             Type targetInterface = typeof(T);
-            if (!contextPool.TryGetValue(targetInterface, out targetInterfaceDict))
+            if (!ContextPool.TryGetValue(targetInterface, out targetInterfaceDict))
             {
                 return null;
             }
