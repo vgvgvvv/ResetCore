@@ -42,24 +42,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\IReciver.cs" />
+    <Compile Include="Bootstrap\Bootstrap.cs" />
+    <Compile Include="Bootstrap\ClientBootstrap.cs" />
     <Compile Include="Context\NetContext.cs" />
-    <Compile Include="Context\IPresentation.cs" />
+    <Compile Include="Handler\ISessionHandler.cs" />
+    <Compile Include="Handler\ISessionInboundHandler.cs" />
+    <Compile Include="Handler\ISessionOutboundHandler.cs" />
+    <Compile Include="Handler\SessionSendHandler.cs" />
+    <Compile Include="Handler\TestOutboundHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Context\ISession.cs" />
-    <Compile Include="Session\SocketEnum.cs" />
-    <Compile Include="Session\SocketEventConst.cs" />
-    <Compile Include="Session\TcpSocket.cs" />
-    <Compile Include="Session\UdpSocket.cs" />
+    <Compile Include="Session\AbstractSessionContext.cs" />
+    <Compile Include="Session\DefaultSessionContext.cs" />
+    <Compile Include="Session\DefaultSessionPipeline.cs" />
+    <Compile Include="Session\DefualtSessionFactory.cs" />
+    <Compile Include="Session\IClientSession.cs" />
+    <Compile Include="Session\ISession.cs" />
+    <Compile Include="Session\ISessionContext.cs" />
+    <Compile Include="Session\ISessionFactory.cs" />
+    <Compile Include="Session\ISessionInboundInvoker.cs" />
+    <Compile Include="Session\ISessionOutboundInvoker.cs" />
+    <Compile Include="Session\ISessionPipeline.cs" />
+    <Compile Include="Session\TcpSession.cs" />
+    <Compile Include="Socket\SocketEnum.cs" />
+    <Compile Include="Socket\SocketEventConst.cs" />
+    <Compile Include="Socket\TcpSocket.cs" />
+    <Compile Include="Socket\UdpSocket.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReFrame.Util\ReFrame.Util.csproj">
       <Project>{be370819-9de9-42a6-8bf8-b3195db0a752}</Project>
       <Name>ReFrame.Util</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Presentation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

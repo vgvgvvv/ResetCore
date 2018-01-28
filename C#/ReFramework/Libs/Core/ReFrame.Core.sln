@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReFrame.Network", "ReFrame.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reframe.Unity", "Reframe.Unity\Reframe.Unity.csproj", "{FCA5E6B7-FA12-4618-8FC8-4EC148980411}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{5ED961E5-B0A9-4F51-8F3A-E8265EF0E25B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FCA5E6B7-FA12-4618-8FC8-4EC148980411}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCA5E6B7-FA12-4618-8FC8-4EC148980411}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCA5E6B7-FA12-4618-8FC8-4EC148980411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED961E5-B0A9-4F51-8F3A-E8265EF0E25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED961E5-B0A9-4F51-8F3A-E8265EF0E25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED961E5-B0A9-4F51-8F3A-E8265EF0E25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED961E5-B0A9-4F51-8F3A-E8265EF0E25B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

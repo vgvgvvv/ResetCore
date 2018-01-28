@@ -3,7 +3,6 @@ using System.Net.Sockets;
 using System;
 using System.Diagnostics;
 using System.Net;
-using ReFrame.Network.Session;
 using ReFrame.Util.Context;
 using ReFrame.Util.Debug;
 

@@ -1,0 +1,14 @@
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/bin/Debug/UnitTest.dll
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/bin/Debug/UnitTest.pdb
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/bin/Debug/nunit.framework.dll
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/bin/Debug/ReFrame.Core.dll
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/bin/Debug/ReFrame.Network.dll
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/bin/Debug/ReFrame.Util.dll
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/bin/Debug/ReFrame.Core.pdb
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/bin/Debug/ReFrame.Network.pdb
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/bin/Debug/ReFrame.Util.pdb
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/bin/Debug/nunit.framework.xml
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.csprojResolveAssemblyReference.cache
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.csproj.CoreCompileInputs.cache
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.dll
+/Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.pdb
