@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Driver.cs" t="Include" />
+          <e p="Managers" t="Include">
+            <e p="GameSyncManager.cs" t="Include" />
+            <e p="IManager.cs" t="Include" />
+            <e p="InputManager.cs" t="Include" />
+            <e p="NetManager.cs" t="Include" />
+            <e p="Ticker" t="Include">
+              <e p="ITickFixedUpdate.cs" t="Include" />
+            </e>
+            <e p="TickManager.cs" t="Include" />
+          </e>
+          <e p="World.cs" t="Include" />
+        </e>
+      </e>
+      <e p="FrameSyncClient.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2017.2/resharper-host/local/Transient/ReSharperHost/v10/SolutionCaches/_FrameSyncClient.765300677.00" t="ExcludeRecursive" />
+  </component>
+</project>
