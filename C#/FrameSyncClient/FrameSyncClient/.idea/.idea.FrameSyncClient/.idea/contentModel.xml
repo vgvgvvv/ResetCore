@@ -21,8 +21,51 @@
             <e p="NetManager.cs" t="Include" />
             <e p="Ticker" t="Include">
               <e p="ITickFixedUpdate.cs" t="Include" />
+              <e p="ITickLateUpdate.cs" t="Include" />
+              <e p="ITickUpdate.cs" t="Include" />
             </e>
             <e p="TickManager.cs" t="Include" />
+          </e>
+          <e p="Net" t="Include">
+            <e p="Protocol" t="Include">
+              <e p="IProtocol.cs" t="Include" />
+            </e>
+            <e p="SocketEnum.cs" t="Include" />
+            <e p="SocketEventConst.cs" t="Include" />
+            <e p="TcpClient.cs" t="Include" />
+            <e p="TcpSocket.cs" t="Include" />
+            <e p="UdpSocket.cs" t="Include" />
+          </e>
+          <e p="Util" t="Include">
+            <e p="Extenstion" t="Include">
+              <e p="ArrayEx.cs" t="Include" />
+              <e p="BitConverterEx.cs" t="Include" />
+              <e p="ColorEx.cs" t="Include" />
+              <e p="ComponentEx.cs" t="Include" />
+              <e p="DictionaryEx.cs" t="Include" />
+              <e p="DirectoryEx.cs" t="Include" />
+              <e p="EnumEx.cs" t="Include" />
+              <e p="ExtensionTransform.cs" t="Include" />
+              <e p="FileEx.cs" t="Include" />
+              <e p="GameObjectEx.cs" t="Include" />
+              <e p="HashtableEx.cs" t="Include" />
+              <e p="IEnumerableEx.cs" t="Include" />
+              <e p="ListEx.cs" t="Include" />
+              <e p="MonobehaviorEx.cs" t="Include" />
+              <e p="ObjectEx.cs" t="Include" />
+              <e p="PathEx.cs" t="Include" />
+              <e p="RandomEx.cs" t="Include" />
+              <e p="ReflectEx.cs" t="Include" />
+              <e p="RichTextEx.cs" t="Include" />
+              <e p="StringEx" t="Include">
+                <e p="IStringConvertable.cs" t="Include" />
+                <e p="IStringConvertable.cs.meta" t="Include" />
+                <e p="StringEx.cs" t="Include" />
+                <e p="StringEx.cs.meta" t="Include" />
+              </e>
+              <e p="TypeEx.cs" t="Include" />
+              <e p="Vector3Ex.cs" t="Include" />
+            </e>
           </e>
           <e p="World.cs" t="Include" />
         </e>

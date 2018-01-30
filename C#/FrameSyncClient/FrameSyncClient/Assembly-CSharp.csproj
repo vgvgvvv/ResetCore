@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{B373DA5B-FBF6-AA0F-1342-178EA4204E8B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -60,6 +61,35 @@
     <Compile Include="Assets\Scripts\Managers\Ticker\ITickLateUpdate.cs" />
     <Compile Include="Assets\Scripts\Managers\Ticker\ITickUpdate.cs" />
     <Compile Include="Assets\Scripts\Managers\TickManager.cs" />
+    <Compile Include="Assets\Scripts\Net\Protocol\IProtocol.cs" />
+    <Compile Include="Assets\Scripts\Net\SocketEnum.cs" />
+    <Compile Include="Assets\Scripts\Net\SocketEventConst.cs" />
+    <Compile Include="Assets\Scripts\Net\TcpClient.cs" />
+    <Compile Include="Assets\Scripts\Net\TcpSocket.cs" />
+    <Compile Include="Assets\Scripts\Net\UdpSocket.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\ArrayEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\BitConverterEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\ColorEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\ComponentEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\DictionaryEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\DirectoryEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\EnumEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\ExtensionTransform.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\FileEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\GameObjectEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\HashtableEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\IEnumerableEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\ListEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\MonobehaviorEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\ObjectEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\PathEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\RandomEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\ReflectEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\RichTextEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\StringEx\IStringConvertable.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\StringEx\StringEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\TypeEx.cs" />
+    <Compile Include="Assets\Scripts\Util\Extenstion\Vector3Ex.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
     <Reference Include="UnityEngine.UI">
       <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -157,6 +187,10 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Scripts\Util\Extenstion\StringEx\IStringConvertable.cs.meta" />
+    <Content Include="Assets\Scripts\Util\Extenstion\StringEx\StringEx.cs.meta" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
