@@ -10,227 +10,49 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TickManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/TickManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
-              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-              <folding>
-                <marker date="1517244793672" expanded="true" signature="6:46" ph="..." />
-                <marker date="1517244793672" expanded="true" signature="76:2224" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="104:146" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="157:206" ph="/// 处理Tick事件 ... " />
-                <marker date="1517244793672" expanded="true" signature="246:2222" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="520:576" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="606:689" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="723:814" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="849:1018" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="899:1008" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="1048:1188" ph="{...}" />
-                <marker date="1517244793672" expanded="false" signature="1198:2015" ph="Ticker操作" />
-                <marker date="1517244793672" expanded="true" signature="1269:1328" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="1391:1458" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="1523:1592" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="1658:1717" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="1783:1850" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="1918:1987" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="2082:2216" ph="{...}" />
-                <marker date="1517244793672" expanded="true" signature="2147:2206" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-              <folding>
-                <marker date="1517244961463" expanded="true" signature="28:709" ph="{...}" />
-                <marker date="1517244961463" expanded="true" signature="40:87" ph="/// 处理输入事件 ... " />
-                <marker date="1517244961463" expanded="true" signature="128:707" ph="{...}" />
-                <marker date="1517244961463" expanded="true" signature="161:237" ph="{...}" />
-                <marker date="1517244961463" expanded="true" signature="267:343" ph="{...}" />
-                <marker date="1517244961463" expanded="true" signature="377:453" ph="{...}" />
-                <marker date="1517244961463" expanded="true" signature="488:564" ph="{...}" />
-                <marker date="1517244961463" expanded="true" signature="594:670" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameSyncManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameSyncManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-              <folding>
-                <marker date="1517244968679" expanded="true" signature="28:565" ph="{...}" />
-                <marker date="1517244968679" expanded="true" signature="35:82" ph="/// 处理同步事件 ... " />
-                <marker date="1517244968679" expanded="true" signature="126:563" ph="{...}" />
-                <marker date="1517244968679" expanded="true" signature="159:192" ph="{...}" />
-                <marker date="1517244968679" expanded="true" signature="222:255" ph="{...}" />
-                <marker date="1517244968679" expanded="true" signature="289:322" ph="{...}" />
-                <marker date="1517244968679" expanded="true" signature="357:390" ph="{...}" />
-                <marker date="1517244968679" expanded="true" signature="420:453" ph="{...}" />
-                <marker date="1517244968679" expanded="true" signature="471:557" ph="/* TODO Update中检查输入，如果需要更新则发送至服务端 ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="NetManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/NetManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+            <state relative-caret-position="600">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
-                <marker date="1517328718359" expanded="true" signature="6:54" ph="..." />
-                <marker date="1517328718359" expanded="true" signature="84:866" ph="{...}" />
-                <marker date="1517328718359" expanded="true" signature="91:138" ph="/// 处理网络事件 ... " />
-                <marker date="1517328718359" expanded="true" signature="177:864" ph="{...}" />
-                <marker date="1517328718359" expanded="true" signature="271:304" ph="{...}" />
-                <marker date="1517328718359" expanded="true" signature="334:538" ph="{...}" />
-                <marker date="1517328718359" expanded="true" signature="395:528" ph="{...}" />
-                <marker date="1517328718359" expanded="true" signature="572:605" ph="{...}" />
-                <marker date="1517328718359" expanded="true" signature="640:673" ph="{...}" />
-                <marker date="1517328718359" expanded="true" signature="703:736" ph="{...}" />
-                <marker date="1517328718359" expanded="true" signature="793:827" ph="{...}" />
+                <marker date="1517932930453" expanded="false" signature="6:54" ph="..." />
+                <marker date="1517932930453" expanded="true" signature="84:761" ph="{...}" />
+                <marker date="1517932930453" expanded="true" signature="91:138" ph="/// 处理网络事件 ... " />
+                <marker date="1517932930453" expanded="true" signature="177:759" ph="{...}" />
+                <marker date="1517932930453" expanded="true" signature="271:304" ph="{...}" />
+                <marker date="1517932930453" expanded="true" signature="334:532" ph="{...}" />
+                <marker date="1517932930453" expanded="true" signature="395:522" ph="{...}" />
+                <marker date="1517932930453" expanded="true" signature="566:599" ph="{...}" />
+                <marker date="1517932930453" expanded="true" signature="634:667" ph="{...}" />
+                <marker date="1517932930453" expanded="true" signature="697:730" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TcpClient.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TcpClient.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/TcpClient.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+            <state relative-caret-position="385">
+              <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
               <folding>
-                <marker date="1517329319058" expanded="true" signature="6:105" ph="..." />
-                <marker date="1517329319058" expanded="true" signature="132:1621" ph="{...}" />
-                <marker date="1517329319058" expanded="true" signature="161:1619" ph="{...}" />
-                <marker date="1517329319058" expanded="true" signature="452:690" ph="{...}" />
-                <marker date="1517329319058" expanded="true" signature="745:809" ph="{...}" />
-                <marker date="1517329319058" expanded="true" signature="849:902" ph="{...}" />
-                <marker date="1517329319058" expanded="true" signature="954:987" ph="{...}" />
-                <marker date="1517329319058" expanded="true" signature="998:1604" ph="Socket回调" />
-                <marker date="1517329319058" expanded="true" signature="1066:1099" ph="{...}" />
-                <marker date="1517329319058" expanded="true" signature="1190:1223" ph="{...}" />
-                <marker date="1517329319058" expanded="true" signature="1285:1402" ph="{...}" />
-                <marker date="1517329319058" expanded="true" signature="1440:1473" ph="{...}" />
-                <marker date="1517329319058" expanded="true" signature="1542:1575" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TcpSocket.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/TcpSocket.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
-              <folding>
-                <marker date="1517328386021" expanded="false" signature="6:163" ph="..." />
-                <marker date="1517328386021" expanded="true" signature="191:11284" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="220:11281" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="315:367" ph="///远端端口 ... " />
-                <marker date="1517328386021" expanded="true" signature="428:481" ph="/// 远端地址 ... " />
-                <marker date="1517328386021" expanded="true" signature="548:601" ph="/// 本地端口 ... " />
-                <marker date="1517328386021" expanded="true" signature="661:714" ph="/// 本地地址 ... " />
-                <marker date="1517328386021" expanded="true" signature="780:837" ph="/// Socket变量 ... " />
-                <marker date="1517328386021" expanded="true" signature="878:934" ph="/// 是否为主动关闭 ... " />
-                <marker date="1517328386021" expanded="true" signature="986:1042" ph="/// 接收数据缓冲区 ... " />
-                <marker date="1517328386021" expanded="true" signature="1185:1238" ph="/// 是否连接 ... " />
-                <marker date="1517328386021" expanded="true" signature="1270:1482" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="1288:1472" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="1347:1400" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="1502:1561" ph="/// 当前Socket状态 ... " />
-                <marker date="1517328386021" expanded="true" signature="1633:2049" ph="公开的回调函数" />
-                <marker date="1517328386021" expanded="true" signature="2097:2893" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="2440:2883" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="2904:6605" ph="公开方法用于执行各种Socket行为" />
-                <marker date="1517328386021" expanded="true" signature="2939:3003" ph="/// 开始监听等待接收到新信息的回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="3068:3757" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="3310:3558" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="3581:3658" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="3767:3820" ph="/// 停止监听 ... " />
-                <marker date="1517328386021" expanded="true" signature="3854:4278" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="3981:4173" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="4042:4159" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="4196:4268" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="4288:4348" ph="/// 连接等待成功连接的回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="4403:4986" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="4676:4855" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="4876:4951" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="4996:5058" ph="/// 断开连接等待断开成功的回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="5092:5642" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="5145:5240" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="5370:5537" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="5560:5632" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="5652:5711" ph="/// 开始接受消息等待回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="5747:6121" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="5819:6016" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="6039:6111" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="6131:6194" ph="/// 发送消息并等待发送成功的回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="6233:6580" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="6302:6475" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="6498:6570" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="6615:11273" ph="回调函数" />
-                <marker date="1517328386021" expanded="true" signature="6636:6693" ph="/// 当接收完成时回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="6788:7196" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="6880:7053" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="7074:7119" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="7205:7262" ph="/// 当连接完成时回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="7359:7919" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="7430:7702" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="7725:7821" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="7929:7986" ph="/// 当断开连接时回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="8089:8485" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="8163:8246" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="8269:8424" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="8494:8551" ph="/// 当发送完成时回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="8642:9137" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="8757:8838" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="8861:9042" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="9146:9203" ph="/// 当接收信息时回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="9300:10201" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="9414:9767" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="9545:9753" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="9790:10037" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="10211:10446" ph="/// 关闭Socket回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="10516:10725" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="10735:10924" ph="/// 错误回调 ... " />
-                <marker date="1517328386021" expanded="true" signature="10969:11246" ph="{...}" />
-                <marker date="1517328386021" expanded="true" signature="11009:11161" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SocketEventConst.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/SocketEventConst.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="68" />
-              <folding>
-                <marker date="1517328385928" expanded="false" signature="6:39" ph="..." />
-                <marker date="1517328385928" expanded="true" signature="67:3051" ph="{...}" />
-                <marker date="1517328385928" expanded="true" signature="74:1834" ph="Tcp套接字代理" />
-                <marker date="1517328385928" expanded="true" signature="95:285" ph="/// Tcp套接字监听代理 ... " />
-                <marker date="1517328385928" expanded="true" signature="361:459" ph="/// Tcp套接字客户端连接代理 ... " />
-                <marker date="1517328385928" expanded="true" signature="539:729" ph="/// Tcp套接字连接代理 ... " />
-                <marker date="1517328385928" expanded="true" signature="806:1043" ph="/// Tcp套接字断开连接代理 ... " />
-                <marker date="1517328385928" expanded="true" signature="1159:1292" ph="/// Tcp套接字接收到数据代理 ... " />
-                <marker date="1517328385928" expanded="true" signature="1371:1463" ph="/// Tcp套接字发送数据代理 ... " />
-                <marker date="1517328385928" expanded="true" signature="1526:1721" ph="/// Tcp套接字发生错误代理 ... " />
-                <marker date="1517328385928" expanded="true" signature="1840:3049" ph="Udp套接字代理" />
-                <marker date="1517328385928" expanded="true" signature="1861:2051" ph="/// Udp套接字监听代理 ... " />
-                <marker date="1517328385928" expanded="true" signature="2127:2319" ph="/// Udp套接字端口绑定代理 ... " />
-                <marker date="1517328385928" expanded="true" signature="2393:2621" ph="/// Udp套接字接收到数据代理 ... " />
-                <marker date="1517328385928" expanded="true" signature="2738:2935" ph="/// Udp套接字发生错误代理 ... " />
+                <marker date="1517937401775" expanded="false" signature="6:122" ph="..." />
+                <marker date="1517937401775" expanded="true" signature="149:2433" ph="{...}" />
+                <marker date="1517937401775" expanded="true" signature="178:2431" ph="{...}" />
+                <marker date="1517937401775" expanded="true" signature="618:856" ph="{...}" />
+                <marker date="1517937401775" expanded="true" signature="911:975" ph="{...}" />
+                <marker date="1517937401775" expanded="true" signature="1021:1187" ph="{...}" />
+                <marker date="1517937401775" expanded="true" signature="1241:1287" ph="{...}" />
+                <marker date="1517937401775" expanded="false" signature="1298:1904" ph="Socket回调" />
+                <marker date="1517937401775" expanded="true" signature="1366:1399" ph="{...}" />
+                <marker date="1517937401775" expanded="true" signature="1490:1523" ph="{...}" />
+                <marker date="1517937401775" expanded="true" signature="1585:1702" ph="{...}" />
+                <marker date="1517937401775" expanded="true" signature="1740:1773" ph="{...}" />
+                <marker date="1517937401775" expanded="true" signature="1842:1875" ph="{...}" />
+                <marker date="1517937401775" expanded="true" signature="1922:2048" ph="/// 获取包长度 ... " />
+                <marker date="1517937401775" expanded="true" signature="2095:2416" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -239,74 +61,171 @@
       <file leaf-file-name="IProtocol.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/IProtocol.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+            <state relative-caret-position="497">
+              <caret line="103" column="60" lean-forward="false" selection-start-line="103" selection-start-column="60" selection-end-line="103" selection-end-column="60" />
               <folding>
-                <marker date="1517328564505" expanded="true" signature="34:86" ph="{...}" />
-                <marker date="1517328564505" expanded="true" signature="63:84" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="6:109" ph="..." />
+                <marker date="1517936858588" expanded="true" signature="145:3390" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="177:622" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="192:259" ph="/// 包长度，包含自身长度以及信息id长度 ... " />
+                <marker date="1517936858588" expanded="true" signature="296:349" ph="/// 信息Id ... " />
+                <marker date="1517936858588" expanded="true" signature="434:607" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="663:2025" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="678:736" ph="/// MessageId ... " />
+                <marker date="1517936858588" expanded="true" signature="801:852" ph="/// 处理 ... " />
+                <marker date="1517936858588" expanded="true" signature="902:996" ph="/// 序列化 ... " />
+                <marker date="1517936858588" expanded="true" signature="1067:1162" ph="/// 反序列化 ... " />
+                <marker date="1517936858588" expanded="true" signature="1244:1346" ph="/// 序列化为Package ... " />
+                <marker date="1517936858588" expanded="true" signature="1404:2010" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="2092:2516" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="2265:2321" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="2368:2501" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="2563:2764" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="2677:2758" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="2850:3388" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="2952:3051" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="3109:3169" ph="{...}" />
+                <marker date="1517936858588" expanded="true" signature="3226:3373" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayEx.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/ArrayEx.cs">
+      <file leaf-file-name="ProtocolContext.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/ProtocolContext.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
               <folding>
-                <marker date="1517329615165" expanded="false" signature="6:92" ph="..." />
-                <marker date="1517329615165" expanded="true" signature="122:3855" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="129:287" ph="/// 遍历数组 ... " />
-                <marker date="1517329615165" expanded="true" signature="356:476" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="408:470" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="482:640" ph="/// 遍历数组 ... " />
-                <marker date="1517329615165" expanded="true" signature="707:825" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="760:819" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="831:1022" ph="/// 数组是否包含特定值 ... " />
-                <marker date="1517329615165" expanded="true" signature="1082:1287" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="1135:1259" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="1192:1249" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="1293:1569" ph="/// 获取子数组 ... " />
-                <marker date="1517329615165" expanded="true" signature="1648:1769" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="1775:1972" ph="/// 连接两个数组 ... " />
-                <marker date="1517329615165" expanded="true" signature="2038:2260" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="2266:2462" ph="/// 切分数组至多个 ... " />
-                <marker date="1517329615165" expanded="true" signature="2548:3248" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="2716:3221" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="2785:2865" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="2882:2950" ph="{...}" />
-                <marker date="1517329615165" expanded="true" signature="3254:3454" ph="/// 切出头部数组，并且返回剩余部分 ... " />
-                <marker date="1517329615165" expanded="true" signature="3522:3853" ph="{...}" />
+                <marker date="1517936418389" expanded="true" signature="34:304" ph="{...}" />
+                <marker date="1517936418389" expanded="true" signature="69:302" ph="{...}" />
+                <marker date="1517936418389" expanded="true" signature="108:147" ph="{...}" />
+                <marker date="1517936418389" expanded="true" signature="192:296" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameObjectEx.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/GameObjectEx.cs">
+      <file leaf-file-name="TestProtocol.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/TestProtocol.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
               <folding>
-                <marker date="1517329630272" expanded="false" signature="6:44" ph="..." />
-                <marker date="1517329630272" expanded="true" signature="70:3628" ph="{...}" />
-                <marker date="1517329630272" expanded="true" signature="109:3625" ph="{...}" />
-                <marker date="1517329630272" expanded="true" signature="125:226" ph="/// 重置物体的Transform ... " />
-                <marker date="1517329630272" expanded="true" signature="288:494" ph="{...}" />
-                <marker date="1517329630272" expanded="true" signature="504:607" ph="/// 虫植物体的Transfrom ... " />
-                <marker date="1517329630272" expanded="true" signature="670:865" ph="{...}" />
-                <marker date="1517329630272" expanded="true" signature="961:1161" ph="{...}" />
-                <marker date="1517329630272" expanded="true" signature="1171:1364" ph="/// 查找指定祖先节点下的对象 ... " />
-                <marker date="1517329630272" expanded="true" signature="1450:1529" ph="{...}" />
-                <marker date="1517329630272" expanded="true" signature="1539:1757" ph="/// 查找指定祖先节点下的组件 ... " />
-                <marker date="1517329630272" expanded="true" signature="1846:2372" ph="{...}" />
-                <marker date="1517329630272" expanded="true" signature="1971:2337" ph="{...}" />
-                <marker date="1517329630272" expanded="true" signature="2382:2623" ph="/// 查找指定节点的 任意子节点 ... " />
-                <marker date="1517329630272" expanded="true" signature="2713:2870" ph="{...}" />
-                <marker date="1517329630272" expanded="true" signature="2880:3073" ph="/// 查找指定祖先节点下的对象 ... " />
-                <marker date="1517329630272" expanded="true" signature="3166:3619" ph="{...}" />
-                <marker date="1517329630272" expanded="true" signature="3238:3584" ph="{...}" />
+                <marker date="1517936291871" expanded="true" signature="52:556" ph="{...}" />
+                <marker date="1517936291871" expanded="true" signature="96:554" ph="{...}" />
+                <marker date="1517936291871" expanded="true" signature="196:272" ph="{...}" />
+                <marker date="1517936291871" expanded="true" signature="333:409" ph="{...}" />
+                <marker date="1517936291871" expanded="true" signature="472:548" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TcpSocket.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/TcpSocket.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1649">
+              <caret line="200" column="9" lean-forward="true" selection-start-line="200" selection-start-column="9" selection-end-line="200" selection-end-column="9" />
+              <folding>
+                <marker date="1517933577405" expanded="false" signature="6:163" ph="..." />
+                <marker date="1517933577405" expanded="true" signature="191:11291" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="220:11288" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="315:367" ph="///远端端口 ... " />
+                <marker date="1517933577405" expanded="true" signature="428:481" ph="/// 远端地址 ... " />
+                <marker date="1517933577405" expanded="true" signature="548:601" ph="/// 本地端口 ... " />
+                <marker date="1517933577405" expanded="true" signature="661:714" ph="/// 本地地址 ... " />
+                <marker date="1517933577405" expanded="true" signature="780:837" ph="/// Socket变量 ... " />
+                <marker date="1517933577405" expanded="true" signature="878:934" ph="/// 是否为主动关闭 ... " />
+                <marker date="1517933577405" expanded="true" signature="986:1042" ph="/// 接收数据缓冲区 ... " />
+                <marker date="1517933577405" expanded="true" signature="1185:1238" ph="/// 是否连接 ... " />
+                <marker date="1517933577405" expanded="true" signature="1270:1482" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="1288:1472" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="1347:1400" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="1502:1561" ph="/// 当前Socket状态 ... " />
+                <marker date="1517933577405" expanded="true" signature="1633:2049" ph="公开的回调函数" />
+                <marker date="1517933577405" expanded="true" signature="2097:2893" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="2440:2883" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="2904:6612" ph="公开方法用于执行各种Socket行为" />
+                <marker date="1517933577405" expanded="true" signature="2939:3003" ph="/// 开始监听等待接收到新信息的回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="3068:3757" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="3310:3558" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="3581:3658" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="3767:3820" ph="/// 停止监听 ... " />
+                <marker date="1517933577405" expanded="true" signature="3854:4278" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="3981:4173" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="4042:4159" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="4196:4268" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="4288:4348" ph="/// 连接等待成功连接的回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="4403:4986" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="4676:4855" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="4876:4951" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="4996:5058" ph="/// 断开连接等待断开成功的回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="5092:5642" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="5145:5240" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="5370:5537" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="5560:5632" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="5652:5711" ph="/// 开始接受消息等待回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="5747:6121" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="5819:6016" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="6039:6111" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="6131:6194" ph="/// 发送消息并等待发送成功的回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="6245:6587" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="6314:6482" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="6505:6577" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="6622:11280" ph="回调函数" />
+                <marker date="1517933577405" expanded="true" signature="6643:6700" ph="/// 当接收完成时回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="6795:7203" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="6887:7060" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="7081:7126" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="7212:7269" ph="/// 当连接完成时回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="7366:7926" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="7437:7709" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="7732:7828" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="7936:7993" ph="/// 当断开连接时回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="8096:8492" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="8170:8253" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="8276:8431" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="8501:8558" ph="/// 当发送完成时回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="8649:9144" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="8764:8845" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="8868:9049" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="9153:9210" ph="/// 当接收信息时回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="9307:10208" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="9421:9774" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="9552:9760" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="9797:10044" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="10218:10453" ph="/// 关闭Socket回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="10523:10732" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="10742:10931" ph="/// 错误回调 ... " />
+                <marker date="1517933577405" expanded="true" signature="10976:11253" ph="{...}" />
+                <marker date="1517933577405" expanded="true" signature="11016:11168" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BitConverterEx.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/BitConverterEx.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="60" column="8" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+              <folding>
+                <marker date="1517934278612" expanded="false" signature="6:92" ph="..." />
+                <marker date="1517934278612" expanded="true" signature="118:1602" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="159:1599" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="175:268" ph="/// 获取基本值类型的byte ... " />
+                <marker date="1517934278612" expanded="true" signature="318:1566" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="357:442" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="475:560" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="593:677" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="712:798" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="832:917" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="952:1038" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="1074:1161" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="1195:1280" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="1315:1401" ph="{...}" />
+                <marker date="1517934278612" expanded="true" signature="1437:1524" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -315,21 +234,30 @@
     </leaf>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/IManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/TickManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/GameObjectEx.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Net/SocketEventConst.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Net/TcpSocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/Singleton/MonoSingleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickLateUpdate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Net/SocketEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickUpdate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/ArrayEx.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/BitConverterEx.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../ReFramework/Libs/Core/ReFrame.Util/Utility/Singleton.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/ObjectPool/MemoryBuffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/IManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/ObjectPool/ClassPool.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/TestProtocol.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/ProtocolContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/NetManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FDC5ED6-1A07-4CAF-B49F-A42DEB20D521/89/3218517f/MemoryStream.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/ObjectPool/UniversalPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameSyncManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Driver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickLateUpdate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/World.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickUpdate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/IProtocol.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/ArrayEx.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../ReFramework/Libs/Core/ReFrame.Util/Utility/Singleton.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickFixedUpdate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Net/TcpClient.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -346,10 +274,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameSyncManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Net/Protocol/Protocol.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Net/Protocol/IProtocol.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/NetManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Net/TcpClient.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/GameObjectEx.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Net/Protocol/ProtocolFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/NetManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Net/TcpSocket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/BitConverterEx.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Net/Protocol/TestProtocol.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Net/Protocol/ProtocolContext.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Net/Protocol/IProtocol.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Net/TcpClient.cs" />
       </list>
     </option>
   </component>
@@ -359,10 +292,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="722" />
+    <option name="y" value="23" />
     <option name="width" value="718" />
-    <option name="height" value="900" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -411,12 +345,41 @@
               <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Managers" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="FrameSyncClient (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="Net" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="FrameSyncClient (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Assembly-CSharp-Editor-firstpass" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Net" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Protocol" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="FrameSyncClient (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Util" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="FrameSyncClient (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Util" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Extenstion" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -455,11 +418,12 @@
       <option name="presentableId" value="Default" />
       <updated>1517243032891</updated>
       <workItem from="1517243034174" duration="3724000" />
+      <workItem from="1517930062686" duration="7632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3724000" />
+    <option name="totallyTimeSpent" value="11858000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,28 +435,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -507,10 +471,600 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/ArrayEx.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517732354902" expanded="false" signature="6:92" ph="..." />
+            <marker date="1517732354902" expanded="true" signature="122:3855" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="129:287" ph="/// 遍历数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="356:476" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="408:470" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="482:640" ph="/// 遍历数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="707:825" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="760:819" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="831:1022" ph="/// 数组是否包含特定值 ... " />
+            <marker date="1517732354902" expanded="true" signature="1082:1287" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1135:1259" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1192:1249" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1293:1569" ph="/// 获取子数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="1648:1769" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1775:1972" ph="/// 连接两个数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="2038:2260" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2266:2462" ph="/// 切分数组至多个 ... " />
+            <marker date="1517732354902" expanded="true" signature="2548:3248" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2716:3221" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2785:2865" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2882:2950" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="3254:3454" ph="/// 切出头部数组，并且返回剩余部分 ... " />
+            <marker date="1517732354902" expanded="true" signature="3522:3853" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/GameObjectEx.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1517732354908" expanded="false" signature="6:44" ph="..." />
+            <marker date="1517732354908" expanded="true" signature="70:3628" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="109:3625" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="125:226" ph="/// 重置物体的Transform ... " />
+            <marker date="1517732354908" expanded="true" signature="288:494" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="504:607" ph="/// 虫植物体的Transfrom ... " />
+            <marker date="1517732354908" expanded="true" signature="670:865" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="961:1161" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="1171:1364" ph="/// 查找指定祖先节点下的对象 ... " />
+            <marker date="1517732354908" expanded="true" signature="1450:1529" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="1539:1757" ph="/// 查找指定祖先节点下的组件 ... " />
+            <marker date="1517732354908" expanded="true" signature="1846:2372" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="1971:2337" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="2382:2623" ph="/// 查找指定节点的 任意子节点 ... " />
+            <marker date="1517732354908" expanded="true" signature="2713:2870" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="2880:3073" ph="/// 查找指定祖先节点下的对象 ... " />
+            <marker date="1517732354908" expanded="true" signature="3166:3619" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="3238:3584" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/TcpClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <marker date="1517937401775" expanded="false" signature="6:122" ph="..." />
+            <marker date="1517937401775" expanded="true" signature="149:2433" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="178:2431" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="618:856" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="911:975" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1021:1187" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1241:1287" ph="{...}" />
+            <marker date="1517937401775" expanded="false" signature="1298:1904" ph="Socket回调" />
+            <marker date="1517937401775" expanded="true" signature="1366:1399" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1490:1523" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1585:1702" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1740:1773" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1842:1875" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1922:2048" ph="/// 获取包长度 ... " />
+            <marker date="1517937401775" expanded="true" signature="2095:2416" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../ReFramework/Libs/Core/ReFrame.Util/Utility/Singleton.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Driver.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/IManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/World.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickFixedUpdate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickUpdate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickLateUpdate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/TickManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding>
+            <marker date="1517732354861" expanded="true" signature="28:709" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="40:87" ph="/// 处理输入事件 ... " />
+            <marker date="1517732354861" expanded="true" signature="128:707" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="161:237" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="267:343" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="377:453" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="488:564" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="594:670" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameSyncManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+          <folding>
+            <marker date="1517732354868" expanded="true" signature="28:565" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="35:82" ph="/// 处理同步事件 ... " />
+            <marker date="1517732354868" expanded="true" signature="126:563" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="159:192" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="222:255" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="289:322" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="357:390" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="420:453" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="471:557" ph="/* TODO Update中检查输入，如果需要更新则发送至服务端 ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/Protocol.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/NetManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <marker date="1517932930453" expanded="false" signature="6:54" ph="..." />
+            <marker date="1517932930453" expanded="true" signature="84:761" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="91:138" ph="/// 处理网络事件 ... " />
+            <marker date="1517932930453" expanded="true" signature="177:759" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="271:304" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="334:532" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="395:522" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="566:599" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="634:667" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="697:730" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/SocketEventConst.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="68" />
+          <folding>
+            <marker date="1517732354893" expanded="false" signature="6:39" ph="..." />
+            <marker date="1517732354893" expanded="true" signature="67:3051" ph="{...}" />
+            <marker date="1517732354893" expanded="true" signature="74:1834" ph="Tcp套接字代理" />
+            <marker date="1517732354893" expanded="true" signature="95:285" ph="/// Tcp套接字监听代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="361:459" ph="/// Tcp套接字客户端连接代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="539:729" ph="/// Tcp套接字连接代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="806:1043" ph="/// Tcp套接字断开连接代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="1159:1292" ph="/// Tcp套接字接收到数据代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="1371:1463" ph="/// Tcp套接字发送数据代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="1526:1721" ph="/// Tcp套接字发生错误代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="1840:3049" ph="Udp套接字代理" />
+            <marker date="1517732354893" expanded="true" signature="1861:2051" ph="/// Udp套接字监听代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="2127:2319" ph="/// Udp套接字端口绑定代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="2393:2621" ph="/// Udp套接字接收到数据代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="2738:2935" ph="/// Udp套接字发生错误代理 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/TcpSocket.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+          <folding>
+            <marker date="1517933577405" expanded="false" signature="6:163" ph="..." />
+            <marker date="1517933577405" expanded="true" signature="191:11291" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="220:11288" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="315:367" ph="///远端端口 ... " />
+            <marker date="1517933577405" expanded="true" signature="428:481" ph="/// 远端地址 ... " />
+            <marker date="1517933577405" expanded="true" signature="548:601" ph="/// 本地端口 ... " />
+            <marker date="1517933577405" expanded="true" signature="661:714" ph="/// 本地地址 ... " />
+            <marker date="1517933577405" expanded="true" signature="780:837" ph="/// Socket变量 ... " />
+            <marker date="1517933577405" expanded="true" signature="878:934" ph="/// 是否为主动关闭 ... " />
+            <marker date="1517933577405" expanded="true" signature="986:1042" ph="/// 接收数据缓冲区 ... " />
+            <marker date="1517933577405" expanded="true" signature="1185:1238" ph="/// 是否连接 ... " />
+            <marker date="1517933577405" expanded="true" signature="1270:1482" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="1288:1472" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="1347:1400" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="1502:1561" ph="/// 当前Socket状态 ... " />
+            <marker date="1517933577405" expanded="true" signature="1633:2049" ph="公开的回调函数" />
+            <marker date="1517933577405" expanded="true" signature="2097:2893" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="2440:2883" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="2904:6612" ph="公开方法用于执行各种Socket行为" />
+            <marker date="1517933577405" expanded="true" signature="2939:3003" ph="/// 开始监听等待接收到新信息的回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="3068:3757" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="3310:3558" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="3581:3658" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="3767:3820" ph="/// 停止监听 ... " />
+            <marker date="1517933577405" expanded="true" signature="3854:4278" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="3981:4173" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4042:4159" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4196:4268" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4288:4348" ph="/// 连接等待成功连接的回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="4403:4986" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4676:4855" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4876:4951" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4996:5058" ph="/// 断开连接等待断开成功的回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="5092:5642" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="5145:5240" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="5370:5537" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="5560:5632" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="5652:5711" ph="/// 开始接受消息等待回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="5747:6121" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="5819:6016" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6039:6111" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6131:6194" ph="/// 发送消息并等待发送成功的回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="6245:6587" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6314:6482" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6505:6577" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6622:11280" ph="回调函数" />
+            <marker date="1517933577405" expanded="true" signature="6643:6700" ph="/// 当接收完成时回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="6795:7203" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6887:7060" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="7081:7126" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="7212:7269" ph="/// 当连接完成时回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="7366:7926" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="7437:7709" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="7732:7828" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="7936:7993" ph="/// 当断开连接时回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="8096:8492" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="8170:8253" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="8276:8431" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="8501:8558" ph="/// 当发送完成时回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="8649:9144" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="8764:8845" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="8868:9049" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="9153:9210" ph="/// 当接收信息时回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="9307:10208" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="9421:9774" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="9552:9760" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="9797:10044" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="10218:10453" ph="/// 关闭Socket回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="10523:10732" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="10742:10931" ph="/// 错误回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="10976:11253" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="11016:11168" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/IProtocol.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding>
+            <marker date="1517936858588" expanded="true" signature="6:109" ph="..." />
+            <marker date="1517936858588" expanded="true" signature="145:3390" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="177:622" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="192:259" ph="/// 包长度，包含自身长度以及信息id长度 ... " />
+            <marker date="1517936858588" expanded="true" signature="296:349" ph="/// 信息Id ... " />
+            <marker date="1517936858588" expanded="true" signature="434:607" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="663:2025" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="678:736" ph="/// MessageId ... " />
+            <marker date="1517936858588" expanded="true" signature="801:852" ph="/// 处理 ... " />
+            <marker date="1517936858588" expanded="true" signature="902:996" ph="/// 序列化 ... " />
+            <marker date="1517936858588" expanded="true" signature="1067:1162" ph="/// 反序列化 ... " />
+            <marker date="1517936858588" expanded="true" signature="1244:1346" ph="/// 序列化为Package ... " />
+            <marker date="1517936858588" expanded="true" signature="1404:2010" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2092:2516" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2265:2321" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2368:2501" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2563:2764" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2677:2758" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2850:3388" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2952:3051" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="3109:3169" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="3226:3373" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/ArrayEx.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517732354902" expanded="false" signature="6:92" ph="..." />
+            <marker date="1517732354902" expanded="true" signature="122:3855" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="129:287" ph="/// 遍历数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="356:476" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="408:470" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="482:640" ph="/// 遍历数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="707:825" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="760:819" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="831:1022" ph="/// 数组是否包含特定值 ... " />
+            <marker date="1517732354902" expanded="true" signature="1082:1287" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1135:1259" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1192:1249" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1293:1569" ph="/// 获取子数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="1648:1769" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1775:1972" ph="/// 连接两个数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="2038:2260" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2266:2462" ph="/// 切分数组至多个 ... " />
+            <marker date="1517732354902" expanded="true" signature="2548:3248" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2716:3221" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2785:2865" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2882:2950" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="3254:3454" ph="/// 切出头部数组，并且返回剩余部分 ... " />
+            <marker date="1517732354902" expanded="true" signature="3522:3853" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/GameObjectEx.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1517732354908" expanded="false" signature="6:44" ph="..." />
+            <marker date="1517732354908" expanded="true" signature="70:3628" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="109:3625" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="125:226" ph="/// 重置物体的Transform ... " />
+            <marker date="1517732354908" expanded="true" signature="288:494" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="504:607" ph="/// 虫植物体的Transfrom ... " />
+            <marker date="1517732354908" expanded="true" signature="670:865" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="961:1161" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="1171:1364" ph="/// 查找指定祖先节点下的对象 ... " />
+            <marker date="1517732354908" expanded="true" signature="1450:1529" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="1539:1757" ph="/// 查找指定祖先节点下的组件 ... " />
+            <marker date="1517732354908" expanded="true" signature="1846:2372" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="1971:2337" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="2382:2623" ph="/// 查找指定节点的 任意子节点 ... " />
+            <marker date="1517732354908" expanded="true" signature="2713:2870" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="2880:3073" ph="/// 查找指定祖先节点下的对象 ... " />
+            <marker date="1517732354908" expanded="true" signature="3166:3619" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="3238:3584" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/TcpClient.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <marker date="1517937401775" expanded="false" signature="6:122" ph="..." />
+            <marker date="1517937401775" expanded="true" signature="149:2433" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="178:2431" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="618:856" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="911:975" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1021:1187" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1241:1287" ph="{...}" />
+            <marker date="1517937401775" expanded="false" signature="1298:1904" ph="Socket回调" />
+            <marker date="1517937401775" expanded="true" signature="1366:1399" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1490:1523" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1585:1702" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1740:1773" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1842:1875" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1922:2048" ph="/// 获取包长度 ... " />
+            <marker date="1517937401775" expanded="true" signature="2095:2416" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ReFramework/Libs/Core/ReFrame.Util/Utility/Singleton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/IManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickFixedUpdate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickUpdate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickLateUpdate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/TickManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/Protocol.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Singleton/MonoSingleton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/ObjectPool/ClassPool.cs.meta">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/ObjectPool/ClassPool.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1517930067423" expanded="false" signature="6:129" ph="..." />
+            <marker date="1517930067423" expanded="true" signature="155:2878" ph="{...}" />
+            <marker date="1517930067423" expanded="true" signature="184:2477" ph="{...}" />
+            <marker date="1517930067423" expanded="true" signature="325:459" ph="/// 获取对应的储存栈 ... " />
+            <marker date="1517930067423" expanded="true" signature="513:736" ph="{...}" />
+            <marker date="1517930067423" expanded="true" signature="604:690" ph="{...}" />
+            <marker date="1517930067423" expanded="true" signature="813:943" ph="/// 获取对象 ... " />
+            <marker date="1517930067423" expanded="true" signature="1029:1495" ph="{...}" />
+            <marker date="1517930067423" expanded="true" signature="1204:1319" ph="{...}" />
+            <marker date="1517930067423" expanded="true" signature="1340:1409" ph="{...}" />
+            <marker date="1517930067423" expanded="true" signature="1506:1690" ph="/// 储存对象 ... " />
+            <marker date="1517930067423" expanded="true" signature="1805:2156" ph="{...}" />
+            <marker date="1517930067423" expanded="true" signature="1958:2146" ph="{...}" />
+            <marker date="1517930067423" expanded="true" signature="2166:2267" ph="/// 清理对象储存栈 ... " />
+            <marker date="1517930067423" expanded="true" signature="2305:2470" ph="{...}" />
+            <marker date="1517930067423" expanded="true" signature="2483:2530" ph="/// 可储存的对象 ... " />
+            <marker date="1517930067423" expanded="true" signature="2561:2876" ph="{...}" />
+            <marker date="1517930067423" expanded="true" signature="2576:2646" ph="/// 已经被修改过，如果需要复用则需要Reset ... " />
+            <marker date="1517930067423" expanded="true" signature="2691:2745" ph="/// 重置该对象 ... " />
+            <marker date="1517930067423" expanded="true" signature="2777:2836" ph="/// 储存到池中前需要做的 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assembly-CSharp.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/SocketEventConst.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="68" />
+          <folding>
+            <marker date="1517732354893" expanded="false" signature="6:39" ph="..." />
+            <marker date="1517732354893" expanded="true" signature="67:3051" ph="{...}" />
+            <marker date="1517732354893" expanded="true" signature="74:1834" ph="Tcp套接字代理" />
+            <marker date="1517732354893" expanded="true" signature="95:285" ph="/// Tcp套接字监听代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="361:459" ph="/// Tcp套接字客户端连接代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="539:729" ph="/// Tcp套接字连接代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="806:1043" ph="/// Tcp套接字断开连接代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="1159:1292" ph="/// Tcp套接字接收到数据代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="1371:1463" ph="/// Tcp套接字发送数据代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="1526:1721" ph="/// Tcp套接字发生错误代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="1840:3049" ph="Udp套接字代理" />
+            <marker date="1517732354893" expanded="true" signature="1861:2051" ph="/// Udp套接字监听代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="2127:2319" ph="/// Udp套接字端口绑定代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="2393:2621" ph="/// Udp套接字接收到数据代理 ... " />
+            <marker date="1517732354893" expanded="true" signature="2738:2935" ph="/// Udp套接字发生错误代理 ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/GameObjectEx.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1517732354908" expanded="false" signature="6:44" ph="..." />
+            <marker date="1517732354908" expanded="true" signature="70:3628" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="109:3625" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="125:226" ph="/// 重置物体的Transform ... " />
+            <marker date="1517732354908" expanded="true" signature="288:494" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="504:607" ph="/// 虫植物体的Transfrom ... " />
+            <marker date="1517732354908" expanded="true" signature="670:865" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="961:1161" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="1171:1364" ph="/// 查找指定祖先节点下的对象 ... " />
+            <marker date="1517732354908" expanded="true" signature="1450:1529" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="1539:1757" ph="/// 查找指定祖先节点下的组件 ... " />
+            <marker date="1517732354908" expanded="true" signature="1846:2372" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="1971:2337" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="2382:2623" ph="/// 查找指定节点的 任意子节点 ... " />
+            <marker date="1517732354908" expanded="true" signature="2713:2870" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="2880:3073" ph="/// 查找指定祖先节点下的对象 ... " />
+            <marker date="1517732354908" expanded="true" signature="3166:3619" ph="{...}" />
+            <marker date="1517732354908" expanded="true" signature="3238:3584" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/ArrayEx.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="129" column="22" lean-forward="false" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="22" />
+          <folding>
+            <marker date="1517732354902" expanded="false" signature="6:92" ph="..." />
+            <marker date="1517732354902" expanded="true" signature="122:3855" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="129:287" ph="/// 遍历数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="356:476" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="408:470" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="482:640" ph="/// 遍历数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="707:825" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="760:819" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="831:1022" ph="/// 数组是否包含特定值 ... " />
+            <marker date="1517732354902" expanded="true" signature="1082:1287" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1135:1259" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1192:1249" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1293:1569" ph="/// 获取子数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="1648:1769" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="1775:1972" ph="/// 连接两个数组 ... " />
+            <marker date="1517732354902" expanded="true" signature="2038:2260" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2266:2462" ph="/// 切分数组至多个 ... " />
+            <marker date="1517732354902" expanded="true" signature="2548:3248" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2716:3221" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2785:2865" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="2882:2950" ph="{...}" />
+            <marker date="1517732354902" expanded="true" signature="3254:3454" ph="/// 切出头部数组，并且返回剩余部分 ... " />
+            <marker date="1517732354902" expanded="true" signature="3522:3853" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/ProtocolFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -533,13 +1087,289 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/IManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/SocketEnum.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1517244769719" expanded="true" signature="28:196" ph="{...}" />
-            <marker date="1517244769719" expanded="true" signature="60:194" ph="{...}" />
+            <marker date="1517328385836" expanded="true" signature="26:1821" ph="{...}" />
+            <marker date="1517328385836" expanded="true" signature="56:1243" ph="{...}" />
+            <marker date="1517328385836" expanded="true" signature="71:122" ph="/// 未知 ... " />
+            <marker date="1517328385836" expanded="true" signature="153:206" ph="/// 绑定端口 ... " />
+            <marker date="1517328385836" expanded="true" signature="230:283" ph="/// 开始监听 ... " />
+            <marker date="1517328385836" expanded="true" signature="315:368" ph="/// 结束监听 ... " />
+            <marker date="1517328385836" expanded="true" signature="398:454" ph="/// 接收客户端连接 ... " />
+            <marker date="1517328385836" expanded="true" signature="480:533" ph="/// 开始连接 ... " />
+            <marker date="1517328385836" expanded="true" signature="566:619" ph="/// 结束连接 ... " />
+            <marker date="1517328385836" expanded="true" signature="650:705" ph="/// 开始发送数据 ... " />
+            <marker date="1517328385836" expanded="true" signature="735:790" ph="/// 结束发送数据 ... " />
+            <marker date="1517328385836" expanded="true" signature="818:873" ph="/// 开始接收数据 ... " />
+            <marker date="1517328385836" expanded="true" signature="906:961" ph="/// 结束接收数据 ... " />
+            <marker date="1517328385836" expanded="true" signature="992:1047" ph="/// 开始断开连接 ... " />
+            <marker date="1517328385836" expanded="true" signature="1083:1138" ph="/// 结束断开连接 ... " />
+            <marker date="1517328385836" expanded="true" signature="1172:1223" ph="/// 关闭 ... " />
+            <marker date="1517328385836" expanded="true" signature="1249:1294" ph="/// 关闭类型 ... " />
+            <marker date="1517328385836" expanded="true" signature="1320:1757" ph="{...}" />
+            <marker date="1517328385836" expanded="true" signature="1335:1386" ph="/// 未知 ... " />
+            <marker date="1517328385836" expanded="true" signature="1412:1467" ph="/// 我方主动断开 ... " />
+            <marker date="1517328385836" expanded="true" signature="1499:1554" ph="/// 我方被动断开 ... " />
+            <marker date="1517328385836" expanded="true" signature="1584:1639" ph="/// 对方主动断开 ... " />
+            <marker date="1517328385836" expanded="true" signature="1674:1729" ph="/// 对方被动断开 ... " />
+            <marker date="1517328385836" expanded="true" signature="1782:1819" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameSyncManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+          <folding>
+            <marker date="1517732354868" expanded="true" signature="28:565" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="35:82" ph="/// 处理同步事件 ... " />
+            <marker date="1517732354868" expanded="true" signature="126:563" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="159:192" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="222:255" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="289:322" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="357:390" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="420:453" ph="{...}" />
+            <marker date="1517732354868" expanded="true" signature="471:557" ph="/* TODO Update中检查输入，如果需要更新则发送至服务端 ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+          <folding>
+            <marker date="1517732354861" expanded="true" signature="28:709" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="40:87" ph="/// 处理输入事件 ... " />
+            <marker date="1517732354861" expanded="true" signature="128:707" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="161:237" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="267:343" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="377:453" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="488:564" ph="{...}" />
+            <marker date="1517732354861" expanded="true" signature="594:670" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/ObjectPool/MemoryBuffer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding>
+            <marker date="1517930067460" expanded="false" signature="6:66" ph="..." />
+            <marker date="1517930067460" expanded="true" signature="92:10340" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="99:186" ph="/// 内存复用块 ... " />
+            <marker date="1517930067460" expanded="true" signature="219:4438" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="657:1534" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="683:1106" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="728:864" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="914:1053" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="1122:1524" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="1167:1292" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="1342:1470" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="1598:1677" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="1707:1784" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="1818:2301" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="1855:1964" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="2007:2254" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="2337:2940" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="2374:2489" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="2535:2903" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="2591:2889" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="2717:2808" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="2981:3480" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="3018:3127" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="3173:3285" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="3381:3448" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="3518:3890" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="3555:3670" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="3715:3854" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="3771:3840" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="3919:3963" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="4022:4432" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="4078:4189" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="4224:4336" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="4444:4531" ph="/// 内存复用池 ... " />
+            <marker date="1517930067460" expanded="true" signature="4568:7898" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="4745:5254" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="4820:4950" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="4993:5075" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="5119:5244" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="5306:5514" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="5572:5867" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="5616:5727" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="5909:6639" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="6005:6131" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="6173:6295" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="6431:6500" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="6532:6602" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="6683:7255" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="6821:6932" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="7081:7238" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="7288:7564" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="7356:7554" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="7415:7540" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="7606:7892" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="7700:7858" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="7752:7844" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="7904:7952" ph="/// 内存复用管理器 ... " />
+            <marker date="1517930067460" expanded="true" signature="8022:10338" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="8593:8640" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="8712:8783" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="8846:8915" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="8990:9062" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="9126:9196" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="9273:9345" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="9410:9480" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="9558:9631" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="9697:9768" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="9846:9917" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="9982:10051" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="10126:10198" ph="{...}" />
+            <marker date="1517930067460" expanded="true" signature="10262:10332" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/ObjectPool/UniversalPool.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="298" column="24" lean-forward="false" selection-start-line="298" selection-start-column="24" selection-end-line="298" selection-end-column="24" />
+          <folding>
+            <marker date="1517732653805" expanded="false" signature="6:114" ph="..." />
+            <marker date="1517732653805" expanded="true" signature="140:8778" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="147:234" ph="/// 通用对象池 ... " />
+            <marker date="1517732653805" expanded="true" signature="268:3123" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="470:902" ph="property" />
+            <marker date="1517732653805" expanded="true" signature="496:554" ph="/// 池子创建的对象总数 ... " />
+            <marker date="1517732653805" expanded="true" signature="611:674" ph="/// 已激活的池子创建的对象的数量 ... " />
+            <marker date="1517732653805" expanded="true" signature="753:813" ph="/// 池子中可使用的对象数量 ... " />
+            <marker date="1517732653805" expanded="true" signature="912:2773" ph="public func" />
+            <marker date="1517732653805" expanded="true" signature="941:1244" ph="/// 创建池 ... " />
+            <marker date="1517732653805" expanded="true" signature="1412:1707" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="1717:1803" ph="/// 从池中获取 ... " />
+            <marker date="1517732653805" expanded="true" signature="1826:2146" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="1887:1949" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="1966:2052" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="2156:2247" ph="/// 归还池 ... " />
+            <marker date="1517732653805" expanded="true" signature="2281:2394" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="2404:2456" ph="/// 销毁池 ... " />
+            <marker date="1517732653805" expanded="true" signature="2486:2741" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="2532:2614" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="2663:2731" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="2783:3116" ph="private func" />
+            <marker date="1517732653805" expanded="true" signature="2845:3083" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="2903:3073" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="3160:3896" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="3315:3406" ph="/// 得到池中新的List ... " />
+            <marker date="1517732653805" expanded="true" signature="3442:3493" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="3503:3598" ph="/// 返回List ... " />
+            <marker date="1517732653805" expanded="true" signature="3646:3697" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="3739:3793" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="3844:3890" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="3944:4803" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="4125:4222" ph="/// 得到池中新的Dictionary ... " />
+            <marker date="1517732653805" expanded="true" signature="4269:4320" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="4330:4437" ph="/// 返回Dictionary ... " />
+            <marker date="1517732653805" expanded="true" signature="4502:4559" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="4612:4677" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="4745:4797" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="4841:5595" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="5002:5094" ph="/// 得到池中新的Queue ... " />
+            <marker date="1517732653805" expanded="true" signature="5131:5182" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="5192:5289" ph="/// 返回Queue ... " />
+            <marker date="1517732653805" expanded="true" signature="5339:5391" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="5434:5489" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="5542:5589" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="5633:6387" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="5794:5886" ph="/// 得到池中新的Stack ... " />
+            <marker date="1517732653805" expanded="true" signature="5923:5974" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="5984:6081" ph="/// 返回Stack ... " />
+            <marker date="1517732653805" expanded="true" signature="6131:6183" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="6226:6281" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="6334:6381" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="6427:7209" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="6592:6686" ph="/// 得到池中新的HashSet ... " />
+            <marker date="1517732653805" expanded="true" signature="6725:6776" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="6786:6887" ph="/// 返回HashSet ... " />
+            <marker date="1517732653805" expanded="true" signature="6941:6995" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="7040:7097" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="7154:7203" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="7270:7848" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="7382:7471" ph="/// 得到池中新的对象 ... " />
+            <marker date="1517732653805" expanded="true" signature="7501:7552" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="7562:7658" ph="/// 返回对象 ... " />
+            <marker date="1517732653805" expanded="true" signature="7703:7757" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="7793:7841" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="7922:8775" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="8051:8140" ph="/// 得到池中新的对象 ... " />
+            <marker date="1517732653805" expanded="true" signature="8170:8221" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="8231:8323" ph="/// 返回对象 ... " />
+            <marker date="1517732653805" expanded="true" signature="8364:8414" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="8456:8534" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="8596:8685" ph="{...}" />
+            <marker date="1517732653805" expanded="true" signature="8721:8769" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/BitConverterEx.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="60" column="8" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+          <folding>
+            <marker date="1517934278612" expanded="false" signature="6:92" ph="..." />
+            <marker date="1517934278612" expanded="true" signature="118:1602" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="159:1599" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="175:268" ph="/// 获取基本值类型的byte ... " />
+            <marker date="1517934278612" expanded="true" signature="318:1566" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="357:442" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="475:560" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="593:677" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="712:798" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="832:917" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="952:1038" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="1074:1161" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="1195:1280" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="1315:1401" ph="{...}" />
+            <marker date="1517934278612" expanded="true" signature="1437:1524" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/NetManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <marker date="1517932930453" expanded="false" signature="6:54" ph="..." />
+            <marker date="1517932930453" expanded="true" signature="84:761" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="91:138" ph="/// 处理网络事件 ... " />
+            <marker date="1517932930453" expanded="true" signature="177:759" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="271:304" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="334:532" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="395:522" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="566:599" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="634:667" ph="{...}" />
+            <marker date="1517932930453" expanded="true" signature="697:730" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/TestProtocol.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+          <folding>
+            <marker date="1517936291871" expanded="true" signature="52:556" ph="{...}" />
+            <marker date="1517936291871" expanded="true" signature="96:554" ph="{...}" />
+            <marker date="1517936291871" expanded="true" signature="196:272" ph="{...}" />
+            <marker date="1517936291871" expanded="true" signature="333:409" ph="{...}" />
+            <marker date="1517936291871" expanded="true" signature="472:548" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -568,324 +1398,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickFixedUpdate.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/ProtocolContext.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        <state relative-caret-position="165">
+          <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
           <folding>
-            <marker date="1517244259701" expanded="true" signature="35:117" ph="{...}" />
-            <marker date="1517244259701" expanded="true" signature="75:115" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickUpdate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding>
-            <marker date="1517244220660" expanded="true" signature="35:107" ph="{...}" />
-            <marker date="1517244220660" expanded="true" signature="70:105" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Ticker/ITickLateUpdate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding>
-            <marker date="1517244559809" expanded="true" signature="35:115" ph="{...}" />
-            <marker date="1517244559809" expanded="true" signature="74:113" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/TickManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <marker date="1517244793672" expanded="true" signature="6:46" ph="..." />
-            <marker date="1517244793672" expanded="true" signature="76:2224" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="104:146" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="157:206" ph="/// 处理Tick事件 ... " />
-            <marker date="1517244793672" expanded="true" signature="246:2222" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="520:576" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="606:689" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="723:814" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="849:1018" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="899:1008" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="1048:1188" ph="{...}" />
-            <marker date="1517244793672" expanded="false" signature="1198:2015" ph="Ticker操作" />
-            <marker date="1517244793672" expanded="true" signature="1269:1328" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="1391:1458" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="1523:1592" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="1658:1717" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="1783:1850" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="1918:1987" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="2082:2216" ph="{...}" />
-            <marker date="1517244793672" expanded="true" signature="2147:2206" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/InputManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding>
-            <marker date="1517244961463" expanded="true" signature="28:709" ph="{...}" />
-            <marker date="1517244961463" expanded="true" signature="40:87" ph="/// 处理输入事件 ... " />
-            <marker date="1517244961463" expanded="true" signature="128:707" ph="{...}" />
-            <marker date="1517244961463" expanded="true" signature="161:237" ph="{...}" />
-            <marker date="1517244961463" expanded="true" signature="267:343" ph="{...}" />
-            <marker date="1517244961463" expanded="true" signature="377:453" ph="{...}" />
-            <marker date="1517244961463" expanded="true" signature="488:564" ph="{...}" />
-            <marker date="1517244961463" expanded="true" signature="594:670" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/GameSyncManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-          <folding>
-            <marker date="1517244968679" expanded="true" signature="28:565" ph="{...}" />
-            <marker date="1517244968679" expanded="true" signature="35:82" ph="/// 处理同步事件 ... " />
-            <marker date="1517244968679" expanded="true" signature="126:563" ph="{...}" />
-            <marker date="1517244968679" expanded="true" signature="159:192" ph="{...}" />
-            <marker date="1517244968679" expanded="true" signature="222:255" ph="{...}" />
-            <marker date="1517244968679" expanded="true" signature="289:322" ph="{...}" />
-            <marker date="1517244968679" expanded="true" signature="357:390" ph="{...}" />
-            <marker date="1517244968679" expanded="true" signature="420:453" ph="{...}" />
-            <marker date="1517244968679" expanded="true" signature="471:557" ph="/* TODO Update中检查输入，如果需要更新则发送至服务端 ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/Protocol.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/NetManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding>
-            <marker date="1517328718359" expanded="true" signature="6:54" ph="..." />
-            <marker date="1517328718359" expanded="true" signature="84:866" ph="{...}" />
-            <marker date="1517328718359" expanded="true" signature="91:138" ph="/// 处理网络事件 ... " />
-            <marker date="1517328718359" expanded="true" signature="177:864" ph="{...}" />
-            <marker date="1517328718359" expanded="true" signature="271:304" ph="{...}" />
-            <marker date="1517328718359" expanded="true" signature="334:538" ph="{...}" />
-            <marker date="1517328718359" expanded="true" signature="395:528" ph="{...}" />
-            <marker date="1517328718359" expanded="true" signature="572:605" ph="{...}" />
-            <marker date="1517328718359" expanded="true" signature="640:673" ph="{...}" />
-            <marker date="1517328718359" expanded="true" signature="703:736" ph="{...}" />
-            <marker date="1517328718359" expanded="true" signature="793:827" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/SocketEventConst.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="68" />
-          <folding>
-            <marker date="1517328385928" expanded="false" signature="6:39" ph="..." />
-            <marker date="1517328385928" expanded="true" signature="67:3051" ph="{...}" />
-            <marker date="1517328385928" expanded="true" signature="74:1834" ph="Tcp套接字代理" />
-            <marker date="1517328385928" expanded="true" signature="95:285" ph="/// Tcp套接字监听代理 ... " />
-            <marker date="1517328385928" expanded="true" signature="361:459" ph="/// Tcp套接字客户端连接代理 ... " />
-            <marker date="1517328385928" expanded="true" signature="539:729" ph="/// Tcp套接字连接代理 ... " />
-            <marker date="1517328385928" expanded="true" signature="806:1043" ph="/// Tcp套接字断开连接代理 ... " />
-            <marker date="1517328385928" expanded="true" signature="1159:1292" ph="/// Tcp套接字接收到数据代理 ... " />
-            <marker date="1517328385928" expanded="true" signature="1371:1463" ph="/// Tcp套接字发送数据代理 ... " />
-            <marker date="1517328385928" expanded="true" signature="1526:1721" ph="/// Tcp套接字发生错误代理 ... " />
-            <marker date="1517328385928" expanded="true" signature="1840:3049" ph="Udp套接字代理" />
-            <marker date="1517328385928" expanded="true" signature="1861:2051" ph="/// Udp套接字监听代理 ... " />
-            <marker date="1517328385928" expanded="true" signature="2127:2319" ph="/// Udp套接字端口绑定代理 ... " />
-            <marker date="1517328385928" expanded="true" signature="2393:2621" ph="/// Udp套接字接收到数据代理 ... " />
-            <marker date="1517328385928" expanded="true" signature="2738:2935" ph="/// Udp套接字发生错误代理 ... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/TcpSocket.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="72" column="30" lean-forward="false" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
-          <folding>
-            <marker date="1517328386021" expanded="false" signature="6:163" ph="..." />
-            <marker date="1517328386021" expanded="true" signature="191:11284" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="220:11281" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="315:367" ph="///远端端口 ... " />
-            <marker date="1517328386021" expanded="true" signature="428:481" ph="/// 远端地址 ... " />
-            <marker date="1517328386021" expanded="true" signature="548:601" ph="/// 本地端口 ... " />
-            <marker date="1517328386021" expanded="true" signature="661:714" ph="/// 本地地址 ... " />
-            <marker date="1517328386021" expanded="true" signature="780:837" ph="/// Socket变量 ... " />
-            <marker date="1517328386021" expanded="true" signature="878:934" ph="/// 是否为主动关闭 ... " />
-            <marker date="1517328386021" expanded="true" signature="986:1042" ph="/// 接收数据缓冲区 ... " />
-            <marker date="1517328386021" expanded="true" signature="1185:1238" ph="/// 是否连接 ... " />
-            <marker date="1517328386021" expanded="true" signature="1270:1482" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="1288:1472" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="1347:1400" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="1502:1561" ph="/// 当前Socket状态 ... " />
-            <marker date="1517328386021" expanded="true" signature="1633:2049" ph="公开的回调函数" />
-            <marker date="1517328386021" expanded="true" signature="2097:2893" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="2440:2883" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="2904:6605" ph="公开方法用于执行各种Socket行为" />
-            <marker date="1517328386021" expanded="true" signature="2939:3003" ph="/// 开始监听等待接收到新信息的回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="3068:3757" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="3310:3558" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="3581:3658" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="3767:3820" ph="/// 停止监听 ... " />
-            <marker date="1517328386021" expanded="true" signature="3854:4278" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="3981:4173" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="4042:4159" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="4196:4268" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="4288:4348" ph="/// 连接等待成功连接的回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="4403:4986" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="4676:4855" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="4876:4951" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="4996:5058" ph="/// 断开连接等待断开成功的回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="5092:5642" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="5145:5240" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="5370:5537" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="5560:5632" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="5652:5711" ph="/// 开始接受消息等待回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="5747:6121" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="5819:6016" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="6039:6111" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="6131:6194" ph="/// 发送消息并等待发送成功的回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="6233:6580" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="6302:6475" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="6498:6570" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="6615:11273" ph="回调函数" />
-            <marker date="1517328386021" expanded="true" signature="6636:6693" ph="/// 当接收完成时回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="6788:7196" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="6880:7053" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="7074:7119" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="7205:7262" ph="/// 当连接完成时回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="7359:7919" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="7430:7702" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="7725:7821" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="7929:7986" ph="/// 当断开连接时回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="8089:8485" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="8163:8246" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="8269:8424" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="8494:8551" ph="/// 当发送完成时回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="8642:9137" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="8757:8838" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="8861:9042" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="9146:9203" ph="/// 当接收信息时回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="9300:10201" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="9414:9767" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="9545:9753" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="9790:10037" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="10211:10446" ph="/// 关闭Socket回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="10516:10725" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="10735:10924" ph="/// 错误回调 ... " />
-            <marker date="1517328386021" expanded="true" signature="10969:11246" ph="{...}" />
-            <marker date="1517328386021" expanded="true" signature="11009:11161" ph="{...}" />
+            <marker date="1517936418389" expanded="true" signature="34:304" ph="{...}" />
+            <marker date="1517936418389" expanded="true" signature="69:302" ph="{...}" />
+            <marker date="1517936418389" expanded="true" signature="108:147" ph="{...}" />
+            <marker date="1517936418389" expanded="true" signature="192:296" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/Protocol/IProtocol.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+        <state relative-caret-position="497">
+          <caret line="103" column="60" lean-forward="false" selection-start-line="103" selection-start-column="60" selection-end-line="103" selection-end-column="60" />
           <folding>
-            <marker date="1517328564505" expanded="true" signature="34:86" ph="{...}" />
-            <marker date="1517328564505" expanded="true" signature="63:84" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="6:109" ph="..." />
+            <marker date="1517936858588" expanded="true" signature="145:3390" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="177:622" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="192:259" ph="/// 包长度，包含自身长度以及信息id长度 ... " />
+            <marker date="1517936858588" expanded="true" signature="296:349" ph="/// 信息Id ... " />
+            <marker date="1517936858588" expanded="true" signature="434:607" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="663:2025" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="678:736" ph="/// MessageId ... " />
+            <marker date="1517936858588" expanded="true" signature="801:852" ph="/// 处理 ... " />
+            <marker date="1517936858588" expanded="true" signature="902:996" ph="/// 序列化 ... " />
+            <marker date="1517936858588" expanded="true" signature="1067:1162" ph="/// 反序列化 ... " />
+            <marker date="1517936858588" expanded="true" signature="1244:1346" ph="/// 序列化为Package ... " />
+            <marker date="1517936858588" expanded="true" signature="1404:2010" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2092:2516" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2265:2321" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2368:2501" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2563:2764" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2677:2758" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2850:3388" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="2952:3051" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="3109:3169" ph="{...}" />
+            <marker date="1517936858588" expanded="true" signature="3226:3373" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/ArrayEx.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4FDC5ED6-1A07-4CAF-B49F-A42DEB20D521/89/3218517f/MemoryStream.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1517329615165" expanded="false" signature="6:92" ph="..." />
-            <marker date="1517329615165" expanded="true" signature="122:3855" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="129:287" ph="/// 遍历数组 ... " />
-            <marker date="1517329615165" expanded="true" signature="356:476" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="408:470" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="482:640" ph="/// 遍历数组 ... " />
-            <marker date="1517329615165" expanded="true" signature="707:825" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="760:819" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="831:1022" ph="/// 数组是否包含特定值 ... " />
-            <marker date="1517329615165" expanded="true" signature="1082:1287" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="1135:1259" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="1192:1249" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="1293:1569" ph="/// 获取子数组 ... " />
-            <marker date="1517329615165" expanded="true" signature="1648:1769" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="1775:1972" ph="/// 连接两个数组 ... " />
-            <marker date="1517329615165" expanded="true" signature="2038:2260" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="2266:2462" ph="/// 切分数组至多个 ... " />
-            <marker date="1517329615165" expanded="true" signature="2548:3248" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="2716:3221" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="2785:2865" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="2882:2950" ph="{...}" />
-            <marker date="1517329615165" expanded="true" signature="3254:3454" ph="/// 切出头部数组，并且返回剩余部分 ... " />
-            <marker date="1517329615165" expanded="true" signature="3522:3853" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Util/Extenstion/GameObjectEx.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <marker date="1517329630272" expanded="false" signature="6:44" ph="..." />
-            <marker date="1517329630272" expanded="true" signature="70:3628" ph="{...}" />
-            <marker date="1517329630272" expanded="true" signature="109:3625" ph="{...}" />
-            <marker date="1517329630272" expanded="true" signature="125:226" ph="/// 重置物体的Transform ... " />
-            <marker date="1517329630272" expanded="true" signature="288:494" ph="{...}" />
-            <marker date="1517329630272" expanded="true" signature="504:607" ph="/// 虫植物体的Transfrom ... " />
-            <marker date="1517329630272" expanded="true" signature="670:865" ph="{...}" />
-            <marker date="1517329630272" expanded="true" signature="961:1161" ph="{...}" />
-            <marker date="1517329630272" expanded="true" signature="1171:1364" ph="/// 查找指定祖先节点下的对象 ... " />
-            <marker date="1517329630272" expanded="true" signature="1450:1529" ph="{...}" />
-            <marker date="1517329630272" expanded="true" signature="1539:1757" ph="/// 查找指定祖先节点下的组件 ... " />
-            <marker date="1517329630272" expanded="true" signature="1846:2372" ph="{...}" />
-            <marker date="1517329630272" expanded="true" signature="1971:2337" ph="{...}" />
-            <marker date="1517329630272" expanded="true" signature="2382:2623" ph="/// 查找指定节点的 任意子节点 ... " />
-            <marker date="1517329630272" expanded="true" signature="2713:2870" ph="{...}" />
-            <marker date="1517329630272" expanded="true" signature="2880:3073" ph="/// 查找指定祖先节点下的对象 ... " />
-            <marker date="1517329630272" expanded="true" signature="3166:3619" ph="{...}" />
-            <marker date="1517329630272" expanded="true" signature="3238:3584" ph="{...}" />
-          </folding>
+        <state relative-caret-position="267">
+          <caret line="366" column="24" lean-forward="false" selection-start-line="366" selection-start-column="24" selection-end-line="366" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/TcpClient.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        <state relative-caret-position="385">
+          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
           <folding>
-            <marker date="1517329319058" expanded="true" signature="6:105" ph="..." />
-            <marker date="1517329319058" expanded="true" signature="132:1621" ph="{...}" />
-            <marker date="1517329319058" expanded="true" signature="161:1619" ph="{...}" />
-            <marker date="1517329319058" expanded="true" signature="452:690" ph="{...}" />
-            <marker date="1517329319058" expanded="true" signature="745:809" ph="{...}" />
-            <marker date="1517329319058" expanded="true" signature="849:902" ph="{...}" />
-            <marker date="1517329319058" expanded="true" signature="954:987" ph="{...}" />
-            <marker date="1517329319058" expanded="true" signature="998:1604" ph="Socket回调" />
-            <marker date="1517329319058" expanded="true" signature="1066:1099" ph="{...}" />
-            <marker date="1517329319058" expanded="true" signature="1190:1223" ph="{...}" />
-            <marker date="1517329319058" expanded="true" signature="1285:1402" ph="{...}" />
-            <marker date="1517329319058" expanded="true" signature="1440:1473" ph="{...}" />
-            <marker date="1517329319058" expanded="true" signature="1542:1575" ph="{...}" />
+            <marker date="1517937401775" expanded="false" signature="6:122" ph="..." />
+            <marker date="1517937401775" expanded="true" signature="149:2433" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="178:2431" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="618:856" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="911:975" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1021:1187" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1241:1287" ph="{...}" />
+            <marker date="1517937401775" expanded="false" signature="1298:1904" ph="Socket回调" />
+            <marker date="1517937401775" expanded="true" signature="1366:1399" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1490:1523" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1585:1702" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1740:1773" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1842:1875" ph="{...}" />
+            <marker date="1517937401775" expanded="true" signature="1922:2048" ph="/// 获取包长度 ... " />
+            <marker date="1517937401775" expanded="true" signature="2095:2416" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Net/TcpSocket.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="200" column="9" lean-forward="true" selection-start-line="200" selection-start-column="9" selection-end-line="200" selection-end-column="9" />
+          <folding>
+            <marker date="1517933577405" expanded="false" signature="6:163" ph="..." />
+            <marker date="1517933577405" expanded="true" signature="191:11291" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="220:11288" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="315:367" ph="///远端端口 ... " />
+            <marker date="1517933577405" expanded="true" signature="428:481" ph="/// 远端地址 ... " />
+            <marker date="1517933577405" expanded="true" signature="548:601" ph="/// 本地端口 ... " />
+            <marker date="1517933577405" expanded="true" signature="661:714" ph="/// 本地地址 ... " />
+            <marker date="1517933577405" expanded="true" signature="780:837" ph="/// Socket变量 ... " />
+            <marker date="1517933577405" expanded="true" signature="878:934" ph="/// 是否为主动关闭 ... " />
+            <marker date="1517933577405" expanded="true" signature="986:1042" ph="/// 接收数据缓冲区 ... " />
+            <marker date="1517933577405" expanded="true" signature="1185:1238" ph="/// 是否连接 ... " />
+            <marker date="1517933577405" expanded="true" signature="1270:1482" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="1288:1472" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="1347:1400" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="1502:1561" ph="/// 当前Socket状态 ... " />
+            <marker date="1517933577405" expanded="true" signature="1633:2049" ph="公开的回调函数" />
+            <marker date="1517933577405" expanded="true" signature="2097:2893" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="2440:2883" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="2904:6612" ph="公开方法用于执行各种Socket行为" />
+            <marker date="1517933577405" expanded="true" signature="2939:3003" ph="/// 开始监听等待接收到新信息的回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="3068:3757" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="3310:3558" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="3581:3658" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="3767:3820" ph="/// 停止监听 ... " />
+            <marker date="1517933577405" expanded="true" signature="3854:4278" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="3981:4173" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4042:4159" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4196:4268" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4288:4348" ph="/// 连接等待成功连接的回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="4403:4986" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4676:4855" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4876:4951" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="4996:5058" ph="/// 断开连接等待断开成功的回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="5092:5642" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="5145:5240" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="5370:5537" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="5560:5632" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="5652:5711" ph="/// 开始接受消息等待回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="5747:6121" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="5819:6016" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6039:6111" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6131:6194" ph="/// 发送消息并等待发送成功的回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="6245:6587" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6314:6482" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6505:6577" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6622:11280" ph="回调函数" />
+            <marker date="1517933577405" expanded="true" signature="6643:6700" ph="/// 当接收完成时回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="6795:7203" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="6887:7060" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="7081:7126" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="7212:7269" ph="/// 当连接完成时回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="7366:7926" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="7437:7709" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="7732:7828" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="7936:7993" ph="/// 当断开连接时回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="8096:8492" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="8170:8253" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="8276:8431" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="8501:8558" ph="/// 当发送完成时回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="8649:9144" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="8764:8845" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="8868:9049" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="9153:9210" ph="/// 当接收信息时回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="9307:10208" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="9421:9774" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="9552:9760" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="9797:10044" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="10218:10453" ph="/// 关闭Socket回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="10523:10732" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="10742:10931" ph="/// 错误回调 ... " />
+            <marker date="1517933577405" expanded="true" signature="10976:11253" ph="{...}" />
+            <marker date="1517933577405" expanded="true" signature="11016:11168" ph="{...}" />
           </folding>
         </state>
       </provider>

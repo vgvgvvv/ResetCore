@@ -20,7 +20,7 @@ namespace FrameSync.Managers
             while (client.ProtocolQueue.Count > 0)
             {
                 var protocol = client.ProtocolQueue.Dequeue();
-                HandleProtocol(protocol);
+                protocol.Process();
             }
         }
 
@@ -39,11 +39,6 @@ namespace FrameSync.Managers
             
         }
 
-        private void HandleProtocol(IProtocol protocol)
-        { 
-            
-        }
-        
         //TODO 实现消息队列
     }
 }

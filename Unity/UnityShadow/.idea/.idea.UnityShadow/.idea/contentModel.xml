@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="DynamicShadowProjector" t="Include">
+          <e p="Readme.txt" t="Include" />
+          <e p="Samples" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Rotate.cs" t="Include" />
+              <e p="Swing.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="DrawSceneObject.cs" t="Include" />
+            <e p="DrawTargetObject.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="DrawSceneObjectEditor.cs" t="Include" />
+              <e p="DrawTargetObjectEditor.cs" t="Include" />
+              <e p="EditorBase.cs" t="Include" />
+              <e p="MipmappedShadowFallbackEditor.cs" t="Include" />
+              <e p="ShadowTextureRendererEditor.cs" t="Include" />
+            </e>
+            <e p="FollowTargetObject.cs" t="Include" />
+            <e p="MipmappedShadowFallback.cs" t="Include" />
+            <e p="ShadowTextureRenderer.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Blit" t="Include">
+              <e p="Blit.shader" t="Include" />
+              <e p="Blur.shader" t="Include" />
+              <e p="CopyMipmap.shader" t="Include" />
+              <e p="Downsample.cginc" t="Include" />
+              <e p="Downsample.shader" t="Include" />
+              <e p="DownsampleFallback.shader" t="Include" />
+              <e p="EraseShadow.shader" t="Include" />
+            </e>
+            <e p="Caps" t="Include">
+              <e p="glslCheck.shader" t="Include" />
+              <e p="tex2DlodExtensionCheck.shader" t="Include" />
+            </e>
+            <e p="Projector" t="Include">
+              <e p="DSPProjector.cginc" t="Include" />
+              <e p="Dynamic" t="Include">
+                <e p="LightxShadowWithLinearFalloff.shader" t="Include" />
+                <e p="LightxShadowWithoutFalloff.shader" t="Include" />
+                <e p="MipmappedShadow.shader" t="Include" />
+                <e p="ShadowWithLinearFalloff.shader" t="Include" />
+                <e p="ShadowWithoutFalloff.shader" t="Include" />
+              </e>
+              <e p="LightWithLinearFalloff.shader" t="Include" />
+              <e p="LightWithoutFalloff.shader" t="Include" />
+              <e p="LightxShadowWithLinearFalloff.shader" t="Include" />
+              <e p="LightxShadowWithoutFalloff.shader" t="Include" />
+              <e p="MipmappedShadow.shader" t="Include" />
+              <e p="ShadowWithLinearFalloff.shader" t="Include" />
+              <e p="ShadowWithoutFalloff.shader" t="Include" />
+            </e>
+            <e p="Shadow" t="Include">
+              <e p="DSPShadow.cginc" t="Include" />
+              <e p="ShadowForReplacement.shader" t="Include" />
+              <e p="ShadowOpaque.shader" t="Include" />
+              <e p="ShadowTransparent.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+      <e p="UnityShadow.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2017.2/resharper-host/local/Transient/ReSharperHost/v10/SolutionCaches/_UnityShadow.1805482742.00" t="ExcludeRecursive" />
+  </component>
+</project>

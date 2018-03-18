@@ -219,12 +219,12 @@ namespace ReFrame.Network {
         /// <summary>
         /// 发送消息并等待发送成功的回调
         /// </summary>
-        public void Send(byte[] data) {
+        public void Send(byte[] data, int length) {
             currentState = SocketState.BEGIN_SEND;
             try {
                 //开始接收数据
                 lock (locker) {
-                    socket.BeginSend(data, 0, data.Length, 0, sendCallback, null);
+                    socket.BeginSend(data, 0, length, 0, sendCallback, null);
                 }
             } catch (Exception exp) {
                 //引发报错事件

@@ -128,6 +128,7 @@ namespace DynamicShadowProjector {
 		{
 			m_isCommandBufferDirty = true;
 		}
+		
 		public void UpdateCommandBuffer()
 		{
 			if (m_target == null) {
@@ -135,6 +136,7 @@ namespace DynamicShadowProjector {
 			}
 			m_commandBuffer.Clear();
 			int materialCount = m_replacementShaders == null ? 0 : m_replacementShaders.Length;
+			//如果渲染子对象则从子对象获取
 			if (m_renderChildren) {
 				Renderer[] renderers = m_target.gameObject.GetComponentsInChildren<Renderer>();
 				for (int i = -1; i < materialCount; ++i) {
@@ -146,6 +148,7 @@ namespace DynamicShadowProjector {
 				}
 			}
 			else {
+				//否则直接获取Renderer
 				Renderer renderer = m_target.gameObject.GetComponent<Renderer>();
 				if (renderer != null) {
 					for (int i = -1; i < materialCount; ++i) {
@@ -158,6 +161,7 @@ namespace DynamicShadowProjector {
 			}
 			m_isCommandBufferDirty = false;
 		}
+		
 		public void UpdateMaterial(Material mat)
 		{
 			if (m_replacedMaterialCache != null) {
@@ -167,6 +171,10 @@ namespace DynamicShadowProjector {
 				}
 			}
 		}
+		
+		/// <summary>
+		/// 更新影子位置
+		/// </summary>
 		public void UpdateTransform()
 		{
 			if (m_textureAlignment != TextureAlignment.None || m_targetDirection != null) {
@@ -306,6 +314,7 @@ namespace DynamicShadowProjector {
 			}
 			m_isCommandBufferDirty = true;
 		}
+		
 		void AddDrawCommand(Renderer renderer, int renderTypeIndex)
 		{
 			Material[] materials = renderer.sharedMaterials;

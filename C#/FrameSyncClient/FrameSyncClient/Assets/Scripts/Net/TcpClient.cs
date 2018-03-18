@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using ReFrame.Network.Protocol;
 
 namespace ReFrame.Network
@@ -9,8 +10,11 @@ namespace ReFrame.Network
     {
         private TcpSocket _socket = new TcpSocket();
         private object tcpLockObject = new object();
-        private byte[] dataBuffer = new byte[1024];
+        private readonly MemoryStream _sharedSendStream = new MemoryStream();
+        private readonly MemoryStream _sharedReciveStream = new MemoryStream();
         
+        private const int HeadLength = 4;
+
         public readonly Queue<IProtocol> ProtocolQueue = new Queue<IProtocol>();
         
 
@@ -28,13 +32,15 @@ namespace ReFrame.Network
             _socket.Connect(address, port);
         }
 
-        public void Send(byte[] bytes)
+        public void Send(IProtocol protocol)
         {
-            _socket.Send(bytes);
+            protocol.SerializePackage(_sharedSendStream);
+            _socket.Send(_sharedSendStream.GetBuffer(), (int)_sharedSendStream.Length);
         }
 
-        private void Reveive(int len, byte[] data)
+        private void Reveive(int len, byte[] indata)
         {
+            
             
         }
 
@@ -70,6 +76,24 @@ namespace ReFrame.Network
         }
 
         #endregion Socket回调
+        
+        /// <summary>
+        /// 获取包长度
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        private int GetDataLength(byte[] data)
+        {
+            if (data.Length < HeadLength)
+                return 0;
+
+            byte[] lengthByte = data.SubArray(0, 4);
+            if (!BitConverter.IsLittleEndian)
+                Array.Reverse(lengthByte);
+            int length = BitConverter.ToInt32(lengthByte, 0);
+
+            return length;
+        }
         
     }
 }

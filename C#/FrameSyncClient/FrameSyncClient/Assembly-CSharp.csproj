@@ -62,11 +62,17 @@
     <Compile Include="Assets\Scripts\Managers\Ticker\ITickUpdate.cs" />
     <Compile Include="Assets\Scripts\Managers\TickManager.cs" />
     <Compile Include="Assets\Scripts\Net\Protocol\IProtocol.cs" />
+    <Compile Include="Assets\Scripts\Net\Protocol\ProtocolContext.cs" />
+    <Compile Include="Assets\Scripts\Net\Protocol\TestProtocol.cs" />
     <Compile Include="Assets\Scripts\Net\SocketEnum.cs" />
     <Compile Include="Assets\Scripts\Net\SocketEventConst.cs" />
     <Compile Include="Assets\Scripts\Net\TcpClient.cs" />
     <Compile Include="Assets\Scripts\Net\TcpSocket.cs" />
     <Compile Include="Assets\Scripts\Net\UdpSocket.cs" />
+    <Compile Include="Assets\Scripts\Util\BetterCollection\BetterDictionary.cs" />
+    <Compile Include="Assets\Scripts\Util\BetterCollection\BetterList.cs" />
+    <Compile Include="Assets\Scripts\Util\BetterCollection\DictionaryList.cs" />
+    <Compile Include="Assets\Scripts\Util\BetterCollection\MultiKeyDictionary.cs" />
     <Compile Include="Assets\Scripts\Util\Extenstion\ArrayEx.cs" />
     <Compile Include="Assets\Scripts\Util\Extenstion\BitConverterEx.cs" />
     <Compile Include="Assets\Scripts\Util\Extenstion\ColorEx.cs" />
@@ -90,6 +96,12 @@
     <Compile Include="Assets\Scripts\Util\Extenstion\StringEx\StringEx.cs" />
     <Compile Include="Assets\Scripts\Util\Extenstion\TypeEx.cs" />
     <Compile Include="Assets\Scripts\Util\Extenstion\Vector3Ex.cs" />
+    <Compile Include="Assets\Scripts\Util\ObjectPool\ClassPool.cs" />
+    <Compile Include="Assets\Scripts\Util\ObjectPool\MemoryBuffer.cs" />
+    <Compile Include="Assets\Scripts\Util\ObjectPool\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\Util\ObjectPool\UniversalPool.cs" />
+    <Compile Include="Assets\Scripts\Util\Singleton\MonoSingleton.cs" />
+    <Compile Include="Assets\Scripts\Util\Singleton\Singleton.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
     <Reference Include="UnityEngine.UI">
       <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -187,10 +199,6 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Assets\Scripts\Util\Extenstion\StringEx\IStringConvertable.cs.meta" />
-    <Content Include="Assets\Scripts\Util\Extenstion\StringEx\StringEx.cs.meta" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

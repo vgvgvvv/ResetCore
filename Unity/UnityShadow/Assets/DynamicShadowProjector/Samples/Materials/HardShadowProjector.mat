@@ -20,7 +20,7 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - _Alpha: 1
-    - _Ambient: 0.3
+    - _Ambient: 0.32
     - _ClipScale: 100
     - _Offset: -1
     m_Colors: []

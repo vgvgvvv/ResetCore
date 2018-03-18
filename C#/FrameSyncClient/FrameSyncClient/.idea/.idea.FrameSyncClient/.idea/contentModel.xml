@@ -29,6 +29,8 @@
           <e p="Net" t="Include">
             <e p="Protocol" t="Include">
               <e p="IProtocol.cs" t="Include" />
+              <e p="ProtocolContext.cs" t="Include" />
+              <e p="TestProtocol.cs" t="Include" />
             </e>
             <e p="SocketEnum.cs" t="Include" />
             <e p="SocketEventConst.cs" t="Include" />
@@ -37,6 +39,12 @@
             <e p="UdpSocket.cs" t="Include" />
           </e>
           <e p="Util" t="Include">
+            <e p="BetterCollection" t="Include">
+              <e p="BetterDictionary.cs" t="Include" />
+              <e p="BetterList.cs" t="Include" />
+              <e p="DictionaryList.cs" t="Include" />
+              <e p="MultiKeyDictionary.cs" t="Include" />
+            </e>
             <e p="Extenstion" t="Include">
               <e p="ArrayEx.cs" t="Include" />
               <e p="BitConverterEx.cs" t="Include" />
@@ -59,12 +67,20 @@
               <e p="RichTextEx.cs" t="Include" />
               <e p="StringEx" t="Include">
                 <e p="IStringConvertable.cs" t="Include" />
-                <e p="IStringConvertable.cs.meta" t="Include" />
                 <e p="StringEx.cs" t="Include" />
-                <e p="StringEx.cs.meta" t="Include" />
               </e>
               <e p="TypeEx.cs" t="Include" />
               <e p="Vector3Ex.cs" t="Include" />
+            </e>
+            <e p="ObjectPool" t="Include">
+              <e p="ClassPool.cs" t="Include" />
+              <e p="MemoryBuffer.cs" t="Include" />
+              <e p="ObjectPool.cs" t="Include" />
+              <e p="UniversalPool.cs" t="Include" />
+            </e>
+            <e p="Singleton" t="Include">
+              <e p="MonoSingleton.cs" t="Include" />
+              <e p="Singleton.cs" t="Include" />
             </e>
           </e>
           <e p="World.cs" t="Include" />
