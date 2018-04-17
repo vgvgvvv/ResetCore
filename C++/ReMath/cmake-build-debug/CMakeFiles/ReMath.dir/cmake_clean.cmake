@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ReMath.dir/sources/Test.cpp.o"
-  "CMakeFiles/ReMath.dir/sources/Vector3.cpp.o"
+  "CMakeFiles/ReMath.dir/sources/Test.cpp.obj"
+  "CMakeFiles/ReMath.dir/sources/Vector3.cpp.obj"
   "libReMath.pdb"
   "libReMath.a"
 )

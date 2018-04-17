@@ -8,139 +8,139 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug"/>
+				<Option working_dir="E:/Projects/ResetCore/C++/ReMath/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Test">
-				<Option output="/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/dongchen/Documents/ResetCore/C++/ReMath/sources"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test"/>
-					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Test/fast">
-				<Option output="/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/dongchen/Documents/ResetCore/C++/ReMath/sources"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test/fast"/>
-					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReMath">
-				<Option output="/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/libReMath.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug"/>
+				<Option output="E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/libReMath.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Projects/ResetCore/C++/ReMath/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/dongchen/Documents/ResetCore/C++/ReMath/sources"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="E:/Projects/ResetCore/C++/ReMath/sources"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReMath"/>
-					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReMath"/>
+					<CompileFile command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReMath/fast">
-				<Option output="/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/libReMath.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug"/>
+				<Option output="E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/libReMath.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Projects/ResetCore/C++/ReMath/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/dongchen/Documents/ResetCore/C++/ReMath/sources"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.1.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="E:/Projects/ResetCore/C++/ReMath/sources"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReMath/fast"/>
-					<CompileFile command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/opt/local/bin/gmake -j8 -f &quot;/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReMath/fast"/>
+					<CompileFile command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/Projects/ResetCore/C++/ReMath/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test">
+				<Option output="E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Projects/ResetCore/C++/ReMath/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/Projects/ResetCore/C++/ReMath/sources"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test"/>
+					<CompileFile command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Test/fast">
+				<Option output="E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Test.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Projects/ResetCore/C++/ReMath/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/Projects/ResetCore/C++/ReMath/sources"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="d:\library\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 Test/fast"/>
+					<CompileFile command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/Projects/ResetCore/C++/ReMath/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Library/MinGW/bin/mingw32-make.exe -f &quot;E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/dongchen/Documents/ResetCore/C++/ReMath/sources/Test.cpp">
+		<Unit filename="E:/Projects/ResetCore/C++/ReMath/sources/Test.cpp">
+			<Option target="ReMath"/>
 			<Option target="Test"/>
+		</Unit>
+		<Unit filename="E:/Projects/ResetCore/C++/ReMath/sources/Vector3.cpp">
 			<Option target="ReMath"/>
 		</Unit>
-		<Unit filename="/Users/dongchen/Documents/ResetCore/C++/ReMath/sources/Vector3.cpp">
+		<Unit filename="E:/Projects/ResetCore/C++/ReMath/sources/Vector3.hpp">
 			<Option target="ReMath"/>
 		</Unit>
-		<Unit filename="/Users/dongchen/Documents/ResetCore/C++/ReMath/sources/Vector3.hpp">
-			<Option target="ReMath"/>
-		</Unit>
-		<Unit filename="/Users/dongchen/Documents/ResetCore/C++/ReMath/CMakeLists.txt">
+		<Unit filename="E:/Projects/ResetCore/C++/ReMath/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
