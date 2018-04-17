@@ -45,7 +45,7 @@ end
 --等待条件
 function WaitForFunc(func)
     
-    while not func() then
+    while not func() do
         coroutine.yield()
     end
 

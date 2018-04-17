@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ReRx" t="Include">
+          <e p="Interface" t="Include">
+            <e p="IObservable.cs" t="Include" />
+            <e p="IObserver.cs" t="Include" />
+            <e p="ISubject.cs" t="Include" />
+            <e p="Unit.cs" t="Include" />
+          </e>
+          <e p="Observable.Creation.cs" t="Include" />
+          <e p="Observable.Operator.cs" t="Include" />
+          <e p="Observable.Subscribe.cs" t="Include" />
+          <e p="Observer.cs" t="Include" />
+          <e p="Operators" t="Include">
+            <e p="OperatorObservableBase.cs" t="Include" />
+            <e p="OperatorObserverBase.cs" t="Include" />
+            <e p="Range.cs" t="Include" />
+            <e p="Where.cs" t="Include" />
+          </e>
+          <e p="Subject.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="ReRx.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2017.2/resharper-host/local/Transient/ReSharperHost/v10/SolutionCaches/_ReRx.1351434666.00" t="ExcludeRecursive" />
+  </component>
+</project>

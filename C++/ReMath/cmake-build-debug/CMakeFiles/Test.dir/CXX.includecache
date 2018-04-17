@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../sources/Vector3.hpp
+
+/Users/dongchen/Documents/ResetCore/C++/ReMath/sources/Test.cpp
+iostream
+-
+Vector3.hpp
+-
+

@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libReMath.a  CMakeFiles/ReMath.dir/sources/Test.cpp.o CMakeFiles/ReMath.dir/sources/Vector3.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libReMath.a
