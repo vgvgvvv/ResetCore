@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/dongchen/Documents/ResetCore/C++/ReMath/sources/Test.cpp" "/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/CMakeFiles/ReMath.dir/sources/Test.cpp.o"
-  "/Users/dongchen/Documents/ResetCore/C++/ReMath/sources/Vector3.cpp" "/Users/dongchen/Documents/ResetCore/C++/ReMath/cmake-build-debug/CMakeFiles/ReMath.dir/sources/Vector3.cpp.o"
+  "E:/Projects/ResetCore/C++/ReMath/sources/Test.cpp" "E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/CMakeFiles/ReMath.dir/sources/Test.cpp.obj"
+  "E:/Projects/ResetCore/C++/ReMath/sources/Vector3.cpp" "E:/Projects/ResetCore/C++/ReMath/cmake-build-debug/CMakeFiles/ReMath.dir/sources/Vector3.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
