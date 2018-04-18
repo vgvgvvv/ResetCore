@@ -1,0 +1,5 @@
+/usr/local/lib/libpugixml.a
+/usr/local/include/pugixml.hpp
+/usr/local/include/pugiconfig.hpp
+/usr/local/lib/cmake/pugixml/pugixml-config.cmake
+/usr/local/lib/cmake/pugixml/pugixml-config-noconfig.cmake
