@@ -8,14 +8,15 @@ set(CMAKE_CXX_FLAGS_RELEASE "-s -O2")
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 
+link_directories(Libs)
+
 add_subdirectory(ECS)
 add_subdirectory(Util)
 add_subdirectory(ReMath)
 add_subdirectory(Test)
-add_subdirectory(Libs/pugixml)
 
 include_directories(Util)
 include_directories(ECS)
 include_directories(ReMath/sources)
-include_directories(Libs/pugixml/src)
+include_directories(Includes)
 

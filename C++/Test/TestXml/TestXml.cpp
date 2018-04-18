@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "pugixml/src/pugixml.hpp"
+#include "pugixml/pugixml.hpp"
 
 void printChild(const pugi::xml_node& parent, const int layer = 0);
 
