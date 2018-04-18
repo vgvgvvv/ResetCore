@@ -16,3 +16,4 @@ add_executable(TestEmbedMono TestEmbedMono/TestEmbedMono.cpp)
 add_executable(TestToLuapp TestToLuapp/TestToLuapp.cpp)
 
 add_executable(TestFMod TestFMod/TestFmod.cpp)
+target_link_libraries(TestFMod fmodL fmodstudioL)
