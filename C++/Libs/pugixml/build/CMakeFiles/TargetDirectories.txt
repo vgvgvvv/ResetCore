@@ -1,7 +1,0 @@
-/Users/dongchen/Documents/ResetCore/C++/Libs/pugixml/build/CMakeFiles/install/local.dir
-/Users/dongchen/Documents/ResetCore/C++/Libs/pugixml/build/CMakeFiles/rebuild_cache.dir
-/Users/dongchen/Documents/ResetCore/C++/Libs/pugixml/build/CMakeFiles/edit_cache.dir
-/Users/dongchen/Documents/ResetCore/C++/Libs/pugixml/build/CMakeFiles/install/strip.dir
-/Users/dongchen/Documents/ResetCore/C++/Libs/pugixml/build/CMakeFiles/pugixml.dir
-/Users/dongchen/Documents/ResetCore/C++/Libs/pugixml/build/CMakeFiles/install.dir
-/Users/dongchen/Documents/ResetCore/C++/Libs/pugixml/build/CMakeFiles/list_install_components.dir

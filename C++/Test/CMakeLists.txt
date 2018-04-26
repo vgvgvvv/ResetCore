@@ -12,8 +12,12 @@ add_executable(TestXml TestXml/TestXml.cpp)
 target_link_libraries(TestXml pugixml)
 
 add_executable(TestEmbedMono TestEmbedMono/TestEmbedMono.cpp)
+target_link_libraries(TestEmbedMono mono)
 
 add_executable(TestToLuapp TestToLuapp/TestToLuapp.cpp)
+target_link_libraries(TestToLuapp lua)
 
 add_executable(TestFMod TestFMod/TestFmod.cpp)
 target_link_libraries(TestFMod fmodL fmodstudioL)
+
+add_subdirectory(TestSDL)
