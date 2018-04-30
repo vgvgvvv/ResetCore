@@ -80,7 +80,7 @@ public:
     }
 
 
-    Vector3 normalize(){
+    Vector3 normalize() const {
         float magSq = x*x + y*y + z*z;
         if(magSq > 0){
             float oneOverMag = static_cast<float>(1.0 / sqrt(magSq));
@@ -89,12 +89,23 @@ public:
         return Vector3(x, y, z);
     }
 
+    Vector3 crossProduct(const Vector3& other) const{
+        return Vector3(y*other.z - z*other.y, x*other.z - z*other.x, x*other.y - y*other.x);
+    }
+
     float dot(const Vector3& other) const{
         return x * other.x + y * other.y + z * other.z;
     }
 
     float magnitude() const {
-        return sqrt(x*x + y*y + z*z);
+        return (float) sqrt(x * x + y * y + z * z);
+    }
+
+    float distance(const Vector3& other) const{
+        auto disX = x - other.x;
+        auto disY = y - other.y;
+        auto disZ = z - other.z;
+        return (float) sqrt(disX * disX + disY * disY + disZ * disZ);
     }
 };
 
