@@ -11,7 +11,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin")
 IF(MACOS)
     link_directories(Libs/MACOS)
 ELSEIF(WIN32)
-    link_directories(../Libs/WIN32)
+    link_directories(Libs/WIN32)
 ENDIF()
 
 add_subdirectory(ECS)
