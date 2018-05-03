@@ -5,8 +5,8 @@
 #ifndef __METADATA_REFLECTION_H__
 #define __METADATA_REFLECTION_H__
 
-#include <Common/mono/utils/mono-publib.h>
-#include <Common/mono/metadata/object.h>
+#include <mono/utils/mono-publib.h>
+#include <mono/metadata/object.h>
 
 MONO_BEGIN_DECLS
 

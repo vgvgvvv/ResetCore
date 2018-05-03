@@ -5,9 +5,9 @@
 #ifndef _MONO_METADATA_LOADER_H_
 #define _MONO_METADATA_LOADER_H_ 1
 
-#include <Common/mono/metadata/metadata.h>
-#include <Common/mono/metadata/image.h>
-#include <Common/mono/utils/mono-error.h>
+#include <mono/metadata/metadata.h>
+#include <mono/metadata/image.h>
+#include <mono/utils/mono-error.h>
 
 MONO_BEGIN_DECLS
 

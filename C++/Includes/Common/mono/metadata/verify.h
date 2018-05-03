@@ -5,9 +5,9 @@
 #ifndef __MONO_METADATA_VERIFY_H__
 #define __MONO_METADATA_VERIFY_H__
 
-#include <Common/mono/metadata/metadata.h>
-#include <Common/mono/metadata/image.h>
-#include <Common/mono/metadata/loader.h>
+#include <mono/metadata/metadata.h>
+#include <mono/metadata/image.h>
+#include <mono/metadata/loader.h>
 #include <glib.h> /* GSList dep */
 
 MONO_BEGIN_DECLS

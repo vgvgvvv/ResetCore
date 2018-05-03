@@ -18,7 +18,15 @@ add_executable(TestXml TestXml/TestXml.cpp)
 target_link_libraries(TestXml pugixml)
 
 add_executable(TestEmbedMono TestEmbedMono/TestEmbedMono.cpp)
-target_link_libraries(TestEmbedMono mono)
+target_link_libraries(TestEmbedMono
+        mono-2.0
+        iconv
+        "-framework CoreFoundation"
+        "-framework Cocoa"
+        "-framework AppKit"
+        "-framework CoreData"
+        "-framework Foundation"
+        )
 
 add_executable(TestToLuapp TestToLuapp/TestToLuapp.cpp)
 target_link_libraries(TestToLuapp lua)

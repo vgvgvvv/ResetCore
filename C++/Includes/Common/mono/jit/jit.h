@@ -9,7 +9,7 @@
 #ifndef _MONO_JIT_JIT_H_
 #define _MONO_JIT_JIT_H_
 
-#include <Common/mono/metadata/appdomain.h>
+#include <mono/metadata/appdomain.h>
 
 MONO_BEGIN_DECLS
 

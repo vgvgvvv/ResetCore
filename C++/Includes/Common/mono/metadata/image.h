@@ -6,8 +6,8 @@
 #define _MONONET_METADATA_IMAGE_H_
 
 #include <stdio.h>
-#include <Common/mono/utils/mono-publib.h>
-#include <Common/mono/utils/mono-error.h>
+#include <mono/utils/mono-publib.h>
+#include <mono/utils/mono-error.h>
 
 MONO_BEGIN_DECLS
 

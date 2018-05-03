@@ -5,8 +5,8 @@
 #ifndef _MONO_METADATA_EXCEPTION_H_
 #define _MONO_METADATA_EXCEPTION_H_
 
-#include <Common/mono/metadata/object.h>
-#include <Common/mono/metadata/image.h>
+#include <mono/metadata/object.h>
+#include <mono/metadata/image.h>
 
 MONO_BEGIN_DECLS
 

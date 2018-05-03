@@ -14,7 +14,7 @@
  * (C) 2002 Ximian, Inc.
  */
 
-#include <Common/mono/utils/mono-publib.h>
+#include <mono/utils/mono-publib.h>
 
 MONO_BEGIN_DECLS
 
@@ -24,7 +24,7 @@ MONO_BEGIN_DECLS
 	MONO_ ## a,
 
 typedef enum {
-#include "Common/mono/cil/opcode.def"
+#include "mono/cil/opcode.def"
 	MONO_CEE_LAST
 } MonoOpcodeEnum;
 

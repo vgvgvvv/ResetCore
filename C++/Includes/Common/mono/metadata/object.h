@@ -5,8 +5,8 @@
 #ifndef _MONO_CLI_OBJECT_H_
 #define _MONO_CLI_OBJECT_H_
 
-#include <Common/mono/metadata/class.h>
-#include <Common/mono/utils/mono-error.h>
+#include <mono/metadata/class.h>
+#include <mono/utils/mono-error.h>
 
 MONO_BEGIN_DECLS
 

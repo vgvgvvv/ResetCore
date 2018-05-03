@@ -7,9 +7,9 @@
 #ifndef __MONO_DEBUG_H__
 #define __MONO_DEBUG_H__
 
-#include <Common/mono/utils/mono-publib.h>
-#include <Common/mono/metadata/image.h>
-#include <Common/mono/metadata/appdomain.h>
+#include <mono/utils/mono-publib.h>
+#include <mono/metadata/image.h>
+#include <mono/metadata/appdomain.h>
 
 MONO_BEGIN_DECLS
 

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Includes/Common/mono" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/Includes/MACOS/SDL/SDL.h" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/Includes/MACOS/SDL/SDL_assert.h" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/Includes/MACOS/SDL/SDL_atomic.h" charset="GB2312" />
@@ -87,5 +88,8 @@
     <file url="file://$PROJECT_DIR$/Includes/MACOS/SDL/close_code.h" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/Libs/MACOS/libSDL2.dylib" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/Libs/MACOS/liblua.a" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/Libs/MACOS/libmono-2.0.a" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/Test/TestEmbedMono/TestCSLib.dll" charset="GB2312" />
+    <file url="file://$PROJECT_DIR$/Test/TestEmbedMono/TestCSLib.pdb" charset="GB2312" />
   </component>
 </project>

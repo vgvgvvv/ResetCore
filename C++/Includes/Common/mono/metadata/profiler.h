@@ -7,9 +7,9 @@
 #ifndef __MONO_PROFILER_H__
 #define __MONO_PROFILER_H__
 
-#include <Common/mono/metadata/appdomain.h>
-#include <Common/mono/metadata/mono-gc.h>
-#include <Common/mono/metadata/object.h>
+#include <mono/metadata/appdomain.h>
+#include <mono/metadata/mono-gc.h>
+#include <mono/metadata/object.h>
 
 MONO_BEGIN_DECLS
 
@@ -419,7 +419,7 @@ typedef enum {
 		_MONO_PROFILER_EVENT(type, MonoProfiler *prof, arg1_type arg1_name, arg2_type arg2_name, arg3_type arg3_name)
 #define MONO_PROFILER_EVENT_4(name, type, arg1_type, arg1_name, arg2_type, arg2_name, arg3_type, arg3_name, arg4_type, arg4_name) \
 		_MONO_PROFILER_EVENT(type, MonoProfiler *prof, arg1_type arg1_name, arg2_type arg2_name, arg3_type arg3_name, arg4_type arg4_name)
-#include <Common/mono/metadata/profiler-events.h>
+#include <mono/metadata/profiler-events.h>
 #undef MONO_PROFILER_EVENT_0
 #undef MONO_PROFILER_EVENT_1
 #undef MONO_PROFILER_EVENT_2
@@ -439,7 +439,7 @@ typedef enum {
 	_MONO_PROFILER_EVENT(name, type)
 #define MONO_PROFILER_EVENT_4(name, type, arg1_type, arg1_name, arg2_type, arg2_name, arg3_type, arg3_name, arg4_type, arg4_name) \
 	_MONO_PROFILER_EVENT(name, type)
-#include <Common/mono/metadata/profiler-events.h>
+#include <mono/metadata/profiler-events.h>
 #undef MONO_PROFILER_EVENT_0
 #undef MONO_PROFILER_EVENT_1
 #undef MONO_PROFILER_EVENT_2

@@ -6,7 +6,7 @@
 #define __MONO_COUNTERS_H__
 
 #include <stdio.h>
-#include <Common/mono/utils/mono-publib.h>
+#include <mono/utils/mono-publib.h>
 
 enum {
 	/* Counter type, bits 0-7. */

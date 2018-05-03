@@ -6,7 +6,7 @@
 #ifndef __METADATA_MONO_GC_H__
 #define __METADATA_MONO_GC_H__
 
-#include <Common/mono/metadata/object.h>
+#include <mono/metadata/object.h>
 
 MONO_BEGIN_DECLS
 

@@ -50,7 +50,7 @@
 #ifndef _MONO_SGEN_BRIDGE_H_
 #define _MONO_SGEN_BRIDGE_H_
 
-#include <Common/mono/utils/mono-publib.h>
+#include <mono/utils/mono-publib.h>
 
 MONO_BEGIN_DECLS
 

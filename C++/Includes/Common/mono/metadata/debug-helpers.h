@@ -5,7 +5,7 @@
 #ifndef __MONO_DEBUG_HELPERS_H__
 #define __MONO_DEBUG_HELPERS_H__
 
-#include <Common/mono/metadata/class.h>
+#include <mono/metadata/class.h>
 
 MONO_BEGIN_DECLS
 

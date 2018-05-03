@@ -10,9 +10,9 @@
 #define __MONO_DEBUG_MONO_SYMFILE_H__
 
 #include <glib.h>
-#include <Common/mono/metadata/class.h>
-#include <Common/mono/metadata/reflection.h>
-#include <Common/mono/metadata/mono-debug.h>
+#include <mono/metadata/class.h>
+#include <mono/metadata/reflection.h>
+#include <mono/metadata/mono-debug.h>
 #include <mono/metadata/debug-internals.h>
 
 typedef struct MonoSymbolFileOffsetTable	MonoSymbolFileOffsetTable;

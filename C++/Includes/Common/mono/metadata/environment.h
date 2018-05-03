@@ -11,7 +11,7 @@
 #ifndef _MONO_METADATA_ENVIRONMENT_H_
 #define _MONO_METADATA_ENVIRONMENT_H_
 
-#include <Common/mono/utils/mono-publib.h>
+#include <mono/utils/mono-publib.h>
 
 MONO_BEGIN_DECLS
 

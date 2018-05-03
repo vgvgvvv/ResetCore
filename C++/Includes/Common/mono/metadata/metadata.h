@@ -5,11 +5,11 @@
 #ifndef __MONO_METADATA_H__
 #define __MONO_METADATA_H__
 
-#include <Common/mono/utils/mono-publib.h>
+#include <mono/utils/mono-publib.h>
 
-#include <Common/mono/metadata/blob.h>
-#include <Common/mono/metadata/row-indexes.h>
-#include <Common/mono/metadata/image.h>
+#include <mono/metadata/blob.h>
+#include <mono/metadata/row-indexes.h>
+#include <mono/metadata/image.h>
 
 MONO_BEGIN_DECLS
 

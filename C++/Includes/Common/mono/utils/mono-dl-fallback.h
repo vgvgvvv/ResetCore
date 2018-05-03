@@ -5,7 +5,7 @@
 #ifndef __MONO_UTILS_DL_FALLBACK_H__
 #define __MONO_UTILS_DL_FALLBACK_H__
 
-#include <Common/mono/utils/mono-publib.h>
+#include <mono/utils/mono-publib.h>
 
 MONO_BEGIN_DECLS
 
