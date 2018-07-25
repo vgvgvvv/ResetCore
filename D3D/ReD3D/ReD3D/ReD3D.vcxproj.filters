@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{95d9b2e8-6ebc-4d86-8702-0d963c9043cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\Application.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Window.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Input.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\ApplicationContext.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\Application.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Common\Window.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\Input.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\ApplicationContext.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
