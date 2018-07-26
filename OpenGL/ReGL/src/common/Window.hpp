@@ -22,9 +22,11 @@ namespace ReGL{
     public:
         bool Init();
         bool ShouldQuit();
+        bool UnInit();
+        void Clear();
         void Swap();
         void PullEvent();
-
+        GLFWwindow* RawWindow();
     public:
         vec2 size{800, 600};
         string title{"Window"};

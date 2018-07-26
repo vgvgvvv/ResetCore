@@ -3,6 +3,7 @@
 //
 
 #include "Application.hpp"
+#include "IMGUI.hpp"
 
 namespace ReGL{
 
@@ -24,25 +25,35 @@ namespace ReGL{
             assert(false);
             return false;
         }
+        if(!IMGUI::Init()){
+            assert(false);
+            return false;
+        }
         return true;
     }
 
     bool Application::Run() {
         while(!main_window->ShouldQuit()){
+            main_window->Clear();
             main_window->PullEvent();
 
-//            // Render
-//            // Clear the colorbuffer
-//            glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-//            glClear(GL_COLOR_BUFFER_BIT);
+            //TODO
 
+            IMGUI::OnGUI();
             main_window->Swap();
         }
         return true;
     }
 
     bool Application::Quit() {
-        glfwTerminate();
+        if(!IMGUI::Uninit()){
+            assert(false);
+            return false;
+        }
+        if(!main_window->UnInit()){
+            assert(false);
+            return false;
+        }
         return true;
     }
 }

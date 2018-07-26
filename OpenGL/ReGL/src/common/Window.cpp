@@ -49,8 +49,18 @@ namespace ReGL{
         return true;
     }
 
+    bool Window::UnInit() {
+        glfwTerminate();
+        return true;
+    }
+
     bool Window::ShouldQuit() {
         return static_cast<bool>(glfwWindowShouldClose(glWindow));
+    }
+
+    void Window::Clear() {
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
     }
 
     void Window::Swap() {
@@ -59,5 +69,9 @@ namespace ReGL{
 
     void Window::PullEvent() {
         glfwPollEvents();
+    }
+
+    GLFWwindow *Window::RawWindow() {
+        return glWindow;
     }
 }

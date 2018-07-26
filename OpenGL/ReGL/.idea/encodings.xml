@@ -11,6 +11,8 @@
     <file url="file://$PROJECT_DIR$/src/3rd/imgui/imgui_demo.cpp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/3rd/imgui/imgui_draw.cpp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/3rd/imgui/imgui_draw.cpp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/3rd/imgui/imgui_impl_glfw_gl3.cpp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/3rd/imgui/imgui_impl_glfw_gl3.h" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/3rd/imgui/imgui_internal.h" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/3rd/imgui/imgui_internal.h" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/3rd/stb" charset="UTF-8" />
