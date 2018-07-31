@@ -18,7 +18,8 @@ namespace ReGL{
 
     public:
         static bool Init();
-        static bool Uninit();
+        static bool Update();
+        static bool UnInit();
 
         static bool OpenAssembly(const std::string& assemblyname, MonoAssembly* assembly);
 

@@ -18,7 +18,11 @@ namespace ReGL{
         return true;
     }
 
-    bool ScriptEngine::Uninit() {
+    bool ScriptEngine::Update() {
+        return true;
+    }
+
+    bool ScriptEngine::UnInit() {
         mono_jit_cleanup(mono_domain_);
         return true;
     }

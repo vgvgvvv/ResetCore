@@ -4,6 +4,8 @@
 
 #include "Application.hpp"
 #include "IMGUI.hpp"
+#include "ScriptEngine.hpp"
+#include "LogEngine.hpp"
 
 namespace ReGL{
 
@@ -22,10 +24,17 @@ namespace ReGL{
 
     bool Application::Init() {
         if(!main_window->Init()){
+            LogEngine::Error("Main Window init Error");
             assert(false);
             return false;
         }
         if(!IMGUI::Init()){
+            LogEngine::Error("IMGUI init Error");
+            assert(false);
+            return false;
+        }
+        if(!ScriptEngine::Init()){
+            LogEngine::Error("Script Engine init Error");
             assert(false);
             return false;
         }
@@ -46,11 +55,18 @@ namespace ReGL{
     }
 
     bool Application::Quit() {
+        if(!ScriptEngine::UnInit()){
+            LogEngine::Error("Script Engine uninit Error");
+            assert(false);
+            return false;
+        }
         if(!IMGUI::Uninit()){
+            LogEngine::Error("imgui uninit Error");
             assert(false);
             return false;
         }
         if(!main_window->UnInit()){
+            LogEngine::Error("Main Window uninit Error");
             assert(false);
             return false;
         }
