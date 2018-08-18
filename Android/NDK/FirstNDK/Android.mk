@@ -1,0 +1,13 @@
+LOCAL_PATH :=.
+include $(CLEAR_VARS)
+LOCAL_MODULE := module1
+LOCAL_SRC_FILES := Module1.cpp
+
+include $(BUILD_SHARED_LIBRARY)
+
+LOCAL_PATH :=.
+include $(CLEAR_VARS)
+LOCAL_MODULE := module2
+LOCAL_SRC_FILES := Module2.cpp
+
+include $(BUILD_SHARED_LIBRARY)
