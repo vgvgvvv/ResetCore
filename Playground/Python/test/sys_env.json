@@ -1,0 +1,11 @@
+{
+	"MoonABPath" : "E:/Projects/RONew/roab",
+	"MoonClientPath" : "E:/Projects/RO/roclient",
+	"MoonGameLibPath" : "E:/Projects/RO/rogamelibs",
+	"MoonProjectPath" : "E:/Projects/RO/roclient/Projects",
+	"MoonResPath" : "E:/Projects/RO/rores",
+	"MoonServerPath" : "E:/Projects/RO/roserver",
+	"MoonClientProjPath" : "E:/Projects/RONew/clientproj",
+	"MoonClientCodePath" : "E:/Projects/RONew/clientcode",
+	"MoonClientConfigPath" : "E:/Projects/RONew/config"
+}
