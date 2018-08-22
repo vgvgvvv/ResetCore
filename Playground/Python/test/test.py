@@ -1,12 +1,15 @@
 # coding=utf-8
-import json
+import unittest
 import os
-import sys
 
-print(sys.path[0])
-print(os.path.abspath(os.curdir))
+class CustomTest(unittest.TestCase):
+    
+    def test_init(self):
+        print("first test")
+        self.assertTrue(True)
 
-file = open("test/sys_env.json", "r")
-data = json.load(file)
+    def test_os_system(self):
+        os.system("E:\Projects\RONew\clientcode\ToolsProject\LocalServer\Servers\start_all.bat")
 
-print(data["MoonABPath"])
+if __name__ == '__main__':
+    unittest.main()
