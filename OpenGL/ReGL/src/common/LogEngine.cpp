@@ -2,7 +2,7 @@
 // Created by ¶­å· on 2018/7/29.
 //
 
-#include "LogEngine.hpp"
+#include "LogEngine.h"
 #include <iostream>
 
 namespace ReGL{

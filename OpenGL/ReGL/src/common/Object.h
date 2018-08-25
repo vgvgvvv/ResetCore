@@ -10,10 +10,20 @@
 namespace ReGL{
     class Object {
     public:
-        Object() = default;
+        Object(){
+            guid_ = ++current_guid_;
+        }
         virtual ~Object() = default;
+        virtual void Destroy() = 0;
         virtual std::string ToString() = 0;
+
+    uint64_t GUID(){ return guid_;}
+
+    private:
+        uint64_t guid_;
+        static uint64_t current_guid_;
     };
+
 }
 
 

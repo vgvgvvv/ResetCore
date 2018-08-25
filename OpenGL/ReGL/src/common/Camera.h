@@ -5,8 +5,10 @@
 #ifndef REGL_CAMERA_HPP
 #define REGL_CAMERA_HPP
 
+#include "Component.h"
+
 namespace ReGL{
-    class Camera {
+    class Camera : public Component{
 
     };
 }

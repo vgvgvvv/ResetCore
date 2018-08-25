@@ -2,4 +2,8 @@
 // Created by ¶­å· on 2018/7/29.
 //
 
-#include "Object.hpp"
+#include "Object.h"
+
+namespace ReGL{
+
+}

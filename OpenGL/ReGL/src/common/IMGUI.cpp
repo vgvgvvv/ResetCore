@@ -20,7 +20,7 @@ namespace ReGL{
     bool IMGUI::OnGUI() {
         ImGui_ImplGlfwGL3_NewFrame();
 
-
+        //TODO
         ImGui::Render();
         ImGui_ImplGlfwGL3_RenderDrawData(ImGui::GetDrawData());
         return true;

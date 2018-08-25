@@ -12,6 +12,10 @@ namespace ReGL{
     public:
         static void DefaultFramebufferSizeCallback(GLFWwindow *window, int width, int height);
         static void DefaultKeyCallback(GLFWwindow *window, int key, int scancode, int action, int mode);
+
+        bool Init();
+        bool Update();
+        bool UnInit();
     };
 }
 

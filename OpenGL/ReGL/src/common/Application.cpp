@@ -2,10 +2,13 @@
 // Created by 董宸 on 2018/7/26.
 //
 
+/**
+ * 主程序入口
+ */
+
 #include "Application.hpp"
 #include "IMGUI.hpp"
-#include "ScriptEngine.hpp"
-#include "LogEngine.hpp"
+#include "LogEngine.h"
 
 namespace ReGL{
 
@@ -33,11 +36,6 @@ namespace ReGL{
             assert(false);
             return false;
         }
-        if(!ScriptEngine::Init()){
-            LogEngine::Error("Script Engine init Error");
-            assert(false);
-            return false;
-        }
         return true;
     }
 
@@ -55,11 +53,6 @@ namespace ReGL{
     }
 
     bool Application::Quit() {
-        if(!ScriptEngine::UnInit()){
-            LogEngine::Error("Script Engine uninit Error");
-            assert(false);
-            return false;
-        }
         if(!IMGUI::Uninit()){
             LogEngine::Error("imgui uninit Error");
             assert(false);

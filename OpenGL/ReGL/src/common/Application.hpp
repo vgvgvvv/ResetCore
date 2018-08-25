@@ -5,7 +5,7 @@
 #ifndef REGL_APPLICATION_HPP
 #define REGL_APPLICATION_HPP
 
-#include "Window.hpp"
+#include "Window.h"
 #include "Common.hpp"
 
 namespace ReGL{
