@@ -9,6 +9,7 @@
 
 namespace ReGL{
     class Camera : public Component{
+    public:
 
     };
 }

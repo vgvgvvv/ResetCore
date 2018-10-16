@@ -3,3 +3,7 @@
 //
 
 #include "Camera.h"
+
+namespace ReGL{
+
+}

@@ -13,43 +13,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98c8ec0c-d238-4761-9675-402a02fd8cbb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/BaseRenderer.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/BaseRenderer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Component.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Component.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/GameObject.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/RegistType.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utility/Singleton.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/Application.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Application.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Application.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Application.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/BaseRenderer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/BaseRenderer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/BaseRenderer.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/BaseRenderer.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/Camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Camera.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Camera.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Camera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Camera.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/GameObject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/GameObject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/GameObject.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/IMGUI.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/IMGUI.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Input.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Input.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/LogEngine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/LogEngine.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/LogEngine.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/LogEngine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Object.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Object.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Object.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Object.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Window.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Window.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Window.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mono/monolib/RootAssembly/.idea/.idea.RootAssembly/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mono/monolib/RootAssembly/.idea/.idea.RootAssembly/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mono/monolib/RootAssembly/.idea/.idea.RootAssembly/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mono/monolib/RootAssembly/.idea/.idea.RootAssembly/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mono/monolib/RootAssembly/.idea/.idea.RootAssembly/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mono/monolib/RootAssembly/RootAssembly.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mono/monolib/RootAssembly/RootAssembly/Properties/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mono/monolib/RootAssembly/RootAssembly/Root.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mono/monolib/RootAssembly/RootAssembly/RootAssembly.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mono/monolib/RootAssembly/RootAssembly/obj/Debug/RootAssembly.csprojResolveAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/script/ScriptEngine.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/script/ScriptEngine.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/GameObject.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/GameObject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Object.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Object.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Playground/Ruby/RubyVisit/1.HelloRuby.ruby" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -64,30 +36,32 @@
     <session id="491251014">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="17" />
-          <entry key="h" value="9" />
-          <entry key="hpp" value="11" />
+          <entry key="cpp" value="24" />
+          <entry key="h" value="13" />
+          <entry key="hpp" value="13" />
           <entry key="txt" value="2" />
+          <entry key="utility" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="2" />
-          <entry key="ObjectiveC" value="37" />
+          <entry key="ObjectiveC" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="337" />
-          <entry key="h" value="760" />
+          <entry key="cpp" value="543" />
+          <entry key="h" value="916" />
           <entry key="hpp" value="890" />
           <entry key="txt" value="39" />
         </counts>
@@ -96,57 +70,37 @@
         <counts>
           <entry key="CMakeLists.txt" value="39" />
           <entry key="Doxygen file" value="7" />
-          <entry key="ObjectiveC" value="1980" />
+          <entry key="ObjectiveC" value="2342" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.cidr.testingFrameworks.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/LogEngine.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/RegistType.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/GameObject.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/common/GameObject.h">
+        <entry file="file://$PROJECT_DIR$/src/common/Camera.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="e#95#109#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Input.hpp">
+        <entry file="file://$PROJECT_DIR$/src/common/Camera.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state>
+              <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Object.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -154,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/BaseRenderer.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="600">
+              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -163,38 +117,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/common/BaseRenderer.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+            <state>
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Application.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
-                <element signature="e#95#117#0" expanded="true" />
+                <element signature="e#56#82#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/IMGUI.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/common/Behavior.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Component.h">
+        <entry file="file://$PROJECT_DIR$/src/common/Behavior.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/Input.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -238,22 +188,25 @@
         <option value="$PROJECT_DIR$/src/common/Behavior.hpp" />
         <option value="$PROJECT_DIR$/src/common/IMGUI.cpp" />
         <option value="$PROJECT_DIR$/src/script/ScriptEngine.cpp" />
-        <option value="$PROJECT_DIR$/src/common/Application.cpp" />
         <option value="$PROJECT_DIR$/src/utility/Singleton.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/common/Object.cpp" />
         <option value="$PROJECT_DIR$/src/common/Object.hpp" />
-        <option value="$PROJECT_DIR$/src/common/GameObject.cpp" />
         <option value="$PROJECT_DIR$/src/common/Component.cpp" />
         <option value="$PROJECT_DIR$/src/common/GameObject.hpp" />
         <option value="$PROJECT_DIR$/src/utility/RegistType.h" />
         <option value="$PROJECT_DIR$/src/common/Camera.hpp" />
-        <option value="$PROJECT_DIR$/src/common/BaseRenderer.cpp" />
         <option value="$PROJECT_DIR$/src/common/Input.hpp" />
         <option value="$PROJECT_DIR$/src/common/RegistType.h" />
-        <option value="$PROJECT_DIR$/src/common/BaseRenderer.h" />
         <option value="$PROJECT_DIR$/src/common/Component.h" />
+        <option value="$PROJECT_DIR$/src/common/Camera.cpp" />
+        <option value="$PROJECT_DIR$/src/common/Camera.h" />
+        <option value="$PROJECT_DIR$/src/common/BaseRenderer.h" />
+        <option value="$PROJECT_DIR$/src/common/BaseRenderer.cpp" />
+        <option value="$PROJECT_DIR$/src/common/Application.cpp" />
+        <option value="$PROJECT_DIR$/src/common/Object.h" />
         <option value="$PROJECT_DIR$/src/common/GameObject.h" />
+        <option value="$PROJECT_DIR$/src/common/GameObject.cpp" />
       </list>
     </option>
   </component>
@@ -290,6 +243,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,7 +278,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,28 +345,29 @@
       <workItem from="1532537491449" duration="10918000" />
       <workItem from="1533236880688" duration="1000" />
       <workItem from="1535211841394" duration="1092000" />
-      <workItem from="1535220434265" duration="3393000" />
+      <workItem from="1535220434265" duration="3533000" />
+      <workItem from="1536859754463" duration="1481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15404000" />
+    <option name="totallyTimeSpent" value="17025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19275825" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19542067" />
       <window_info id="Structure" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32871288" />
+      <window_info anchor="bottom" id="Messages" order="0" visible="true" weight="0.26930693" />
       <window_info anchor="bottom" id="CMake" order="1" weight="0.32871288" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32889965" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32871288" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -506,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Window.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/3rd/imgui/imgui.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -523,41 +470,12 @@
     <entry file="file:///Library/Frameworks/Mono.framework/Headers/jit/jit.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/script/ScriptEngine.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="e#38#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/script/ScriptEngine.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/script/ScriptEngine.cpp" />
+    <entry file="file://$PROJECT_DIR$/src/script/ScriptEngine.hpp" />
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Common.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Behavior.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -582,33 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Behavior.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Camera.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Component.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Camera.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Object.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Window.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -630,24 +521,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Application.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/Application.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/BaseRenderer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -660,7 +537,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/LogEngine.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="330">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
         </state>
       </provider>
@@ -672,13 +549,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/BaseRenderer.h">
+    <entry file="file://$PROJECT_DIR$/src/common/Input.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding>
-            <element signature="e#95#117#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -696,27 +570,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Input.cpp">
+    <entry file="file://$PROJECT_DIR$/src/common/Component.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/GameObject.cpp">
+    <entry file="file://$PROJECT_DIR$/src/common/Common.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Window.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/BaseRenderer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/BaseRenderer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/utility">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="320" column="8" selection-start-line="320" selection-start-column="8" selection-end-line="320" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Object.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/common/GameObject.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="139">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
           <folding>
             <element signature="e#95#109#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/GameObject.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Application.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#56#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Behavior.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Behavior.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Camera.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Camera.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

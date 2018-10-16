@@ -7,7 +7,7 @@
 namespace ReGL{
 
     void GameObjectManager::AddGameObject(GameObject &go) {
-        game_object_map_.emplace(go.GUID(), go);
+        game_object_map_.emplace(go.GUID(), &go);
     }
 
     void GameObjectManager::RemoveGameObject(GameObject &go) {

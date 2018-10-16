@@ -15,7 +15,6 @@ namespace ReGL{
         }
         virtual ~Object() = default;
         virtual void Destroy() = 0;
-        virtual std::string ToString() = 0;
 
     uint64_t GUID(){ return guid_;}
 

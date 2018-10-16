@@ -26,6 +26,10 @@ namespace ReGL{
 
         void RemoveRenderer(const BaseRenderer& renderer);
 
+        void AddCamera(const Camera& camera);
+
+        void RemoveCamera(const Camera& camera);
+
         bool Init();
 
         bool Render();
@@ -42,6 +46,8 @@ namespace ReGL{
      */
     class BaseRenderer : public Component {
 
+    public:
+        void Render(Camera& camera);
 
 
     };

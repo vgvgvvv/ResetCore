@@ -9,6 +9,7 @@
 #include "Application.hpp"
 #include "IMGUI.hpp"
 #include "LogEngine.h"
+#include "BaseRenderer.h"
 
 namespace ReGL{
 
@@ -36,6 +37,11 @@ namespace ReGL{
             assert(false);
             return false;
         }
+        if(!RendererManager::GetInstance().Init()){
+            LogEngine::Error("Renderer init Error");
+            assert(false);
+            return false;
+        }
         return true;
     }
 
@@ -45,7 +51,7 @@ namespace ReGL{
             main_window->PullEvent();
 
             //TODO
-
+            RendererManager::GetInstance().Render();
             IMGUI::OnGUI();
             main_window->Swap();
         }
@@ -53,6 +59,11 @@ namespace ReGL{
     }
 
     bool Application::Quit() {
+        if(!RendererManager::GetInstance().UnInit()){
+            LogEngine::Error("Renderer uninit Error");
+            assert(false);
+            return false;
+        }
         if(!IMGUI::Uninit()){
             LogEngine::Error("imgui uninit Error");
             assert(false);

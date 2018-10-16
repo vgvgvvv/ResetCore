@@ -26,7 +26,7 @@ namespace ReGL{
         void RemoveGameObject(GameObject &go);
         const bool GetGameObject(const uint64_t guid, GameObject* result) const;
     private:
-        std::map<uint64_t, GameObject> game_object_map_;
+        std::map<uint64_t, GameObject*> game_object_map_;
     };
 
     /**
