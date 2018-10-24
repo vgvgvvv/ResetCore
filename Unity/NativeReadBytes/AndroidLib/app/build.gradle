@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            moduleName "NativeLib"
+        }
+        sourceSets {
+            main {
+                jni.srcDirs = ['src/main/jni']
+            }
+        }
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11 -frtti -fexceptions"
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+task copySO(type : Copy){
+    from "build/intermediates/cmake/release/obj"
+    into 'build/Plugins/libs'
+}
+
+def zipFile = file('build/intermediates/intermediate-jars/release/classes.jar')
+task buildJar(type : Jar){
+    from zipTree(zipFile)
+    baseName = "AndroidLib"
+    destinationDir = file("build/Plugins")
+}
+
+task deleteBuild(type: Delete) {
+    delete "AndroidLib.jar"
+}
+
+buildJar.dependsOn(deleteBuild, build, copySO)
+
+

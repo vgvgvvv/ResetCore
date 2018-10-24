@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="AndroidCallback.cs" t="Include" />
+        <e p="Editor" t="Include">
+          <e p="CreateBytes.cs" t="Include" />
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ReadNativeByte.cs" t="Include" />
+        <e p="StreamingAssets" t="Include">
+          <e p="build_info.txt" t="Include" />
+          <e p="Test.txt" t="Include" />
+        </e>
+        <e p="TestReadByte.cs" t="Include" />
+        <e p="Unity-Logs-Viewer" t="Include">
+          <e p="Reporter" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReporterEditor.cs" t="Include" />
+            </e>
+            <e p="MultiKeyDictionary.cs" t="Include" />
+            <e p="Reporter.cs" t="Include" />
+            <e p="ReporterGUI.cs" t="Include" />
+            <e p="ReporterMessageReceiver.cs" t="Include" />
+            <e p="Test" t="Include">
+              <e p="Rotate.cs" t="Include" />
+              <e p="TestReporter.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="NativeReadBytes.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2017.2/resharper-host/local/Transient/ReSharperHost/v10/SolutionCaches/_NativeReadBytes.379667671.00" t="ExcludeRecursive" />
+  </component>
+</project>
