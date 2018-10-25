@@ -9,12 +9,10 @@ add_library( # Sets the name of the library.
         ${NDK_SRC})
 
 find_library(
-        android-lib
         android
-        log-lib
         log)
 
 target_link_libraries(
         NativeLib
-        ${log-lib}
-        ${android-lib})
+        log
+        android)

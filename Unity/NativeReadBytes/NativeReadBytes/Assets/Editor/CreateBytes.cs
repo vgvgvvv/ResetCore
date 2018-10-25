@@ -18,7 +18,10 @@ public class CreateBytes {
 		{
 			using (var writer = new BinaryWriter(fs))
 			{
-				writer.Write("Hello World");
+				int a = 10;
+				writer.Write(a);
+				int b = 100;
+				writer.Write(b);
 			}
 		}
 	}

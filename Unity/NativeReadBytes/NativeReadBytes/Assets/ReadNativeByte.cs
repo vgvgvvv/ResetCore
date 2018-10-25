@@ -9,6 +9,9 @@ public class ReadNativeByte
 
 	[DllImport("NativeLib")]
 	public static extern int ReadBytes(string name, ref IntPtr ptr);
+	
+	[DllImport("NativeLib")]
+	public static extern int ReadBytesWithOffset(string name, ref IntPtr ptr, int offset, int length);
 
 	[DllImport("NativeLib")]
 	public static extern void ReleaseBytes(IntPtr ptr);

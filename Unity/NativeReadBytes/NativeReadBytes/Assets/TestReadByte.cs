@@ -15,7 +15,7 @@ public class TestReadByte : MonoBehaviour {
 		if (GUILayout.Button("Test", GUILayout.Height(100), GUILayout.Width(100)))
 		{
 			var ptr = IntPtr.Zero;
-			int size = ReadNativeByte.ReadBytes("Test.txt", ref ptr);
+			int size = ReadNativeByte.ReadBytesWithOffset("Test.txt", ref ptr, sizeof(int), sizeof(int));
 			Debug.Log("Size:" + size.ToString());
 			if (size > 0)
 			{
@@ -27,7 +27,7 @@ public class TestReadByte : MonoBehaviour {
 				stream.Position = 0;
 				Marshal.Copy(ptr, stream.GetBuffer(), 0, size);
 				var reader = new BinaryReader(stream);
-				Debug.Log(reader.ReadString());
+				Debug.Log(reader.ReadInt32().ToString());
 				ReadNativeByte.ReleaseBytes(ptr);
 			}
 		}
