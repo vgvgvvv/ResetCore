@@ -15,7 +15,7 @@ public class TestReadByte : MonoBehaviour {
 		if (GUILayout.Button("Test", GUILayout.Height(100), GUILayout.Width(100)))
 		{
 			var ptr = IntPtr.Zero;
-			int size = ReadNativeByte.ReadBytesWithOffset("Test.txt", ref ptr, sizeof(int), sizeof(int));
+			int size = ReadNativeByte.ReadAssetsBytesWithOffset("Test.txt", ref ptr, sizeof(int), sizeof(int));
 			Debug.Log("Size:" + size.ToString());
 			if (size > 0)
 			{

@@ -1,3 +1,5 @@
 /Library/
 /obj/
 /Temp/
+/.vs/
+*.apk
