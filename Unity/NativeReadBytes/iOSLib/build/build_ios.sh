@@ -5,8 +5,8 @@ cd build_ios
 
 cmake \
     -DIOS=true \
-    -DCMAKE_TOOLCHAIN_FILE=../cmake/iOS.cmake \
+    DIOS_PLATFORM=OS \
+    -DCMAKE_TOOLCHAIN_FILE=../cmake/ios.toolchain.cmake \
     -DCMAKE_BUILD_TYPE=Release \
-    -GXcode \
     ../..
 

@@ -12,8 +12,6 @@ file(GLOB_RECURSE SRC src/*.cpp)
 
 set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_COMPILER clang++)
-set(CMAKE_OSX_ARCHITECTURES "armv7 arm64")
-set(CMAKE_OSX_SYSROOT iphoneos12.1)
 set(CMAKE_XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET "8.0")
 
 add_library( # Sets the name of the library.

@@ -12,89 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3b863a5-cbae-47c4-a307-26801f547251" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/FirstAutoConf/HelloWorld.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/FirstAutoConf/autom4te.cache/output.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/FirstAutoConf/autom4te.cache/output.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/FirstAutoConf/autom4te.cache/output.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/FirstAutoConf/autom4te.cache/requests" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/FirstAutoConf/autom4te.cache/traces.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/FirstAutoConf/autom4te.cache/traces.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/FirstAutoConf/autom4te.cache/traces.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/FirstAutoConf/autoscan.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/FirstAutoConf/configure" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/FirstAutoConf/configure.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/ChangeLog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/Makefile.am" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/Makefile.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/NEWS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/aclocal.m4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/autom4te.cache/output.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/autom4te.cache/output.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/autom4te.cache/requests" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/autom4te.cache/traces.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/autom4te.cache/traces.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/autoscan.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/compile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/conbak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/config.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/config.h.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/config.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/config.status" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/configure" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/configure.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/configure.scan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/gen.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/core/.deps/apple.Po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/core/.deps/test.Po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/core/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/core/Makefile.am" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/core/Makefile.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/core/test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/core/test.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/core/test.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/include/apple.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/shell/.deps/apple.Po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/shell/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/shell/Makefile.am" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/shell/Makefile.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/shell/apple.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/ModuleA/apple/shell/apple.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/include/swap.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/lib/.deps/swap.Po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/lib/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/lib/Makefile.am" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/lib/Makefile.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/lib/libswap.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/lib/swap.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/src/lib/swap.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../C++/LearnCpp/LearnAutoConf/IBMDemo/stamp-h1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../JVM/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../JVM/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../JVM/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../JVM/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../JVM/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../JVM/Common/Common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../JVM/JVM.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NativeReadBytes/Assets/Plugins/iOS.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/build_ios.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/NativeHelper.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdpart/include/libpng/config.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdpart/include/libpng/png.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdpart/include/libpng/pngconf.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdpart/include/libpng/pngdebug.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdpart/include/libpng/pnginfo.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdpart/include/libpng/pnglibconf.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdpart/include/libpng/pngprefix.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdpart/include/libpng/pngpriv.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdpart/include/libpng/pngstruct.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thirdpart/libs/libpng.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LoadRawPngData/NativeLib/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LoadRawPngData/NativeLib/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NativeReadBytes/.idea/.idea.NativeReadBytes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeReadBytes/.idea/.idea.NativeReadBytes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativeByte.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativeByte.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativeBytes/TestReadByte.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativeBytes/TestReadByte.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativePhoto/NativeTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativePhoto/NativeTexture.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativePhoto/NativeTextureManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativePhoto/NativeTextureManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativePhoto/PngLib.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativePhoto/PngLib.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativePhoto/ReadNativePhoto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeReadBytes/Assets/ReadNativePhoto/ReadNativePhoto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NativeReadBytes/Assets/StreamingAssets/build_info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../NativeReadBytes/Assets/StreamingAssets/build_info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/build_ios.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build/build_ios.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,7 +38,8 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -133,13 +62,13 @@
         <counts>
           <entry key="cpp" value="15" />
           <entry key="sh" value="110" />
-          <entry key="txt" value="174" />
+          <entry key="txt" value="176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="110" />
-          <entry key="CMakeLists.txt" value="174" />
+          <entry key="CMakeLists.txt" value="176" />
           <entry key="ObjectiveC" value="15" />
         </counts>
       </usages-collector>
@@ -148,12 +77,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -170,20 +99,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/cmake/iOS.cmake">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
+            <state relative-caret-position="300">
               <caret line="20" column="8" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NativeHelper.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="45">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
               <folding>
                 <element signature="e#96#108#0" expanded="true" />
-                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,8 +139,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/build/build_ios.sh" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/NativeHelper.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -221,9 +150,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="989" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -231,6 +161,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="NativeLib" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,24 +187,7 @@
             <path>
               <item name="NativeLib" type="b2602c69:ProjectViewProjectNode" />
               <item name="iOSLib" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NativeLib" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iOSLib" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="NativeLib" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -324,24 +248,20 @@
       <option name="presentableId" value="Default" />
       <updated>1541591734112</updated>
       <workItem from="1541591736456" duration="1826000" />
+      <workItem from="1541597649818" duration="794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1826000" />
+    <option name="totallyTimeSpent" value="2620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="989" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="CMake" visible="true" weight="0.32998884" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -349,11 +269,16 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="LuaJ" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="CMake" order="11" visible="true" weight="0.32998884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="LuaJ" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,16 +288,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/thirdpart/include/libpng/config.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/cmake/iOS.cmake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/build_ios.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -380,21 +295,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/build/cmake/iOS.cmake">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="8" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/thirdpart/include/libpng/config.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/NativeHelper.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding>
             <element signature="e#96#108#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
