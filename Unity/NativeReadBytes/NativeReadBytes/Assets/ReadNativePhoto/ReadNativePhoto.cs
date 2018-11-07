@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
@@ -12,93 +13,72 @@ public class ReadNativePhoto : MonoBehaviour
     public RawImage img;
     private string imgpath;
 
-    private RawTexture currentRawTexture;
+    private NativeTexture currentRawTexture;
 
 
     void Awake()
     {
         imgpath = Path.Combine(Application.persistentDataPath, "test.png");
+        gameObject.AddComponent<NativeTextureManager>();
     }
     void OnGUI()
     {
         if (GUILayout.Button("TakeSnap", GUILayout.Height(100), GUILayout.Width(100)))
         {
-            ScreenCapture.CaptureScreenshot(imgpath);
+            Debug.Log("TakeSnap");
+            TakeScreenShotFromScreenSize(tex =>
+            {
+                SaveTexture(tex, imgpath);
+            });
         }
 
         if (GUILayout.Button("Load", GUILayout.Height(100), GUILayout.Width(100)))
         {
-            if (Application.isMobilePlatform)
-            {
-                if (currentRawTexture != null)
-                {
-                    currentRawTexture.Dispose();
-                }
-                currentRawTexture = new RawTexture(imgpath, 1280, 800);
-                img.texture = currentRawTexture.Tex;
-            }
-            else
-            {
-                byte[] buff = new byte[1024];
-                using (var fs = File.OpenRead(imgpath))
-                {
-                    using (var ms = new MemoryStream())
-                    {
-                        int offset = 0;
-                        while (true)
-                        {
-                            int num = fs.Read(buff, 0, buff.Length);
-                            if (num <= 0)
-                            {
-                                break;
-                            }
-                            ms.Write(buff, 0, num);
-                            offset += num;
-                        }
-
-                        Texture2D texture = new Texture2D(1280, 800);
-                        texture.LoadRawTextureData(ms.ToArray());
-                        img.texture = texture;
-                    }
-                }
-            }
-
+            Debug.Log("Load");
+            currentRawTexture = new NativeTexture(imgpath);
+            img.texture = currentRawTexture.Tex;
         }
 
         if (GUILayout.Button("UnLoad", GUILayout.Height(100), GUILayout.Width(100)))
         {
-            if (Application.isMobilePlatform)
-            {
-                currentRawTexture.Dispose();
-            }
-            else
-            {
-                Object.Destroy(img.texture);
-            }
+            Debug.Log("UnLoad");
+            currentRawTexture.Dispose();
         }
     }
-}
-
-public class RawTexture : IDisposable
-{
-    private IntPtr ptr = IntPtr.Zero;
-    public Texture2D Tex { get; private set; }
-
-    public RawTexture(string path, int width, int height)
+    
+    public void TakeScreenShotFromScreenSize(Action<Texture2D> callback)
     {
-        Tex = new Texture2D(width, height);
-        var size = ReadNativeByte.ReadRawBytes(path, ref ptr);
-        if (size < 0)
+        TakeScreenShot(new Rect(Screen.width * 0, Screen.height * 0, Screen.width, Screen.height), callback);
+    }
+
+    public void TakeScreenShot(Rect rect, Action<Texture2D> callback)
+    {
+        StartCoroutine(DoTakeScreenShot(rect, callback));
+    }
+    
+    private IEnumerator DoTakeScreenShot(Rect rect, Action<Texture2D> callback)
+    {
+        yield return new WaitForEndOfFrame();
+
+        Texture2D screenShot = new Texture2D((int)rect.width, (int)rect.height, TextureFormat.RGB24, false);
+        screenShot.ReadPixels(rect, 0, 0, false);
+        screenShot.Apply();
+
+        if (callback != null)
+            callback(screenShot);
+    }
+    
+    public static void SaveTexture(Texture2D texture, string path, bool destroyAfterSave = true)
+    {
+        if (!Directory.Exists(path))
+            Directory.CreateDirectory(Path.GetDirectoryName(path));
+
+        var bytes = texture.EncodeToPNG();
+        File.WriteAllBytes(path, bytes);
+
+        if (destroyAfterSave)
         {
-            Debug.LogError(string.Format("size < 0 : {0}", size));
+            Object.Destroy(texture);
         }
-        Tex.LoadRawTextureData(ptr, size);
-        ReadNativeByte.ReleaseBytes(ptr);
-    }
-
-    public void Dispose()
-    {
-        Object.Destroy(Tex);
-        GC.SuppressFinalize(this);
     }
 }

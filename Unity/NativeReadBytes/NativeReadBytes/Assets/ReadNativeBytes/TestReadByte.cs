@@ -9,9 +9,11 @@ using UnityEngine;
 public class TestReadByte : MonoBehaviour {
 
 	MemoryStream stream = new MemoryStream();
-
+	
 	private void OnGUI()
 	{
+		string rawBytesPath = Path.Combine(Application.persistentDataPath, "raw.txt");
+
 		if (GUILayout.Button("Test", GUILayout.Height(100), GUILayout.Width(100)))
 		{
 			var ptr = IntPtr.Zero;
@@ -32,9 +34,37 @@ public class TestReadByte : MonoBehaviour {
 			}
 		}
 		
-		if (GUILayout.Button("Test2", GUILayout.Height(100), GUILayout.Width(100)))
+		if (GUILayout.Button("CreateRawBytes", GUILayout.Height(100), GUILayout.Width(100)))
 		{
-			Debug.Log(ReadNativeByte.Add(100, 200).ToString());
+			if (File.Exists(rawBytesPath))
+			{
+				File.Delete(rawBytesPath);
+			}
+
+			using (var fs = File.Create(rawBytesPath))
+			{
+				using (var writer = new BinaryWriter(fs))
+				{
+					writer.Write("Hello Raw Bytes!");
+				}
+			}
+		}
+
+		if (GUILayout.Button("ReadRawBytes", GUILayout.Height(100), GUILayout.Width(100)))
+		{
+			var ptr = IntPtr.Zero;
+			var size = ReadNativeByte.ReadRawBytes(rawBytesPath, ref ptr);
+			if (size <= 0)
+			{
+				Debug.LogError(string.Format("read error errcode={0}", size.ToString()));
+				return;
+			}
+			stream.SetLength(size);
+			stream.Position = 0;
+			Marshal.Copy(ptr, stream.GetBuffer(), 0, size);
+			var reader = new BinaryReader(stream);
+			Debug.Log(reader.ReadString());
+			ReadNativeByte.ReleaseBytes(ptr);
 		}
 		
 	}

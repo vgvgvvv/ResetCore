@@ -18,11 +18,19 @@
           </e>
         </e>
         <e p="ReadNativeByte.cs" t="Include" />
+        <e p="ReadNativeBytes" t="Include">
+          <e p="TestReadByte.cs" t="Include" />
+        </e>
+        <e p="ReadNativePhoto" t="Include">
+          <e p="NativeTexture.cs" t="Include" />
+          <e p="NativeTextureManager.cs" t="Include" />
+          <e p="PngLib.cs" t="Include" />
+          <e p="ReadNativePhoto.cs" t="Include" />
+        </e>
         <e p="StreamingAssets" t="Include">
           <e p="build_info.txt" t="Include" />
           <e p="Test.txt" t="Include" />
         </e>
-        <e p="TestReadByte.cs" t="Include" />
         <e p="Unity-Logs-Viewer" t="Include">
           <e p="Reporter" t="Include">
             <e p="Editor" t="Include">

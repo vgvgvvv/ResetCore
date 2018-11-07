@@ -54,7 +54,11 @@
   <ItemGroup>
     <Compile Include="Assets\AndroidCallback.cs" />
     <Compile Include="Assets\ReadNativeByte.cs" />
-    <Compile Include="Assets\TestReadByte.cs" />
+    <Compile Include="Assets\ReadNativeBytes\TestReadByte.cs" />
+    <Compile Include="Assets\ReadNativePhoto\NativeTexture.cs" />
+    <Compile Include="Assets\ReadNativePhoto\NativeTextureManager.cs" />
+    <Compile Include="Assets\ReadNativePhoto\PngLib.cs" />
+    <Compile Include="Assets\ReadNativePhoto\ReadNativePhoto.cs" />
     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\MultiKeyDictionary.cs" />
     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Reporter.cs" />
     <Compile Include="Assets\Unity-Logs-Viewer\Reporter\ReporterGUI.cs" />
