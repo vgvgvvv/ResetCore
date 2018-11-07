@@ -28,14 +28,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PngLib.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PngLib.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="135">
+              <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
               <folding>
-                <marker date="1541579062635" expanded="true" signature="6:130" ph="..." />
-                <marker date="1541579062635" expanded="true" signature="158:943" ph="{...}" />
+                <marker date="1541594032882" expanded="false" signature="6:130" ph="..." />
+                <marker date="1541594032882" expanded="true" signature="158:1033" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -69,30 +69,28 @@
         <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTexture.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="525">
-              <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+              <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
               <folding>
-                <marker date="1541580350900" expanded="true" signature="8:81" ph="..." />
-                <marker date="1541580350900" expanded="true" signature="123:1055" ph="{...}" />
-                <marker date="1541580350900" expanded="true" signature="334:809" ph="{...}" />
-                <marker date="1541580350900" expanded="true" signature="434:526" ph="{...}" />
-                <marker date="1541580350900" expanded="true" signature="836:1053" ph="{...}" />
+                <marker date="1541593780004" expanded="true" signature="8:81" ph="..." />
+                <marker date="1541593780004" expanded="true" signature="334:809" ph="{...}" />
+                <marker date="1541593780004" expanded="true" signature="434:526" ph="{...}" />
+                <marker date="1541593780004" expanded="true" signature="836:1053" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NativeTextureManager.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NativeTextureManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTextureManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
               <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="56" />
               <folding>
-                <marker date="1541580028521" expanded="true" signature="6:44" ph="..." />
-                <marker date="1541580028521" expanded="true" signature="96:688" ph="{...}" />
-                <marker date="1541580028521" expanded="true" signature="198:235" ph="{...}" />
-                <marker date="1541580028521" expanded="true" signature="312:473" ph="{...}" />
-                <marker date="1541580028521" expanded="true" signature="349:389" ph="{...}" />
-                <marker date="1541580028521" expanded="true" signature="529:686" ph="{...}" />
+                <marker date="1541593780014" expanded="true" signature="6:44" ph="..." />
+                <marker date="1541593780014" expanded="true" signature="198:235" ph="{...}" />
+                <marker date="1541593780014" expanded="true" signature="312:473" ph="{...}" />
+                <marker date="1541593780014" expanded="true" signature="349:389" ph="{...}" />
+                <marker date="1541593780014" expanded="true" signature="529:686" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -101,11 +99,11 @@
       <file leaf-file-name="ReadNativeByte.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ReadNativeByte.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="25" />
+            <state relative-caret-position="120">
+              <caret line="12" column="10" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
               <folding>
-                <marker date="1541514264777" expanded="false" signature="6:130" ph="..." />
-                <marker date="1541514264777" expanded="true" signature="159:656" ph="{...}" />
+                <marker date="1541593963577" expanded="false" signature="6:130" ph="..." />
+                <marker date="1541593963577" expanded="true" signature="159:759" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -114,7 +112,7 @@
       <file leaf-file-name="TestReadByte.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ReadNativeBytes/TestReadByte.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="832">
+            <state relative-caret-position="975">
               <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
               <folding>
                 <marker date="1541578512173" expanded="true" signature="6:170" ph="..." />
@@ -164,15 +162,15 @@
         <option value="$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Reporter.cs" />
         <option value="$PROJECT_DIR$/Assets/AndroidCallback.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Assets/ReadNativeByte.cs" />
         <option value="$PROJECT_DIR$/Assets/Editor/CreateBytes.cs" />
         <option value="$PROJECT_DIR$/Assets/TestReadByte.cs" />
         <option value="$PROJECT_DIR$/Assets/ReadNativeBytes/TestReadByte.cs" />
-        <option value="$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs" />
         <option value="$PROJECT_DIR$/Assets/ReadNativePhoto/NativePhotoManager.cs" />
         <option value="$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTextureManager.cs" />
         <option value="$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTexture.cs" />
         <option value="$PROJECT_DIR$/Assets/ReadNativePhoto/ReadNativePhoto.cs" />
+        <option value="$PROJECT_DIR$/Assets/ReadNativeByte.cs" />
+        <option value="$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs" />
       </list>
     </option>
   </component>
@@ -182,8 +180,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="951" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
@@ -201,6 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -239,7 +238,6 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,12 +272,13 @@
       <workItem from="1540276297688" duration="462000" />
       <workItem from="1540373960466" duration="6484000" />
       <workItem from="1540397888920" duration="336000" />
-      <workItem from="1541576948389" duration="3980000" />
+      <workItem from="1541576948389" duration="4831000" />
+      <workItem from="1541593772621" duration="527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13128000" />
+    <option name="totallyTimeSpent" value="14506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,7 +290,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="803" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -302,7 +301,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35313174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35303515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -330,6 +329,114 @@
     <entry file="file://$PROJECT_DIR$/Assets/Editor/CreateBytes.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <marker date="1540398057971" expanded="false" signature="6:114" ph="..." />
+            <marker date="1540398057971" expanded="true" signature="141:516" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="204:512" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="304:334" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="371:509" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="420:505" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <marker date="1541594032882" expanded="false" signature="6:130" ph="..." />
+            <marker date="1541594032882" expanded="true" signature="158:1033" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/ReadNativePhoto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+          <folding>
+            <marker date="1541580956869" expanded="false" signature="6:185" ph="..." />
+            <marker date="1541580956869" expanded="true" signature="231:2344" ph="{...}" />
+            <marker date="1541580956869" expanded="true" signature="352:497" ph="{...}" />
+            <marker date="1541580956869" expanded="true" signature="514:1213" ph="{...}" />
+            <marker date="1541580956869" expanded="true" signature="607:783" ph="{...}" />
+            <marker date="1541580956869" expanded="true" signature="700:771" ph="{...}" />
+            <marker date="1541580956869" expanded="true" signature="867:1027" ph="{...}" />
+            <marker date="1541580956869" expanded="true" signature="1113:1207" ph="{...}" />
+            <marker date="1541580956869" expanded="true" signature="1291:1413" ph="{...}" />
+            <marker date="1541580956869" expanded="true" signature="1484:1554" ph="{...}" />
+            <marker date="1541580956869" expanded="true" signature="1639:1950" ph="{...}" />
+            <marker date="1541580956869" expanded="true" signature="2052:2342" ph="{...}" />
+            <marker date="1541580956869" expanded="true" signature="2279:2336" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTextureManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="56" />
+          <folding>
+            <marker date="1541593780014" expanded="true" signature="6:44" ph="..." />
+            <marker date="1541593780014" expanded="true" signature="198:235" ph="{...}" />
+            <marker date="1541593780014" expanded="true" signature="312:473" ph="{...}" />
+            <marker date="1541593780014" expanded="true" signature="349:389" ph="{...}" />
+            <marker date="1541593780014" expanded="true" signature="529:686" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativeBytes/TestReadByte.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+          <folding>
+            <marker date="1541578512173" expanded="true" signature="6:170" ph="..." />
+            <marker date="1541578512173" expanded="true" signature="214:1879" ph="{...}" />
+            <marker date="1541578512173" expanded="true" signature="283:1814" ph="{...}" />
+            <marker date="1541578512173" expanded="true" signature="445:961" ph="{...}" />
+            <marker date="1541578512173" expanded="true" signature="636:957" ph="{...}" />
+            <marker date="1541578512173" expanded="true" signature="669:720" ph="{...}" />
+            <marker date="1541578512173" expanded="true" signature="1051:1288" ph="{...}" />
+            <marker date="1541578512173" expanded="true" signature="1089:1130" ph="{...}" />
+            <marker date="1541578512173" expanded="true" signature="1177:1284" ph="{...}" />
+            <marker date="1541578512173" expanded="true" signature="1228:1279" ph="{...}" />
+            <marker date="1541578512173" expanded="true" signature="1374:1808" ph="{...}" />
+            <marker date="1541578512173" expanded="true" signature="1488:1588" ph="{...}" />
+            <marker date="1541578512173" expanded="true" signature="1868:1875" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTexture.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <marker date="1541593780004" expanded="true" signature="8:81" ph="..." />
+            <marker date="1541593780004" expanded="true" signature="334:809" ph="{...}" />
+            <marker date="1541593780004" expanded="true" signature="434:526" ph="{...}" />
+            <marker date="1541593780004" expanded="true" signature="836:1053" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativeByte.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <marker date="1541593963577" expanded="false" signature="6:130" ph="..." />
+            <marker date="1541593963577" expanded="true" signature="159:759" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Editor/CreateBytes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1540398057971" expanded="false" signature="6:114" ph="..." />
@@ -347,8 +454,8 @@
         <state relative-caret-position="195">
           <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="48" />
           <folding>
-            <marker date="1541514264777" expanded="false" signature="6:130" ph="..." />
-            <marker date="1541514264777" expanded="true" signature="159:656" ph="{...}" />
+            <marker date="1541593963577" expanded="false" signature="6:130" ph="..." />
+            <marker date="1541593963577" expanded="true" signature="159:759" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -357,13 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding>
-            <marker date="1540373966370" expanded="false" signature="6:78" ph="..." />
-            <marker date="1540373966370" expanded="true" signature="125:315" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="156:180" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="215:246" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="282:311" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -388,8 +488,8 @@
         <state relative-caret-position="90">
           <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding>
-            <marker date="1541514264777" expanded="false" signature="6:130" ph="..." />
-            <marker date="1541514264777" expanded="true" signature="159:656" ph="{...}" />
+            <marker date="1541593963577" expanded="false" signature="6:130" ph="..." />
+            <marker date="1541593963577" expanded="true" signature="159:759" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -398,13 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding>
-            <marker date="1540373966370" expanded="false" signature="6:78" ph="..." />
-            <marker date="1540373966370" expanded="true" signature="125:315" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="156:180" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="215:246" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="282:311" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -419,13 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <marker date="1540373966370" expanded="false" signature="6:78" ph="..." />
-            <marker date="1540373966370" expanded="true" signature="125:315" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="156:180" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="215:246" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="282:311" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -479,13 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding>
-            <marker date="1540373966370" expanded="false" signature="6:78" ph="..." />
-            <marker date="1540373966370" expanded="true" signature="125:315" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="156:180" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="215:246" ph="{...}" />
-            <marker date="1540373966370" expanded="true" signature="282:311" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -493,7 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -514,18 +592,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ReadNativeByte.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="120">
+          <caret line="12" column="10" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
           <folding>
-            <marker date="1541514264777" expanded="false" signature="6:130" ph="..." />
-            <marker date="1541514264777" expanded="true" signature="159:656" ph="{...}" />
+            <marker date="1541593963577" expanded="false" signature="6:130" ph="..." />
+            <marker date="1541593963577" expanded="true" signature="159:759" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ReadNativeBytes/TestReadByte.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="832">
+        <state relative-caret-position="975">
           <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
           <folding>
             <marker date="1541578512173" expanded="true" signature="6:170" ph="..." />
@@ -545,13 +623,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTextureManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="405">
+          <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="56" />
           <folding>
-            <marker date="1541579062635" expanded="true" signature="6:130" ph="..." />
-            <marker date="1541579062635" expanded="true" signature="158:943" ph="{...}" />
+            <marker date="1541593780014" expanded="true" signature="6:44" ph="..." />
+            <marker date="1541593780014" expanded="true" signature="198:235" ph="{...}" />
+            <marker date="1541593780014" expanded="true" signature="312:473" ph="{...}" />
+            <marker date="1541593780014" expanded="true" signature="349:389" ph="{...}" />
+            <marker date="1541593780014" expanded="true" signature="529:686" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTexture.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <marker date="1541593780004" expanded="true" signature="8:81" ph="..." />
+            <marker date="1541593780004" expanded="true" signature="334:809" ph="{...}" />
+            <marker date="1541593780004" expanded="true" signature="434:526" ph="{...}" />
+            <marker date="1541593780004" expanded="true" signature="836:1053" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -578,31 +672,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTexture.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        <state relative-caret-position="135">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding>
-            <marker date="1541580350900" expanded="true" signature="8:81" ph="..." />
-            <marker date="1541580350900" expanded="true" signature="123:1055" ph="{...}" />
-            <marker date="1541580350900" expanded="true" signature="334:809" ph="{...}" />
-            <marker date="1541580350900" expanded="true" signature="434:526" ph="{...}" />
-            <marker date="1541580350900" expanded="true" signature="836:1053" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTextureManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="56" />
-          <folding>
-            <marker date="1541580028521" expanded="true" signature="6:44" ph="..." />
-            <marker date="1541580028521" expanded="true" signature="96:688" ph="{...}" />
-            <marker date="1541580028521" expanded="true" signature="198:235" ph="{...}" />
-            <marker date="1541580028521" expanded="true" signature="312:473" ph="{...}" />
-            <marker date="1541580028521" expanded="true" signature="349:389" ph="{...}" />
-            <marker date="1541580028521" expanded="true" signature="529:686" ph="{...}" />
+            <marker date="1541594032882" expanded="false" signature="6:130" ph="..." />
+            <marker date="1541594032882" expanded="true" signature="158:1033" ph="{...}" />
           </folding>
         </state>
       </provider>

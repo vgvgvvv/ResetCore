@@ -6,30 +6,37 @@ using UnityEngine;
 
 public static class PngLib
 {
-	[DllImport("NativeLib")]
+	
+	#if UNITY_IOS
+	public const string libName = "__Internal";
+    #else
+	public const string libName = "NativeLib";
+	#endif
+	
+	[DllImport(libName)]
 	public static extern IntPtr CreateLoader();
 
-	[DllImport("NativeLib")]
+	[DllImport(libName)]
 	public static extern void DestroyLoader(IntPtr loader);
 
-	[DllImport("NativeLib")]
+	[DllImport(libName)]
 	public static extern bool Load(IntPtr loader, IntPtr data, int size);
 
-	[DllImport("NativeLib")]
+	[DllImport(libName)]
 	public static extern bool LoadWithPath(IntPtr loader, string fileName);
 
-	[DllImport("NativeLib")]
+	[DllImport(libName)]
 	public static extern void SetTexture(IntPtr loader, IntPtr texture);
 
-	[DllImport("NativeLib")]
+	[DllImport(libName)]
 	public static extern void UpdateTextureImmediate(IntPtr loader);
 
-	[DllImport("NativeLib")]
+	[DllImport(libName)]
 	public static extern int GetWidth(IntPtr loader);
 
-	[DllImport("NativeLib")]
+	[DllImport(libName)]
 	public static extern int GetHeight(IntPtr loader);
 
-	[DllImport("NativeLib")]
+	[DllImport(libName)]
 	public static extern IntPtr GetPngRenderEventFunc();
 }

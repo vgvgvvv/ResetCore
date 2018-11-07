@@ -6,20 +6,25 @@ using UnityEngine;
 
 public class ReadNativeByte
 {
-
-	[DllImport("NativeLib")]
+	#if UNITY_IOS
+	public const string libName = "__Internal";
+    #else
+	public const string libName = "NativeLib";
+	#endif
+	
+	[DllImport(libName)]
 	public static extern int ReadAssetsBytes(string name, ref IntPtr ptr);
 	
-	[DllImport("NativeLib")]
+	[DllImport(libName)]
 	public static extern int ReadAssetsBytesWithOffset(string name, ref IntPtr ptr, int offset, int length);
 
-    [DllImport("NativeLib")]
+    [DllImport(libName)]
     public static extern int ReadRawBytes(string name, ref IntPtr ptr);
 
-    [DllImport("NativeLib")]
+    [DllImport(libName)]
 	public static extern void ReleaseBytes(IntPtr ptr);
 	
-	[DllImport("NativeLib")]
+	[DllImport(libName)]
 	public static extern int Add(int a, int b);
 	
 }
