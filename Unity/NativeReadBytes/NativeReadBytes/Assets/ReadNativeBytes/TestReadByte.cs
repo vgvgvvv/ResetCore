@@ -14,6 +14,7 @@ public class TestReadByte : MonoBehaviour {
 	{
 		string rawBytesPath = Path.Combine(Application.persistentDataPath, "raw.txt");
 
+		#if UNITY_ANDROID
 		if (GUILayout.Button("Test", GUILayout.Height(100), GUILayout.Width(100)))
 		{
 			var ptr = IntPtr.Zero;
@@ -33,6 +34,7 @@ public class TestReadByte : MonoBehaviour {
 				ReadNativeByte.ReleaseBytes(ptr);
 			}
 		}
+		#endif
 		
 		if (GUILayout.Button("CreateRawBytes", GUILayout.Height(100), GUILayout.Width(100)))
 		{

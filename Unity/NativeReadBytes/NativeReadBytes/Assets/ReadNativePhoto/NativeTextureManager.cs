@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NativeTextureManager : MonoBehaviour
 {
+    #if UNITY_ANDROID
     public static NativeTextureManager Instance { get; private set; }
     
     private void Awake()
@@ -28,4 +29,5 @@ public class NativeTextureManager : MonoBehaviour
         GL.IssuePluginEvent(PngLib.GetPngRenderEventFunc(), 0);
         isWaitingToUpdate = false;
     }
+    #endif
 }

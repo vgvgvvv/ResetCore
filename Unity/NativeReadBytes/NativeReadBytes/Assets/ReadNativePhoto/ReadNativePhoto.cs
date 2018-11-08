@@ -9,7 +9,6 @@ using Object = UnityEngine.Object;
 
 public class ReadNativePhoto : MonoBehaviour
 {
-
     public RawImage img;
     private string imgpath;
 
@@ -23,23 +22,40 @@ public class ReadNativePhoto : MonoBehaviour
     }
     void OnGUI()
     {
-        if (GUILayout.Button("TakeSnap", GUILayout.Height(100), GUILayout.Width(100)))
+        if (GUILayout.Button("TakeSnap", GUILayout.Height(200), GUILayout.Width(200)))
         {
-            Debug.Log("TakeSnap");
+            Debug.Log("TakeSnap " + imgpath);
             TakeScreenShotFromScreenSize(tex =>
             {
                 SaveTexture(tex, imgpath);
             });
         }
 
-        if (GUILayout.Button("Load", GUILayout.Height(100), GUILayout.Width(100)))
+        if (GUILayout.Button("LoadByCS", GUILayout.Height(200), GUILayout.Width(200)))
         {
-            Debug.Log("Load");
+            Debug.Log("Load By CS " + imgpath);
+            if (!File.Exists(imgpath))
+            {
+                Debug.LogError(imgpath + " not exist!!!");
+            }
+            var bytes = File.ReadAllBytes(imgpath);
+            Texture2D texture = new Texture2D(1280, 800);
+            texture.LoadImage(bytes);
+            img.texture = texture;
+        }
+        
+        if (GUILayout.Button("Load", GUILayout.Height(200), GUILayout.Width(200)))
+        {
+            Debug.Log("Load " + imgpath);
+            if (!File.Exists(imgpath))
+            {
+                Debug.LogError(imgpath + " not exist!!!");
+            }
             currentRawTexture = new NativeTexture(imgpath);
             img.texture = currentRawTexture.Tex;
         }
 
-        if (GUILayout.Button("UnLoad", GUILayout.Height(100), GUILayout.Width(100)))
+        if (GUILayout.Button("UnLoad", GUILayout.Height(200), GUILayout.Width(200)))
         {
             Debug.Log("UnLoad");
             currentRawTexture.Dispose();

@@ -13,6 +13,7 @@ public static class PngLib
 	public const string libName = "NativeLib";
 	#endif
 	
+	#if UNITY_ANDROID
 	[DllImport(libName)]
 	public static extern IntPtr CreateLoader();
 
@@ -39,4 +40,26 @@ public static class PngLib
 
 	[DllImport(libName)]
 	public static extern IntPtr GetPngRenderEventFunc();
+	#elif UNITY_IOS
+
+	[DllImport(libName)]
+	public static extern IntPtr CreateLoader();
+	[DllImport(libName)]
+	public static extern bool Load(IntPtr loader, string fileName);
+	[DllImport(libName)]
+	public static extern void DestroyLoader(IntPtr loader);
+	[DllImport(libName)]
+	public static extern int GetWidth(IntPtr loader);
+	[DllImport(libName)]
+	public static extern int GetHeight(IntPtr loader);
+	[DllImport(libName)]
+	public static extern IntPtr GetTexturePtr(IntPtr loader);
+	[DllImport(libName)]
+	public static extern System.IntPtr CreateNativeTexture(string filename);
+	[DllImport(libName)]
+	public static extern System.IntPtr CreateNativeTextureWithFullPath(string filePath);
+	[DllImport(libName)]
+	public static extern void DestroyNativeTexture(System.IntPtr tex);
+	
+	#endif
 }
