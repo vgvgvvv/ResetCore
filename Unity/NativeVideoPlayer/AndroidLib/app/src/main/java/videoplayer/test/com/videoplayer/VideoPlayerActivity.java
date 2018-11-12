@@ -1,6 +1,8 @@
 package videoplayer.test.com.videoplayer;
 
 import android.app.Activity;
+import android.content.ContentResolver;
+import android.content.Context;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,11 +20,14 @@ public class VideoPlayerActivity extends Activity{
     int moviepos = -1;
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(GetR("layout", "movie_activity"));
-        videoView = findViewById(GetR("id", "videoView"));
-
+        Log.d("Unity", "onCreate: ");
+        videoView = (VideoView)findViewById(GetR("id", "videoView"));
+        if(videoView == null){
+            Log.e("Unity", "videoView not found");
+        }
     }
 
     private int GetR(String field, String name){
@@ -32,10 +37,10 @@ public class VideoPlayerActivity extends Activity{
     @Override
     protected void onStart() {
         super.onStart();
-        String uriPath = "android.resource://" + getPackageName() + "/" + GetR("raw","cg");
-        Uri uri = Uri.parse(uriPath);
+        Log.d("Unity", "onStart: ");
+        Uri uri = resourceToUri(this, GetR("raw", "cg"));
+        Log.d("Unity", "url is " + uri.toString());
         videoView.setVideoURI(uri);
-        // videoView.setVideoPath(Environment.getExternalStorageDirectory() + "/" + filePath);
         videoView.requestFocus();
         videoView.start();
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
@@ -43,7 +48,7 @@ public class VideoPlayerActivity extends Activity{
             @Override
             public void onCompletion(MediaPlayer mp)
             {
-                UnityPlayer.UnitySendMessage("StartScene", "MovieOver", "1");
+                UnityPlayer.UnitySendMessage("Canvas", "Hide", "");
                 VideoPlayerActivity.this.finish();
                 overridePendingTransition(0, 0);
             }
@@ -64,7 +69,6 @@ public class VideoPlayerActivity extends Activity{
                 Log.d("Unity", "on media player focus change : " + hasFocus);
             }
         });
-
     }
 
     @Override
@@ -104,4 +108,11 @@ public class VideoPlayerActivity extends Activity{
      */
     @Override
     public void onBackPressed() { }
+
+    public static Uri resourceToUri(Context context, int resID) {
+        return Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE + "://" +
+                context.getResources().getResourcePackageName(resID) + '/' +
+                context.getResources().getResourceTypeName(resID) + '/' +
+                context.getResources().getResourceEntryName(resID) );
+    }
 }

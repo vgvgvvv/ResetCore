@@ -9,9 +9,20 @@ import com.unity3d.player.UnityPlayerActivity;
 
 public class MainActivity extends UnityPlayerActivity {
 
+    static boolean _played = false;
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(!_played){
+            StartMoviePlayer();
+            _played = true;
+        }
 
     }
 

@@ -25,14 +25,14 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
 
-def zipFile = file('build/intermediates/bundles/release/classes.jar')
+def zipFile = file('build/intermediates/intermediate-jars/release/classes.jar')
 task deleteBuild(type: Delete) {
     delete "VideoLib.jar"
 }
 
 task _makeJar(type: Jar) {
     from zipTree(zipFile)
-    baseName = "JoyYouSDKBase"
+    baseName = "VideoLib"
     destinationDir = file("build/Plugins")
 }
 _makeJar.dependsOn(deleteBuild, build)
