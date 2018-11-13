@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,10 +35,13 @@ public class HideLog : MonoBehaviour
     }
 
     public RawImage rawImg;
+//
+//    [DllImport("__Internal")]
+//    public static extern void iosPlayMovie(string name);
 
     void Awake()
     {
-        //CurrentActivity.Call("StartMoviePlayer");
+//        iosPlayMovie("cg");
     }
 
 	// Use this for initialization
