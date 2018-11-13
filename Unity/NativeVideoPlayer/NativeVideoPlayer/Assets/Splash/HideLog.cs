@@ -35,18 +35,19 @@ public class HideLog : MonoBehaviour
     }
 
     public RawImage rawImg;
-//
-//    [DllImport("__Internal")]
-//    public static extern void iosPlayMovie(string name);
+
+    [DllImport("__Internal")]
+    public static extern void iosPlayMovie();
 
     void Awake()
     {
-//        iosPlayMovie("cg");
+        iosPlayMovie();
     }
 
 	// Use this for initialization
 	void Hide ()
 	{
+	    Debug.Log("Hide!!!!");
 	    StartCoroutine(DoHide());
 	}
 	
@@ -55,5 +56,6 @@ public class HideLog : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         rawImg.gameObject.SetActive(false);
+        Debug.Log("Hide Finish!!!!");
     }
 }

@@ -104,7 +104,7 @@ extern "C" {
 #endif
     
     //开始播放开场动画
-    void iosPlayMovie(const char * name)
+    void iosPlayMovie()
     {
         NSLog(@"ios play movie");
         
