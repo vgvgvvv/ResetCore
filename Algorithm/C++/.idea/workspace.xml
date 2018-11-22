@@ -16,202 +16,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f7b71b9-6400-49d3-96e7-0ae5f0ba3eaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/vector.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/vector.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/algorithm_tests/test_vector.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/CHANGES" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/CONTRIBUTORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/COPYING" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/Makefile.am" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/Makefile.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/aclocal.m4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/config.guess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/config.h.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/config.sub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/depcomp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/install-sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/ltmain.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/missing" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/cmake/internal_utils.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/codegear/gtest.cbproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/codegear/gtest.groupproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/codegear/gtest_all.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/codegear/gtest_link.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/codegear/gtest_main.cbproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/codegear/gtest_unittest.cbproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/configure" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/configure.ac" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/fused-src/gtest/gtest-all.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/fused-src/gtest/gtest.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/fused-src/gtest/gtest_main.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest-death-test.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest-message.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest-param-test.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest-param-test.h.pump" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest-printers.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest-spi.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest-test-part.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest-typed-test.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest_pred_impl.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest_prod.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-death-test-internal.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-filepath.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-internal.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-linked_ptr.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-param-util-generated.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-param-util-generated.h.pump" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-param-util.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-port.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-string.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-tuple.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-tuple.h.pump" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-type-util.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/internal/gtest-type-util.h.pump" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/acx_pthread.m4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/gtest.m4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/libtool.m4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/ltoptions.m4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/ltsugar.m4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/ltversion.m4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/lt~obsolete.m4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/make/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/msvc/gtest-md.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/msvc/gtest-md.vcproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/msvc/gtest.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/msvc/gtest.vcproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/msvc/gtest_main-md.vcproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/msvc/gtest_main.vcproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/msvc/gtest_prod_test-md.vcproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/msvc/gtest_prod_test.vcproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/msvc/gtest_unittest-md.vcproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/msvc/gtest_unittest.vcproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/prime_tables.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample1.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample1.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample10_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample1_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample2.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample2.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample2_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample3-inl.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample3_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample4.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample4.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample4_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample5_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample6_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample7_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample8_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/samples/sample9_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/scripts/fuse_gtest_files.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/scripts/gen_gtest_pred_impl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/scripts/gtest-config.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/scripts/pump.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/scripts/test/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/src/gtest-all.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/src/gtest-death-test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/src/gtest-filepath.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/src/gtest-internal-inl.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/src/gtest-port.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/src/gtest-printers.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/src/gtest-test-part.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/src/gtest-typed-test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/src/gtest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/src/gtest_main.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-death-test_ex_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-death-test_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-filepath_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-linked_ptr_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-listener_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-message_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-options_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-param-test2_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-param-test_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-param-test_test.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-port_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-printers_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-test-part_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-tuple_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-typed-test2_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-typed-test_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-typed-test_test.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest-unittest-api_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_all_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_break_on_failure_unittest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_break_on_failure_unittest_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_catch_exceptions_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_catch_exceptions_test_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_color_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_color_test_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_env_var_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_env_var_test_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_environment_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_filter_unittest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_filter_unittest_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_help_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_help_test_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_list_tests_unittest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_list_tests_unittest_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_main_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_no_test_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_output_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_output_test_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_output_test_golden_lin.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_pred_impl_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_prod_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_repeat_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_shuffle_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_shuffle_test_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_sole_header_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_stress_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_test_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_throw_on_failure_ex_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_throw_on_failure_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_throw_on_failure_test_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_uninitialized_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_uninitialized_test_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_unittest.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_xml_outfile1_test_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_xml_outfile2_test_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_xml_outfiles_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_xml_output_unittest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_xml_output_unittest_.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/gtest_xml_test_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/production.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/test/production.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Config/DebugProject.xcconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Config/FrameworkTarget.xcconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Config/General.xcconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Config/ReleaseProject.xcconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Config/StaticLibraryTarget.xcconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Config/TestTarget.xcconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Resources/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Samples/FrameworkSample/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Samples/FrameworkSample/WidgetFramework.xcodeproj/project.pbxproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Samples/FrameworkSample/runtests.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Samples/FrameworkSample/widget.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Samples/FrameworkSample/widget.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Samples/FrameworkSample/widget_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Scripts/runtests.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/Scripts/versiongenerate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/gtest.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unity/NativeReadBytes/NativeReadBytes/.idea/.idea.NativeReadBytes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unity/NativeReadBytes/NativeReadBytes/.idea/.idea.NativeReadBytes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unity/NativeReadBytes/NativeReadBytes/Assets/StreamingAssets/build_info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unity/NativeReadBytes/NativeReadBytes/Assets/StreamingAssets/build_info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/MoviePlayerViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/MoviePlayerViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/TestAppController.mm" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/TestAppController.mm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/cg.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/cg.mp4.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Splash/HideLog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Splash/HideLog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/StreamingAssets/build_info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/StreamingAssets/build_info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Unity/NativeVideoPlayer/NativeVideoPlayer/output.apk" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -265,14 +72,65 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-2023883749">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="ObjectiveC" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="54" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="1" />
+          <entry key="ObjectiveC" value="54" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="285">
+              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter2.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="34" />
+              <folding>
+                <element signature="e#47#71#0" expanded="true" />
+                <element signature="e#2641#2659#0" expanded="true" />
+                <element signature="e#3186#3198#0" expanded="true" />
+                <element signature="e#3227#3239#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter3.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#47#71#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -280,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/unit_tests/algorithm_tests/test_vector.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="240">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -289,7 +147,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithm/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="60">
               <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="32" />
             </state>
           </provider>
@@ -305,10 +163,10 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="40">
               <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
             </state>
           </provider>
@@ -322,7 +180,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algorithm/vector.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="180">
               <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
@@ -347,8 +205,9 @@
         <option value="$PROJECT_DIR$/algorithm/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/unit_tests/algorithm_tests/test_vector.cpp" />
         <option value="$PROJECT_DIR$/algorithm/vector.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter3.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -376,11 +235,40 @@
               <item name="ReAlgorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="C++" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ReAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C++" type="462c0819:PsiDirectoryNode" />
+              <item name="unit_tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C++" type="462c0819:PsiDirectoryNode" />
+              <item name="unit_tests" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm_tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C++" type="462c0819:PsiDirectoryNode" />
+              <item name="unit_tests" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp11_feature" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ReAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C++" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -479,16 +367,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3171000" />
+    <option name="totallyTimeSpent" value="3318000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="822" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25273523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32876712" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
@@ -501,6 +388,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.3739726" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -523,14 +411,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/unit_tests/algorithm_tests/test_vector.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="240">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="60">
           <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="32" />
         </state>
       </provider>
@@ -540,22 +428,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/vector.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="180">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="40">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#47#71#0" expanded="true" />
+            <element signature="e#2641#2659#0" expanded="true" />
+            <element signature="e#3186#3198#0" expanded="true" />
+            <element signature="e#3227#3239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter3.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#47#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
         </state>
       </provider>
     </entry>
