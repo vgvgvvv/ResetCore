@@ -9,16 +9,17 @@
 using namespace std;
 
 namespace CPP_11_FEATURE_CHAPTER_2{
-    /**
+
+/**
  * 判断是否为c++11
  */
 #if __cplusplus < 201103L
 #error "should use c++11 implementtion"
 #endif
 
-/**
- * 预定义宏
- */
+    /**
+     * 预定义宏
+     */
     TEST(CPP_11_FEATURE, CHAPTER_2_MACRO){
         cout << endl;
         //行数
@@ -37,17 +38,17 @@ namespace CPP_11_FEATURE_CHAPTER_2{
         cout << __cplusplus << endl;
     }
 
-/**
- * _Pragma的使用
- */
+    /**
+     * _Pragma的使用
+     */
     TEST(CPP_11_FEATURE, CHAPTER_2_PRAGMA){
         //_Pragma("once")效果与#pragma once效果一致
     }
 
 
-/**
- * 变长参数
- */
+    /**
+     * 变长参数
+     */
     TEST(CPP_11_FEATURE, CHAPTER_2_VA_ARGS){
 #define TEST_VA_ARGS(...) cout << __VA_ARGS__ << endl
 
@@ -57,13 +58,13 @@ namespace CPP_11_FEATURE_CHAPTER_2{
 #undef TEST_VA_ARGS
     }
 
-/**
- * 宽窄字符串连接
- */
+    /**
+     * 宽窄字符串连接
+     */
 
-/**
- * long long 的支持
- */
+    /**
+     * long long 的支持
+     */
     TEST(CPP_11_FEATURE, CHAPTER_2_LONG_LONG){
         cout << endl;
         cout << LLONG_MIN << endl;
@@ -72,9 +73,9 @@ namespace CPP_11_FEATURE_CHAPTER_2{
     }
 
 
-/**
- * assert的使用
- */
+    /**
+     * assert的使用
+     */
     TEST(CPP_11_FEATURE, CHAPTER_2_ASSERT){
         //如果有NDEBUG的宏 assert则会被展开为无意义的语句。
         int n = 100;
@@ -82,40 +83,40 @@ namespace CPP_11_FEATURE_CHAPTER_2{
     }
 
     const int asset_test = 100;
-/**
- * static_assert的使用
- */
+    /**
+     * static_assert的使用
+     */
     TEST(CPP_11_FEATURE, CHAPTER_2_STATIC_ASSERT){
         //编译时断言
         static_assert(asset_test == 100, "static assert!!");
     }
 
-/**
- * noexcept修饰符
- * 表示不会抛出异常，如果有异常则直接终止进程
- */
+    /**
+     * noexcept修饰符
+     * 表示不会抛出异常，如果有异常则直接终止进程
+     */
     TEST(CPP_11_FEATURE, CHAPTER_2_NOEXCEPT){}
 
-/**
- * 表示不会抛出异常
- */
+    /**
+     * 表示不会抛出异常
+     */
     void noexcpt_func() noexcept{
 
     }
 
-/**
- * 表示有可能发生异常
- */
+    /**
+     * 表示有可能发生异常
+     */
     void hasexcept_func() noexcept(false){
 
     }
 
-/**
- * 快速初始化成员变量
- * 初始化列表优先于就地初始化
- * 注意：非常量的静态成员变量还是需要到头文件以外去定义，
- *      保持编译时类静态成员的定义最后只存在于一个目标文件中
- */
+    /**
+     * 快速初始化成员变量
+     * 初始化列表优先于就地初始化
+     * 注意：非常量的静态成员变量还是需要到头文件以外去定义，
+     *      保持编译时类静态成员的定义最后只存在于一个目标文件中
+     */
     class InitTest{
     public:
         const int constVar = 100;//常量可以通过‘=’初始化
@@ -123,9 +124,9 @@ namespace CPP_11_FEATURE_CHAPTER_2{
         const char * strVar {"111"};
     };
 
-/**
- * 非静态成员的sizeof
- */
+    /**
+     * 非静态成员的sizeof
+     */
     TEST(CPP_11_FEATURE, CHAPTER_2_SIZEOf){
         InitTest test;
         cout << endl;
@@ -135,23 +136,23 @@ namespace CPP_11_FEATURE_CHAPTER_2{
         //sizeof(((InitTest*)0)->nonConstVar)
     }
 
-/**
- * 扩展的friend语法
- * C++98:friend class TYPE
- * C++11:friend TYPE
- * 模板中也可以支持friend了
- *
- * example：
- *
- * template <typename T> class People {
- *      friend T;
- * };
- *
- * People<P> PP;//此处P为People的friend
- *
- * 进行测试的时候可以将测试代码作为friend
- *
- */
+    /**
+     * 扩展的friend语法
+     * C++98:friend class TYPE
+     * C++11:friend TYPE
+     * 模板中也可以支持friend了
+     *
+     * example：
+     *
+     * template <typename T> class People {
+     *      friend T;
+     * };
+     *
+     * People<P> PP;//此处P为People的friend
+     *
+     * 进行测试的时候可以将测试代码作为friend
+     *
+     */
 
     template <typename T>
     class TestFriend {
@@ -163,14 +164,14 @@ namespace CPP_11_FEATURE_CHAPTER_2{
 
     }
 
-/**
- * final/override控制
- * 通过final禁止重写
- */
+    /**
+     * final/override控制
+     * 通过final禁止重写
+     */
 
-/**
- * 模板函数的默认模板参数
- */
+    /**
+     * 模板函数的默认模板参数
+     */
     template <typename T = int>
     class DefTempClass{};//C++98通过 C++11通过
 
