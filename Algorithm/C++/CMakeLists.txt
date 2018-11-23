@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
 project(ReAlgorithm)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 11)
 
 include_directories(algorithm)
 set(SRC main.cpp)
@@ -31,8 +31,11 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 ##############
 # Unit Tests
 ##############
+
 add_executable(runUnitTests
-        unit_tests/algorithm_tests/test_vector.cpp)
+        unit_tests/algorithm_tests/test_vector.cpp
+        unit_tests/cpp11_feature/Chapter2.cpp
+        unit_tests/cpp11_feature/Chapter3.cpp)
 
 # Standard linking to gtest stuff.
 target_link_libraries(runUnitTests gtest gtest_main)
