@@ -247,7 +247,8 @@ inline float3 ObjSpaceViewDir( in float4 v )
 
 
 
-// Used in ForwardBase pass: Calculates diffuse lighting from 4 point lights, with data packed in a special way.
+// Used in ForwardBase pass: Calculates diffuse lighting from 4 point lights, 
+// with data packed in a special way.
 float3 Shade4PointLights (
     float4 lightPosX, float4 lightPosY, float4 lightPosZ,
     float3 lightColor0, float3 lightColor1, float3 lightColor2, float3 lightColor3,

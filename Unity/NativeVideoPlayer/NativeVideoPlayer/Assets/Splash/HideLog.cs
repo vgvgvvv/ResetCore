@@ -36,12 +36,12 @@ public class HideLog : MonoBehaviour
 
     public RawImage rawImg;
 
-    [DllImport("__Internal")]
-    public static extern void iosPlayMovie();
+//    [DllImport("__Internal")]
+//    public static extern void iosPlayMovie();
 
     void Awake()
     {
-        iosPlayMovie();
+//        iosPlayMovie();
     }
 
 	// Use this for initialization

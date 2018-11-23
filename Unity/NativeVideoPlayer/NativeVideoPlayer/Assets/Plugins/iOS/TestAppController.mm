@@ -91,11 +91,11 @@ static TestAppController* instance;
         [self.rootViewController presentViewController:mp animated:NO completion:nil];
     }
     
-    if(mp.isManualClose){
-        UnitySendMessage("Canvas", "Hide", "");
-    }else{
-        UnitySendMessage("Canvas", "Hide", "");
-    }
+    // if(mp.isManualClose){
+    //     UnitySendMessage("Canvas", "Hide", "");
+    // }else{
+    //     UnitySendMessage("Canvas", "Hide", "");
+    // }
 }
 
 

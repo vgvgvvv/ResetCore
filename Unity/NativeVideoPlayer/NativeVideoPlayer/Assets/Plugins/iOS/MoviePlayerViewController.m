@@ -25,8 +25,7 @@
     manualClose = NO;
     
     NSBundle *bundle = [NSBundle mainBundle];
-    NSString * path = [bundle pathForResource:@"cg" ofType:@"mp4"];
-    NSLog(@"path is %@", path);
+    NSString * path = [bundle pathForResource:@"cg" ofType:@"mp4" inDirectory:@"Data/Raw"];
     NSURL * url = [NSURL fileURLWithPath:path];
     
     if(url == nil)

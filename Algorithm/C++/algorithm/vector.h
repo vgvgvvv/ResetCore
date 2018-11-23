@@ -6,6 +6,10 @@
 #define ALGORITHM_VECTOR_H
 
 namespace ReAlgorithm{
+
+    typedef int Rank;
+
+    template <typename T>
     class vector {
 
     };

@@ -1,0 +1,15 @@
+{
+    "group": "Video",
+    "libs": [],
+    "frameworks": ["AVKit.framework"],
+    "headerpaths": [],                    
+    "files":   [],
+    "folders": [],    
+    "excludes": ["^.*.meta$", "^.*.mdown$", "^.*.pdf$"],
+    "compiler_flags": [],
+    "linker_flags": ["-ObjC"],
+    "plist": {
+    },
+    "embed_binaries":[
+    ]
+}
