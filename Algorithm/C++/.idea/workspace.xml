@@ -16,7 +16,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f7b71b9-6400-49d3-96e7-0ae5f0ba3eaf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter3.cpp" afterDir="false" />
     </list>
@@ -32,7 +31,7 @@
     <session id="1015425858">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="3" />
@@ -55,7 +54,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="5882" />
+          <entry key="cpp" value="10424" />
           <entry key="h" value="22" />
           <entry key="txt" value="234" />
         </counts>
@@ -63,8 +62,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="229" />
-          <entry key="Doxygen file" value="146" />
-          <entry key="ObjectiveC" value="5758" />
+          <entry key="Doxygen file" value="292" />
+          <entry key="ObjectiveC" value="10154" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -105,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -125,11 +124,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter3.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="343" column="8" lean-forward="true" selection-start-line="343" selection-start-column="8" selection-end-line="343" selection-end-column="8" />
+            <state relative-caret-position="678">
+              <caret line="644" column="32" selection-start-line="644" selection-start-column="32" selection-end-line="644" selection-end-column="32" />
               <folding>
                 <element signature="e#47#71#0" expanded="true" />
                 <element signature="e#7142#7154#0" expanded="true" />
+                <element signature="e#9311#9323#0" expanded="true" />
+                <element signature="e#9923#9947#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -267,7 +268,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -292,7 +293,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP_11_FEATURE_CHAPTER_3.CHAPTER_3_RVALUE_ERROR" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE_CHAPTER_3" TEST_METHOD="CHAPTER_3_RVALUE_ERROR" TEST_MODE="SUITE_TEST">
+    <configuration name="CPP_11_FEATURE_CHAPTER_3.CHAPTER_3_RVALUE_ERROR" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE_CHAPTER_3" TEST_METHOD="CHAPTER_3_RVALUE_ERROR" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -302,12 +303,12 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP_11_FEATURE.CHAPTER_3_LVALUE_REF" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_3_LVALUE_REF" TEST_MODE="SUITE_TEST">
+    <configuration name="CPP_11_FEATURE.CHAPTER_3_LVALUE_REF" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_3_LVALUE_REF" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP_11_FEATURE.CHAPTER_3_MOVE_SWAP" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_3_MOVE_SWAP" TEST_MODE="SUITE_TEST">
+    <configuration name="CPP_11_FEATURE.CHAPTER_3_MOVE_SWAP" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_3_MOVE_SWAP" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -383,7 +384,7 @@
       <updated>1542472591458</updated>
       <workItem from="1542472592701" duration="1601000" />
       <workItem from="1542477837619" duration="1570000" />
-      <workItem from="1542946929183" duration="9215000" />
+      <workItem from="1542946929183" duration="17932000" />
     </task>
     <servers />
   </component>
@@ -420,7 +421,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12533000" />
+    <option name="totallyTimeSpent" value="21250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="815" y="0" width="625" height="900" extended-state="0" />
@@ -460,7 +461,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter3.cpp</url>
-          <line>193</line>
+          <line>195</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -517,17 +518,19 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter3.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="343" column="8" lean-forward="true" selection-start-line="343" selection-start-column="8" selection-end-line="343" selection-end-column="8" />
+        <state relative-caret-position="678">
+          <caret line="644" column="32" selection-start-line="644" selection-start-column="32" selection-end-line="644" selection-end-column="32" />
           <folding>
             <element signature="e#47#71#0" expanded="true" />
             <element signature="e#7142#7154#0" expanded="true" />
+            <element signature="e#9311#9323#0" expanded="true" />
+            <element signature="e#9923#9947#0" expanded="true" />
           </folding>
         </state>
       </provider>

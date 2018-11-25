@@ -5,6 +5,8 @@
 #include "gtest/gtest.h"
 #include <iostream>
 #include <utility>
+#include <map>
+#include <initializer_list>
 
 using namespace std;
 
@@ -346,4 +348,300 @@ namespace CPP_11_FEATURE_CHAPTER_3 {
        * 所以移动语义还是非常有用的。
        *
        */
+
+      /**
+       * 完美转发是指在函数模板中，完全依照模板的参数的类型，将参数传递给函数模板中调用的另外一个函数
+       *
+       * template<typename T>
+       * void IamForwarding(T t) { IrunCodeActually(t); }
+       *
+       * 上述代码使用最基本的类型转发，但是会导致临时对象拷贝，所以其实并不完美
+       *
+       */
+
+      /**
+       *
+       * //目标函数需要接受非常量的左值引用
+       * void IrunCodeActually(int& t){}
+       *
+       * template <typename T>
+       * //常量左值引用，可以接受所有的值
+       * void IamForwarding(const T& t)
+       * {
+       *    //这句代码无法编译通过因为目标函数无法接受常量左值引用
+       *    IrunCodeActually(t);
+       * }
+       *
+       */
+
+
+      TEST(CPP_11_FEATURE, CHAPTER_3_FORWARDING){
+
+          typedef const int T;
+          typedef T& TR;
+          //在C++98中无法编译通过
+          TR& v = 1;
+
+        /**
+         * 引用折叠
+         * 类型定义   声明的类型   实际类型
+         * T&        TR          A&
+         * T&        TR&         A&
+         * T&        TR&&        A&
+         * T&&       TR          TR&&
+         * T&&       TR&         TR&
+         * T&&       TR&&        TR&&
+         *
+         * 只要出现了左值引用例如T&或者TR&最终就会推导为左值引用
+         */
+
+      }
+
+      /**
+       * 通过引用折叠以及forward可以帮助我们完美转发所有类型。
+       * 无需产生任何的临时构造函数
+       * @param t
+       */
+    void IrunCodeActually(int && t){}
+    void IrunCodeActually(int& t){}
+    void IrunCodeActually(const int && t){}
+    void IrunCodeActually(const int & t){}
+
+
+    template <typename T>
+    void IamForwarding(T && t)
+    {
+        /**
+         * 实际上forawrd<T>与static_cast<T&&>是等价的，通过折叠可以
+         * 通过引用折叠即可帮助我们将所有类型变为右值引用
+         */
+
+        IrunCodeActually(forward<T>(t));
+    }
+
+    TEST(CPP_11_FEATURE, CHAPTER3_PERFECT_FORWARD){
+        int a;
+        int b;
+        const int c = 1;
+        const int d = 0;
+
+        IamForwarding(a);//非常量左值
+        IamForwarding(move(b));//非常量右值
+        IamForwarding(c);//常量左值
+        IamForwarding(move(d));//常量右值
+    }
+
+    /**
+     * 完美转发可以用于包装函数，有点像函数式编程的概念
+     */
+     template<typename T, typename U>
+     void PerfectForwardTest(T && t, U& func){
+         cout << t << "\tforwarded..." << endl;
+         func(forward<T>(t));
+     }
+
+     void RunCode(double && m);
+     void RunHome(double && h);
+     void RunComp(double && c);
+
+     TEST(CPP_11_FEATURE, TEST_PERFECT_FORWARD){
+         PerfectForwardTest(1.5, RunCode);
+         PerfectForwardTest(3, RunHome);
+         PerfectForwardTest(9, RunComp);
+     }
+
+     /**
+      * C++11中make_pair以及make_unique都通过完美转发进行实现，
+      * 无论性能还是代码简化上都完美
+      */
+
+     /**
+      * 显示转换操作符 explicit
+      * 以前只能在构造函数里面用，现在可以推广到转换操作符
+      * C++中的隐式转换非常容易出现问题
+      */
+
+     class ConvertTo{};
+     class Convertable{
+     public:
+         explicit operator ConvertTo() const { return ConvertTo(); }
+     };
+    void Func(ConvertTo ct){}
+    /**
+     * 测试隐式转换限制
+     */
+    TEST(CPP_11_FEATURE, CHAPTER_3_EXPLICIT){
+        Convertable c;
+        ConvertTo ct(c);
+        //下面这句话无法通过编译因为隐式变换
+        //ConvertTo ct2 = c;
+        ConvertTo ct3 = static_cast<ConvertTo>(c);
+        //下面这句话无法通过编译因为隐式变换
+        //Func(c);
+    }
+
+    /**
+     * 初始化列表
+     * 无论是数组还是std库都已经支持的花括号初始化
+     */
+     TEST(CPP_11_FEATURE, CHAPTER_3_INITIALIZER_LIST){
+         int arr1[5] = {0};
+         int arr2[] = {1, 2, 3, 4};
+         int arr3[] {1, 3, 5};
+         vector<int> vec1 {1, 3, 5};
+         map<int, float> map1 {{1, 2}, {1, 3}};
+     }
+
+     /**
+      * C++11的赋值方式
+      *
+      * 等号加赋值表达式
+      * int a = 3 + 4;
+      *
+      * 等号加花括号
+      * int a = {3 + 4};
+      *
+      * 圆括号
+      * int a(3+4);
+      *
+      * 花括号的初始化列表
+      * int a {3 + 4};
+      */
+
+     /**
+      * 我们可以自定义自己的初始化列表的构造
+      * 需要包含头文件：
+      * #include <initializer_list>
+      */
+
+     /**
+      * 类中使用初始化列表
+      */
+     class TestInit{
+     public:
+         TestInit(initializer_list<pair<string, int>> l){
+             auto i = l.begin();
+             for(;i != l.end(); ++ i){
+                 data.push_back(*i);
+             }
+         }
+
+     private:
+         vector<pair<string, int>> data;
+     };
+
+     /**
+      * 函数中使用初始化列表
+      * @param v
+      */
+     void InitListFunc(initializer_list<int> v){
+         for(auto i = v.begin(); i != v.end(); i ++){
+             cout << *i << endl;
+         }
+     }
+
+     TEST(CPP_11_FEATURE, CHAPTER_3_TEST_INITIALIZER_LIST){
+         TestInit init({
+             {"hoho", 1},
+             {"asd", 2}
+         });
+         InitListFunc({1, 2, 3});
+     }
+
+     /**
+      * 我们也可以使用[]操作符
+      */
+      class TestInitInOperator{
+          TestInitInOperator &operator [] (initializer_list<int> l){
+
+          }
+          TestInitInOperator &operator =(int v){
+
+          }
+      };
+
+      /**
+       * 返回初始化列表的情况
+       */
+    /**
+     * 这样会造成临时变量
+     *
+     * vector<int> ReturnInitList(){
+     * return {1, 2};
+     * }
+     */
+
+    /**
+     * 正确做法，const是因为等同于返回字面量，否则会报错
+     * @return
+     */
+    const vector<int>& ReturnInitList(){
+
+        return {1, 2};
+    }
+
+    /**
+     * 花括号的初始化方式还可以防止类型变窄
+     * 其实就是丢精度，列表初始化是唯一一种可以防止类型收窄的初始化方式
+     */
+    TEST(CPP_11_FEATURE, CHAPTER_3_NARROWING){
+        const int x = 1024;
+        const int y = 10;
+
+        char a = x;
+        //以下语句会编译报错，因为类型变窄（丢精度）
+        //char c = {x};
+        //unsigned char e = {-1};
+    }
+
+    /**
+     * POD类型(Plain Old Data)
+     * 表示一个类型的属性
+     * Old体现在与C语言的兼容性，可以使用memcpy以及memset进行初始化等
+     * 具体的C++将POD分为两个概念的合集：
+     * 平凡的(trivial)和标准布局(standard layout)
+     */
+
+    /**
+     * 什么是平凡的？
+     * * 拥有平凡的构造函数以及析构函数（默认构造析构函数）
+     * * 拥有平凡的拷贝构造以及移动构造函数（默认的）
+     * * 拥有平凡的拷贝赋值运算符以及移动赋值运算符（默认的）
+     * * 不包含虚函数以及虚基类
+     */
+     TEST(CPP_11_FEATURE, CHAPTER_3_TRIVIAL){
+         //判断是否为平凡的
+         cout << std::is_trivial<int>::value << endl;
+     }
+
+     /**
+      * 什么是标准布局？
+      * * 所有的费静态成员有相同的访问权限(public, priveate, protected)
+      * * 在类活结构体继承时满足以下两种情况之一：
+      *     1.派生类中有非静态成员，且只有一个仅包含静态成员的基类
+      *     2.基类有非静态成员，而派生类没有非静态成员
+      * * 类中的第一个非静态成员的类型与其基类不同
+      * * 没有虚函数和虚基类
+      * * 所有非静态数据成员都符合标准布局类型，其基类也符合标准布局，
+      *   这是一个递归的定义
+      */
+
+    TEST(CPP_11_FEATURE, CHAPTER_3_IS_POD){
+        //判断是否为平凡的
+        cout << std::is_pod<int>::value << endl;
+    }
+
+    /**
+     * 那么POD有啥好处呢
+     * * 字节赋值可以安全地使用memset和memcpy对POD类型进行初始化和拷贝等操作
+     * * 提供对C内存布局兼容。C++程序可以与C函数进行交互因为POD类型的数据在C与
+     *   C++直接操作总是安全的
+     * * 保证了静态初始化的安全有效，静态初始化很多时候能够提高程序的性能，
+     *   而POD类型的对象初始化往往更加简单（比如放入.bbs段）在初始化中直接被赋值0
+     */
+
+    /**
+     * 非受限联合体
+     * 在C++98中并不是所有成员都能成为联合体数据成员
+     */
 }
