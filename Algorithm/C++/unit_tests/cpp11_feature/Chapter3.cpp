@@ -431,6 +431,10 @@ namespace CPP_11_FEATURE_CHAPTER_3 {
         IamForwarding(move(d));//常量右值
     }
 
+    void RunCode(double && m){};
+    void RunHome(double && h){};
+    void RunComp(double && c){};
+
     /**
      * 完美转发可以用于包装函数，有点像函数式编程的概念
      */
@@ -440,9 +444,7 @@ namespace CPP_11_FEATURE_CHAPTER_3 {
          func(forward<T>(t));
      }
 
-     void RunCode(double && m);
-     void RunHome(double && h);
-     void RunComp(double && c);
+
 
      TEST(CPP_11_FEATURE, TEST_PERFECT_FORWARD){
          PerfectForwardTest(1.5, RunCode);
@@ -588,7 +590,7 @@ namespace CPP_11_FEATURE_CHAPTER_3 {
         const int x = 1024;
         const int y = 10;
 
-        char a = x;
+        char a =  x;
         //以下语句会编译报错，因为类型变窄（丢精度）
         //char c = {x};
         //unsigned char e = {-1};
@@ -643,5 +645,124 @@ namespace CPP_11_FEATURE_CHAPTER_3 {
     /**
      * 非受限联合体
      * 在C++98中并不是所有成员都能成为联合体数据成员
+     * 这导致联合体和C的兼容性形同虚设
+     * //Todo
      */
+
+    /**
+     * 用户自定义字面量
+     * 比如我们需要表示颜色的时候我们希望有一个自己的字面量来简化初始化
+     */
+     struct RGBA{
+         uint8_t r;
+         uint8_t g;
+         uint8_t b;
+         uint8_t a;
+         RGBA(uint8_t R, uint8_t G, uint8_t B, uint8_t A=0) :
+            r(R), g(G), b(B), a(A) {}
+     };
+
+     /**
+      * 定义自定义字面量
+      * @param col
+      * @param n
+      * @return
+      */
+     RGBA operator "" _COLOR(const char* col, size_t n){
+         const char* p = col;
+         const char* end = col + n;
+         const char *r, *g, *b, *a;
+         r = g = b = a = nullptr;
+         for(;p != end; ++p){
+             if(*p == 'r'){
+                 r = p;
+             }else if(*p == 'g'){
+                 g = p;
+             }else if(*p == 'b'){
+                 b = p;
+             }else if(*p == 'a'){
+                 a = p;
+             }
+         }
+         if((r == nullptr) || (g == nullptr) || (b == nullptr))
+             throw ;
+         else if(a == nullptr){
+             return RGBA(atoi(r+1), atoi(g+1), atoi(b+1));
+         }else{
+             return RGBA(atoi(r+1), atoi(g+1), atoi(b+1), atoi(a+1));
+         }
+     }
+
+     std::ostream & operator << (std::ostream &out, RGBA& col){
+         return out << "r: " << (int)col.r
+            << ", g: " << (int)col.g
+            << ", b: " << (int)col.b
+            << ", a: " << (int)col.a << endl;
+     }
+
+     void blend(RGBA&& col1, RGBA&& col2){
+         cout << "blend " << endl << col1 << col2 << endl;
+     }
+
+     //使用自定义字面量
+     TEST(CPP_11_FEATURE, CHAPTER_3_LITERAL_OPERATOR){
+         blend("r255 g240 b155"_COLOR, "r15 g255 b10 a7"_COLOR);
+     }
+
+     struct Watt{ unsigned int v; };
+     Watt operator "" _watt(unsigned long long v){
+         return { (unsigned int)v };
+     }
+
+     TEST(CP_11_FEATURE, CHAPTER_3_LITERAL_OPERATOR_WITH_NUM){
+         Watt cap = 1024_watt;
+     }
+
+     /**
+      * 不过事实上其是有一定限制的
+      * * 如果字面量为整数型，字面量操作符函数止咳接受unsigned long long 或者 const char*
+      *   如果unsigned longlong无法容纳字面量时，自动将字面量转换为\0结尾的字符串，并以char*
+      *   版本进行处理
+      * * 如果字面量为浮点数，则字面量操作符只可接受long double或者 const char*为参数。
+      *   const char*版本调度规则同整型
+      * * 如果字面量为字符串，则字面量操作符只可接受 const char*，size_t为参数
+      * * 如果字面量为字符，则字面量操作符只可接受一个char为参数
+      *
+      * 几点需要注意的：
+      * * 在声明时 operator "" 与后面用户自定义后缀必须有空格
+      * * 后缀建议以下划线开始，不宜使用非下划线后缀的用户自定义字符串常量，否则会有编译警告，
+      *   主要就是避免混乱
+      */
+
+     /**
+      * 内联名字空间
+      * //Todo
+      *
+      */
+
+     /**
+      * 模板的别名
+      * 除了typedef，using在C++11中是更好的选择
+      */
+     TEST(CPP_11_FREATURE, CHAPTER_3_USING_NAME){
+         using uint = unsigned int;
+         typedef unsigned int UINT;
+         cout << is_same<uint, UINT>::value << endl;
+     }
+
+     /**
+      * using 可以针对模板进行别名更加灵活了
+      */
+     template<typename T> using MapString = std::map<T, char*>;
+     TEST(CPP_11_FREATURE, CHAPTER_3_TEMPLATE_USING_NAME){
+        MapString<int> numberedString;
+     }
+
+     /**
+      * 一般化的SFINEA规则
+      * 模板在推导时无法进行匹配的时候不会产生编译错误
+      * //Todo
+      */
+
+
 }
