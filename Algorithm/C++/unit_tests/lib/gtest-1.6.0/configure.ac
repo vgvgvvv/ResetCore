@@ -61,7 +61,7 @@ AC_SUBST(PTHREAD_LIBS)
 
 # TODO(chandlerc@google.com) Check for the necessary system headers.
 
-# TODO(chandlerc@google.com) Check the types, structures, and other compiler
+# TODO(chandlerc@google.com) CheckWeakPtr the types, structures, and other compiler
 # and architecture characteristics.
 
 # Output the generated files. No further autoconf macros may be used.

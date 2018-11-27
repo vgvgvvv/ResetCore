@@ -167,7 +167,7 @@ for flag in $acx_pthread_flags; do
         LIBS="$PTHREAD_LIBS $LIBS"
         CFLAGS="$CFLAGS $PTHREAD_CFLAGS"
 
-        # Check for various functions.  We must include pthread.h,
+        # CheckWeakPtr for various functions.  We must include pthread.h,
         # since some functions may be macros.  (On the Sequent, we
         # need a special flag -Kthread to make this header compile.)
         # We check for pthread_join because it is in -lpthread on IRIX

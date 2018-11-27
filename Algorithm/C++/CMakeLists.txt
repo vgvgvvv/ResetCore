@@ -37,7 +37,8 @@ add_executable(runUnitTests
         unit_tests/algorithm_tests/test_vector.cpp
         unit_tests/cpp11_feature/Chapter2.cpp
         unit_tests/cpp11_feature/Chapter3.cpp
-        unit_tests/cpp11_feature/Chapter4.cpp)
+        unit_tests/cpp11_feature/Chapter4.cpp
+        unit_tests/cpp11_feature/Chapter5.cpp)
 
 # Standard linking to gtest stuff.
 target_link_libraries(runUnitTests gtest gtest_main)

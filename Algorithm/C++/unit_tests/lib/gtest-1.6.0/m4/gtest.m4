@@ -1,7 +1,7 @@
 dnl GTEST_LIB_CHECK([minimum version [,
 dnl                  action if found [,action if not found]]])
 dnl
-dnl Check for the presence of the Google Test library, optionally at a minimum
+dnl CheckWeakPtr for the presence of the Google Test library, optionally at a minimum
 dnl version, and indicate a viable version with the HAVE_GTEST flag. It defines
 dnl standard variables for substitution including GTEST_CPPFLAGS,
 dnl GTEST_CXXFLAGS, GTEST_LDFLAGS, and GTEST_LIBS. It also defines

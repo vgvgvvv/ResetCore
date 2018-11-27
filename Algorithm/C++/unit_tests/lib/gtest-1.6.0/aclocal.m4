@@ -1087,7 +1087,7 @@ AC_DEFUN([AM_SUBST_NOTMAKE], [_AM_SUBST_NOTMAKE($@)])
 
 # _AM_PROG_TAR(FORMAT)
 # --------------------
-# Check how to create a tarball in format FORMAT.
+# CheckWeakPtr how to create a tarball in format FORMAT.
 # FORMAT should be one of `v7', `ustar', or `pax'.
 #
 # Substitute a variable $(am__tar) that is a command

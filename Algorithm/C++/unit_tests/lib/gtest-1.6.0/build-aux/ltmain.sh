@@ -4244,7 +4244,7 @@ func_mode_link ()
 	      arg=$fil
 	      # A libtool-controlled object.
 
-	      # Check to see that this really is a libtool object.
+	      # CheckWeakPtr to see that this really is a libtool object.
 	      if func_lalib_unsafe_p "$arg"; then
 		pic_object=
 		non_pic_object=

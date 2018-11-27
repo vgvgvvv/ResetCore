@@ -7040,7 +7040,7 @@ AC_SUBST([OBJDUMP])
 
 # _LT_DECL_SED
 # ------------
-# Check for a fully-functional sed program, that truncates
+# CheckWeakPtr for a fully-functional sed program, that truncates
 # as few characters as possible.  Prefer GNU sed if found.
 m4_defun([_LT_DECL_SED],
 [AC_PROG_SED

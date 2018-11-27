@@ -988,7 +988,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B238FA30E828BB600846E11 /* Build configuration list for PBXAggregateTarget "Check" */ = {
+		3B238FA30E828BB600846E11 /* Build configuration list for PBXAggregateTarget "CheckWeakPtr" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B238F600E828B5400846E11 /* Debug */,
