@@ -5,6 +5,7 @@
 #include "gtest/gtest.h"
 #include <iostream>
 #include <cassert>
+#include <climits>
 
 using namespace std;
 

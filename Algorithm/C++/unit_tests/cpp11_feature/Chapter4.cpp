@@ -4,6 +4,7 @@
 
 #include "gtest/gtest.h"
 #include <type_traits>
+#include <algorithm>
 
 using namespace std;
 
@@ -205,7 +206,7 @@ namespace CPP_11_FEATURE_CHAPTER_4 {
     }
 
     int TestDeclForward(double b) {
-        return (int);
+        return (int)b;
     }
 
     template<typename T>
