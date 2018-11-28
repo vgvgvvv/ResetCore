@@ -19,18 +19,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f7b71b9-6400-49d3-96e7-0ae5f0ba3eaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter5.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter6.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/aclocal.m4" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/aclocal.m4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/install-sh" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/install-sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/ltmain.sh" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/ltmain.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/missing" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/build-aux/missing" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/configure.ac" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/configure.ac" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/acx_pthread.m4" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/acx_pthread.m4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/gtest.m4" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/gtest.m4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/libtool.m4" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/libtool.m4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/gtest.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/xcode/gtest.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter5.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,37 +44,37 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="4" />
-          <entry key="h" value="1" />
+          <entry key="cpp" value="6" />
+          <entry key="h" value="2" />
           <entry key="m4" value="1" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="2" />
-          <entry key="ObjectiveC" value="5" />
+          <entry key="CMakeLists.txt" value="6" />
+          <entry key="ObjectiveC" value="8" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="10424" />
+          <entry key="cpp" value="14612" />
           <entry key="h" value="22" />
-          <entry key="txt" value="234" />
+          <entry key="txt" value="281" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="229" />
-          <entry key="Doxygen file" value="292" />
-          <entry key="ObjectiveC" value="10154" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="CMakeLists.txt" value="267" />
+          <entry key="Doxygen file" value="370" />
+          <entry key="ObjectiveC" value="14264" />
+          <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages">
         <counts>
-          <entry key="Google Test" value="17" />
+          <entry key="Google Test" value="27" />
         </counts>
       </usages-collector>
     </session>
@@ -154,31 +146,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter4.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="34" />
-              <folding>
-                <element signature="e#39#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter5.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="141" column="15" selection-start-line="141" selection-start-column="15" selection-end-line="141" selection-end-column="15" />
+            <state relative-caret-position="1530">
+              <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
               <folding>
                 <element signature="e#47#71#0" expanded="true" />
               </folding>
@@ -186,9 +157,45 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter6.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="313" column="16" selection-start-line="313" selection-start-column="16" selection-end-line="313" selection-end-column="16" />
+              <folding>
+                <element signature="e#39#63#0" expanded="true" />
+                <element signature="e#491#511#0" expanded="true" />
+                <element signature="e#1180#1192#0" expanded="true" />
+                <element signature="e#2636#2654#0" expanded="true" />
+                <element signature="e#2719#2745#0" expanded="true" />
+                <element signature="e#2784#2800#0" expanded="true" />
+                <element signature="e#2927#2949#0" expanded="true" />
+                <element signature="e#3001#3034#0" expanded="true" />
+                <element signature="e#3132#3134#0" expanded="true" />
+                <element signature="e#3228#3242#0" expanded="true" />
+                <element signature="e#3277#3302#0" expanded="true" />
+                <element signature="e#3422#3424#0" expanded="true" />
+                <element signature="e#3778#3793#0" expanded="true" />
+                <element signature="e#3840#3852#0" expanded="true" />
+                <element signature="e#3933#3948#0" expanded="true" />
+                <element signature="e#4211#4223#0" expanded="true" />
+                <element signature="e#5001#5016#0" expanded="true" />
+                <element signature="e#5053#5081#0" expanded="true" />
+                <element signature="e#5341#5343#0" expanded="true" />
+                <element signature="e#5585#5647#0" expanded="true" />
+                <element signature="e#5595#5609#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -222,8 +229,9 @@
         <option value="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter3.cpp" />
         <option value="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter2.cpp" />
         <option value="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter4.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter5.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter6.cpp" />
       </list>
     </option>
   </component>
@@ -295,33 +303,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Google Test.CPP_11_FEATURE.CHAPTER_5_WEAK_PTR">
-    <configuration name="CPP_11_FEATURE_CHAPTER_3.CHAPTER_3_RVALUE" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE_CHAPTER_3" TEST_METHOD="CHAPTER_3_RVALUE" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="Google Test.CPP_11_FEATURE.CHAPTER_6_VARIABLE_ARGS_AND_FORWARD">
+    <configuration name="CPP_11_FEATURE.CHAPTER_6_CONSTEXPR_LOOP" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_6_CONSTEXPR_LOOP" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP_11_FEATURE.CHAPTER_3_LVALUE_REF" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_3_LVALUE_REF" TEST_MODE="SUITE_TEST">
+    <configuration name="CPP_11_FEATURE.CHAPTER_6_FUNCTION_VARIABLE_ARG" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_6_FUNCTION_VARIABLE_ARG" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP_11_FEATURE.CHAPTER_3_MOVE_SWAP" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_3_MOVE_SWAP" TEST_MODE="SUITE_TEST">
+    <configuration name="CPP_11_FEATURE.CHAPTER_6_SIZE_OF_PACK" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_6_SIZE_OF_PACK" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP_11_FEATURE.CHAPTER_4_RANGE_FOR" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_4_RANGE_FOR" TEST_MODE="SUITE_TEST">
+    <configuration name="CPP_11_FEATURE.CHAPTER_6_VARIABLE_ARGS_AND_FORWARD" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_6_VARIABLE_ARGS_AND_FORWARD" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP_11_FEATURE.CHAPTER_5_WEAK_PTR" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_5_WEAK_PTR" TEST_MODE="SUITE_TEST">
+    <configuration name="CPP_11_FEATURE.CHAPTER_6_VARIABLE_LENGTH_TEMPLATE" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_6_VARIABLE_LENGTH_TEMPLATE" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnitTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="TEST_GTEST" TEST_MODE="SUITE_TEST">
+    <configuration name="UnitTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -364,19 +372,19 @@
       <item itemvalue="Application.gtest_main" />
       <item itemvalue="Google Test.runUnitTests" />
       <item itemvalue="Google Test.UnitTest" />
-      <item itemvalue="Google Test.CPP_11_FEATURE_CHAPTER_3.CHAPTER_3_RVALUE" />
-      <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_3_LVALUE_REF" />
-      <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_3_MOVE_SWAP" />
-      <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_4_RANGE_FOR" />
-      <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_5_WEAK_PTR" />
+      <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_6_CONSTEXPR_LOOP" />
+      <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_6_VARIABLE_LENGTH_TEMPLATE" />
+      <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_6_FUNCTION_VARIABLE_ARG" />
+      <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_6_SIZE_OF_PACK" />
+      <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_6_VARIABLE_ARGS_AND_FORWARD" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_5_WEAK_PTR" />
-        <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_4_RANGE_FOR" />
-        <item itemvalue="Google Test.CPP_11_FEATURE_CHAPTER_3.CHAPTER_3_RVALUE" />
-        <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_3_MOVE_SWAP" />
-        <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_3_LVALUE_REF" />
+        <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_6_VARIABLE_ARGS_AND_FORWARD" />
+        <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_6_SIZE_OF_PACK" />
+        <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_6_FUNCTION_VARIABLE_ARG" />
+        <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_6_VARIABLE_LENGTH_TEMPLATE" />
+        <item itemvalue="Google Test.CPP_11_FEATURE.CHAPTER_6_CONSTEXPR_LOOP" />
       </list>
     </recent_temporary>
   </component>
@@ -398,51 +406,50 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CPP_11_FEATURE_CHAPTER_3_CHAPTER_3_RVALUE - 2018.11.24 at 12h 54m 59s.xml">
-      <configuration name="CPP_11_FEATURE_CHAPTER_3.CHAPTER_3_RVALUE" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="CPP_11_FEATURE_CHAPTER_6_CONSTEXPR_LOOP - 2018.11.28 at 12h 54m 03s.xml">
+      <configuration name="CPP_11_FEATURE.CHAPTER_6_CONSTEXPR_LOOP" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="CPP_11_FEATURE_CHAPTER_3_CHAPTER_3_RVALUE - 2018.11.24 at 12h 57m 10s.xml">
-      <configuration name="CPP_11_FEATURE_CHAPTER_3.CHAPTER_3_RVALUE" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="CPP_11_FEATURE_CHAPTER_6_CONSTEXPR_LOOP - 2018.11.28 at 12h 54m 17s.xml">
+      <configuration name="CPP_11_FEATURE.CHAPTER_6_CONSTEXPR_LOOP" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="CPP_11_FEATURE_CHAPTER_3_LVALUE_REF - 2018.11.24 at 13h 08m 35s.xml">
-      <configuration name="CPP_11_FEATURE.CHAPTER_3_LVALUE_REF" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="CPP_11_FEATURE_CHAPTER_6_CONSTEXPR_LOOP - 2018.11.28 at 12h 55m 13s.xml">
+      <configuration name="CPP_11_FEATURE.CHAPTER_6_CONSTEXPR_LOOP" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="CPP_11_FEATURE_CHAPTER_3_LVALUE_REF - 2018.11.24 at 13h 11m 28s.xml">
-      <configuration name="CPP_11_FEATURE.CHAPTER_3_LVALUE_REF" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="CPP_11_FEATURE_CHAPTER_6_VARIABLE_LENGTH_TEMPLATE - 2018.11.28 at 13h 16m 11s.xml">
+      <configuration name="CPP_11_FEATURE.CHAPTER_6_VARIABLE_LENGTH_TEMPLATE" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="CPP_11_FEATURE_CHAPTER_3_MOVE_SWAP - 2018.11.24 at 13h 44m 09s.xml">
-      <configuration name="CPP_11_FEATURE.CHAPTER_3_MOVE_SWAP" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="CPP_11_FEATURE_CHAPTER_6_FUNCTION_VARIABLE_ARG - 2018.11.28 at 13h 23m 22s.xml">
+      <configuration name="CPP_11_FEATURE.CHAPTER_6_FUNCTION_VARIABLE_ARG" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="CPP_11_FEATURE_CHAPTER_3_CHAPTER_3_RVALUE - 2018.11.24 at 13h 57m 51s.xml">
-      <configuration name="CPP_11_FEATURE_CHAPTER_3.CHAPTER_3_RVALUE" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="CPP_11_FEATURE_CHAPTER_6_FUNCTION_VARIABLE_ARG - 2018.11.28 at 13h 23m 33s.xml">
+      <configuration name="CPP_11_FEATURE.CHAPTER_6_FUNCTION_VARIABLE_ARG" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="CPP_11_FEATURE_CHAPTER_3_CHAPTER_3_RVALUE - 2018.11.24 at 13h 58m 11s.xml">
-      <configuration name="CPP_11_FEATURE_CHAPTER_3.CHAPTER_3_RVALUE" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="CPP_11_FEATURE_CHAPTER_6_FUNCTION_VARIABLE_ARG - 2018.11.28 at 13h 23m 43s.xml">
+      <configuration name="CPP_11_FEATURE.CHAPTER_6_FUNCTION_VARIABLE_ARG" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="CPP_11_FEATURE_CHAPTER_3_CHAPTER_3_RVALUE - 2018.11.24 at 13h 59m 41s.xml">
-      <configuration name="CPP_11_FEATURE_CHAPTER_3.CHAPTER_3_RVALUE" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="CPP_11_FEATURE_CHAPTER_6_SIZE_OF_PACK - 2018.11.28 at 13h 26m 48s.xml">
+      <configuration name="CPP_11_FEATURE.CHAPTER_6_SIZE_OF_PACK" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="CPP_11_FEATURE_CHAPTER_3_CHAPTER_3_RVALUE - 2018.11.24 at 14h 01m 11s.xml">
-      <configuration name="CPP_11_FEATURE_CHAPTER_3.CHAPTER_3_RVALUE" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="CPP_11_FEATURE_CHAPTER_6_VARIABLE_ARGS_AND_FORWARD - 2018.11.28 at 13h 40m 37s.xml">
+      <configuration name="CPP_11_FEATURE.CHAPTER_6_VARIABLE_ARGS_AND_FORWARD" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="CPP_11_FEATURE_CHAPTER_5_WEAK_PTR - 2018.11.27 at 19h 08m 04s.xml">
-      <configuration name="CPP_11_FEATURE.CHAPTER_5_WEAK_PTR" configurationId="CMakeGoogleTestRunConfigurationType" />
+    <history-entry file="CPP_11_FEATURE_CHAPTER_6_VARIABLE_ARGS_AND_FORWARD - 2018.11.28 at 13h 40m 52s.xml">
+      <configuration name="CPP_11_FEATURE.CHAPTER_6_VARIABLE_ARGS_AND_FORWARD" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24001000" />
+    <option name="totallyTimeSpent" value="29551000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="808" y="0" width="632" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25586355" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2542373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="LuaCheck" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969216" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32770607" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32650602" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -452,7 +459,8 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.37349397" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32770607" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32650602" />
+      <window_info anchor="bottom" id="LuaCheck" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -480,20 +488,17 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/algorithm/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
+        <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="32" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/m4/gtest.m4">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
+        <state relative-caret-position="30">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
@@ -503,7 +508,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/algorithm/vector.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="135">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
@@ -535,13 +540,6 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter4.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -552,12 +550,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/lib/gtest-1.6.0/include/gtest/gtest.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="429" column="15" selection-start-line="429" selection-start-column="15" selection-end-line="429" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter5.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="141" column="15" selection-start-line="141" selection-start-column="15" selection-end-line="141" selection-end-column="15" />
+        <state relative-caret-position="1530">
+          <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
           <folding>
             <element signature="e#47#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter6.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="313" column="16" selection-start-line="313" selection-start-column="16" selection-end-line="313" selection-end-column="16" />
+          <folding>
+            <element signature="e#39#63#0" expanded="true" />
+            <element signature="e#491#511#0" expanded="true" />
+            <element signature="e#1180#1192#0" expanded="true" />
+            <element signature="e#2636#2654#0" expanded="true" />
+            <element signature="e#2719#2745#0" expanded="true" />
+            <element signature="e#2784#2800#0" expanded="true" />
+            <element signature="e#2927#2949#0" expanded="true" />
+            <element signature="e#3001#3034#0" expanded="true" />
+            <element signature="e#3132#3134#0" expanded="true" />
+            <element signature="e#3228#3242#0" expanded="true" />
+            <element signature="e#3277#3302#0" expanded="true" />
+            <element signature="e#3422#3424#0" expanded="true" />
+            <element signature="e#3778#3793#0" expanded="true" />
+            <element signature="e#3840#3852#0" expanded="true" />
+            <element signature="e#3933#3948#0" expanded="true" />
+            <element signature="e#4211#4223#0" expanded="true" />
+            <element signature="e#5001#5016#0" expanded="true" />
+            <element signature="e#5053#5081#0" expanded="true" />
+            <element signature="e#5341#5343#0" expanded="true" />
+            <element signature="e#5585#5647#0" expanded="true" />
+            <element signature="e#5595#5609#0" expanded="true" />
           </folding>
         </state>
       </provider>
