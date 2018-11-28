@@ -19,9 +19,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f7b71b9-6400-49d3-96e7-0ae5f0ba3eaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter7.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter6.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter6.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter7.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter7.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,31 +43,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cpp" value="6" />
+          <entry key="cpp" value="7" />
           <entry key="h" value="2" />
           <entry key="m4" value="1" />
-          <entry key="txt" value="6" />
+          <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CMakeLists.txt" value="6" />
-          <entry key="ObjectiveC" value="8" />
+          <entry key="CMakeLists.txt" value="7" />
+          <entry key="ObjectiveC" value="9" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="14612" />
+          <entry key="cpp" value="15493" />
           <entry key="h" value="22" />
-          <entry key="txt" value="281" />
+          <entry key="txt" value="282" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="267" />
-          <entry key="Doxygen file" value="370" />
-          <entry key="ObjectiveC" value="14264" />
+          <entry key="CMakeLists.txt" value="268" />
+          <entry key="Doxygen file" value="419" />
+          <entry key="ObjectiveC" value="15096" />
           <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
@@ -145,57 +145,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter5.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2142">
-              <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
-              <folding>
-                <element signature="e#47#71#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter6.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="278" column="23" selection-start-line="278" selection-start-column="23" selection-end-line="278" selection-end-column="23" />
-              <folding>
-                <element signature="e#39#63#0" expanded="true" />
-                <element signature="e#98#116#0" expanded="true" />
-                <element signature="e#491#511#0" expanded="true" />
-                <element signature="e#1180#1192#0" expanded="true" />
-                <element signature="e#2636#2654#0" expanded="true" />
-                <element signature="e#2719#2745#0" expanded="true" />
-                <element signature="e#2784#2800#0" expanded="true" />
-                <element signature="e#2927#2949#0" expanded="true" />
-                <element signature="e#3001#3034#0" expanded="true" />
-                <element signature="e#3132#3134#0" expanded="true" />
-                <element signature="e#3228#3242#0" expanded="true" />
-                <element signature="e#3277#3302#0" expanded="true" />
-                <element signature="e#3422#3424#0" expanded="true" />
-                <element signature="e#3778#3793#0" expanded="true" />
-                <element signature="e#3840#3852#0" expanded="true" />
-                <element signature="e#3933#3948#0" expanded="true" />
-                <element signature="e#4211#4223#0" expanded="true" />
-                <element signature="e#5001#5016#0" expanded="true" />
-                <element signature="e#5053#5081#0" expanded="true" />
-                <element signature="e#5341#5343#0" expanded="true" />
-                <element signature="e#5585#5647#0" expanded="true" />
-                <element signature="e#5595#5609#0" expanded="true" />
-                <element signature="e#6178#6184#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter7.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="122" column="9" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
+            <state relative-caret-position="668">
+              <caret line="171" column="14" selection-start-line="171" selection-start-column="14" selection-end-line="171" selection-end-column="14" />
               <folding>
                 <element signature="e#47#66#0" expanded="true" />
               </folding>
@@ -235,8 +189,8 @@
         <option value="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter2.cpp" />
         <option value="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter4.cpp" />
         <option value="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter5.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter6.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter7.cpp" />
       </list>
     </option>
@@ -285,7 +239,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Chapter2&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/Algorithm/C++/unit_tests/cpp11_feature/Chapter2.cpp" />
+    <property name="SearchEverywhereHistoryKey" value="Chap&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/Algorithm/C++/unit_tests/cpp11_feature/Chapter7.cpp&#10;Chapter2&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/Algorithm/C++/unit_tests/cpp11_feature/Chapter2.cpp" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -330,7 +284,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP_11_FEATURE.CHAPTER_7_DEFAULT_METHOD" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_7_DEFAULT_METHOD" TEST_MODE="SUITE_TEST">
+    <configuration name="CPP_11_FEATURE.CHAPTER_7_DEFAULT_METHOD" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_7_DEFAULT_METHOD" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -445,18 +399,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31819000" />
+    <option name="totallyTimeSpent" value="35044000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="808" y="0" width="632" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25254238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969216" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3257329" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3253012" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -465,7 +419,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.3733863" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.37228915" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3257329" />
       <window_info anchor="bottom" id="LuaCheck" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -564,9 +518,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter6.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="306" column="37" selection-start-line="306" selection-start-column="37" selection-end-line="306" selection-end-column="37" />
+          <folding>
+            <element signature="e#39#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter5.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2142">
+        <state relative-caret-position="1530">
           <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
           <folding>
             <element signature="e#47#71#0" expanded="true" />
@@ -576,50 +543,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter6.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="278" column="23" selection-start-line="278" selection-start-column="23" selection-end-line="278" selection-end-column="23" />
-          <folding>
-            <element signature="e#39#63#0" expanded="true" />
-            <element signature="e#98#116#0" expanded="true" />
-            <element signature="e#491#511#0" expanded="true" />
-            <element signature="e#1180#1192#0" expanded="true" />
-            <element signature="e#2636#2654#0" expanded="true" />
-            <element signature="e#2719#2745#0" expanded="true" />
-            <element signature="e#2784#2800#0" expanded="true" />
-            <element signature="e#2927#2949#0" expanded="true" />
-            <element signature="e#3001#3034#0" expanded="true" />
-            <element signature="e#3132#3134#0" expanded="true" />
-            <element signature="e#3228#3242#0" expanded="true" />
-            <element signature="e#3277#3302#0" expanded="true" />
-            <element signature="e#3422#3424#0" expanded="true" />
-            <element signature="e#3778#3793#0" expanded="true" />
-            <element signature="e#3840#3852#0" expanded="true" />
-            <element signature="e#3933#3948#0" expanded="true" />
-            <element signature="e#4211#4223#0" expanded="true" />
-            <element signature="e#5001#5016#0" expanded="true" />
-            <element signature="e#5053#5081#0" expanded="true" />
-            <element signature="e#5341#5343#0" expanded="true" />
-            <element signature="e#5585#5647#0" expanded="true" />
-            <element signature="e#5595#5609#0" expanded="true" />
-            <element signature="e#6178#6184#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter7.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="122" column="9" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
+        <state relative-caret-position="668">
+          <caret line="171" column="14" selection-start-line="171" selection-start-column="14" selection-end-line="171" selection-end-column="14" />
           <folding>
             <element signature="e#47#66#0" expanded="true" />
           </folding>
