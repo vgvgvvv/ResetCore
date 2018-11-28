@@ -4,6 +4,11 @@
 
 #include "gtest/gtest.h"
 #include <iostream>
+#include <cstdarg>
+
+#ifndef WIN32
+#include <pthread.h>
+#endif
 
 using namespace std;
 
@@ -271,7 +276,7 @@ namespace CPP_11_FEATURE_CHAPTER_6 {
     template<typename T1, typename... T>
     struct MultiTypes<T1, T...> : public MultiTypes<T...> {
         T1 t1;
-        MultiTypes<T...>(T1 a, T... b) :
+        MultiTypes<T1, T...>(T1 a, T... b) :
                 t1(a), MultiTypes<T...>(b...){
             cout << "MultiTypes<T1, T...>(T1 a, T... b)" << endl;
         }
@@ -312,5 +317,12 @@ namespace CPP_11_FEATURE_CHAPTER_6 {
 
     /**
      * 原子类型与原子操作
+     * Todo Windows上并不能用
      */
+    #ifndef WIN32
+    //Todo
+    #endif
+
+
+
 }
