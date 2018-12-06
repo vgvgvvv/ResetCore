@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>4</LangVersion>
+    <LangVersion>6</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,7 +13,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
   </PropertyGroup>
@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_0;UNITY_2017_3;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_OSX;PLATFORM_STANDALONE;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_16;UNITY_2017_4;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_OSX;PLATFORM_STANDALONE;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -39,423 +39,601 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.XML" />
+    <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity2017.3/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity2017.3/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Shaders\PostEffect\AntialiasingFXAA\AntialiasingFXAA.cs" />
-     <Compile Include="Assets\Shaders\PostEffect\BlackWhite\BlackWhite.cs" />
-     <Compile Include="Assets\Shaders\PostEffect\Bloom\Bloom.cs" />
-     <Compile Include="Assets\Shaders\PostEffect\BlurEffectConeTap\BlurEffectConeTap.cs" />
-     <Compile Include="Assets\Shaders\PostEffect\Common\ImageEffectBase.cs" />
-     <Compile Include="Assets\Shaders\PostEffect\Contrast\Contrast.cs" />
-     <Compile Include="Assets\Shaders\PostEffect\RadialBlur\RadialBlur.cs" />
-     <Compile Include="Assets\Shaders\PostEffect\RGBSepration\RGBSepration.cs" />
-     <Compile Include="Assets\Shaders\PostEffect\RGBSepration\TestPostEffect.cs" />
-     <Compile Include="Assets\Shaders\PostEffect\Saturation\Saturation.cs" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityShaderUtilities.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\GLSLSupport.glslinc" />
-     <None Include="Assets\Shaders\RoShaders\Particle\ParticleAdd.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardCore.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VR\Shaders\SpatialMappingWireframe.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-Bumped.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardCoreForward.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Sprites-Default.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\WaterWarpPlane.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-Diffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Projector\RectBlend.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-Diffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-DefaultETC1.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\ROLighting_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\UI\UI-SeparateAlphaForDiscolor.shader" />
-     <None Include="Assets\Shaders\RoShaders\PostEffects\Include\UberSecondPass.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Include\OutLine_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityGBuffer.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Projector\Projector-Multiply.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuseMaskR.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuseColNoLight.shader" />
-     <None Include="Assets\Shaders\RoShaders\RimLight\CutoutDiffuseMaskREmsPanner.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-VertexLit-OnlyDirectionalLights.shader" />
-     <None Include="Assets\Shaders\RoShaders\Projector\AnnulusBlend.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Cubemaps\CubeCopy.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Unlit-TextDetail.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\HLSLSupport.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\AutoLight.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\TerrainSplatmapCommon.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Trees\BillboardTree.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\FirstPass.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\ROCommonBasic_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Particle\ParticleAlphaBlend.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Details\WavingGrassBillboard.shader" />
-     <None Include="Assets\Shaders\RoShaders\UI\UI-SeparateAlpha.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\TransparentDiffuseMaskLM.shader" />
-     <None Include="Assets\Shaders\RoShaders\Particle\ParticleTransparent.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-CompositeOverdraw.shader" />
-     <None Include="Assets\Shaders\RoShaders\RimLight\CutoutDiffuseMaskRCap.shader" />
-     <None Include="Assets\Shaders\RoShaders\Particle\ParticleAlphaBlendNoColor.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\CustomShadowG.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VideoDecode.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Details\WavingGrass.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityLightingCommon.cginc" />
-     <None Include="Assets\Shaders\RoShaders\RimLight\Diffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Specular-AddPass.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-Parallax.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Specular-Base.shader" />
-     <None Include="Assets\Shaders\RoShaders\Projector\Projector-Color.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle VertexLit Blended.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\GIDebug\TextureUV.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\PBS_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Common\AdditiveColor.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityCG.glslinc" />
-     <None Include="Assets\Shaders\RoShaders\Skin\Skin-FlowTexCutout.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-Glossy.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\GIDebug\VertexColors.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\SpeedTreeVertex.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-BumpSpec.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-Halo.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-Bumped.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-BumpSpec.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityImageBasedLighting.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Sprites-Mask.shader" />
-     <None Include="Assets\Shaders\RoShaders\RimLight\CutoutDiffuseMaskR.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\CustomShadowA.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\Lighting.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Particle-Add.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\skybox cubed.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\ParticleAlphaBlendC_UVPanner.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionBark.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResources\Font.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\SkinBlend_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Cubemaps\CubeBlur.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-DiffuseDetail.shader" />
-     <None Include="Assets\Shaders\RoShaders\Projector\FanBlend.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\PBSHead_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\SpeedTreeWind.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-VertexLit.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardUtils.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Common\TransparentGrayMaskRNoLight.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-Parallax.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\ROShadow_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityCG.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityGlobalIllumination.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Skybox-Cubed.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-ParallaxSpec.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\GIDebug\UV1sAsPositions.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SpeedTree.shader" />
-     <None Include="Assets\Shaders\RoShaders\Skin\CutoutDiffuseMaskRFlow.shader" />
-     <None Include="Assets\Shaders\RoShaders\Particle\Particle-Add(clipRGB).shader" />
-     <None Include="Assets\Shaders\RoShaders\Projector\CircleBlend.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-Bumped.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\ROColorEffect_Include.cginc" />
-     <None Include="Assets\Shaders\PostEffect\Saturation\Saturation.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Lightmap-Unlit.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-DepthNormalsTexture.shader" />
-     <None Include="Assets\Shaders\PostEffect\AntialiasingFXAA\FXAA.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Lit-Refraction.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-BlitCopyDepth.shader" />
-     <None Include="Assets\Shaders\PostEffect\Bloom\Bloom.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\CutoutAdditiveColor.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\GIDebug\ShowLightMask.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesOptimized.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\CustomShadowR.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-ConvertTexture.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityDeferredLibrary.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VideoDecodeAndroid.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Standard-Base.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityPBSLighting.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionLeavesRendertex.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Skybox.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Particle-Alpha.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Multiply.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-VertexLit.shader" />
-     <None Include="Assets\Shaders\RoShaders\PostEffects\Include\ACES.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\Tessellation.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Overdraw.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-BumpVertexLit.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Lit-Transparent.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardMeta.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Particle-Alpha-VertexLit.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Decal.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardShadow.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardCoreForwardSimple.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Lightmap-Diffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle AddSmooth.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-GUITextureBlit.shader" />
-     <None Include="Assets\Shaders\PostEffect\BlurEffectConeTap\BlurEffectConeTaps.shader" />
-     <None Include="Assets\Shaders\DebugShader\UVDebug.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\license.txt" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-GUITextureClip.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-Parallax.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-ParallaxSpec.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-Diffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Bumped.shader" />
-     <None Include="Assets\Shaders\RoShaders\Skin\Skin-Cube.shader" />
-     <None Include="Assets\Shaders\RoShaders\Particle\Particle-Add(4Tex).shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuseMaskRNoLight.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityInstancing.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Lightmap-Bumped.shader" />
-     <None Include="Assets\Shaders\RoShaders\Particle\Particle-AddColor(RGB).shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-DeferredShading.shader" />
-     <None Include="Assets\Shaders\RoShaders\RO\U_Y_AP_1.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Premultiply Blend.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\MobileDiffuseColMask.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Cubemaps\CubeBlurOdd.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\SpeedTreeCommon.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Scene\DiffuseEmission_FlowVC.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle AddMultiply.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\CustomShadowB.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\CutoutDiffuseCol.shader" />
-     <None Include="Assets\Shaders\PostEffect\AntialiasingFXAA\FXAA3.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Skin\Skin-FlowTexDiff.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Lit-Detail.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-VertexLit.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VR\Shaders\SpatialMappingOcclusion.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Details\VertexLit.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\CutoutDiffuseMaskRNoLight.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Flare.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityBuiltin2xTreeLibrary.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityMetaPass.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\SpeedTreeBillboardCommon.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Skin\Skin-CubeNoMask.shader" />
-     <None Include="Assets\Shaders\RoShaders\PostEffects\Include\Common.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Projector\RectAdd.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityShaderVariables.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Include\ROCommonHead_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Projector\CircleAdd.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnitySprites.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityBuiltin3xTreeLibrary.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-ScreenSpaceShadows.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-BumpSpec.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\StandardSpecular.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-BumpSpec.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\CommonHead_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VR\Shaders\BlitCopyFromTexArray.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\CustomLightSphere.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBarkRendertex.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\CutoutFadeLM.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-MotionVectors.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Unlit-Transparent.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuseMaskRCube.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Standard-AddPass.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-ParallaxSpec.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-BumpSpec-1DirectionalLight.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-Diffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\CutoutDiffuseMaskLM_VMove.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-CombineDepthNormals.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VR\Shaders\Internal-VRDistortion.shader" />
-     <None Include="Assets\Shaders\RoShaders\Particle\Particle-Add(clip).shader" />
-     <None Include="Assets\Shaders\Water1\Water1.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Add.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardBRDF.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Common\MobileDiffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\CutoutFade.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesFastOptimized.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-ParallaxSpec.shader" />
-     <None Include="Assets\Shaders\PostEffect\Contrast\Contrast.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBarkOptimized.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\CommonBasic_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Particle-Multiply.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuseCol.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\DiffuseEmisSin.shader" />
-     <None Include="Assets\Shaders\Water2\Water2.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Specular-FirstPass.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityUI.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Standard-FirstPass.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-Glossy.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-Diffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Diffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Unlit-Text.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\ROLightingBasic_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Skin\Skin-RimLightBlend8.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-Flare.shader" />
-     <None Include="Assets\Shaders\PostEffect\BlackWhite\BlackWhite.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Standard.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\ROSkinBlend_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-SoftEdgeUnlit.shader" />
-     <None Include="Assets\Shaders\PostEffect\RGBSepration\Rgb.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-Parallax.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-Glossy.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Unlit\Unlit-Normal.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\Custom_Add.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SpeedTreeBillboard.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-Glossy.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeaves.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\CutoutDiffuseMaskR.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-VertexLit.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResources\Internal-Clear.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\CutoutDiffuseColNoLight.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Anim Alpha Blend.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VideoDecodeOSX.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-GUITexture.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-GUIRoundedRect.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Unlit\Unlit-Alpha.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardInput.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Blend.shader" />
-     <None Include="Assets\Shaders\PostEffect\RGBSepration\Rgbsepration.shader" />
-     <None Include="Assets\Shaders\PostEffect\RadialBlur\RadialBlur.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityDeprecated.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Scene\SceneAdd_DoubleRot.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBark.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\Fade.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-DeferredReflections.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\MobileDiffuseCol.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-VertexLit.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Alpha Blend.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-Bumped.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\CutoutDiffuseMaskLM.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesFast.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Unlit\Unlit-AlphaTest.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Lightmap-BumpSpec.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesRendertex.shader" />
-     <None Include="Assets\Shaders\PostEffect\Bloom\BlurEffect.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResources\PerformanceTools\FrameDebuggerRenderTargetDisplay.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Lit-RefractionDetail.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Skybox.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionLeaves.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResources\Internal-ErrorShader.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-StencilWrite.shader" />
-     <None Include="Assets\Shaders\RoShaders\Projector\Projector-Alpha.shader" />
-     <None Include="Assets\Shaders\RoShaders\RimLight\DiffuseEmsPanner.shader" />
-     <None Include="Assets\Shaders\RoShaders\Include\Shadow_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\RimLight\DiffuseCap.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\TerrainEngine.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Include\LightMap_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Scene\WarpMoon.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Lightmap-VertexLit.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\CutoutDiffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Lightmap-Glossy.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Cubemaps\CubeBlend.shader" />
-     <None Include="Assets\Shaders\RoShaders\Projector\FanAdd.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-VertexLit.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionBarkRendertex.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-BumpNolight.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardConfig.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Default.shader" />
-     <None Include="Assets\Shaders\RoShaders\Common\CutoutSpecCol.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-DiffuseFast.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Skybox-Procedural.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle MultiplyDouble.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-BlitCopy.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-Bumped.shader" />
-     <None Include="Assets\Shaders\RoShaders\PostEffects\Include\ColorGrading.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Particle\ParticleAddNoColor.shader" />
-     <None Include="Assets\Shaders\RoShaders\Particle\Particle-Add(RGB).shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-PrePassLighting.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Lit-Bumped.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityCustomRenderTexture.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Unlit-Detail.shader" />
-     <None Include="Assets\Shaders\RoShaders\RimLight\DiffuseOutline.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityShadowLibrary.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Include\ROOutLine_Include.cginc" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Sprites-Diffuse.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Unlit\Unlit-Color.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-DefaultFont.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResources\Internal-Colored.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-GUITextureClipText.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-BumpSpec.shader" />
-     <None Include="Assets\Shaders\RoShaders\Scene\WaterAlphaBlend.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-BumpSpec.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\AddPass.shader" />
-     <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-Glossy.shader" />
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Networking">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.TestRunner">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="nunit.framework">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Timeline">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Timeline">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.TreeEditor">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UIAutomation">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UIAutomation">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.GoogleAudioSpatializer">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.GoogleAudioSpatializer">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.HoloLens">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.HoloLens">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.VR">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Graphs">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/Managed/UnityEditor.Graphs.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Android.Extensions">
- <HintPath>/Applications/Unity2017.3/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.iOS.Extensions">
- <HintPath>/Applications/Unity2017.3/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.OSXStandalone.Extensions">
- <HintPath>/Applications/Unity2017.3/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Advertisements">
- <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/Editor/UnityEditor.Advertisements.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Analytics">
- <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Purchasing">
- <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.Purchasing">
- <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.StandardEvents">
- <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\Shaders\PostEffect\AntialiasingFXAA\AntialiasingFXAA.cs" />
+    <Compile Include="Assets\Shaders\PostEffect\BlackWhite\BlackWhite.cs" />
+    <Compile Include="Assets\Shaders\PostEffect\Bloom\Bloom.cs" />
+    <Compile Include="Assets\Shaders\PostEffect\BlurEffectConeTap\BlurEffectConeTap.cs" />
+    <Compile Include="Assets\Shaders\PostEffect\Common\ImageEffectBase.cs" />
+    <Compile Include="Assets\Shaders\PostEffect\Contrast\Contrast.cs" />
+    <Compile Include="Assets\Shaders\PostEffect\RadialBlur\RadialBlur.cs" />
+    <Compile Include="Assets\Shaders\PostEffect\RGBSepration\RGBSepration.cs" />
+    <Compile Include="Assets\Shaders\PostEffect\RGBSepration\TestPostEffect.cs" />
+    <Compile Include="Assets\Shaders\PostEffect\Saturation\Saturation.cs" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityShaderUtilities.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\GLSLSupport.glslinc" />
+    <None Include="Assets\Shaders\RoShaders\Particle\ParticleAdd.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardCore.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VR\Shaders\SpatialMappingWireframe.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-Bumped.shader" />
+    <None Include="Assets\RO\Shader\RO\Creature\ROAvatar.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardCoreForward.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Sprites-Default.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\WaterWarpPlane.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-Diffuse.shader" />
+    <None Include="Assets\Shaders\RoShaders\Projector\RectBlend.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-Diffuse.shader" />
+    <None Include="Assets\RO\Shader\RO\Scene\ROSceneItem.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-DefaultETC1.shader" />
+    <None Include="Assets\RO\Shader\TMP\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Shaders\RoShaders\Include\ROLighting_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\UI\UI-SeparateAlphaForDiscolor.shader" />
+    <None Include="Assets\Shaders\RoShaders\PostEffects\Include\UberSecondPass.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Include\OutLine_Include.cginc" />
+    <None Include="Assets\RO\Shader\RO\Effect\ROEffectUI__beta137.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityGBuffer.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Projector\Projector-Multiply.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuseMaskR.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuseColNoLight.shader" />
+    <None Include="Assets\Shaders\RoShaders\RimLight\CutoutDiffuseMaskREmsPanner.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\StdLib.hlsl" />
+    <None Include="Assets\RO\Shader\RO\Scene\ROVolumeFog.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-VertexLit-OnlyDirectionalLights.shader" />
+    <None Include="Assets\Shaders\RoShaders\Projector\AnnulusBlend.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Cubemaps\CubeCopy.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Unlit-TextDetail.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\HLSLSupport.cginc" />
+    <None Include="Assets\RO\Shader\RO\Replace\OutlineUI.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\AutoLight.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\TerrainSplatmapCommon.cginc" />
+    <None Include="Assets\RO\Shader\RO\Scene\ROCloud.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Trees\BillboardTree.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\Colors.hlsl" />
+    <None Include="Assets\RO\Demo\ReCommon.cginc" />
+    <None Include="Assets\RO\Shader\RO\Scene\ROWaterWave__beta137.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\FirstPass.shader" />
+    <None Include="Assets\Shaders\RoShaders\Include\ROCommonBasic_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Particle\ParticleAlphaBlend.shader" />
+    <None Include="Assets\RO\Shader\RO\UI\ROUI.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Details\WavingGrassBillboard.shader" />
+    <None Include="Assets\Shaders\RoShaders\UI\UI-SeparateAlpha.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\TransparentDiffuseMaskLM.shader" />
+    <None Include="Assets\Shaders\RoShaders\Particle\ParticleTransparent.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-CompositeOverdraw.shader" />
+    <None Include="Assets\Shaders\RoShaders\RimLight\CutoutDiffuseMaskRCap.shader" />
+    <None Include="Assets\Shaders\RoShaders\Particle\ParticleAlphaBlendNoColor.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\CustomShadowG.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VideoDecode.shader" />
+    <None Include="Assets\RO\Shader\RO\Creature\ROMonsterUI__beta140.shader" />
+    <None Include="Assets\RO\Shader\TMP\TMPro_Surface.cginc" />
+    <None Include="Assets\RO\Shader\RO\Scene\ROSky.shader" />
+    <None Include="Assets\RO\Shader\RO\Effect\ROCautionArrow.shader" />
+    <None Include="Assets\RO\Shader\TMP\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Details\WavingGrass.shader" />
+    <None Include="Assets\RO\Shader\RO\Creature\ROPlayerUI__beta140.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityLightingCommon.cginc" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\API\Metal.hlsl" />
+    <None Include="Assets\RO\Shader\TMP\TMP_SDF.shader" />
+    <None Include="Assets\RO\Shader\RO\Replace\Invisible.shader" />
+    <None Include="Assets\RO\Shader\RO\Creature\ROMonster__beta140.shader" />
+    <None Include="Assets\Shaders\RoShaders\RimLight\Diffuse.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Specular-AddPass.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-Parallax.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Specular-Base.shader" />
+    <None Include="Assets\Shaders\RoShaders\Projector\Projector-Color.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle VertexLit Blended.shader" />
+    <None Include="Assets\RO\Shader\RO\Replace\HighLighting.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\GIDebug\TextureUV.shader" />
+    <None Include="Assets\Shaders\RoShaders\Include\PBS_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Common\AdditiveColor.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityCG.glslinc" />
+    <None Include="Assets\Shaders\RoShaders\Skin\Skin-FlowTexCutout.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-Glossy.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\GIDebug\VertexColors.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\SpeedTreeVertex.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-BumpSpec.shader" />
+    <None Include="Assets\RO\Shader\RO\Replace\OutlineGeometry.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-Halo.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-Bumped.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-BumpSpec.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityImageBasedLighting.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Sprites-Mask.shader" />
+    <None Include="Assets\Shaders\RoShaders\RimLight\CutoutDiffuseMaskR.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\CustomShadowA.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\Lighting.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Particle-Add.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\skybox cubed.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\ParticleAlphaBlendC_UVPanner.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionBark.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResources\Font.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\Sampling.hlsl" />
+    <None Include="Assets\Shaders\RoShaders\Include\SkinBlend_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Cubemaps\CubeBlur.shader" />
+    <None Include="Assets\RO\Shader\TMP\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\RO\Shader\TMP\TMPro_Properties.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-DiffuseDetail.shader" />
+    <None Include="Assets\Shaders\RoShaders\Projector\FanBlend.shader" />
+    <None Include="Assets\Shaders\RoShaders\Include\PBSHead_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\SpeedTreeWind.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-VertexLit.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardUtils.cginc" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\PPS\Bloom.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\xRLib.hlsl" />
+    <None Include="Assets\RO\Shader\RO\Replace\ROOccluder__beta137.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\TransparentGrayMaskRNoLight.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-Parallax.shader" />
+    <None Include="Assets\Shaders\RoShaders\Include\ROShadow_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityCG.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityGlobalIllumination.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Skybox-Cubed.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-ParallaxSpec.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\GIDebug\UV1sAsPositions.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SpeedTree.shader" />
+    <None Include="Assets\Shaders\RoShaders\Skin\CutoutDiffuseMaskRFlow.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\API\PSP2.hlsl" />
+    <None Include="Assets\Shaders\RoShaders\Particle\Particle-Add(clipRGB).shader" />
+    <None Include="Assets\Shaders\RoShaders\Projector\CircleBlend.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-Bumped.shader" />
+    <None Include="Assets\Shaders\RoShaders\Include\ROColorEffect_Include.cginc" />
+    <None Include="Assets\Shaders\PostEffect\Saturation\Saturation.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Lightmap-Unlit.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-DepthNormalsTexture.shader" />
+    <None Include="Assets\Shaders\PostEffect\AntialiasingFXAA\FXAA.shader" />
+    <None Include="Assets\RO\Shader\RO\Creature\ROShadowPlane.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Lit-Refraction.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-BlitCopyDepth.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\API\Vulkan.hlsl" />
+    <None Include="Assets\Shaders\PostEffect\Bloom\Bloom.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\CutoutAdditiveColor.shader" />
+    <None Include="Assets\RO\Shader\TMP\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\GIDebug\ShowLightMask.shader" />
+    <None Include="Assets\RO\Shader\RO\Effect\ROEffect__beta137.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesOptimized.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\CustomShadowR.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-ConvertTexture.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityDeferredLibrary.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VideoDecodeAndroid.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Standard-Base.shader" />
+    <None Include="Assets\RO\Shader\RO\Include\SceneMeta.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityPBSLighting.cginc" />
+    <None Include="Assets\RO\Shader\RO\Scene\ROScene__beta140.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionLeavesRendertex.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Skybox.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Particle-Alpha.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\API\D3D12.hlsl" />
+    <None Include="Assets\RO\Shader\RO\Include\ColorCorrect.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Multiply.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-VertexLit.shader" />
+    <None Include="Assets\Shaders\RoShaders\PostEffects\Include\ACES.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\Tessellation.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Overdraw.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-BumpVertexLit.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Lit-Transparent.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardMeta.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Particle-Alpha-VertexLit.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Decal.shader" />
+    <None Include="Assets\RO\Shader\RO\Include\CautionCommon.cginc" />
+    <None Include="Assets\RO\Shader\RO\UI\ROUIMap.shader" />
+    <None Include="Assets\RO\Shader\TMP\TMP_SDF Overlay.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardShadow.cginc" />
+    <None Include="Assets\RO\Shader\TMP\TMPro.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardCoreForwardSimple.cginc" />
+    <None Include="Assets\RO\Shader\RO\UI\ROEmojiFont.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Lightmap-Diffuse.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle AddSmooth.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-GUITextureBlit.shader" />
+    <None Include="Assets\Shaders\PostEffect\BlurEffectConeTap\BlurEffectConeTaps.shader" />
+    <None Include="Assets\RO\Shader\RO\UI\ROUIRT.shader" />
+    <None Include="Assets\Shaders\DebugShader\UVDebug.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\license.txt" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-GUITextureClip.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-Parallax.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-ParallaxSpec.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-Diffuse.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Bumped.shader" />
+    <None Include="Assets\Shaders\RoShaders\Skin\Skin-Cube.shader" />
+    <None Include="Assets\Shaders\RoShaders\Particle\Particle-Add(4Tex).shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuseMaskRNoLight.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\API\D3D11.hlsl" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityInstancing.cginc" />
+    <None Include="Assets\RO\Shader\RO\Replace\Outline.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\API\OpenGL.hlsl" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Lightmap-Bumped.shader" />
+    <None Include="Assets\Shaders\RoShaders\Particle\Particle-AddColor(RGB).shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-DeferredShading.shader" />
+    <None Include="Assets\Shaders\RoShaders\RO\U_Y_AP_1.shader" />
+    <None Include="Assets\RO\Shader\RO\Creature\ROPlayer__beta140.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\API\Switch.hlsl" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\PPS\Lut2D.shader" />
+    <None Include="Assets\RO\Shader\RO\Creature\ROMonsterVisibility__beta140.shader" />
+    <None Include="Assets\RO\Shader\RO\Creature\ROPlayerVisibility__beta140.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Premultiply Blend.shader" />
+    <None Include="Assets\RO\Shader\TMP\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\MobileDiffuseColMask.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Cubemaps\CubeBlurOdd.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\SpeedTreeCommon.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Scene\DiffuseEmission_FlowVC.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle AddMultiply.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\CustomShadowB.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\CutoutDiffuseCol.shader" />
+    <None Include="Assets\Shaders\PostEffect\AntialiasingFXAA\FXAA3.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Skin\Skin-FlowTexDiff.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Lit-Detail.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-VertexLit.shader" />
+    <None Include="Assets\RO\Shader\TMP\TMP_Bitmap.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VR\Shaders\SpatialMappingOcclusion.shader" />
+    <None Include="Assets\RO\Shader\RO\Effect\ROEffectRT__beta137.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Details\VertexLit.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\CutoutDiffuseMaskRNoLight.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Flare.shader" />
+    <None Include="Assets\RO\Shader\RO\CusRT\CustomRenderTexture.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\ACES.hlsl" />
+    <None Include="Assets\RO\Shader\TMP\TMP_Sprite.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityBuiltin2xTreeLibrary.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityMetaPass.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\SpeedTreeBillboardCommon.cginc" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\API\D3D9.hlsl" />
+    <None Include="Assets\Shaders\RoShaders\Skin\Skin-CubeNoMask.shader" />
+    <None Include="Assets\Shaders\RoShaders\PostEffects\Include\Common.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Projector\RectAdd.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityShaderVariables.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Include\ROCommonHead_Include.cginc" />
+    <None Include="Assets\RO\Shader\TMP\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Shaders\RoShaders\Projector\CircleAdd.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnitySprites.cginc" />
+    <None Include="Assets\RO\Shader\RO\Effect\ROEffectDistortion__beta137.shader" />
+    <None Include="Assets\RO\Shader\RO\UI\ROUIEye__beta137.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityBuiltin3xTreeLibrary.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-ScreenSpaceShadows.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-BumpSpec.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\StandardSpecular.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-BumpSpec.shader" />
+    <None Include="Assets\RO\Shader\RO\Scene\ROWater__beta140.shader" />
+    <None Include="Assets\Shaders\RoShaders\Include\CommonHead_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VR\Shaders\BlitCopyFromTexArray.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\API\XboxOne.hlsl" />
+    <None Include="Assets\Shaders\RoShaders\Scene\CustomLightSphere.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBarkRendertex.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\CutoutFadeLM.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-MotionVectors.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Unlit-Transparent.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuseMaskRCube.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Standard-AddPass.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-ParallaxSpec.shader" />
+    <None Include="Assets\RO\Shader\RO\Replace\Standard.shader" />
+    <None Include="Assets\RO\Shader\RO\Include\SceneCommon.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-BumpSpec-1DirectionalLight.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-Diffuse.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\CutoutDiffuseMaskLM_VMove.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-CombineDepthNormals.shader" />
+    <None Include="Assets\RO\Shader\RO\UI\RONativeImg.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VR\Shaders\Internal-VRDistortion.shader" />
+    <None Include="Assets\Shaders\RoShaders\Particle\Particle-Add(clip).shader" />
+    <None Include="Assets\Shaders\Water1\Water1.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Add.shader" />
+    <None Include="Assets\RO\Shader\RO\Include\EffectCommon.cginc" />
+    <None Include="Assets\RO\Shader\RO\Include\GpuSkinning.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardBRDF.cginc" />
+    <None Include="Assets\RO\Shader\RO\Replace\OverDraw.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\MobileDiffuse.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\CutoutFade.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesFastOptimized.shader" />
+    <None Include="Assets\RO\Shader\RO\Include\SceneMap.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-ParallaxSpec.shader" />
+    <None Include="Assets\Shaders\PostEffect\Contrast\Contrast.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBarkOptimized.shader" />
+    <None Include="Assets\Shaders\RoShaders\Include\CommonBasic_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Particle-Multiply.shader" />
+    <None Include="Assets\RO\Shader\RO\UI\ROUIHUD.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuseCol.shader" />
+    <None Include="Assets\RO\Shader\RO\Effect\ROCaution__beta138.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\DiffuseEmisSin.shader" />
+    <None Include="Assets\RO\Shader\RO\Creature\ROMonsterSoul__beta140.shader" />
+    <None Include="Assets\Shaders\Water2\Water2.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Specular-FirstPass.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityUI.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\Standard-FirstPass.shader" />
+    <None Include="Assets\RO\Shader\RO\Scene\Lightbeam_Detail.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-Glossy.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-Diffuse.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Diffuse.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Unlit-Text.shader" />
+    <None Include="Assets\Shaders\RoShaders\Include\ROLightingBasic_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Skin\Skin-RimLightBlend8.shader" />
+    <None Include="Assets\RO\Shader\RO\UI\ROFrameAnimation.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-Flare.shader" />
+    <None Include="Assets\Shaders\PostEffect\BlackWhite\BlackWhite.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\TransparentDiffuse.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Standard.shader" />
+    <None Include="Assets\Shaders\RoShaders\Include\ROSkinBlend_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-SoftEdgeUnlit.shader" />
+    <None Include="Assets\Shaders\PostEffect\RGBSepration\Rgb.shader" />
+    <None Include="Assets\RO\Shader\RO\Replace\PreZAlphaTest.shader" />
+    <None Include="Assets\RO\Shader\RO\UI\ROUIWaveMask.shader" />
+    <None Include="Assets\RO\Shader\RO\Replace\ShadowCaster.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-Parallax.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-Glossy.shader" />
+    <None Include="Assets\RO\Shader\RO\Effect\ROEffectGround__beta137.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Unlit\Unlit-Normal.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\Custom_Add.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SpeedTreeBillboard.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-Glossy.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeaves.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\CutoutDiffuseMaskR.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-VertexLit.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResources\Internal-Clear.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\CutoutDiffuseColNoLight.shader" />
+    <None Include="Assets\RO\Shader\RO\Effect\ROEffectProjector__beta137.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Anim Alpha Blend.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\VideoDecodeOSX.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\ROUber.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-GUITexture.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-GUIRoundedRect.shader" />
+    <None Include="Assets\RO\Shader\RO\ImageEffect\API\PSSL.hlsl" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Unlit\Unlit-Alpha.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardInput.cginc" />
+    <None Include="Assets\RO\Shader\RO\Scene\ROTerrain__beta140.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Blend.shader" />
+    <None Include="Assets\Shaders\PostEffect\RGBSepration\Rgbsepration.shader" />
+    <None Include="Assets\RO\Shader\RO\Replace\Mipmap.shader" />
+    <None Include="Assets\Shaders\PostEffect\RadialBlur\RadialBlur.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityDeprecated.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Scene\SceneAdd_DoubleRot.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorBark.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\Fade.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-DeferredReflections.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\MobileDiffuseCol.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\AlphaTest-VertexLit.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle Alpha Blend.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-Bumped.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\CutoutDiffuseMaskLM.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesFast.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Unlit\Unlit-AlphaTest.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Lightmap-BumpSpec.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesRendertex.shader" />
+    <None Include="Assets\Shaders\PostEffect\Bloom\BlurEffect.shader" />
+    <None Include="Assets\RO\Shader\RO\Include\DepthShadow.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResources\PerformanceTools\FrameDebuggerRenderTargetDisplay.shader" />
+    <None Include="Assets\RO\Shader\RO\Scene\Lightbeam.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Lit-RefractionDetail.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-Skybox.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionLeaves.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResources\Internal-ErrorShader.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-StencilWrite.shader" />
+    <None Include="Assets\Shaders\RoShaders\Projector\Projector-Alpha.shader" />
+    <None Include="Assets\Shaders\RoShaders\RimLight\DiffuseEmsPanner.shader" />
+    <None Include="Assets\Shaders\RoShaders\Include\Shadow_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\RimLight\DiffuseCap.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\TerrainEngine.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Include\LightMap_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Scene\WarpMoon.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Lightmap-VertexLit.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\CutoutDiffuse.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Lightmap-Glossy.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Cubemaps\CubeBlend.shader" />
+    <None Include="Assets\RO\Shader\RO\UI\ROUIHair__beta137.shader" />
+    <None Include="Assets\Shaders\RoShaders\Projector\FanAdd.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-VertexLit.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Nature\SoftOcclusion\TreeSoftOcclusionBarkRendertex.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Reflect-BumpNolight.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityStandardConfig.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Default.shader" />
+    <None Include="Assets\Shaders\RoShaders\Common\CutoutSpecCol.shader" />
+    <None Include="Assets\RO\Shader\RO\Replace\PreZOpaque.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-DiffuseFast.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Skybox-Procedural.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Particle MultiplyDouble.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-BlitCopy.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Alpha-Bumped.shader" />
+    <None Include="Assets\Shaders\RoShaders\PostEffects\Include\ColorGrading.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Particle\ParticleAddNoColor.shader" />
+    <None Include="Assets\Shaders\RoShaders\Particle\Particle-Add(RGB).shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-PrePassLighting.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Lit-Bumped.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityCustomRenderTexture.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-Unlit-Detail.shader" />
+    <None Include="Assets\Shaders\RoShaders\RimLight\DiffuseOutline.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\CGIncludes\UnityShadowLibrary.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Include\ROOutLine_Include.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Sprites-Diffuse.shader" />
+    <None Include="Assets\RO\Shader\RO\Include\CreatureCommon.cginc" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Unlit\Unlit-Color.shader" />
+    <None Include="Assets\RO\Shader\RO\Creature\ROPlayerSoul__beta140.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\UI\UI-DefaultFont.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResources\Internal-Colored.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Internal-GUITextureClipText.shader" />
+    <None Include="Assets\RO\Shader\RO\Creature\ROSnapShot.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Normal-BumpSpec.shader" />
+    <None Include="Assets\Shaders\RoShaders\Scene\WaterAlphaBlend.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Mobile\Mobile-BumpSpec.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\TerrainShaders\Splats\AddPass.shader" />
+    <None Include="Assets\RO\Shader\RO\Replace\Cover.shader" />
+    <None Include="Assets\Shaders\RoShaders\Interal\DefaultResourcesExtra\Illumin-Glossy.shader" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.16f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>/Users/dongchen/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -465,5 +643,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>

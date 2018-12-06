@@ -13,6 +13,139 @@
             </e>
           </e>
         </e>
+        <e p="RO" t="Include">
+          <e p="Demo" t="Include">
+            <e p="Editor" t="Include">
+              <e p="BaseShaderEditor.cs" t="Include" />
+              <e p="CommonShaderEditor.cs" t="Include" />
+              <e p="MaterialPropertyAttribute.cs" t="Include" />
+            </e>
+            <e p="ReCommon.cginc" t="Include" />
+          </e>
+          <e p="Shader" t="Include">
+            <e p="RO" t="Include">
+              <e p="Creature" t="Include">
+                <e p="ROAvatar.shader" t="Include" />
+                <e p="ROMonster__beta140.shader" t="Include" />
+                <e p="ROMonsterSoul__beta140.shader" t="Include" />
+                <e p="ROMonsterUI__beta140.shader" t="Include" />
+                <e p="ROMonsterVisibility__beta140.shader" t="Include" />
+                <e p="ROPlayer__beta140.shader" t="Include" />
+                <e p="ROPlayerSoul__beta140.shader" t="Include" />
+                <e p="ROPlayerUI__beta140.shader" t="Include" />
+                <e p="ROPlayerVisibility__beta140.shader" t="Include" />
+                <e p="ROShadowPlane.shader" t="Include" />
+                <e p="ROSnapShot.shader" t="Include" />
+              </e>
+              <e p="CusRT" t="Include">
+                <e p="CustomRenderTexture.shader" t="Include" />
+              </e>
+              <e p="Editor" t="Include">
+                <e p="ROEffectShaderGUI.cs" t="Include" />
+                <e p="ROSceneShaderGUI.cs" t="Include" />
+              </e>
+              <e p="Effect" t="Include">
+                <e p="ROCaution__beta138.shader" t="Include" />
+                <e p="ROCautionArrow.shader" t="Include" />
+                <e p="ROEffect__beta137.shader" t="Include" />
+                <e p="ROEffectDistortion__beta137.shader" t="Include" />
+                <e p="ROEffectGround__beta137.shader" t="Include" />
+                <e p="ROEffectProjector__beta137.shader" t="Include" />
+                <e p="ROEffectRT__beta137.shader" t="Include" />
+                <e p="ROEffectUI__beta137.shader" t="Include" />
+              </e>
+              <e p="ImageEffect" t="Include">
+                <e p="ACES.hlsl" t="Include" />
+                <e p="API" t="Include">
+                  <e p="D3D11.hlsl" t="Include" />
+                  <e p="D3D12.hlsl" t="Include" />
+                  <e p="D3D9.hlsl" t="Include" />
+                  <e p="Metal.hlsl" t="Include" />
+                  <e p="OpenGL.hlsl" t="Include" />
+                  <e p="PSP2.hlsl" t="Include" />
+                  <e p="PSSL.hlsl" t="Include" />
+                  <e p="Switch.hlsl" t="Include" />
+                  <e p="Vulkan.hlsl" t="Include" />
+                  <e p="XboxOne.hlsl" t="Include" />
+                </e>
+                <e p="Colors.hlsl" t="Include" />
+                <e p="PPS" t="Include">
+                  <e p="Bloom.shader" t="Include" />
+                  <e p="Lut2D.shader" t="Include" />
+                </e>
+                <e p="ROUber.shader" t="Include" />
+                <e p="Sampling.hlsl" t="Include" />
+                <e p="StdLib.hlsl" t="Include" />
+                <e p="xRLib.hlsl" t="Include" />
+              </e>
+              <e p="Include" t="Include">
+                <e p="CautionCommon.cginc" t="Include" />
+                <e p="ColorCorrect.cginc" t="Include" />
+                <e p="CreatureCommon.cginc" t="Include" />
+                <e p="DepthShadow.cginc" t="Include" />
+                <e p="EffectCommon.cginc" t="Include" />
+                <e p="GpuSkinning.cginc" t="Include" />
+                <e p="SceneCommon.cginc" t="Include" />
+                <e p="SceneMap.cginc" t="Include" />
+                <e p="SceneMeta.cginc" t="Include" />
+              </e>
+              <e p="Replace" t="Include">
+                <e p="Cover.shader" t="Include" />
+                <e p="HighLighting.shader" t="Include" />
+                <e p="Invisible.shader" t="Include" />
+                <e p="Mipmap.shader" t="Include" />
+                <e p="Outline.shader" t="Include" />
+                <e p="OutlineGeometry.shader" t="Include" />
+                <e p="OutlineUI.shader" t="Include" />
+                <e p="OverDraw.shader" t="Include" />
+                <e p="PreZAlphaTest.shader" t="Include" />
+                <e p="PreZOpaque.shader" t="Include" />
+                <e p="ROOccluder__beta137.shader" t="Include" />
+                <e p="ShadowCaster.shader" t="Include" />
+                <e p="Standard.shader" t="Include" />
+              </e>
+              <e p="Scene" t="Include">
+                <e p="Lightbeam.shader" t="Include" />
+                <e p="Lightbeam_Detail.shader" t="Include" />
+                <e p="ROCloud.shader" t="Include" />
+                <e p="ROScene__beta140.shader" t="Include" />
+                <e p="ROSceneItem.shader" t="Include" />
+                <e p="ROSky.shader" t="Include" />
+                <e p="ROTerrain__beta140.shader" t="Include" />
+                <e p="ROVolumeFog.shader" t="Include" />
+                <e p="ROWater__beta140.shader" t="Include" />
+                <e p="ROWaterWave__beta137.shader" t="Include" />
+              </e>
+              <e p="UI" t="Include">
+                <e p="ROEmojiFont.shader" t="Include" />
+                <e p="ROFrameAnimation.shader" t="Include" />
+                <e p="RONativeImg.shader" t="Include" />
+                <e p="ROUI.shader" t="Include" />
+                <e p="ROUIEye__beta137.shader" t="Include" />
+                <e p="ROUIHair__beta137.shader" t="Include" />
+                <e p="ROUIHUD.shader" t="Include" />
+                <e p="ROUIMap.shader" t="Include" />
+                <e p="ROUIRT.shader" t="Include" />
+                <e p="ROUIWaveMask.shader" t="Include" />
+              </e>
+            </e>
+            <e p="TMP" t="Include">
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Shaders" t="Include">
           <e p="DebugShader" t="Include">
             <e p="UVDebug.shader" t="Include" />

@@ -83,6 +83,7 @@
               <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
               <folding>
                 <marker date="1515926287275" expanded="false" signature="6:61" ph="..." />
+                <marker date="1515926287275" expanded="true" signature="90:2437" ph="{...}" />
                 <marker date="1515926287275" expanded="true" signature="136:2435" ph="{...}" />
                 <marker date="1515926287275" expanded="true" signature="208:1207" ph="组件操作" />
                 <marker date="1515926287275" expanded="true" signature="230:285" ph="/// 包含所有组件 ... " />
@@ -105,11 +106,60 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="REntityManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntityManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+              <folding>
+                <marker date="1515926480836" expanded="false" signature="6:86" ph="..." />
+                <marker date="1515926480836" expanded="true" signature="115:1844" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="160:1842" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="362:494" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="512:658" ph="/// 添加新的Entity ... " />
+                <marker date="1515926480836" expanded="true" signature="731:824" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="869:987" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="1026:1548" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="1129:1216" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="1314:1538" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="1587:1836" ph="{...}" />
+                <marker date="1515926480836" expanded="true" signature="1684:1753" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RManager.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1515924318127" expanded="true" signature="27:213" ph="{...}" />
+                <marker date="1515924318127" expanded="true" signature="64:211" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RObject.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <marker date="1515926802188" expanded="true" signature="56:118" ph="{...}" />
+                <marker date="1515926802188" expanded="true" signature="94:116" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="RWorld.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RWorld.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="268">
+              <caret line="49" column="38" lean-forward="false" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
               <folding>
                 <marker date="1515926555586" expanded="false" signature="6:61" ph="..." />
                 <marker date="1515926555586" expanded="true" signature="90:1922" ph="{...}" />
@@ -219,99 +269,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UdpSocket.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReFrame.Network/Socket/UdpSocket.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1517055906074" expanded="false" signature="6:137" ph="..." />
-                <marker date="1517055906074" expanded="true" signature="164:8814" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="193:8812" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="1122:1181" ph="/// 当前Socket状态 ... " />
-                <marker date="1517055906074" expanded="true" signature="1309:1443" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="1504:2217" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="1618:1942" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="1976:2094" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="2287:3077" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="2387:2807" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="2841:2959" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="3218:4428" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="3424:4158" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="3605:4144" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="3734:3913" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="4192:4310" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="4471:4828" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="4543:4699" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="4733:4818" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="4879:5381" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="5015:5220" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="5255:5371" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="5447:5842" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="5573:5713" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="5747:5832" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="5941:6413" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="6144:6284" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="6318:6403" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="6476:6805" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="6577:6795" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="6611:6755" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="6855:7575" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="7087:7200" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="7234:7343" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="7622:7966" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="7747:7837" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="7871:7956" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="7976:8165" ph="/// 错误回调 ... " />
-                <marker date="1517055906074" expanded="true" signature="8209:8507" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="8257:8422" ph="{...}" />
-                <marker date="1517055906074" expanded="true" signature="8590:8806" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISessionFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/IClientSession.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISession.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/RObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Bootstrap/Bootstrap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/RManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Bootstrap/ClientBootstrap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISessionContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntityManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Handler/ISessionInboundHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/DefualtSessionFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Handler/TestOutboundHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Handler/ISessionHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Handler/ISessionOutboundHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Context/NetContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISessionPipeline.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/TcpSession.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISessionInboundInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/ActionQueue.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/RComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Util/Context/InterfaceBinder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Reusable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/AbstractSessionContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISessionContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Socket/TcpSocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISessionPipeline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/DefaultSessionContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/IClientSession.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/DefualtSessionFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/DefaultSessionPipeline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISessionOutboundInvoker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Bootstrap/Bootstrap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Bootstrap/ClientBootstrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Reframe.Unity/Utility/UnityDebuger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/RWorld.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A24E193D-5CF1-4A42-AC00-EBAEA26EC7BC/0a/0d4d9cda/Socket.cs" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Handler/SessionSendHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/RComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/RObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/RManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntityManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UnitTest/Tests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Socket/TcpSocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Network/Socket/UdpSocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Network/Socket/SocketEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISessionOutboundInvoker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Context/NetContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Handler/ISessionOutboundHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Util/Context/InterfaceBinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Handler/SessionSendHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Handler/ISessionHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Handler/TestOutboundHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Handler/ISessionInboundHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Reusable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISession.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/HashUtil.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISessionInboundInvoker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISessionFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A24E193D-5CF1-4A42-AC00-EBAEA26EC7BC/0a/0d4d9cda/Socket.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Utility/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/AbstractSessionContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/DefaultSessionPipeline.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/DefaultSessionContext.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -396,6 +394,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -406,7 +405,13 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="ReFrame.Core (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="ReFrame.Util" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ReFrame.Core" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ReFrame.Core (5 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ReFrame.Core" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Base" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -414,7 +419,6 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -454,11 +458,12 @@
       <workItem from="1517082429837" duration="4174000" />
       <workItem from="1517241373794" duration="829000" />
       <workItem from="1517329470635" duration="205000" />
+      <workItem from="1543593493803" duration="337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30219000" />
+    <option name="totallyTimeSpent" value="30556000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,20 +476,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.08941345" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4873035" sideWeight="0.49642345" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22031474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22317597" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4873035" sideWeight="0.5035765" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4873035" sideWeight="0.5035765" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -566,25 +572,10 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReFrame.Network/Session/ISession.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <marker date="1517083340408" expanded="true" signature="72:961" ph="{...}" />
-            <marker date="1517083340408" expanded="true" signature="233:369" ph="/// 连接服务器 ... " />
-            <marker date="1517083340408" expanded="true" signature="434:528" ph="/// 发送消息 ... " />
-            <marker date="1517083340408" expanded="true" signature="569:668" ph="/// 不经过处理直接发送消息 ... " />
-            <marker date="1517083340408" expanded="true" signature="712:806" ph="/// 处理消息 ... " />
-            <marker date="1517083340408" expanded="true" signature="866:919" ph="/// 断开连接 ... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -597,14 +588,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/Singleton.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntityManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -636,13 +619,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ReFrame.Network/Context/Sender.cs" />
-    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RObject.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReFrame.Network/Handler/SessionInitializer.cs" />
     <entry file="file://$PROJECT_DIR$/ReFrame.Network/Session/DefualtSessionFactory.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -785,15 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <marker date="1517084476079" expanded="true" signature="91:980" ph="{...}" />
-            <marker date="1517084476079" expanded="true" signature="262:547" ph="{...}" />
-            <marker date="1517084476079" expanded="true" signature="371:537" ph="{...}" />
-            <marker date="1517084476079" expanded="true" signature="591:645" ph="{...}" />
-            <marker date="1517084476079" expanded="true" signature="692:749" ph="{...}" />
-            <marker date="1517084476079" expanded="true" signature="801:858" ph="{...}" />
-            <marker date="1517084476079" expanded="true" signature="909:965" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,14 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <marker date="1517083340408" expanded="true" signature="72:961" ph="{...}" />
-            <marker date="1517083340408" expanded="true" signature="233:369" ph="/// 连接服务器 ... " />
-            <marker date="1517083340408" expanded="true" signature="434:528" ph="/// 发送消息 ... " />
-            <marker date="1517083340408" expanded="true" signature="569:668" ph="/// 不经过处理直接发送消息 ... " />
-            <marker date="1517083340408" expanded="true" signature="712:806" ph="/// 处理消息 ... " />
-            <marker date="1517083340408" expanded="true" signature="866:919" ph="/// 断开连接 ... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,12 +960,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Util/Extension/StringEx/IStringConvertable.cs" />
+    <entry file="file://$PROJECT_DIR$/ReFrame.Util/Extension/StringEx/StringEx.cs" />
     <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntity.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding>
             <marker date="1515926287275" expanded="false" signature="6:61" ph="..." />
+            <marker date="1515926287275" expanded="true" signature="90:2437" ph="{...}" />
             <marker date="1515926287275" expanded="true" signature="136:2435" ph="{...}" />
             <marker date="1515926287275" expanded="true" signature="208:1207" ph="组件操作" />
             <marker date="1515926287275" expanded="true" signature="230:285" ph="/// 包含所有组件 ... " />
@@ -1028,10 +990,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/REntityManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <marker date="1515926480836" expanded="false" signature="6:86" ph="..." />
+            <marker date="1515926480836" expanded="true" signature="115:1844" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="160:1842" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="362:494" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="512:658" ph="/// 添加新的Entity ... " />
+            <marker date="1515926480836" expanded="true" signature="731:824" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="869:987" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="1026:1548" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="1129:1216" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="1314:1538" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="1587:1836" ph="{...}" />
+            <marker date="1515926480836" expanded="true" signature="1684:1753" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1515924318127" expanded="true" signature="27:213" ph="{...}" />
+            <marker date="1515924318127" expanded="true" signature="64:211" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <marker date="1515926802188" expanded="true" signature="56:118" ph="{...}" />
+            <marker date="1515926802188" expanded="true" signature="94:116" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ReFrame.Core/Base/RWorld.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="268">
+          <caret line="49" column="38" lean-forward="false" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
           <folding>
             <marker date="1515926555586" expanded="false" signature="6:61" ph="..." />
             <marker date="1515926555586" expanded="true" signature="90:1922" ph="{...}" />
@@ -1054,22 +1059,6 @@
             <marker date="1515926555586" expanded="true" signature="1713:1858" ph="{...}" />
             <marker date="1515926555586" expanded="true" signature="1775:1848" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReFrame.Util/Extension/StringEx/IStringConvertable.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReFrame.Util/Extension/StringEx/StringEx.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12099">
-          <caret line="200" column="32" lean-forward="false" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>

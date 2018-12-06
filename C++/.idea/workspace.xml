@@ -20,16 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7557ff0-045b-41ff-a493-8cc52ffdaf20" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unity/NativeReadBytes/NativeReadBytes/.idea/.idea.NativeReadBytes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/NativeReadBytes/NativeReadBytes/.idea/.idea.NativeReadBytes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unity/NativeReadBytes/NativeReadBytes/Assets/StreamingAssets/build_info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/NativeReadBytes/NativeReadBytes/Assets/StreamingAssets/build_info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/MoviePlayerViewController.m" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/MoviePlayerViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/TestAppController.mm" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/TestAppController.mm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/cg.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Plugins/iOS/cg.mp4.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Splash/HideLog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/Splash/HideLog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/StreamingAssets/build_info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Unity/NativeVideoPlayer/NativeVideoPlayer/Assets/StreamingAssets/build_info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Unity/NativeVideoPlayer/NativeVideoPlayer/output.apk" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm/C++/utility/string_util.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Algorithm/C++/utility/string_util.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Algorithm/C++/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorithm/C++/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Algorithm/C++/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorithm/C++/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/.idea/.idea.ReFrame.Core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/.idea/.idea.ReFrame.Core/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/Reframe.Unity/obj/Debug/Reframe.Unity.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/Reframe.Unity/obj/Debug/Reframe.Unity.csprojResolveAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.csprojResolveAssemblyReference.cache" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-win32/" />
@@ -45,9 +42,23 @@
     <session id="-1694588381">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="1" />
+          <entry key="hpp" value="5" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="1" />
+          <entry key="ObjectiveC" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -55,15 +66,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Test/TestEmbedMono/TestEmbedMono.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -73,12 +75,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/TestXml/TestXml.cpp">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
+            <state relative-caret-position="255">
+              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ECS/ComponentId.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ECS/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ECS/Entity.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ECS/IComponent.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ECS/ISystem.hpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ECS/SystemContainer.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ECS/SystemContainer.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
               <folding>
-                <element signature="e#38#57#0" expanded="true" />
+                <element signature="e#511#523#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,6 +221,11 @@
             <path>
               <item name="ResetCore" type="b2602c69:ProjectViewProjectNode" />
               <item name="C++" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ResetCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C++" type="462c0819:PsiDirectoryNode" />
+              <item name="ECS" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -347,19 +409,19 @@
       <workItem from="1525368176775" duration="186000" />
       <workItem from="1532805076882" duration="2334000" />
       <workItem from="1542471795261" duration="388000" />
+      <workItem from="1543598817893" duration="88000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36761000" />
+    <option name="totallyTimeSpent" value="36849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2918455" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29613733" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32827586" />
@@ -372,12 +434,13 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32889965" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32827586" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Data View" order="3" />
       <window_info anchor="right" id="LuaJ" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,34 +450,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ECS/IComponent.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECS/SystemContainer.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECS/ComponentId.cpp" />
-    <entry file="file://$PROJECT_DIR$/ECS/Entity.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/deque" />
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory" />
     <entry file="file://$PROJECT_DIR$/Util/ObjectPool.hpp" />
-    <entry file="file://$PROJECT_DIR$/ECS/Entity.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Util/ObjectPool.cpp" />
     <entry file="file://$PROJECT_DIR$/Util/TypeDefine.hpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -475,13 +513,6 @@
     <entry file="file://$PROJECT_DIR$/Util/File.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ECS/ComponentId.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Libs/pugixml/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/ReMath/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -519,13 +550,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Includes/Lua/lapi.h" />
-    <entry file="file://$PROJECT_DIR$/ECS/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/TestToLuapp/TestLua.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -538,13 +562,6 @@
     <entry file="file://$PROJECT_DIR$/Includes/mono/metadata/profiler-events.h" />
     <entry file="file://$PROJECT_DIR$/Includes/SDL/begin_code.h" />
     <entry file="file://$PROJECT_DIR$/Includes/SDL/SDL_config.h.cmake" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Includes/SDL/SDL_system.h" />
     <entry file="file://$PROJECT_DIR$/Includes/SDL/SDL.h" />
     <entry file="file://$PROJECT_DIR$/Test/TestSDL/CMakeLists.txt">
@@ -603,6 +620,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/ComponentId.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/Entity.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/IComponent.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/ISystem.hpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/SystemContainer.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/SystemContainer.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="e#511#523#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
