@@ -69,7 +69,14 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)ReGL\thirdpart\include;$(SolutionDir)ReGL\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)ReGL\thirdpart\libs\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)ReGL\thirdpart\include;$(SolutionDir)ReGL\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)ReGL\thirdpart\libs\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -78,6 +85,9 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)\ReGL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -85,8 +95,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\ReGL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -117,13 +130,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\looper\InputManager.cpp" />
     <ClCompile Include="src\looper\World.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\opengl\Canvas.cpp" />
+    <ClCompile Include="src\opengl\GLADManager.cpp" />
+    <ClCompile Include="src\opengl\GLFWManager.cpp" />
+    <ClCompile Include="src\opengl\GLManager.cpp" />
+    <ClCompile Include="src\opengl\Window.cpp" />
+    <ClCompile Include="src\thirdpart\glad.c" />
     <ClCompile Include="src\utility\context.cpp" />
     <ClCompile Include="src\utility\logger\ConsoleLogger.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\looper\InputManager.h" />
     <ClInclude Include="src\looper\World.h" />
+    <ClInclude Include="src\opengl\Canvas.h" />
+    <ClInclude Include="src\opengl\GLADManager.h" />
+    <ClInclude Include="src\opengl\GLFWManager.h" />
+    <ClInclude Include="src\opengl\GLManager.h" />
+    <ClInclude Include="src\opengl\Window.h" />
     <ClInclude Include="src\utility\context.h" />
     <ClInclude Include="src\utility\logger\ConsoleLogger.h" />
     <ClInclude Include="src\utility\logger\ILogger.h" />

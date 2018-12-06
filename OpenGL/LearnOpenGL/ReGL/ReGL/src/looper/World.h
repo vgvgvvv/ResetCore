@@ -11,8 +11,11 @@ namespace ReGL
         ~World() = delete;
 
         static bool Init();
+        static bool PreUpdate();
         static bool Update();
+        static bool LateUpdate();
         static bool Uninit();
+
         static bool Run(int argc, char **argv);
     
     private:

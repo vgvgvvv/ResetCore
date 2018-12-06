@@ -4,9 +4,6 @@
     <Filter Include="src">
       <UniqueIdentifier>{76f8205c-7d1b-47c1-97e0-219685d6d991}</UniqueIdentifier>
     </Filter>
-    <Filter Include="thirdpart">
-      <UniqueIdentifier>{bdec1a29-d622-43a6-a691-6c4be9166807}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\opengl">
       <UniqueIdentifier>{bd23d0bb-390a-4b11-831d-286844e29376}</UniqueIdentifier>
     </Filter>
@@ -18,6 +15,9 @@
     </Filter>
     <Filter Include="src\utility\logger">
       <UniqueIdentifier>{57648c6d-0f2f-4729-8adc-3e6f8091f816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdpart">
+      <UniqueIdentifier>{bdec1a29-d622-43a6-a691-6c4be9166807}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -32,6 +32,27 @@
     </ClCompile>
     <ClCompile Include="src\utility\logger\ConsoleLogger.cpp">
       <Filter>src\utility\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thirdpart\glad.c">
+      <Filter>src\thirdpart</Filter>
+    </ClCompile>
+    <ClCompile Include="src\looper\InputManager.cpp">
+      <Filter>src\looper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\Canvas.cpp">
+      <Filter>src\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\GLADManager.cpp">
+      <Filter>src\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\GLFWManager.cpp">
+      <Filter>src\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\GLManager.cpp">
+      <Filter>src\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\Window.cpp">
+      <Filter>src\opengl</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -49,6 +70,24 @@
     </ClInclude>
     <ClInclude Include="src\utility\logger\ILogger.h">
       <Filter>src\utility\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\looper\InputManager.h">
+      <Filter>src\looper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\Canvas.h">
+      <Filter>src\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\GLADManager.h">
+      <Filter>src\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\GLFWManager.h">
+      <Filter>src\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\GLManager.h">
+      <Filter>src\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\Window.h">
+      <Filter>src\opengl</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

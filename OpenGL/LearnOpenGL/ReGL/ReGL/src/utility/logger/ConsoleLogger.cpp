@@ -8,18 +8,18 @@ namespace ReGL
     void ConsoleLogger::Log(const std::string& log) const
     {
         SetConsoleTextAttribute(hConsole, LOG_COLOR);
-        std::cout << "[LOG] " << log << std::endl;
+        std::cout << "[LOG] " << log << std::endl << "\t[FILE]" << __FILE__ << "\t[LINE]" << __LINE__ << std::endl;
     }
 
     void ConsoleLogger::Warning(const std::string& log) const
     {
         SetConsoleTextAttribute(hConsole, WARNING_COLOR);
-        std::cout << "[WARNING] " << std::endl;
+        std::cout << "[WARNING] " << log << std::endl << "\t[FILE]" << __FILE__ << "\t[LINE]" << __LINE__ << std::endl;
     }
 
     void ConsoleLogger::Error(const std::string& log) const
     {
         SetConsoleTextAttribute(hConsole, ERROR_COLOR);
-        std::cerr << "[ERROR] " << std::endl;
+        std::cerr << "[ERROR] " << log << std::endl << "\t[FILE]" << __FILE__ << "\t[LINE]" << __LINE__ << std::endl;
     }
 }

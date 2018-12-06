@@ -1,33 +1,23 @@
-﻿#include "Context.h"
+﻿#include "context.h"
 #include "logger/ConsoleLogger.h"
 
 namespace ReGL
 {
-    ILogger* Context::logger_ = {new ConsoleLogger()};
+    ConsoleLogger Context::default_logger_;
 
-    template <typename T>
-    void Context::RegisterInterface(T* target)
+    void Context::Init()
     {
+        RegisterLogger(default_logger_);
     }
 
-    template <typename T>
-    const T& Context::GetInterface()
+    void Context::RegisterLogger(ILogger& logger)
     {
-    }
-
-
-    void Context::RegisterLogger(ILogger* logger)
-    {
-        if(logger == nullptr)
-        {
-            return;
-        }
-        delete logger_;
-        logger_ = logger;
+        ContextValue<ILogger>::Set(logger);
     }
 
     const ILogger& Context::GetLogger()
     {
-        return *logger_;
+        return ContextValue<ILogger>::Get();
     }
+
 }

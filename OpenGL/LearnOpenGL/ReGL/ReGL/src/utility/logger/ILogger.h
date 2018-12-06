@@ -9,8 +9,8 @@ namespace ReGL
     {
     public:
         ILogger() = default;
-        ILogger(const ILogger&) = delete;
-        ILogger& operator=(const ILogger&) = delete;
+        ILogger(const ILogger&) = default;
+        ILogger& operator=(const ILogger&) = default;
         virtual void Log(const std::string&) const = 0;
         virtual void Warning(const std::string&) const = 0;
         virtual void Error(const std::string&) const = 0;
