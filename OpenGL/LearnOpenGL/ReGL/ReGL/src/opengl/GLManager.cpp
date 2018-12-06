@@ -32,13 +32,22 @@ namespace ReGL
             Context::GetLogger().Error(" GLFWManager::Update with error !!!");
             return false;
         }
+        if(!canvas_.Render())
+        {
+            Context::GetLogger().Error(" Canvas::Render with error !!!");
+            return false;
+        }
 
         return true;
     }
 
     bool GLManager::LateUpdate()
     {
-        canvas_.Clear();
+        if(!canvas_.Clear())
+        {
+            Context::GetLogger().Error(" Canvas::Clear with error !!!");
+            return false;
+        }
         if(!GLFWManager::LateUpdate())
         {
             Context::GetLogger().Error(" GLFWManager::LateUpdate with error !!!");

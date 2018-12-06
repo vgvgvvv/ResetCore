@@ -3,6 +3,12 @@
 
 namespace ReGL
 {
+    bool Canvas::Render()
+    {
+        
+    }
+
+
     bool Canvas::Clear()
     {
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
