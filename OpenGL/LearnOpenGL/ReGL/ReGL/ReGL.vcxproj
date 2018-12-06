@@ -137,6 +137,7 @@
     <ClCompile Include="src\opengl\GLADManager.cpp" />
     <ClCompile Include="src\opengl\GLFWManager.cpp" />
     <ClCompile Include="src\opengl\GLManager.cpp" />
+    <ClCompile Include="src\opengl\renderer\MeshRenderer.cpp" />
     <ClCompile Include="src\opengl\Window.cpp" />
     <ClCompile Include="src\thirdpart\glad.c" />
     <ClCompile Include="src\utility\context.cpp" />
@@ -149,6 +150,8 @@
     <ClInclude Include="src\opengl\GLADManager.h" />
     <ClInclude Include="src\opengl\GLFWManager.h" />
     <ClInclude Include="src\opengl\GLManager.h" />
+    <ClInclude Include="src\opengl\renderer\MeshRenderer.h" />
+    <ClInclude Include="src\opengl\renderer\Renderer.h" />
     <ClInclude Include="src\opengl\Window.h" />
     <ClInclude Include="src\utility\context.h" />
     <ClInclude Include="src\utility\logger\ConsoleLogger.h" />
