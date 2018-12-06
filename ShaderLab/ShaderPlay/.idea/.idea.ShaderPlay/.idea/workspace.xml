@@ -10,152 +10,202 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EffectCommon.cginc" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/RO/Shader/RO/Include/EffectCommon.cginc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MaterialPropertyAttribute.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/Editor/MaterialPropertyAttribute.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-              <folding>
-                <marker date="1543640896050" expanded="true" signature="6:92" ph="..." />
-                <marker date="1543640896050" expanded="true" signature="144:272" ph="{...}" />
-                <marker date="1543640896050" expanded="true" signature="243:270" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonShaderEditor.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/Editor/CommonShaderEditor.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-              <folding>
-                <marker date="1543640954649" expanded="false" signature="6:97" ph="..." />
-                <marker date="1543640954649" expanded="true" signature="150:301" ph="{...}" />
-                <marker date="1543640954649" expanded="true" signature="247:295" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseShaderEditor.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/Editor/BaseShaderEditor.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-              <folding>
-                <marker date="1543641555757" expanded="false" signature="6:141" ph="..." />
-                <marker date="1543641555757" expanded="true" signature="185:1065" ph="{...}" />
-                <marker date="1543641555757" expanded="true" signature="258:796" ph="{...}" />
-                <marker date="1543641555757" expanded="true" signature="318:497" ph="{...}" />
-                <marker date="1543641555757" expanded="true" signature="370:398" ph="{...}" />
-                <marker date="1543641555757" expanded="true" signature="512:616" ph="{...}" />
-                <marker date="1543641555757" expanded="true" signature="659:793" ph="{...}" />
-                <marker date="1543641555757" expanded="true" signature="740:789" ph="{...}" />
-                <marker date="1543641555757" expanded="true" signature="887:1063" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ROEffectShaderGUI.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/RO/Shader/RO/Editor/ROEffectShaderGUI.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="122" column="31" lean-forward="false" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
-              <folding>
-                <marker date="1536744794461" expanded="false" signature="6:63" ph="..." />
-                <marker date="1536744794461" expanded="true" signature="107:24867" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="135:444" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="482:736" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="772:1047" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="1076:1192" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="1221:1280" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="1308:1416" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="3067:7153" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="7242:8998" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="7455:7523" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="7590:7657" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="7717:7777" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="7837:7897" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="7910:7972" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="8098:8602" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="8146:8351" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="8391:8592" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="9020:13312" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="9193:9532" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="9602:10252" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="10322:10518" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="10590:10788" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="10860:11058" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="11127:11316" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="11385:11574" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="11645:11905" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="12104:13306" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="12236:12923" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="12940:13296" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="13336:16527" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="13506:16521" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="13583:13773" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="13849:14039" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="14110:14299" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="14371:14566" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="14642:14914" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="14981:16511" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="15066:15272" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="15352:15558" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="15633:15838" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="15914:16125" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="16205:16497" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="16548:16859" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="16708:16853" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="16885:17225" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="16953:17219" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="17246:17328" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="17351:24497" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="17500:17646" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="17700:17868" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="17921:18085" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="18162:18312" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="18353:24491" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="18461:24432" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="18655:19109" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="19138:19764" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="19608:19738" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="20376:20494" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="20672:21370" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="21215:21344" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="21966:22084" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="22253:22938" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="22783:22912" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="23111:23605" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="23678:24369" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="24213:24343" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="24519:24602" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="24621:24785" ph="{...}" />
-                <marker date="1536744794461" expanded="true" signature="24808:24865" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="EffectCommon.cginc" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Assets/RO/Shader/RO/Include/EffectCommon.cginc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="258">
+                  <caret line="346" column="37" lean-forward="false" selection-start-line="346" selection-start-column="16" selection-end-line="346" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MaterialPropertyAttribute.cs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/Editor/MaterialPropertyAttribute.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+                  <folding>
+                    <marker date="1543640896050" expanded="true" signature="6:92" ph="..." />
+                    <marker date="1543640896050" expanded="true" signature="144:272" ph="{...}" />
+                    <marker date="1543640896050" expanded="true" signature="243:270" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CommonShaderEditor.cs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/Editor/CommonShaderEditor.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+                  <folding>
+                    <marker date="1543640954649" expanded="false" signature="6:97" ph="..." />
+                    <marker date="1543640954649" expanded="true" signature="150:301" ph="{...}" />
+                    <marker date="1543640954649" expanded="true" signature="247:295" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BaseShaderEditor.cs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/Editor/BaseShaderEditor.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+                  <folding>
+                    <marker date="1543641555757" expanded="false" signature="6:141" ph="..." />
+                    <marker date="1543641555757" expanded="true" signature="185:1065" ph="{...}" />
+                    <marker date="1543641555757" expanded="true" signature="258:796" ph="{...}" />
+                    <marker date="1543641555757" expanded="true" signature="318:497" ph="{...}" />
+                    <marker date="1543641555757" expanded="true" signature="370:398" ph="{...}" />
+                    <marker date="1543641555757" expanded="true" signature="512:616" ph="{...}" />
+                    <marker date="1543641555757" expanded="true" signature="659:793" ph="{...}" />
+                    <marker date="1543641555757" expanded="true" signature="740:789" ph="{...}" />
+                    <marker date="1543641555757" expanded="true" signature="887:1063" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ROEffectShaderGUI.cs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/RO/Shader/RO/Editor/ROEffectShaderGUI.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="115">
+                  <caret line="122" column="31" lean-forward="false" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
+                  <folding>
+                    <marker date="1536744794461" expanded="false" signature="6:63" ph="..." />
+                    <marker date="1536744794461" expanded="true" signature="107:24867" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="135:444" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="482:736" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="772:1047" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="1076:1192" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="1221:1280" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="1308:1416" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="3067:7153" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="7242:8998" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="7455:7523" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="7590:7657" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="7717:7777" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="7837:7897" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="7910:7972" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="8098:8602" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="8146:8351" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="8391:8592" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="9020:13312" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="9193:9532" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="9602:10252" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="10322:10518" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="10590:10788" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="10860:11058" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="11127:11316" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="11385:11574" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="11645:11905" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="12104:13306" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="12236:12923" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="12940:13296" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="13336:16527" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="13506:16521" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="13583:13773" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="13849:14039" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="14110:14299" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="14371:14566" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="14642:14914" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="14981:16511" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="15066:15272" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="15352:15558" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="15633:15838" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="15914:16125" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="16205:16497" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="16548:16859" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="16708:16853" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="16885:17225" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="16953:17219" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="17246:17328" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="17351:24497" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="17500:17646" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="17700:17868" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="17921:18085" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="18162:18312" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="18353:24491" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="18461:24432" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="18655:19109" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="19138:19764" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="19608:19738" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="20376:20494" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="20672:21370" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="21215:21344" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="21966:22084" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="22253:22938" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="22783:22912" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="23111:23605" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="23678:24369" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="24213:24343" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="24519:24602" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="24621:24785" ph="{...}" />
+                    <marker date="1536744794461" expanded="true" signature="24808:24865" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ReCommon.cginc" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/ReCommon.cginc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="ReCommon.cginc" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/ReCommon.cginc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ROEffect__beta137.shader" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Assets/RO/Shader/RO/Effect/ROEffect__beta137.shader">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1770">
+                  <caret line="118" column="59" lean-forward="false" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="59" />
+                  <folding>
+                    <marker date="1540261953626" expanded="true" signature="0:59" ph="/* Author: Starking. ... */" />
+                    <marker date="1540261953626" expanded="true" signature="90:4471" ph="{...}" />
+                    <marker date="1540261953626" expanded="true" signature="104:2330" ph="{...}" />
+                    <marker date="1540261953626" expanded="true" signature="2343:3444" ph="{...}" />
+                    <marker date="1540261953626" expanded="true" signature="2478:3440" ph="{...}" />
+                    <marker date="1540261953626" expanded="true" signature="2669:3430" ph="{...}" />
+                    <marker date="1540261953626" expanded="true" signature="3456:4420" ph="{...}" />
+                    <marker date="1540261953626" expanded="true" signature="3591:4416" ph="{...}" />
+                    <marker date="1540261953626" expanded="true" signature="3782:4406" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>CREATURE_TRANSPARENT</find>
       <find>_THIRDMAP_ON</find>
+      <find>USE_THIRDTEX</find>
+      <find>_SECONDTYPE_ALPHAMASK</find>
     </findStrings>
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -175,6 +225,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/Rgbsepration.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RO/Shader/RO/Include/CreatureCommon.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/RGBSepration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/RO/Demo/ReCommon.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RO/Shader/RO/Include/CautionCommon.cginc" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/RO/Shader/RO/Editor/ROEffectShaderGUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Shaders/PostEffect/BlackWhite/BlackWhite.cs" root0="FORCE_HIGHLIGHTING" />
@@ -183,11 +234,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Shaders/PostEffect/RGBSepration/TestPostEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/RO/Shader/RO/Include/EffectCommon.cginc" />
         <option value="$PROJECT_DIR$/Assets/RO/Demo/CommonShaderEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/RO/Demo/Editor/MaterialPropertyAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/RO/Demo/Editor/CommonShaderEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/RO/Demo/Editor/BaseShaderEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/RO/Shader/RO/Include/EffectCommon.cginc" />
+        <option value="$PROJECT_DIR$/Assets/RO/Demo/ReCommon.cginc" />
       </list>
     </option>
   </component>
@@ -223,6 +275,32 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="RO" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ShaderPlay (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="RO" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Demo" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -235,7 +313,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="SearchEverywhereHistoryKey" value="ROEffectShaderGUI&#9;null&#9;null&#10;BaseSha&#9;null&#9;null&#10;CommonS&#9;null&#9;null&#10;Material&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="ROEffect&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/ShaderLab/ShaderPlay/Assets/RO/Shader/RO/Effect/ROEffect__beta137.shader&#10;ROEffectShaderGUI&#9;null&#9;null&#10;BaseSha&#9;null&#9;null&#10;CommonS&#9;null&#9;null&#10;Material&#9;null&#9;null" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -267,12 +345,12 @@
       <updated>1516527208426</updated>
       <workItem from="1516527210691" duration="737000" />
       <workItem from="1543638809770" duration="599000" />
-      <workItem from="1543640756649" duration="1155000" />
+      <workItem from="1543640756649" duration="2857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2491000" />
+    <option name="totallyTimeSpent" value="4193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -285,6 +363,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -294,10 +373,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25679544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25679544" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -397,30 +476,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/Editor/MaterialPropertyAttribute.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <marker date="1543640896050" expanded="true" signature="6:92" ph="..." />
-            <marker date="1543640896050" expanded="true" signature="144:272" ph="{...}" />
-            <marker date="1543640896050" expanded="true" signature="243:270" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/Editor/CommonShaderEditor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-          <folding>
-            <marker date="1543640954649" expanded="false" signature="6:97" ph="..." />
-            <marker date="1543640954649" expanded="true" signature="150:301" ph="{...}" />
-            <marker date="1543640954649" expanded="true" signature="247:295" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -569,11 +624,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/Editor/MaterialPropertyAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <marker date="1543640896050" expanded="true" signature="6:92" ph="..." />
+            <marker date="1543640896050" expanded="true" signature="144:272" ph="{...}" />
+            <marker date="1543640896050" expanded="true" signature="243:270" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/Editor/CommonShaderEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="50" lean-forward="false" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+          <folding>
+            <marker date="1543640954649" expanded="false" signature="6:97" ph="..." />
+            <marker date="1543640954649" expanded="true" signature="150:301" ph="{...}" />
+            <marker date="1543640954649" expanded="true" signature="247:295" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/RO/Demo/ReCommon.cginc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/RO/Shader/RO/Include/EffectCommon.cginc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="258">
+          <caret line="346" column="37" lean-forward="false" selection-start-line="346" selection-start-column="16" selection-end-line="346" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/RO/Shader/RO/Effect/ROEffect__beta137.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1770">
+          <caret line="118" column="59" lean-forward="false" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="59" />
+          <folding>
+            <marker date="1540261953626" expanded="true" signature="0:59" ph="/* Author: Starking. ... */" />
+            <marker date="1540261953626" expanded="true" signature="90:4471" ph="{...}" />
+            <marker date="1540261953626" expanded="true" signature="104:2330" ph="{...}" />
+            <marker date="1540261953626" expanded="true" signature="2343:3444" ph="{...}" />
+            <marker date="1540261953626" expanded="true" signature="2478:3440" ph="{...}" />
+            <marker date="1540261953626" expanded="true" signature="2669:3430" ph="{...}" />
+            <marker date="1540261953626" expanded="true" signature="3456:4420" ph="{...}" />
+            <marker date="1540261953626" expanded="true" signature="3591:4416" ph="{...}" />
+            <marker date="1540261953626" expanded="true" signature="3782:4406" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
