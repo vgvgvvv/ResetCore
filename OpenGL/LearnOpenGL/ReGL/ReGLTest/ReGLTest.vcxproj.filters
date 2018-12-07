@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="TestUtil.cpp">
+      <Filter>TestReGL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="TestReGL">
+      <UniqueIdentifier>{40a4b650-1bbe-43a6-9d2f-b5adf132a7f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

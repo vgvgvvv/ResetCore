@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{76f8205c-7d1b-47c1-97e0-219685d6d991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opengl">
+      <UniqueIdentifier>{bd23d0bb-390a-4b11-831d-286844e29376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\looper">
+      <UniqueIdentifier>{db3575d9-f778-455f-8c10-e0829c0e6f8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utility">
+      <UniqueIdentifier>{32f15102-0660-4c64-8de5-74e2ca44b75b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utility\logger">
+      <UniqueIdentifier>{57648c6d-0f2f-4729-8adc-3e6f8091f816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\thirdpart">
+      <UniqueIdentifier>{bdec1a29-d622-43a6-a691-6c4be9166807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opengl\renderer">
+      <UniqueIdentifier>{a52440a1-a88b-4c77-8c9d-628bcbfca0cb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\looper\World.cpp">
+      <Filter>src\looper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utility\context.cpp">
+      <Filter>src\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utility\logger\ConsoleLogger.cpp">
+      <Filter>src\utility\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thirdpart\glad.c">
+      <Filter>src\thirdpart</Filter>
+    </ClCompile>
+    <ClCompile Include="src\looper\InputManager.cpp">
+      <Filter>src\looper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\Canvas.cpp">
+      <Filter>src\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\GLADManager.cpp">
+      <Filter>src\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\GLFWManager.cpp">
+      <Filter>src\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\GLManager.cpp">
+      <Filter>src\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\Window.cpp">
+      <Filter>src\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\renderer\MeshRenderer.cpp">
+      <Filter>src\opengl\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\looper\Scene.cpp">
+      <Filter>src\looper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\renderer\Mesh.cpp">
+      <Filter>src\opengl\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\renderer\Shader.cpp">
+      <Filter>src\opengl\renderer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\looper\World.h">
+      <Filter>src\looper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\singleton.h">
+      <Filter>src\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\context.h">
+      <Filter>src\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\logger\ConsoleLogger.h">
+      <Filter>src\utility\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\logger\ILogger.h">
+      <Filter>src\utility\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\looper\InputManager.h">
+      <Filter>src\looper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\Canvas.h">
+      <Filter>src\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\GLADManager.h">
+      <Filter>src\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\GLFWManager.h">
+      <Filter>src\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\GLManager.h">
+      <Filter>src\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\Window.h">
+      <Filter>src\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderer\Renderer.h">
+      <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderer\MeshRenderer.h">
+      <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\looper\Scene.h">
+      <Filter>src\looper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderer\Mesh.h">
+      <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderer\Shader.h">
+      <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
