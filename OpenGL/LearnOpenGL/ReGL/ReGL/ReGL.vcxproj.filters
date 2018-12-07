@@ -60,6 +60,15 @@
     <ClCompile Include="src\opengl\renderer\MeshRenderer.cpp">
       <Filter>src\opengl\renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\looper\Scene.cpp">
+      <Filter>src\looper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\renderer\Mesh.cpp">
+      <Filter>src\opengl\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\renderer\Shader.cpp">
+      <Filter>src\opengl\renderer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\looper\World.h">
@@ -99,6 +108,15 @@
       <Filter>src\opengl\renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\opengl\renderer\MeshRenderer.h">
+      <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\looper\Scene.h">
+      <Filter>src\looper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderer\Mesh.h">
+      <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderer\Shader.h">
       <Filter>src\opengl\renderer</Filter>
     </ClInclude>
   </ItemGroup>

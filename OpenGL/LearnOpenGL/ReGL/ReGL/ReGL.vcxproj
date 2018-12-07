@@ -83,10 +83,10 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\ReGL\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -98,7 +98,7 @@
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -131,13 +131,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\looper\InputManager.cpp" />
+    <ClCompile Include="src\looper\Scene.cpp" />
     <ClCompile Include="src\looper\World.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\opengl\Canvas.cpp" />
     <ClCompile Include="src\opengl\GLADManager.cpp" />
     <ClCompile Include="src\opengl\GLFWManager.cpp" />
     <ClCompile Include="src\opengl\GLManager.cpp" />
+    <ClCompile Include="src\opengl\renderer\Mesh.cpp" />
     <ClCompile Include="src\opengl\renderer\MeshRenderer.cpp" />
+    <ClCompile Include="src\opengl\renderer\Shader.cpp" />
     <ClCompile Include="src\opengl\Window.cpp" />
     <ClCompile Include="src\thirdpart\glad.c" />
     <ClCompile Include="src\utility\context.cpp" />
@@ -145,13 +148,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\looper\InputManager.h" />
+    <ClInclude Include="src\looper\Scene.h" />
     <ClInclude Include="src\looper\World.h" />
     <ClInclude Include="src\opengl\Canvas.h" />
     <ClInclude Include="src\opengl\GLADManager.h" />
     <ClInclude Include="src\opengl\GLFWManager.h" />
     <ClInclude Include="src\opengl\GLManager.h" />
+    <ClInclude Include="src\opengl\renderer\Mesh.h" />
     <ClInclude Include="src\opengl\renderer\MeshRenderer.h" />
     <ClInclude Include="src\opengl\renderer\Renderer.h" />
+    <ClInclude Include="src\opengl\renderer\Shader.h" />
     <ClInclude Include="src\opengl\Window.h" />
     <ClInclude Include="src\utility\context.h" />
     <ClInclude Include="src\utility\logger\ConsoleLogger.h" />
