@@ -25,6 +25,9 @@ public static class PngLib
 
 	[DllImport(libName)]
 	public static extern bool LoadWithPath(IntPtr loader, string fileName);
+	
+	[DllImport(libName)]
+	public static extern bool LoadFromStreamingAssets(IntPtr loader, string fileName);
 
 	[DllImport(libName)]
 	public static extern void SetTexture(IntPtr loader, IntPtr texture);

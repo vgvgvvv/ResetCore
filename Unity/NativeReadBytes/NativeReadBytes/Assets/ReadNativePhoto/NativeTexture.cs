@@ -1,6 +1,7 @@
 ﻿
 
 using System;
+using System.IO;
 using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 
@@ -12,16 +13,28 @@ public class NativeTexture : IDisposable
     public int Width { get; private set; }
     public int Height { get; private set; }
     
-    public NativeTexture(string fileName)
+    public NativeTexture(string fileName, bool fromStreamingAssets = false)
     {
 
 #if UNITY_ANDROID
         _loader = PngLib.CreateLoader();
-        if (!PngLib.LoadWithPath(_loader, fileName))
+        if (!fromStreamingAssets)
         {
-            Debug.LogError("Load With Path Error");
-            return;
+            if (!PngLib.LoadWithPath(_loader, fileName))
+            {
+                Debug.LogError("Load With Path Error");
+                return;
+            }
         }
+        else
+        {
+            if (!PngLib.LoadFromStreamingAssets(_loader, fileName))
+            {
+                Debug.LogError("Load From StreamingAssets Error");
+                return;
+            }
+        }
+        
         Width = PngLib.GetWidth(_loader);
         Height = PngLib.GetHeight(_loader);
         Tex = new Texture2D(Width, Height, TextureFormat.RGBA32, false);
@@ -30,7 +43,14 @@ public class NativeTexture : IDisposable
         
 #elif UNITY_IOS
         _loader = PngLib.CreateLoader();
-        PngLib.Load(_loader, fileName);
+        if (!fromStreamingAssets)
+        {
+            PngLib.Load(_loader, fileName);
+        }
+        else
+        {
+            PngLib.Load(_loader, Path.Combine(Application.streamingAssetsPath, fileName));
+        }
         Width = PngLib.GetWidth(_loader);
         Height = PngLib.GetHeight(_loader);
         Tex = Texture2D.CreateExternalTexture(Width, Height, TextureFormat.ARGB32, false, true,
