@@ -5,7 +5,7 @@ namespace ReGL
 {
     bool Canvas::Render()
     {
-        
+        return true;
     }
 
 
