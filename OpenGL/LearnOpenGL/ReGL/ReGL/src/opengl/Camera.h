@@ -8,7 +8,7 @@
 
 namespace ReGL
 {
-    class Canvas
+    class Camera
     {
     public:
         bool Render();

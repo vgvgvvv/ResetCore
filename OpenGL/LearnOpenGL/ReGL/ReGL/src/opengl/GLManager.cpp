@@ -5,7 +5,7 @@
 
 namespace ReGL
 {
-    Canvas GLManager::canvas_;
+    Camera GLManager::camera_;
     bool GLManager::Init()
     {
         if (!GLFWManager::Init())
@@ -32,7 +32,7 @@ namespace ReGL
             Context::GetLogger().Error(" GLFWManager::Update with error !!!");
             return false;
         }
-        if(!canvas_.Render())
+        if(!camera_.Render())
         {
             Context::GetLogger().Error(" Canvas::Render with error !!!");
             return false;
@@ -43,7 +43,7 @@ namespace ReGL
 
     bool GLManager::LateUpdate()
     {
-        if(!canvas_.Clear())
+        if(!camera_.Clear())
         {
             Context::GetLogger().Error(" Canvas::Clear with error !!!");
             return false;
