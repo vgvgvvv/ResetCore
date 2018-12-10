@@ -4,7 +4,7 @@
 
 #ifndef __GLMANAGER_H__
 #define __GLMANAGER_H__
-#include "Canvas.h"
+#include "Camera.h"
 
 namespace ReGL
 {
@@ -16,7 +16,7 @@ namespace ReGL
         static bool LateUpdate();
         static bool Uninit();
     private:
-        static Canvas canvas_;
+        static Camera camera_;
     };
 
 }

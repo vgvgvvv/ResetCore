@@ -22,6 +22,12 @@
     <Filter Include="src\opengl\renderer">
       <UniqueIdentifier>{a52440a1-a88b-4c77-8c9d-628bcbfca0cb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\script">
+      <UniqueIdentifier>{0801a559-06a8-4884-b973-6ee1ebcb0779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utility\datastruct">
+      <UniqueIdentifier>{2d1e7c50-a49f-49a2-9b6e-d5697e5bef49}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -41,9 +47,6 @@
     </ClCompile>
     <ClCompile Include="src\looper\InputManager.cpp">
       <Filter>src\looper</Filter>
-    </ClCompile>
-    <ClCompile Include="src\opengl\Canvas.cpp">
-      <Filter>src\opengl</Filter>
     </ClCompile>
     <ClCompile Include="src\opengl\GLADManager.cpp">
       <Filter>src\opengl</Filter>
@@ -69,6 +72,24 @@
     <ClCompile Include="src\opengl\renderer\Shader.cpp">
       <Filter>src\opengl\renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\opengl\Camera.cpp">
+      <Filter>src\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\renderer\Material.cpp">
+      <Filter>src\opengl\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\script\Behavior.cpp">
+      <Filter>src\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\script\BehaviorManager.cpp">
+      <Filter>src\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\looper\GameObject.cpp">
+      <Filter>src\looper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utility\datastruct\LinkList.cpp">
+      <Filter>src\utility\datastruct</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\looper\World.h">
@@ -88,9 +109,6 @@
     </ClInclude>
     <ClInclude Include="src\looper\InputManager.h">
       <Filter>src\looper</Filter>
-    </ClInclude>
-    <ClInclude Include="src\opengl\Canvas.h">
-      <Filter>src\opengl</Filter>
     </ClInclude>
     <ClInclude Include="src\opengl\GLADManager.h">
       <Filter>src\opengl</Filter>
@@ -118,6 +136,24 @@
     </ClInclude>
     <ClInclude Include="src\opengl\renderer\Shader.h">
       <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\Camera.h">
+      <Filter>src\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderer\Material.h">
+      <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\script\Behavior.h">
+      <Filter>src\script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\script\BehaviorManager.h">
+      <Filter>src\script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\looper\GameObject.h">
+      <Filter>src\looper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\datastruct\LinkList.h">
+      <Filter>src\utility\datastruct</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

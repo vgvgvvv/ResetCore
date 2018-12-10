@@ -130,36 +130,46 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\looper\GameObject.cpp" />
     <ClCompile Include="src\looper\InputManager.cpp" />
     <ClCompile Include="src\looper\Scene.cpp" />
     <ClCompile Include="src\looper\World.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\opengl\Canvas.cpp" />
+    <ClCompile Include="src\opengl\Camera.cpp" />
     <ClCompile Include="src\opengl\GLADManager.cpp" />
     <ClCompile Include="src\opengl\GLFWManager.cpp" />
     <ClCompile Include="src\opengl\GLManager.cpp" />
+    <ClCompile Include="src\opengl\renderer\Material.cpp" />
     <ClCompile Include="src\opengl\renderer\Mesh.cpp" />
     <ClCompile Include="src\opengl\renderer\MeshRenderer.cpp" />
     <ClCompile Include="src\opengl\renderer\Shader.cpp" />
     <ClCompile Include="src\opengl\Window.cpp" />
+    <ClCompile Include="src\script\Behavior.cpp" />
+    <ClCompile Include="src\script\BehaviorManager.cpp" />
     <ClCompile Include="src\thirdpart\glad.c" />
     <ClCompile Include="src\utility\context.cpp" />
+    <ClCompile Include="src\utility\datastruct\LinkList.cpp" />
     <ClCompile Include="src\utility\logger\ConsoleLogger.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\looper\GameObject.h" />
     <ClInclude Include="src\looper\InputManager.h" />
     <ClInclude Include="src\looper\Scene.h" />
     <ClInclude Include="src\looper\World.h" />
-    <ClInclude Include="src\opengl\Canvas.h" />
+    <ClInclude Include="src\opengl\Camera.h" />
     <ClInclude Include="src\opengl\GLADManager.h" />
     <ClInclude Include="src\opengl\GLFWManager.h" />
     <ClInclude Include="src\opengl\GLManager.h" />
+    <ClInclude Include="src\opengl\renderer\Material.h" />
     <ClInclude Include="src\opengl\renderer\Mesh.h" />
     <ClInclude Include="src\opengl\renderer\MeshRenderer.h" />
     <ClInclude Include="src\opengl\renderer\Renderer.h" />
     <ClInclude Include="src\opengl\renderer\Shader.h" />
     <ClInclude Include="src\opengl\Window.h" />
+    <ClInclude Include="src\script\Behavior.h" />
+    <ClInclude Include="src\script\BehaviorManager.h" />
     <ClInclude Include="src\utility\context.h" />
+    <ClInclude Include="src\utility\datastruct\LinkList.h" />
     <ClInclude Include="src\utility\logger\ConsoleLogger.h" />
     <ClInclude Include="src\utility\logger\ILogger.h" />
     <ClInclude Include="src\utility\singleton.h" />
