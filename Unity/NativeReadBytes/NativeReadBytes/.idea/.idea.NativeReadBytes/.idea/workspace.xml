@@ -31,53 +31,58 @@
       <file leaf-file-name="PngLib.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <marker date="1541655648418" expanded="false" signature="6:130" ph="..." />
-                <marker date="1541655648418" expanded="true" signature="158:1835" ph="{...}" />
+                <marker date="1543838274752" expanded="false" signature="6:130" ph="..." />
+                <marker date="1543838274752" expanded="true" signature="158:1943" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadNativePhoto.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ReadNativePhoto.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/ReadNativePhoto.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+            <state relative-caret-position="699">
+              <caret line="59" column="9" lean-forward="false" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
               <folding>
-                <marker date="1541659636884" expanded="false" signature="6:185" ph="..." />
-                <marker date="1541659636884" expanded="true" signature="231:2964" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="351:496" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="513:1833" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="606:793" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="710:781" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="881:1258" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="978:1065" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="1350:1647" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="1441:1528" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="1733:1827" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="1911:2033" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="2104:2174" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="2259:2570" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="2672:2962" ph="{...}" />
-                <marker date="1541659636884" expanded="true" signature="2899:2956" ph="{...}" />
+                <marker date="1543838711794" expanded="false" signature="6:185" ph="..." />
+                <marker date="1543838711794" expanded="true" signature="231:3305" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="351:524" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="541:2174" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="634:821" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="738:809" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="909:1286" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="1006:1093" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="1378:1675" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="1469:1556" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="1786:1988" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="2074:2168" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="2252:2374" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="2445:2515" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="2600:2911" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="3013:3303" ph="{...}" />
+                <marker date="1543838711794" expanded="true" signature="3240:3297" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NativeTexture.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NativeTexture.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTexture.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="435">
+              <caret line="32" column="57" lean-forward="false" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
               <folding>
-                <marker date="1541656011190" expanded="false" signature="8:81" ph="..." />
-                <marker date="1541656011190" expanded="true" signature="124:1564" ph="{...}" />
-                <marker date="1541656011190" expanded="true" signature="335:1168" ph="{...}" />
-                <marker date="1541656011190" expanded="true" signature="1195:1562" ph="{...}" />
+                <marker date="1543838463591" expanded="false" signature="8:98" ph="..." />
+                <marker date="1543838463591" expanded="true" signature="141:2100" ph="{...}" />
+                <marker date="1543838463591" expanded="true" signature="386:1704" ph="{...}" />
+                <marker date="1543838463591" expanded="true" signature="486:671" ph="{...}" />
+                <marker date="1543838463591" expanded="true" signature="553:661" ph="{...}" />
+                <marker date="1543838463591" expanded="true" signature="684:891" ph="{...}" />
+                <marker date="1543838463591" expanded="true" signature="762:881" ph="{...}" />
+                <marker date="1543838463591" expanded="true" signature="1731:2098" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -90,7 +95,6 @@
               <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
               <folding>
                 <marker date="1541597021923" expanded="false" signature="6:44" ph="..." />
-                <marker date="1541597021923" expanded="true" signature="96:721" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -138,19 +142,20 @@
     </findStrings>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTexture.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ReadNativeByte.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTextureManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Reporter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AndroidCallback.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ReadNativeBytes/TestReadByte.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/ReadNativePhoto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/CreateBytes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7886DBD6-3DA2-4A23-B0AA-9C4C54ACDB00/40/41dc6212/ImageConversion.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DDFA4801-4F4D-4B2A-A2B3-B74383337C48/0b/68ef6aec/GUILayout.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/ReadNativeBytes/TestReadByte.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Unity-Logs-Viewer/Reporter/Reporter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTextureManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB7B695B-8C62-46B3-AC16-46577AEA7650/38/3931f5da/Marshal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/ReadNativePhoto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB7B695B-8C62-46B3-AC16-46577AEA7650/eb/bf85727c/IntPtr.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTexture.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BB7B695B-8C62-46B3-AC16-46577AEA7650/7d/99dd5b0d/BinaryReader.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/ReadNativeByte.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7886DBD6-3DA2-4A23-B0AA-9C4C54ACDB00/40/41dc6212/ImageConversion.cs" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -179,8 +184,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1288" />
-    <option name="width" value="632" />
+    <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
@@ -273,11 +277,12 @@
       <workItem from="1540397888920" duration="336000" />
       <workItem from="1541576948389" duration="4831000" />
       <workItem from="1541593772621" duration="6375000" />
+      <workItem from="1543837813267" duration="837000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20354000" />
+    <option name="totallyTimeSpent" value="21191000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,7 +305,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35303515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35303515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -364,11 +369,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <marker date="1543838274752" expanded="false" signature="6:130" ph="..." />
+            <marker date="1543838274752" expanded="true" signature="158:1943" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/ReadNativePhoto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+          <folding>
+            <marker date="1543838711794" expanded="false" signature="6:185" ph="..." />
+            <marker date="1543838711794" expanded="true" signature="231:3305" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="351:524" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="541:2174" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="634:821" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="738:809" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="909:1286" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1006:1093" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1378:1675" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1469:1556" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1786:1988" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2074:2168" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2252:2374" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2445:2515" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2600:2911" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="3013:3303" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="3240:3297" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTextureManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <marker date="1541597021923" expanded="false" signature="6:44" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativeByte.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1541597105254" expanded="false" signature="6:130" ph="..." />
+            <marker date="1541597105254" expanded="true" signature="159:794" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativeBytes/TestReadByte.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <marker date="1541597122774" expanded="false" signature="6:170" ph="..." />
+            <marker date="1541597122774" expanded="true" signature="214:1908" ph="{...}" />
+            <marker date="1541597122774" expanded="true" signature="283:1843" ph="{...}" />
+            <marker date="1541597122774" expanded="true" signature="1080:1317" ph="{...}" />
+            <marker date="1541597122774" expanded="true" signature="1118:1159" ph="{...}" />
+            <marker date="1541597122774" expanded="true" signature="1206:1313" ph="{...}" />
+            <marker date="1541597122774" expanded="true" signature="1257:1308" ph="{...}" />
+            <marker date="1541597122774" expanded="true" signature="1403:1837" ph="{...}" />
+            <marker date="1541597122774" expanded="true" signature="1517:1617" ph="{...}" />
+            <marker date="1541597122774" expanded="true" signature="1897:1904" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTexture.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <marker date="1543838463591" expanded="false" signature="8:98" ph="..." />
+            <marker date="1543838463591" expanded="true" signature="141:2100" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="386:1704" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="486:671" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="553:661" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="684:891" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="762:881" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="1731:2098" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Editor/CreateBytes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <marker date="1540398057971" expanded="false" signature="6:114" ph="..." />
+            <marker date="1540398057971" expanded="true" signature="141:516" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="204:512" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="304:334" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="371:509" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="420:505" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
           <folding>
-            <marker date="1541655648418" expanded="false" signature="6:130" ph="..." />
-            <marker date="1541655648418" expanded="true" signature="158:1835" ph="{...}" />
+            <marker date="1543838274752" expanded="false" signature="6:130" ph="..." />
+            <marker date="1543838274752" expanded="true" signature="158:1943" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -378,22 +492,23 @@
         <state relative-caret-position="345">
           <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding>
-            <marker date="1541659636884" expanded="false" signature="6:185" ph="..." />
-            <marker date="1541659636884" expanded="true" signature="231:2964" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="351:496" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="513:1833" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="606:793" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="710:781" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="881:1258" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="978:1065" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="1350:1647" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="1441:1528" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="1733:1827" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="1911:2033" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="2104:2174" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="2259:2570" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="2672:2962" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="2899:2956" ph="{...}" />
+            <marker date="1543838711794" expanded="false" signature="6:185" ph="..." />
+            <marker date="1543838711794" expanded="true" signature="231:3305" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="351:524" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="541:2174" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="634:821" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="738:809" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="909:1286" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1006:1093" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1378:1675" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1469:1556" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1786:1988" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2074:2168" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2252:2374" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2445:2515" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2600:2911" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="3013:3303" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="3240:3297" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -404,7 +519,6 @@
           <caret line="27" column="56" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="56" />
           <folding>
             <marker date="1541597021923" expanded="false" signature="6:44" ph="..." />
-            <marker date="1541597021923" expanded="true" signature="96:721" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -433,10 +547,14 @@
         <state relative-caret-position="525">
           <caret line="35" column="19" lean-forward="false" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
           <folding>
-            <marker date="1541656011190" expanded="false" signature="8:81" ph="..." />
-            <marker date="1541656011190" expanded="true" signature="124:1564" ph="{...}" />
-            <marker date="1541656011190" expanded="true" signature="335:1168" ph="{...}" />
-            <marker date="1541656011190" expanded="true" signature="1195:1562" ph="{...}" />
+            <marker date="1543838463591" expanded="false" signature="8:98" ph="..." />
+            <marker date="1543838463591" expanded="true" signature="141:2100" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="386:1704" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="486:671" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="553:661" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="684:891" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="762:881" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="1731:2098" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -593,18 +711,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Editor/CreateBytes.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativeByte.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="165">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <marker date="1540398057971" expanded="false" signature="6:114" ph="..." />
-            <marker date="1540398057971" expanded="true" signature="141:516" ph="{...}" />
-            <marker date="1540398057971" expanded="true" signature="204:512" ph="{...}" />
-            <marker date="1540398057971" expanded="true" signature="304:334" ph="{...}" />
-            <marker date="1540398057971" expanded="true" signature="371:509" ph="{...}" />
-            <marker date="1540398057971" expanded="true" signature="420:505" ph="{...}" />
+            <marker date="1541597105254" expanded="false" signature="6:130" ph="..." />
+            <marker date="1541597105254" expanded="true" signature="159:794" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTextureManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <marker date="1541597021923" expanded="false" signature="6:44" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7886DBD6-3DA2-4A23-B0AA-9C4C54ACDB00/40/41dc6212/ImageConversion.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="66" column="30" lean-forward="false" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -627,81 +758,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ReadNativeByte.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DDFA4801-4F4D-4B2A-A2B3-B74383337C48/0b/68ef6aec/GUILayout.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1541597105254" expanded="false" signature="6:130" ph="..." />
-            <marker date="1541597105254" expanded="true" signature="159:794" ph="{...}" />
-          </folding>
+        <state relative-caret-position="480">
+          <caret line="32" column="53" lean-forward="true" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTextureManager.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Editor/CreateBytes.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
           <folding>
-            <marker date="1541597021923" expanded="false" signature="6:44" ph="..." />
-            <marker date="1541597021923" expanded="true" signature="96:721" ph="{...}" />
+            <marker date="1540398057971" expanded="false" signature="6:114" ph="..." />
+            <marker date="1540398057971" expanded="true" signature="141:516" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="204:512" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="304:334" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="371:509" ph="{...}" />
+            <marker date="1540398057971" expanded="true" signature="420:505" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/PngLib.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <marker date="1541655648418" expanded="false" signature="6:130" ph="..." />
-            <marker date="1541655648418" expanded="true" signature="158:1835" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7886DBD6-3DA2-4A23-B0AA-9C4C54ACDB00/40/41dc6212/ImageConversion.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="66" column="30" lean-forward="false" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/ReadNativePhoto.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
-          <folding>
-            <marker date="1541659636884" expanded="false" signature="6:185" ph="..." />
-            <marker date="1541659636884" expanded="true" signature="231:2964" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="351:496" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="513:1833" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="606:793" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="710:781" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="881:1258" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="978:1065" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="1350:1647" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="1441:1528" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="1733:1827" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="1911:2033" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="2104:2174" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="2259:2570" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="2672:2962" ph="{...}" />
-            <marker date="1541659636884" expanded="true" signature="2899:2956" ph="{...}" />
+            <marker date="1543838274752" expanded="false" signature="6:130" ph="..." />
+            <marker date="1543838274752" expanded="true" signature="158:1943" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/NativeTexture.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="435">
+          <caret line="32" column="57" lean-forward="false" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
           <folding>
-            <marker date="1541656011190" expanded="false" signature="8:81" ph="..." />
-            <marker date="1541656011190" expanded="true" signature="124:1564" ph="{...}" />
-            <marker date="1541656011190" expanded="true" signature="335:1168" ph="{...}" />
-            <marker date="1541656011190" expanded="true" signature="1195:1562" ph="{...}" />
+            <marker date="1543838463591" expanded="false" signature="8:98" ph="..." />
+            <marker date="1543838463591" expanded="true" signature="141:2100" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="386:1704" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="486:671" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="553:661" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="684:891" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="762:881" ph="{...}" />
+            <marker date="1543838463591" expanded="true" signature="1731:2098" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ReadNativePhoto/ReadNativePhoto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="59" column="9" lean-forward="false" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+          <folding>
+            <marker date="1543838711794" expanded="false" signature="6:185" ph="..." />
+            <marker date="1543838711794" expanded="true" signature="231:3305" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="351:524" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="541:2174" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="634:821" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="738:809" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="909:1286" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1006:1093" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1378:1675" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1469:1556" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="1786:1988" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2074:2168" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2252:2374" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2445:2515" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="2600:2911" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="3013:3303" ph="{...}" />
+            <marker date="1543838711794" expanded="true" signature="3240:3297" ph="{...}" />
           </folding>
         </state>
       </provider>

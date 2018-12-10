@@ -5,6 +5,7 @@
 #include <queue>
 #include <jni.h>
 #include "PngLoader.h"
+#include "nativeread_reset_com_nativeread_NativeHelper.h"
 
 using namespace RONDK;
 using UnityRenderEvent = void(*)(int);
@@ -52,6 +53,21 @@ extern "C"{
         Load(pPngLoader, pData, static_cast<size_t>(size));
         delete[] pData;
         return true;
+    }
+
+    JNIEXPORT bool JNICALL LoadFromStreamingAssets(PngLoader *pPngLoader, char* fileName){
+        if(fileName == nullptr){
+            return false;
+        }
+        unsigned char* bytes = nullptr;
+        int size = ReadAssetsBytes(fileName, &bytes);
+        if(bytes != nullptr){
+            Load(pPngLoader, bytes, static_cast<size_t>(size));
+            delete[] bytes;
+            return true;
+        }else{
+            return false;
+        }
     }
 
     JNIEXPORT void JNICALL SetTexture(PngLoader *pPngLoader, GLuint texture){

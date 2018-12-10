@@ -13,7 +13,13 @@ extern "C" {
  * Signature: (Landroid/content/res/AssetManager;)V
  */
 JNIEXPORT void JNICALL Java_nativeread_reset_com_nativeread_NativeHelper_SetAssetManager
-  (JNIEnv *, jobject, jobject);
+        (JNIEnv *, jobject, jobject);
+
+JNIEXPORT int32_t JNICALL ReadAssetsBytes
+        (char* fileName, unsigned char** result);
+
+JNIEXPORT int32_t JNICALL ReadAssetsBytesWithOffset
+        (char* fileName, unsigned char** result, int32_t offset, int32_t length);
 
 #ifdef __cplusplus
 }

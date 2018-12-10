@@ -18,11 +18,12 @@ public class ReadNativePhoto : MonoBehaviour
     void Awake()
     {
         imgpath = Path.Combine(Application.persistentDataPath, "test.png");
+        Debug.Log(imgpath);
         gameObject.AddComponent<NativeTextureManager>();
     }
     void OnGUI()
     {
-        if (GUILayout.Button("TakeSnap", GUILayout.Height(200), GUILayout.Width(200)))
+        if (GUILayout.Button("TakeSnap", GUILayout.Height(150), GUILayout.Width(150)))
         {
             Debug.Log("TakeSnap " + imgpath);
             TakeScreenShotFromScreenSize(tex =>
@@ -31,7 +32,7 @@ public class ReadNativePhoto : MonoBehaviour
             });
         }
 
-        if (GUILayout.Button("LoadByCS", GUILayout.Height(200), GUILayout.Width(200)))
+        if (GUILayout.Button("LoadByCS", GUILayout.Height(150), GUILayout.Width(150)))
         {
             Debug.Log("Load By CS " + imgpath);
             if (!File.Exists(imgpath))
@@ -44,7 +45,7 @@ public class ReadNativePhoto : MonoBehaviour
             img.texture = texture;
         }
         
-        if (GUILayout.Button("Load", GUILayout.Height(200), GUILayout.Width(200)))
+        if (GUILayout.Button("Load", GUILayout.Height(150), GUILayout.Width(150)))
         {
             Debug.Log("Load " + imgpath);
             if (!File.Exists(imgpath))
@@ -54,8 +55,15 @@ public class ReadNativePhoto : MonoBehaviour
             currentRawTexture = new NativeTexture(imgpath);
             img.texture = currentRawTexture.Tex;
         }
+        
+        if (GUILayout.Button("LoadFromStreamingAssets", GUILayout.Height(150), GUILayout.Width(150)))
+        {
+            Debug.Log("LoadFromStreamingAssets " + "test.png");
+            currentRawTexture = new NativeTexture("test.png", true);
+            img.texture = currentRawTexture.Tex;
+        }
 
-        if (GUILayout.Button("UnLoad", GUILayout.Height(200), GUILayout.Width(200)))
+        if (GUILayout.Button("UnLoad", GUILayout.Height(150), GUILayout.Width(150)))
         {
             Debug.Log("UnLoad");
             currentRawTexture.Dispose();
