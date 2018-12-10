@@ -19,13 +19,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f7b71b9-6400-49d3-96e7-0ae5f0ba3eaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utility/string_util.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utility/string_util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C#/ReFramework/Libs/Core/.idea/.idea.ReFrame.Core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/ReFramework/Libs/Core/.idea/.idea.ReFrame.Core/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C#/ReFramework/Libs/Core/Reframe.Unity/obj/Debug/Reframe.Unity.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/ReFramework/Libs/Core/Reframe.Unity/obj/Debug/Reframe.Unity.csprojResolveAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.csprojResolveAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/RO/Shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Shaders/LearnPBR/Splited.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Shaders/LearnPBR/TestPBR.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/FirstPersonCharacter/Audio.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/FirstPersonCharacter/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/FirstPersonCharacter/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/RollerBall/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/RollerBall/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/RollerBall/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/RollerBall/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/RollerBall/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/ThirdPersonCharacter/Animation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/ThirdPersonCharacter/Animator.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/ThirdPersonCharacter/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/ThirdPersonCharacter/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/ThirdPersonCharacter/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Characters/ThirdPersonCharacter/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/CrossPlatformInput/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/CrossPlatformInput/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Editor/CrossPlatformInput.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/PhysicsMaterials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/Assets/Standard Assets/Utility/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/ShaderPlay.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../ShaderLab/ShaderPlay/ShaderPlay.sln" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,9 +127,12 @@
     <session id="397672078">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -152,8 +174,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utility/string_util.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+            <state relative-caret-position="854">
+              <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -166,7 +188,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="546">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
@@ -217,7 +239,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -227,6 +249,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,22 +257,16 @@
               <item name="ReAlgorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="C++" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ReAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C++" type="462c0819:PsiDirectoryNode" />
-              <item name="utility" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Chap&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/Algorithm/C++/unit_tests/cpp11_feature/Chapter7.cpp&#10;Chapter2&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/Algorithm/C++/unit_tests/cpp11_feature/Chapter2.cpp" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../CppProjects/Rengine" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
@@ -291,12 +308,12 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP_11_FEATURE.CHAPTER_8_ALIGNOF" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_8_ALIGNOF" TEST_MODE="SUITE_TEST">
+    <configuration name="CPP_11_FEATURE.CHAPTER_8_ALIGNOF" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_8_ALIGNOF" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP_11_FEATURE.CHAPTER_8_PADDING_DATA" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_8_PADDING_DATA" TEST_MODE="SUITE_TEST">
+    <configuration name="CPP_11_FEATURE.CHAPTER_8_PADDING_DATA" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ReAlgorithm" TARGET_NAME="runUnitTests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ReAlgorithm" RUN_TARGET_NAME="runUnitTests" TEST_CLASS="CPP_11_FEATURE" TEST_METHOD="CHAPTER_8_PADDING_DATA" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -377,6 +394,8 @@
       <workItem from="1543400480415" duration="2268000" />
       <workItem from="1543465823604" duration="1336000" />
       <workItem from="1543597331056" duration="1113000" />
+      <workItem from="1544094363109" duration="19000" />
+      <workItem from="1544095141062" duration="13000" />
     </task>
     <servers />
   </component>
@@ -413,12 +432,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37949000" />
+    <option name="totallyTimeSpent" value="37981000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31330472" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32311827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -554,13 +573,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include/stddef.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="119" column="8" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include/stddef.h" />
     <entry file="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter8.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -581,20 +594,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/utility/string_util.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="854">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utility/string_util.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/utility/string_util.cpp">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        <state relative-caret-position="546">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
