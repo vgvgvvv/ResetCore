@@ -20,6 +20,14 @@ namespace ReGL
         return true;
     }
 
+
+    bool GLManager::WillRender()
+    {
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+        return true;
+    }
+
     bool GLManager::Update()
     {
         if(GLFWManager::ShouldFinish())
@@ -31,7 +39,7 @@ namespace ReGL
             Context::GetLogger().Error(" GLFWManager::Update with error !!!");
             return false;
         }
-        if(!camera_->Render())
+        if(!CurrentCamera().Render())
         {
             Context::GetLogger().Error(" Canvas::Render with error !!!");
             return false;
@@ -42,7 +50,7 @@ namespace ReGL
 
     bool GLManager::LateUpdate()
     {
-        if(!camera_->Clear())
+        if(!CurrentCamera().Clear())
         {
             Context::GetLogger().Error(" Canvas::Clear with error !!!");
             return false;
@@ -70,5 +78,16 @@ namespace ReGL
         }
 
         return true;
+    }
+
+
+    const Camera& GLManager::CurrentCamera()
+    {
+        return *camera_;
+    }
+
+    const Scene& GLManager::CurrentScene()
+    {
+        return *scene_;
     }
 }

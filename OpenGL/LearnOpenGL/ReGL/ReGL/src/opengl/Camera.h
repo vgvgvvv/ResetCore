@@ -11,8 +11,8 @@ namespace ReGL
     class Camera
     {
     public:
-        bool Render();
-        bool Clear();
+        bool Render() const;
+        bool Clear() const;
 
     private:
         //TODO 使用链表

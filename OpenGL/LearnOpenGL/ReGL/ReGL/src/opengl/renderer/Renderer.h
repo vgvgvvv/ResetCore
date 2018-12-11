@@ -1,5 +1,6 @@
 #ifndef __RENDERER_H__
 #define __RENDERER_H__
+#include <list>
 
 namespace ReGL
 {
@@ -7,6 +8,13 @@ namespace ReGL
     {
     public:
         virtual bool Render() = 0;
+    };
+
+    class RendererManager
+    {
+    public:
+    private:
+        static std::list<Renderer*> renderers_;
     };
 }
 

@@ -22,6 +22,7 @@ namespace ReGL
 
     bool Window::LateUpdate()
     {
+        
         glfwSwapBuffers(window_);
         return true;    
     }

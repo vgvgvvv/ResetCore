@@ -99,6 +99,9 @@
     <ClCompile Include="src\utility\Context.cpp">
       <Filter>src\utility</Filter>
     </ClCompile>
+    <ClCompile Include="src\opengl\renderer\ShaderProgram.cpp">
+      <Filter>src\opengl\renderer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\looper\World.h">
@@ -169,6 +172,12 @@
     </ClInclude>
     <ClInclude Include="src\utility\Singleton.h">
       <Filter>src\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\looper\IRenderManager.h">
+      <Filter>src\looper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderer\ShaderProgram.h">
+      <Filter>src\opengl\renderer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

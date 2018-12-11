@@ -10,7 +10,7 @@ namespace ReGL
 
     bool World::Init()
     {
-        if(!GLManager::Init())
+        if(!ContextValue<IRenderManager>::Get().Init())
         {
             Context::GetLogger().Error(" GLManager::Init with error !!!");
             return false;
@@ -21,16 +21,20 @@ namespace ReGL
 
     bool World::PreUpdate()
     {
+        if (!ContextValue<InputManager>::Get().ProcessInput())
+        {
+            return false;
+        }
         return true;
     }
 
     bool World::Update()
     {
-        if(!ContextValue<InputManager>::Get().ProcessInput())
+        if (!ContextValue<IRenderManager>::Get().WillRender())
         {
             return false;
         }
-        if (!GLManager::Update())
+        if (!ContextValue<IRenderManager>::Get().Update())
         {
             return false;
         }
@@ -39,7 +43,7 @@ namespace ReGL
 
     bool World::LateUpdate()
     {
-        if(!GLManager::LateUpdate())
+        if(!ContextValue<IRenderManager>::Get().LateUpdate())
         {
             return false;
         }
@@ -55,7 +59,7 @@ namespace ReGL
     bool World::Uninit()
     {
         running_ = false;
-        if (!GLManager::Uninit())
+        if (!ContextValue<IRenderManager>::Get().Uninit())
         {
             Context::GetLogger().Error(" GLManager::Uninit with error !!!");
             return false;

@@ -2,6 +2,8 @@
 #include "logger/ConsoleLogger.h"
 #include "looper/InputManager.h"
 #include "opengl/GLFWInputManager.h"
+#include "looper/IRenderManager.h"
+#include "opengl/GLManager.h"
 
 namespace ReGL
 {
@@ -11,6 +13,7 @@ namespace ReGL
     {
         RegisterLogger(&default_logger_);
         ContextValue<InputManager>::Set(new GLFWInputManager());
+        ContextValue<IRenderManager>::Set(new GLManager());
     }
 
     void Context::RegisterLogger(ILogger* logger)
