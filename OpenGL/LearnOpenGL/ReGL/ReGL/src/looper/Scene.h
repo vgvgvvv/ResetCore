@@ -8,8 +8,11 @@ namespace ReGL
     class Scene
     {
     public:
+        bool Init();
+        bool Update();
+        bool Uninit();
     private:
-        aiScene * scene_;
+        aiScene* scene_{nullptr};
     };
 }
 

@@ -26,7 +26,7 @@ namespace ReGL
 
     bool World::Update()
     {
-        if(!InputManager::ProcessInput())
+        if(!ContextValue<InputManager>::Get().ProcessInput())
         {
             return false;
         }
@@ -43,7 +43,7 @@ namespace ReGL
         {
             return false;
         }
-        if(!InputManager::PullInput())
+        if(!ContextValue<InputManager>::Get().PullInput())
         {
             return false;
         }

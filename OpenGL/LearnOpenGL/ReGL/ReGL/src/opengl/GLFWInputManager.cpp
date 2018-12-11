@@ -1,13 +1,13 @@
-﻿#include "InputManager.h"
+﻿#include "GLFWInputManager.h"
 #include "utility/Context.h"
-#include "opengl/GLFWManager.h"
+#include "GLFWManager.h"
+
 
 namespace ReGL
 {
-
-    bool InputManager::ProcessInput()
+    bool GLFWInputManager::ProcessInput()
     {
-        if(!GLFWManager::HandleInput())
+        if (!GLFWManager::HandleInput())
         {
             Context::GetLogger().Error("GLFWManager::HandleInput Init Error!!");
             return false;
@@ -15,14 +15,13 @@ namespace ReGL
         return true;
     }
 
-    bool InputManager::PullInput()
+    bool GLFWInputManager::PullInput()
     {
-        if(!GLFWManager::PullEvents())
+        if (!GLFWManager::PullEvents())
         {
             Context::GetLogger().Error("GLFWManager::PullEvents Init Error!!");
             return false;
         }
         return true;
     }
-
 }
