@@ -7,7 +7,7 @@
 
 namespace ReGL
 {
-    class Camera : Component
+    class Camera : public Component
     {
     public:
         bool Render() const;

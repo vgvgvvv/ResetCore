@@ -6,7 +6,7 @@
 namespace ReGL
 {
     class Component;
-    class GameObject : Object
+    class GameObject : public Object
     {
     public:
         friend class GameObjectManager;
@@ -16,10 +16,12 @@ namespace ReGL
             transform_ = new Transform();
         }
 
-        ~GameObject()
+        ~GameObject() override
         {
             delete transform_;
         }
+
+        Transform& GetTransform() const { return *transform_; }
 
         private:
             std::list<const Component*> components_;

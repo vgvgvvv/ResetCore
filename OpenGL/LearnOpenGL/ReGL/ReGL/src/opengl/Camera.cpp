@@ -1,5 +1,4 @@
 ﻿#include "Camera.h"
-#include <glad/glad.h>
 
 namespace ReGL
 {
@@ -9,6 +8,7 @@ namespace ReGL
         {
             return true;
         }
+        
         return true;
     }
 

@@ -9,7 +9,7 @@ namespace ReGL
     {
     public:
 
-        const GameObject& GetGameObject() { return *game_object_; }
+        GameObject& GetGameObject() const { return *game_object_; }
     private:
         GameObject* game_object_{nullptr};
     };
