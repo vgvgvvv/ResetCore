@@ -102,6 +102,15 @@
     <ClCompile Include="src\opengl\renderer\ShaderProgram.cpp">
       <Filter>src\opengl\renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\script\Transform.cpp">
+      <Filter>src\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\script\Component.cpp">
+      <Filter>src\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\script\Object.cpp">
+      <Filter>src\script</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\looper\World.h">
@@ -178,6 +187,15 @@
     </ClInclude>
     <ClInclude Include="src\opengl\renderer\ShaderProgram.h">
       <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\script\Transform.h">
+      <Filter>src\script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\script\Component.h">
+      <Filter>src\script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\script\Object.h">
+      <Filter>src\script</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

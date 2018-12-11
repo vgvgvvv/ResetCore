@@ -1,9 +1,10 @@
 ﻿#ifndef __BEHAVIOR_H__
 #define __BEHAVIOR_H__
+#include "Component.h"
 
 namespace ReGL
 {
-    class Behavior
+    class Behavior : public Component
     {
     public:
         virtual bool Awake() = 0;

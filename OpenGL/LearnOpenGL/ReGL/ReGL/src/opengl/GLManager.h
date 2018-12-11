@@ -4,12 +4,13 @@
 
 #ifndef __GLMANAGER_H__
 #define __GLMANAGER_H__
-#include "Camera.h"
-#include "looper/Scene.h"
+
 #include "looper/IRenderManager.h"
 
 namespace ReGL
 {
+    class Scene;
+    class Camera;
     class GLManager : public IRenderManager
     {
     public:

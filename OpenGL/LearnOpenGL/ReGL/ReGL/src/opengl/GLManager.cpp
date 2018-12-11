@@ -2,6 +2,7 @@
 #include "GLADManager.h"
 #include "GLFWManager.h"
 #include "utility/Context.h"
+#include "Camera.h"
 
 namespace ReGL
 {
