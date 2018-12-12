@@ -145,6 +145,7 @@
     <ClCompile Include="src\opengl\renderer\MeshRenderer.cpp" />
     <ClCompile Include="src\opengl\renderer\Shader.cpp" />
     <ClCompile Include="src\opengl\renderer\ShaderProgram.cpp" />
+    <ClCompile Include="src\opengl\renderer\Texture.cpp" />
     <ClCompile Include="src\opengl\Window.cpp" />
     <ClCompile Include="src\script\Behavior.cpp" />
     <ClCompile Include="src\script\BehaviorManager.cpp" />
@@ -154,6 +155,7 @@
     <ClCompile Include="src\thirdpart\glad.c" />
     <ClCompile Include="src\utility\Context.cpp" />
     <ClCompile Include="src\utility\datastruct\LinkList.cpp" />
+    <ClCompile Include="src\utility\io\File.cpp" />
     <ClCompile Include="src\utility\logger\ConsoleLogger.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +176,7 @@
     <ClInclude Include="src\opengl\renderer\Renderer.h" />
     <ClInclude Include="src\opengl\renderer\Shader.h" />
     <ClInclude Include="src\opengl\renderer\ShaderProgram.h" />
+    <ClInclude Include="src\opengl\renderer\Texture.h" />
     <ClInclude Include="src\opengl\Window.h" />
     <ClInclude Include="src\script\Behavior.h" />
     <ClInclude Include="src\script\BehaviorManager.h" />
@@ -184,6 +187,7 @@
     <ClInclude Include="src\utility\common\Property.h" />
     <ClInclude Include="src\utility\Context.h" />
     <ClInclude Include="src\utility\datastruct\LinkList.h" />
+    <ClInclude Include="src\utility\io\File.h" />
     <ClInclude Include="src\utility\logger\ConsoleLogger.h" />
     <ClInclude Include="src\utility\logger\ILogger.h" />
     <ClInclude Include="src\utility\memory\Memory.h" />

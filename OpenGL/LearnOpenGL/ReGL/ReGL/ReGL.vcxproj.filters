@@ -40,6 +40,15 @@
     <Filter Include="src\utility\common">
       <UniqueIdentifier>{a60a72a0-c397-4cb1-b440-91229bd5b0d0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\utility\io">
+      <UniqueIdentifier>{bdbb72ab-042f-4b2b-be98-31667f28f335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utility\io\parser">
+      <UniqueIdentifier>{c7e35bb6-c062-4834-809a-2bff79dc493b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\resources">
+      <UniqueIdentifier>{03c07460-93b9-43f5-af1b-ec3286f11ed7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -116,6 +125,12 @@
     </ClCompile>
     <ClCompile Include="src\looper\ScriptManager.cpp">
       <Filter>src\looper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\renderer\Texture.cpp">
+      <Filter>src\opengl\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utility\io\File.cpp">
+      <Filter>src\utility\io</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -211,6 +226,12 @@
     </ClInclude>
     <ClInclude Include="src\utility\common\Property.h">
       <Filter>src\utility\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderer\Texture.h">
+      <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\io\File.h">
+      <Filter>src\utility\io</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
