@@ -24,4 +24,11 @@ namespace ReGL
         }
         return true;
     }
+
+
+    bool ShaderProgram::Use() const
+    {
+        glUseProgram(program_id_);
+        return true;
+    }
 }

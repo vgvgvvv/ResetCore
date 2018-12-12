@@ -7,6 +7,7 @@ namespace ReGL
     class Renderer
     {
     public:
+        virtual ~Renderer() = default;
         virtual bool Render() = 0;
     };
 

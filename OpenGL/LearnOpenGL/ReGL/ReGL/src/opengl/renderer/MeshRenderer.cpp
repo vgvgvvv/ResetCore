@@ -2,6 +2,7 @@
 
 namespace ReGL
 {
+
     bool MeshRenderer::Render()
     {
         return true;
