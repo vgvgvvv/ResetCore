@@ -2,6 +2,7 @@
 #define __GAMEOBJECT_H__
 #include <list>
 #include "script/Transform.h"
+#include "utility/Common.h"
 
 namespace ReGL
 {
@@ -11,27 +12,27 @@ namespace ReGL
     public:
         friend class GameObjectManager;
 
-        GameObject()
-        {
-            transform_ = new Transform();
-        }
+        bool Destroy() override;
 
-        ~GameObject() override
-        {
-            delete transform_;
-        }
+        const Transform& GetTransform() const { return transform_; }
 
-        Transform& GetTransform() const { return *transform_; }
+        template <typename T>
+        const T& AddComponent()
+        {
+            auto id = typeid(T);
+            
+        }
 
         private:
-            std::list<const Component*> components_;
-            Transform* transform_;
+            std::list<Component*> components_;
+            Transform transform_;
     };
 
     class GameObjectManager
     {
     public:
         static GameObject& Create();
+        static bool Destroy(GameObject* game_object);
     private:
         static std::list<GameObject*> game_objects_;
     };

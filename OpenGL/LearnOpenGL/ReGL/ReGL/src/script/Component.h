@@ -10,6 +10,9 @@ namespace ReGL
     public:
 
         GameObject& GetGameObject() const { return *game_object_; }
+        bool Destroy() override;
+    protected:
+        bool inited_;
     private:
         GameObject* game_object_{nullptr};
     };

@@ -4,14 +4,16 @@
 
 namespace ReGL
 {
+    class BehaviorManager;
     class Behavior : public Component
     {
     public:
-        virtual bool Awake() = 0;
-        virtual bool Start() = 0;
+        friend BehaviorManager;
+        bool Init();
+        virtual bool PreUpdate() = 0;
         virtual bool Update() = 0;
         virtual bool LateUpdate() = 0;
-        virtual bool OnDestroy() = 0;
+        bool Destroy() override;
     };
 }
 

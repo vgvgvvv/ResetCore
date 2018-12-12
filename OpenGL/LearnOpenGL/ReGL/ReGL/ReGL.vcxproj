@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="src\looper\GameObject.cpp" />
     <ClCompile Include="src\looper\Scene.cpp" />
+    <ClCompile Include="src\looper\ScriptManager.cpp" />
     <ClCompile Include="src\looper\World.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\opengl\Camera.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="src\looper\InputManager.h" />
     <ClInclude Include="src\looper\IRenderManager.h" />
     <ClInclude Include="src\looper\Scene.h" />
+    <ClInclude Include="src\looper\ScriptManager.h" />
     <ClInclude Include="src\looper\World.h" />
     <ClInclude Include="src\opengl\Camera.h" />
     <ClInclude Include="src\opengl\GLADManager.h" />
@@ -178,6 +180,8 @@
     <ClInclude Include="src\script\Component.h" />
     <ClInclude Include="src\script\Object.h" />
     <ClInclude Include="src\script\Transform.h" />
+    <ClInclude Include="src\utility\Common.h" />
+    <ClInclude Include="src\utility\common\Property.h" />
     <ClInclude Include="src\utility\Context.h" />
     <ClInclude Include="src\utility\datastruct\LinkList.h" />
     <ClInclude Include="src\utility\logger\ConsoleLogger.h" />

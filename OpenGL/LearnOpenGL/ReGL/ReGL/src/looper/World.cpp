@@ -3,6 +3,7 @@
 #include "utility/logger/ConsoleLogger.h"
 #include "InputManager.h"
 #include "opengl/GLManager.h"
+#include "ScriptManager.h"
 
 namespace ReGL
 {
@@ -10,9 +11,14 @@ namespace ReGL
 
     bool World::Init()
     {
+        if(!ContextValue<ScriptManager>::Get().Init())
+        {
+            Context::GetLogger().Error(" ScriptManager::Init with error !!!");
+            return false;
+        }
         if(!ContextValue<IRenderManager>::Get().Init())
         {
-            Context::GetLogger().Error(" GLManager::Init with error !!!");
+            Context::GetLogger().Error(" RenderManager::Init with error !!!");
             return false;
         }
         running_ = true;
@@ -21,6 +27,11 @@ namespace ReGL
 
     bool World::PreUpdate()
     {
+        if(!ContextValue<ScriptManager>::Get().PreUpdate())
+        {
+            Context::GetLogger().Error(" ScriptManager::PreUpdate with error !!!");
+            return false;
+        }
         if (!ContextValue<InputManager>::Get().ProcessInput())
         {
             return false;
@@ -34,6 +45,11 @@ namespace ReGL
         {
             return false;
         }
+        if (!ContextValue<ScriptManager>::Get().Update())
+        {
+            Context::GetLogger().Error(" ScriptManager::Update with error !!!");
+            return false;
+        }
         if (!ContextValue<IRenderManager>::Get().Update())
         {
             return false;
@@ -43,6 +59,11 @@ namespace ReGL
 
     bool World::LateUpdate()
     {
+        if (!ContextValue<ScriptManager>::Get().LateUpdate())
+        {
+            Context::GetLogger().Error(" ScriptManager::LateUpdate with error !!!");
+            return false;
+        }
         if(!ContextValue<IRenderManager>::Get().LateUpdate())
         {
             return false;
@@ -62,6 +83,11 @@ namespace ReGL
         if (!ContextValue<IRenderManager>::Get().Uninit())
         {
             Context::GetLogger().Error(" GLManager::Uninit with error !!!");
+            return false;
+        }
+        if (!ContextValue<ScriptManager>::Get().Uninit())
+        {
+            Context::GetLogger().Error(" ScriptManager::Uninit with error !!!");
             return false;
         }
         return true;

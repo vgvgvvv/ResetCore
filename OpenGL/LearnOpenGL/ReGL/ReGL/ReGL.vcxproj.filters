@@ -37,6 +37,9 @@
     <Filter Include="src\pinvoke\template">
       <UniqueIdentifier>{99cd9dbb-7014-455d-811e-8fc4eb3dffe3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\utility\common">
+      <UniqueIdentifier>{a60a72a0-c397-4cb1-b440-91229bd5b0d0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -110,6 +113,9 @@
     </ClCompile>
     <ClCompile Include="src\script\Object.cpp">
       <Filter>src\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\looper\ScriptManager.cpp">
+      <Filter>src\looper</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -196,6 +202,15 @@
     </ClInclude>
     <ClInclude Include="src\script\Object.h">
       <Filter>src\script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\looper\ScriptManager.h">
+      <Filter>src\looper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\Common.h">
+      <Filter>src\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\common\Property.h">
+      <Filter>src\utility\common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
