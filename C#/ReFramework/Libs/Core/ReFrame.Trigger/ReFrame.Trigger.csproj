@@ -1,20 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4EF2254D-F9B6-4409-BA29-8F3EC044D7D4}</ProjectGuid>
-    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{FE0C80A7-C179-42AB-90FA-53BA6D32C5EB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ReFrame.Core</RootNamespace>
-    <AssemblyName>ReFrame.Core</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>ReFrame.Trigger</RootNamespace>
+    <AssemblyName>ReFrame.Trigger</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -35,31 +33,32 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\IBase.cs" />
-    <Compile Include="ECS\RComponent.cs" />
-    <Compile Include="ECS\REntity.cs" />
-    <Compile Include="ECS\REntityManager.cs" />
-    <Compile Include="ECS\RManager.cs" />
-    <Compile Include="ECS\RObject.cs" />
-    <Compile Include="ECS\RWorld.cs" />
+    <Compile Include="Base\IArg.cs" />
+    <Compile Include="Base\ICommand.cs" />
+    <Compile Include="Base\ICondition.cs" />
+    <Compile Include="Base\IEvent.cs" />
+    <Compile Include="Base\ITrigger.cs" />
+    <Compile Include="Base\Trigger.cs" />
+    <Compile Include="Core\TriggerManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ReFrame.Core\ReFrame.Core.csproj">
+      <Project>{4ef2254d-f9b6-4409-ba29-8f3ec044d7d4}</Project>
+      <Name>ReFrame.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ReFrame.Util\ReFrame.Util.csproj">
-      <Project>{BE370819-9DE9-42A6-8BF8-B3195DB0A752}</Project>
+      <Project>{be370819-9de9-42a6-8bf8-b3195db0a752}</Project>
       <Name>ReFrame.Util</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
