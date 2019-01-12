@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ReFrame.Util.Debug
+namespace ReFrame.Util
 {
     public interface IDebuger
     {

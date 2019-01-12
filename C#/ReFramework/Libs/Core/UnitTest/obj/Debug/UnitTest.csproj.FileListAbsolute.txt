@@ -12,3 +12,7 @@
 /Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.csproj.CoreCompileInputs.cache
 /Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.dll
 /Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.pdb
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\UnitTest\obj\Debug\UnitTest.csprojAssemblyReference.cache
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\UnitTest\obj\Debug\UnitTest.dll
+D:\Documents\ResetCore\C#\ReFramework\Libs\Core\UnitTest\obj\Debug\UnitTest.pdb

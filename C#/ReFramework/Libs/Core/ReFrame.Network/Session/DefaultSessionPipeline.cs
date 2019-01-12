@@ -8,7 +8,7 @@ namespace ReFrame.Network
 {
     public class DefaultSessionPipeline : ISessionPipeline
     {
-        private static IDebuger logger = InterfaceBinder.Get<IDebuger>();
+        private static IDebuger logger = ContextValue<IDebuger>.Value;
         
         public ISession Session { get; }
         
