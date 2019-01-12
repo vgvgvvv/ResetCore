@@ -223,9 +223,11 @@ function HU.BuildNewCode(SysPath, LuaPath)
         HU.FakeENV = HU.FakeT()
         HU.MetaMap = {}
         HU.RequireMap = {}
+        --设置沙盒进行执行，并且通过沙盒获取相关数据
         setfenv(NewFunction, HU.FakeENV)
         local NewObject
         HU.ErrorHappen = false
+        --如果有错误发生则进行处理
         xpcall(function()
             NewObject = NewFunction()
         end, HU.ErrorHandle)
@@ -290,7 +292,9 @@ function HU.Travel_G()
         end
     end
 
+    --遍历全局表
     f(_G)
+    --遍历注册表
     local registryTable = debug.getregistry()
     f(registryTable)
 
@@ -320,12 +324,16 @@ function HU.HotUpdateCode(LuaPath, SysPath)
         local Success, NewObject = HU.BuildNewCode(SysPath, LuaPath)
         log.color("build new code", Success, NewObject)
         if Success then
+            --更新旧有对象
             HU.ReplaceOld(OldObject, NewObject, LuaPath, "Main", "")
+            --更新require的对象
             for LuaPath, NewObject in pairs(HU.RequireMap) do
                 local OldObject = package.loaded[LuaPath]
                 HU.ReplaceOld(OldObject, NewObject, LuaPath, "Main_require", "")
             end
+            --把沙盒中用于获取信息的元表去除
             setmetatable(HU.FakeENV, nil)
+            --将沙盒中所有的东西拷贝到实际环境中
             HU.UpdateAllFunction(HU.ENV, HU.FakeENV, " ENV ", "Main", "")
             if #HU.ChangedFuncList > 0 then
                 HU.Travel_G()
