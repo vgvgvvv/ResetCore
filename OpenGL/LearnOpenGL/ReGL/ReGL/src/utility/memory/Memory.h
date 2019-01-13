@@ -1,0 +1,10 @@
+#ifndef __MEMORY_MANAGER_H__
+#define __MEMORY_MANAGER_H__
+
+#define NEW_OBJECT(CLASSNAME, ...) (new CLASSNAME(__VA_ARGS__))
+#define DELETE_OBJECT(VALUE) (delete VALUE)
+
+#define NEW_ARRAY(CLASSNAME, COUNT) (new CLASSNAME[COUNT])
+#define DELETE_ARRAY(ARRAY) (delete[] ARRAY)
+
+#endif

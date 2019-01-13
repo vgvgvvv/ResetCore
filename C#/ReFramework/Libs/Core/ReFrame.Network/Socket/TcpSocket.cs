@@ -9,7 +9,7 @@ using ReFrame.Util.Debug;
 namespace ReFrame.Network {
     public class TcpSocket {
 
-        private static readonly IDebuger logger = InterfaceBinder.Get<IDebuger>();
+        private static readonly IDebuger logger = ContextValue<IDebuger>.Value;
 
         /// <summary>
         ///远端端口

@@ -28,6 +28,27 @@
     <Filter Include="src\utility\datastruct">
       <UniqueIdentifier>{2d1e7c50-a49f-49a2-9b6e-d5697e5bef49}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\utility\memory">
+      <UniqueIdentifier>{00ae9a58-bc74-491f-a421-0c89b27c1af3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pinvoke">
+      <UniqueIdentifier>{7fb2f3be-94a2-4cdb-959e-0a932a955dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pinvoke\template">
+      <UniqueIdentifier>{99cd9dbb-7014-455d-811e-8fc4eb3dffe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utility\common">
+      <UniqueIdentifier>{a60a72a0-c397-4cb1-b440-91229bd5b0d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utility\io">
+      <UniqueIdentifier>{bdbb72ab-042f-4b2b-be98-31667f28f335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utility\io\parser">
+      <UniqueIdentifier>{c7e35bb6-c062-4834-809a-2bff79dc493b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\resources">
+      <UniqueIdentifier>{03c07460-93b9-43f5-af1b-ec3286f11ed7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -36,17 +57,11 @@
     <ClCompile Include="src\looper\World.cpp">
       <Filter>src\looper</Filter>
     </ClCompile>
-    <ClCompile Include="src\utility\context.cpp">
-      <Filter>src\utility</Filter>
-    </ClCompile>
     <ClCompile Include="src\utility\logger\ConsoleLogger.cpp">
       <Filter>src\utility\logger</Filter>
     </ClCompile>
     <ClCompile Include="src\thirdpart\glad.c">
       <Filter>src\thirdpart</Filter>
-    </ClCompile>
-    <ClCompile Include="src\looper\InputManager.cpp">
-      <Filter>src\looper</Filter>
     </ClCompile>
     <ClCompile Include="src\opengl\GLADManager.cpp">
       <Filter>src\opengl</Filter>
@@ -90,16 +105,37 @@
     <ClCompile Include="src\utility\datastruct\LinkList.cpp">
       <Filter>src\utility\datastruct</Filter>
     </ClCompile>
+    <ClCompile Include="src\opengl\GLFWInputManager.cpp">
+      <Filter>src\opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utility\Context.cpp">
+      <Filter>src\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\renderer\ShaderProgram.cpp">
+      <Filter>src\opengl\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\script\Transform.cpp">
+      <Filter>src\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\script\Component.cpp">
+      <Filter>src\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\script\Object.cpp">
+      <Filter>src\script</Filter>
+    </ClCompile>
+    <ClCompile Include="src\looper\ScriptManager.cpp">
+      <Filter>src\looper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\renderer\Texture.cpp">
+      <Filter>src\opengl\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utility\io\File.cpp">
+      <Filter>src\utility\io</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\looper\World.h">
       <Filter>src\looper</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utility\singleton.h">
-      <Filter>src\utility</Filter>
-    </ClInclude>
-    <ClInclude Include="src\utility\context.h">
-      <Filter>src\utility</Filter>
     </ClInclude>
     <ClInclude Include="src\utility\logger\ConsoleLogger.h">
       <Filter>src\utility\logger</Filter>
@@ -154,6 +190,48 @@
     </ClInclude>
     <ClInclude Include="src\utility\datastruct\LinkList.h">
       <Filter>src\utility\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\GLFWInputManager.h">
+      <Filter>src\opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\memory\Memory.h">
+      <Filter>src\utility\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\Context.h">
+      <Filter>src\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\Singleton.h">
+      <Filter>src\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\looper\IRenderManager.h">
+      <Filter>src\looper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderer\ShaderProgram.h">
+      <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\script\Transform.h">
+      <Filter>src\script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\script\Component.h">
+      <Filter>src\script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\script\Object.h">
+      <Filter>src\script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\looper\ScriptManager.h">
+      <Filter>src\looper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\Common.h">
+      <Filter>src\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\common\Property.h">
+      <Filter>src\utility\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderer\Texture.h">
+      <Filter>src\opengl\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utility\io\File.h">
+      <Filter>src\utility\io</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

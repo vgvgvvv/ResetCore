@@ -1,5 +1,6 @@
 ﻿#include "Window.h"
 #include "utility/Context.h"
+#include <GLFW/glfw3.h>
 
 namespace ReGL
 {
@@ -22,6 +23,7 @@ namespace ReGL
 
     bool Window::LateUpdate()
     {
+        
         glfwSwapBuffers(window_);
         return true;    
     }

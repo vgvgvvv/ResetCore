@@ -39,12 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\RComponent.cs" />
-    <Compile Include="Base\REntity.cs" />
-    <Compile Include="Base\REntityManager.cs" />
-    <Compile Include="Base\RManager.cs" />
-    <Compile Include="Base\RObject.cs" />
-    <Compile Include="Base\RWorld.cs" />
+    <Compile Include="Base\IBase.cs" />
+    <Compile Include="ECS\RComponent.cs" />
+    <Compile Include="ECS\REntity.cs" />
+    <Compile Include="ECS\REntityManager.cs" />
+    <Compile Include="ECS\RManager.cs" />
+    <Compile Include="ECS\RObject.cs" />
+    <Compile Include="ECS\RWorld.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

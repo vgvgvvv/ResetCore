@@ -34,6 +34,7 @@ namespace ReGL
     bool GLFWManager::LateUpdate()
     {
         window_.LateUpdate();
+       
         glfwPollEvents();
         return true;
     }

@@ -1,7 +1,7 @@
 ﻿#ifndef __WINDOW_H__
 #define __WINDOW_H__
-#include "GLFWManager.h"
 #include <string>
+#include "GLFWManager.h"
 
 namespace ReGL
 {

@@ -39,10 +39,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\InterfaceBinder.cs" />
+    <Compile Include="Utility\Assert.cs" />
+    <Compile Include="Context\Context.cs" />
+    <Compile Include="Context\ContextValue.cs" />
     <Compile Include="Context\IDebuger.cs" />
+    <Compile Include="Context\MUUID.cs" />
+    <Compile Include="Parser\DataSerialize.cs" />
+    <Compile Include="Parser\StringSerialize.cs" />
+    <Compile Include="Parser\XmlSerialize.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\ActionQueue.cs" />
+    <Compile Include="Utility\Hash.cs" />
     <Compile Include="Utility\HashUtil.cs" />
     <Compile Include="Utility\ObjectPool.cs" />
     <Compile Include="Utility\Reusable.cs" />

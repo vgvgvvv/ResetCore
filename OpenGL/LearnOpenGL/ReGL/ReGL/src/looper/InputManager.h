@@ -10,8 +10,8 @@ namespace ReGL
     class InputManager
     {
     public:
-        static bool ProcessInput();
-        static bool PullInput();
+        virtual bool ProcessInput() = 0;
+        virtual bool PullInput() = 0;
     };
 }
 

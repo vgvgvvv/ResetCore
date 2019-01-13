@@ -3,20 +3,16 @@
  */
 #ifndef __CANVAS_H__
 #define __CANVAS_H__
-#include <vector>
-#include "renderer/Renderer.h"
+#include "script/Component.h"
 
 namespace ReGL
 {
-    class Camera
+    class Camera : public Component
     {
     public:
-        bool Render();
-        bool Clear();
+        bool Render() const;
+        bool Clear() const;
 
-    private:
-        //TODO 使用链表
-        //std::vector<Renderer*> renderers_;
     };
 
 }

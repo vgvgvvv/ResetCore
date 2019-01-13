@@ -6,44 +6,46 @@ namespace Reframe.Unity.Utility
 {
     public class UnityDebuger : IDebuger
     {
+        private static readonly string DEFAULT_TAG = "DEFAULT";
+
         public void Log(string log)
         {
-            Debug.unityLogger.Log(log);
+            Log(DEFAULT_TAG, log);
         }
 
         public void Log(string tag, string log)
         {
-            Debug.unityLogger.Log(tag, log);
+            Debug.Log($"[{tag}] {log}");
         }
 
         public void LogWarning(string log)
         {
-            Debug.unityLogger.LogWarning("default", log);
+            LogWarning(DEFAULT_TAG, log);
         }
 
         public void LogWarning(string tag, string log)
         {
-            Debug.unityLogger.LogWarning(tag, log);
+            Debug.LogWarning($"[{tag}] {log}");
         }
 
         public void LogError(string log)
         {
-            Debug.unityLogger.LogError("default", log);
+            LogError(DEFAULT_TAG, log);
         }
 
         public void LogError(string tag, string log)
         {
-            Debug.unityLogger.LogError(tag, log);
+            Debug.LogError($"[{tag}] {log}");
         }
 
         public void LogException(Exception e)
         {
-            Debug.unityLogger.LogException(e);
+            LogException(DEFAULT_TAG, e);
         }
 
         public void LogException(string tag, Exception e)
         {
-            Debug.unityLogger.Log(tag, e);
+            Debug.Log($"[{tag}] {e}");
         }
     }
 }

@@ -13,7 +13,7 @@ namespace ReGL
 
         static void Init();
 
-        static void RegisterLogger(ILogger& logger);
+        static void RegisterLogger(ILogger* logger);
 
         static const ILogger& GetLogger();
 
@@ -31,9 +31,9 @@ namespace ReGL
         {
             return *value_;
         };
-        static void Set(T& value)
+        static void Set(T* value)
         {
-            value_ = &value;
+            value_ = value;
         }
     private:
         static T* value_;

@@ -9,7 +9,7 @@ namespace ReFrame.Network
 {
     public class UdpSocket
     {
-        private static readonly IDebuger logger = InterfaceBinder.Get<IDebuger>();
+        private static readonly IDebuger logger = ContextValue<IDebuger>.Value;
 
         public string remoteAddress { get; private set; }
         public int remotePort { get; private set; }
