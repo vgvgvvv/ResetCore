@@ -8,6 +8,7 @@
 #include <string>
 #include <jni.h>
 #include <android/log.h>
+#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {

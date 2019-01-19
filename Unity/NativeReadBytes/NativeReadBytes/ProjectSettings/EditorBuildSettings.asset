@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/CheckStreamingAssets/TestCheckFile.unity
+    guid: c172c8c05b5508a468ee9ea72ed18704
+  - enabled: 1
+    path: Assets/ScreenSize/TestScreenSize.unity
+    guid: ce07e8c4586b5e2409fe090224b192cb
+  - enabled: 1
     path: Assets/ReadNativePhoto/ReadNativePhoto.unity
     guid: 8e375dfa978a0624a9e3a638818f7cf5
   - enabled: 1
