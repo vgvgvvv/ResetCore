@@ -20,11 +20,11 @@
 #include "lualib.h"
 
 
-/* macro to `unsign' a character */
+/* 强转为 unsigned char 的宏 */
 #define uchar(c)        ((unsigned char)(c))
 
 
-
+//获取字符串长度
 static int str_len (lua_State *L) {
   size_t l;
   luaL_checklstring(L, 1, &l);
@@ -32,14 +32,14 @@ static int str_len (lua_State *L) {
   return 1;
 }
 
-
+//获取合法的长度, (如果是负数则返回从后往前数)
 static ptrdiff_t posrelat (ptrdiff_t pos, size_t len) {
   /* relative string position: negative means back from end */
   if (pos < 0) pos += (ptrdiff_t)len + 1;
   return (pos >= 0) ? pos : 0;
 }
 
-
+//获取子串
 static int str_sub (lua_State *L) {
   size_t l;
   const char *s = luaL_checklstring(L, 1, &l);
@@ -53,7 +53,7 @@ static int str_sub (lua_State *L) {
   return 1;
 }
 
-
+//字符串翻转
 static int str_reverse (lua_State *L) {
   size_t l;
   luaL_Buffer b;
@@ -64,7 +64,7 @@ static int str_reverse (lua_State *L) {
   return 1;
 }
 
-
+//字符串全部变为小写
 static int str_lower (lua_State *L) {
   size_t l;
   size_t i;
@@ -77,7 +77,7 @@ static int str_lower (lua_State *L) {
   return 1;
 }
 
-
+//字符串全部变为大写
 static int str_upper (lua_State *L) {
   size_t l;
   size_t i;
@@ -143,7 +143,7 @@ static int writer (lua_State *L, const void* b, size_t size, void* B) {
   return 0;
 }
 
-
+//将代码块dump成二进制 之后可以加载这个二进制来获取函数
 static int str_dump (lua_State *L) {
   luaL_Buffer b;
   luaL_checktype(L, 1, LUA_TFUNCTION);
@@ -159,10 +159,11 @@ static int str_dump (lua_State *L) {
 
 /*
 ** {======================================================
-** PATTERN MATCHING
+** PATTERN MATCHING 模式匹配
 ** =======================================================
 */
 
+#pragma region 模式匹配
 
 #define CAP_UNFINISHED	(-1)
 #define CAP_POSITION	(-2)
@@ -244,7 +245,6 @@ static int match_class (int c, int cl) {
   // 传入的cl字符，为大写的情况下，与小写的匹配情况为互补关系
   return (islower(cl) ? res : !res);
 }
-
 
 static int matchbracketclass (int c, const char *p, const char *ec) {
   int sig = 1;
@@ -725,6 +725,8 @@ static int str_gsub (lua_State *L) {
   return 2;
 }
 
+#pragma endregion 模式匹配
+
 /* }====================================================== */
 
 
@@ -738,7 +740,7 @@ static int str_gsub (lua_State *L) {
 */
 #define MAX_FORMAT	(sizeof(FLAGS) + sizeof(LUA_INTFRMLEN) + 10)
 
-
+//特殊字符替换
 static void addquoted (lua_State *L, luaL_Buffer *b, int arg) {
   size_t l;
   const char *s = luaL_checklstring(L, arg, &l);
@@ -887,16 +889,17 @@ static const luaL_Reg strlib[] = {
   {NULL, NULL}
 };
 
-
+//添加元表，字符串可以获得扩展方法
 static void createmetatable (lua_State *L) {
-  lua_createtable(L, 0, 1);  /* create metatable for strings */
-  lua_pushliteral(L, "");  /* dummy string */
-  lua_pushvalue(L, -2);
-  lua_setmetatable(L, -2);  /* set string metatable */
-  lua_pop(L, 1);  /* pop dummy string */
-  lua_pushvalue(L, -2);  /* string library... */
-  lua_setfield(L, -2, "__index");  /* ...is the __index metamethod */
-  lua_pop(L, 1);  /* pop metatable */
+ 
+  lua_createtable(L, 0, 1);         /* create metatable for strings */     // table
+  lua_pushliteral(L, "");           /* dummy string */  // table ""
+  lua_pushvalue(L, -2);             // table "" table
+  lua_setmetatable(L, -2);          /* set string metatable */ // table "" 
+  lua_pop(L, 1);                    /* pop dummy string */ // table
+  lua_pushvalue(L, -2);             /* string library... */ // table lib
+  lua_setfield(L, -2, "__index");   /* ...is the __index metamethod */ // table["__index"]=lib // table lib
+  lua_pop(L, 1);                    /* pop metatable */ // table
 }
 
 
@@ -905,7 +908,7 @@ static void createmetatable (lua_State *L) {
 */
 LUALIB_API int luaopen_string (lua_State *L) {
   luaL_register(L, LUA_STRLIBNAME, strlib);
-#if defined(LUA_COMPAT_GFIND)
+#if defined(LUA_COMPAT_GFIND) //兼容旧函数
   lua_getfield(L, -1, "gmatch");
   lua_setfield(L, -2, "gfind");
 #endif

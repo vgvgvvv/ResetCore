@@ -495,7 +495,7 @@ LUALIB_API void luaL_addvalue (luaL_Buffer *B) {
   }
 }
 
-
+//初始化buffer，将纸质设为buffer头，并将长度设为0
 LUALIB_API void luaL_buffinit (lua_State *L, luaL_Buffer *B) {
   B->L = L;
   B->p = B->buffer;

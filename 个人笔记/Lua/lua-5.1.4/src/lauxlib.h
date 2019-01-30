@@ -125,9 +125,9 @@ LUALIB_API const char *(luaL_findtable) (lua_State *L, int idx,
 */
 
 
-
+//字符串缓冲区
 typedef struct luaL_Buffer {
-  char *p;			/* current position in buffer */
+  char *p;			/* buffer的当前位置 */
   int lvl;  /* number of strings in the stack (level) */
   lua_State *L;
   char buffer[LUAL_BUFFERSIZE];
