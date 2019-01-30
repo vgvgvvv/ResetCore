@@ -185,7 +185,7 @@ typedef struct lua_TValue {
 
 #define setttype(obj, tt) (ttype(obj) = (tt))
 
-
+// 只有这些类型的数据 才是可回收的数据
 #define iscollectable(o)	(ttype(o) >= LUA_TSTRING)
 
 
@@ -211,7 +211,7 @@ typedef union TString {
 #define svalue(o)       getstr(rawtsvalue(o))
 
 
-
+// 这里为什么需要使用union类型？
 typedef union Udata {
   L_Umaxalign dummy;  /* ensures maximum alignment for `local' udata */
   struct {
@@ -228,12 +228,16 @@ typedef union Udata {
 /*
 ** Function Prototypes
 */
+// 存放函数原型的数据结构
 typedef struct Proto {
   CommonHeader;
   TValue *k;  /* constants used by the function */
+  // 存放函数体的opcode
   Instruction *code;
+  // 在这个函数中定义的函数
   struct Proto **p;  /* functions defined inside the function */
   int *lineinfo;  /* map from opcodes to source lines */
+  // 存放局部变量的数组
   struct LocVar *locvars;  /* information about local variables */
   TString **upvalues;  /* upvalue names */
   TString  *source;
@@ -258,7 +262,7 @@ typedef struct Proto {
 #define VARARG_ISVARARG		2
 #define VARARG_NEEDSARG		4
 
-
+// 存放局部变量的结构体
 typedef struct LocVar {
   TString *varname;
   int startpc;  /* first point where variable is active */
@@ -275,7 +279,9 @@ typedef struct UpVal {
   CommonHeader;
   TValue *v;  /* points to stack or to its own value */
   union {
+	// 当这个upval被close时,保存upval的值,后面可能还会被引用到
     TValue value;  /* the value (when closed) */
+    // 当这个upval还在open状态时,以下链表串连在openupval链表中
     struct {  /* double linked list (when open) */
       struct UpVal *prev;
       struct UpVal *next;
@@ -328,7 +334,7 @@ typedef union TKey {
   TValue tvk;
 } TKey;
 
-
+// 每个节点都有key和val
 typedef struct Node {
   TValue i_val;
   TKey i_key;
@@ -352,11 +358,14 @@ typedef struct Table {
 /*
 ** `module' operation for hashing (size is always a power of 2)
 */
+// (size&(size-1))==0是检查size是2的次幂
+// (s) & ((size)-1)) = s % size
 #define lmod(s,size) \
 	(check_exp((size&(size-1))==0, (cast(int, (s) & ((size)-1)))))
 
 
 #define twoto(x)	(1<<(x))
+// sizenode返回的值必然是2的次幂
 #define sizenode(t)	(twoto((t)->lsizenode))
 
 

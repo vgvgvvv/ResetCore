@@ -38,7 +38,7 @@ struct lua_longjmp;  /* defined in ldo.c */
 typedef struct stringtable {
   GCObject **hash;
   lu_int32 nuse;  /* number of elements */
-  int size;
+  int size;       // hash桶数组大小
 } stringtable;
 
 
@@ -77,13 +77,20 @@ typedef struct global_State {
   GCObject *gray;  /* list of gray objects */
   GCObject *grayagain;  /* list of objects to be traversed atomically */
   GCObject *weak;  /* list of weak tables (to be cleared) */
+  // 所有有GC方法的udata都放在tmudata链表中
   GCObject *tmudata;  /* last element of list of userdata to be GC */
   Mbuffer buff;  /* temporary buffer for string concatentation */
+  // 一个阈值，当这个totalbytes大于这个阈值时进行自动GC
   lu_mem GCthreshold;
+  // 保存当前分配的总内存数量
   lu_mem totalbytes;  /* number of bytes currently allocated */
+  // 一个估算值，根据这个计算GCthreshold
   lu_mem estimate;  /* an estimate of number of bytes actually in use */
+  // 当前待GC的数据大小，其实就是累加totalbytes和GCthreshold的差值
   lu_mem gcdept;  /* how much GC is `behind schedule' */
+  // 可以配置的一个值，不是计算出来的，根据这个计算GCthreshold，以此来控制下一次GC触发的时间
   int gcpause;  /* size of pause between successive GCs */
+  // 每次进行GC操作回收的数据比例，见lgc.c/luaC_step函数
   int gcstepmul;  /* GC `granularity' */
   lua_CFunction panic;  /* to be called in unprotected errors */
   TValue l_registry;
@@ -166,4 +173,3 @@ LUAI_FUNC lua_State *luaE_newthread (lua_State *L);
 LUAI_FUNC void luaE_freethread (lua_State *L, lua_State *L1);
 
 #endif
-

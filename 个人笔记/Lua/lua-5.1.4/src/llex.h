@@ -10,7 +10,7 @@
 #include "lobject.h"
 #include "lzio.h"
 
-
+// 256个字符
 #define FIRST_RESERVED	257
 
 /* maximum length of a reserved word */
@@ -39,7 +39,7 @@ enum RESERVED {
 /* array with token `names' */
 LUAI_DATA const char *const luaX_tokens [];
 
-
+// 存放数据信息：字符串或者数字
 typedef union {
   lua_Number r;
   TString *ts;
@@ -51,7 +51,7 @@ typedef struct Token {
   SemInfo seminfo;
 } Token;
 
-
+// 保存词法分析状态的数据结构
 typedef struct LexState {
   int current;  /* current character (charint) */
   int linenumber;  /* input line counter */

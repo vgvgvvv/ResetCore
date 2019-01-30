@@ -516,14 +516,19 @@ static int luaB_costatus (lua_State *L) {
 
 
 static int auxresume (lua_State *L, lua_State *co, int narg) {
+  // 拿到协程当前状态
   int status = costatus(L, co);
+  // 根据参数检查函数栈
   if (!lua_checkstack(co, narg))
     luaL_error(L, "too many arguments to resume");
+  // 检查当前协程是不是在suspend状态
   if (status != CO_SUS) {
     lua_pushfstring(L, "cannot resume %s coroutine", statnames[status]);
     return -1;  /* error flag */
   }
+  // 把参数移动到当前协程的栈上
   lua_xmove(L, co, narg);
+  // 设置调用栈层次
   lua_setlevel(L, co);
   status = lua_resume(co, narg);
   if (status == 0 || status == LUA_YIELD) {
@@ -545,12 +550,15 @@ static int luaB_coresume (lua_State *L) {
   int r;
   luaL_argcheck(L, co, 1, "coroutine expected");
   r = auxresume(L, co, lua_gettop(L) - 1);
+  // 判断resume的结果
   if (r < 0) {
+	// 小于0表示出错,返回false以及错误信息
     lua_pushboolean(L, 0);
     lua_insert(L, -2);
     return 2;  /* return false + error message */
   }
   else {
+	// 返回true以及yield时的参数
     lua_pushboolean(L, 1);
     lua_insert(L, -(r + 1));
     return r + 1;  /* return true + `resume' returns */
@@ -577,12 +585,14 @@ static int luaB_cocreate (lua_State *L) {
   lua_State *NL = lua_newthread(L);
   luaL_argcheck(L, lua_isfunction(L, 1) && !lua_iscfunction(L, 1), 1,
     "Lua function expected");
+  // 将函数压栈
   lua_pushvalue(L, 1);  /* move function to top */
+  // 将函数从L移动到NL中
   lua_xmove(L, NL, 1);  /* move function from L to NL */
   return 1;
 }
 
-
+//创建coroutine，返回一个函数，一旦你调用这个函数，就进入coroutine，和create功能重复
 static int luaB_cowrap (lua_State *L) {
   luaB_cocreate(L);
   lua_pushcclosure(L, luaB_auxwrap, 1);
@@ -625,10 +635,13 @@ static void auxopen (lua_State *L, const char *name,
 
 static void base_open (lua_State *L) {
   /* set global _G */
+  // 创建G表
   lua_pushvalue(L, LUA_GLOBALSINDEX);
   lua_setglobal(L, "_G");
   /* open lib into global table */
+  // 将base_funcs中的函数全都放入_G表中
   luaL_register(L, "_G", base_funcs);
+  // 存放版本号
   lua_pushliteral(L, LUA_VERSION);
   lua_setglobal(L, "_VERSION");  /* set global _VERSION */
   /* `ipairs' and `pairs' need auxliliary functions as upvalues */

@@ -45,15 +45,16 @@ const char lua_ident[] =
 #define api_incr_top(L)   {api_check(L, L->top < L->ci->top); L->top++;}
 
 
-
 static TValue *index2adr (lua_State *L, int idx) {
   if (idx > 0) {
+	// 如果idx > 0,则从栈中base为基础位置取元素
     TValue *o = L->base + (idx - 1);
     api_check(L, idx <= L->ci->top - L->base);
     if (o >= L->top) return cast(TValue *, luaO_nilobject);
     else return o;
   }
   else if (idx > LUA_REGISTRYINDEX) {
+	// 如果LUA_REGISTRYINDEX > idx < 0,则从栈中top为基础位置取元素
     api_check(L, idx != 0 && -idx <= L->top - L->base);
     return L->top + idx;
   }
@@ -75,9 +76,10 @@ static TValue *index2adr (lua_State *L, int idx) {
   }
 }
 
-
+// 获取当前环境表
 static Table *getcurrenv (lua_State *L) {
   if (L->ci == L->base_ci)  /* no enclosing function? */
+	// 如果当前不在任何函数中,那个使用全局表
     return hvalue(gt(L));  /* use global table as environment */
   else {
     Closure *func = curr_func(L);
@@ -114,7 +116,9 @@ LUA_API void lua_xmove (lua_State *from, lua_State *to, int n) {
   api_checknelems(from, n);
   api_check(from, G(from) == G(to));
   api_check(from, to->ci->top - to->top >= n);
+  // from的栈指针-n,表示栈顶需要移动的元素回退
   from->top -= n;
+  // 依次从from中把需要的变量移动到to中
   for (i = 0; i < n; i++) {
     setobj2s(to, to->top++, from->top + i);
   }
@@ -182,6 +186,7 @@ LUA_API void lua_remove (lua_State *L, int idx) {
   lua_lock(L);
   p = index2adr(L, idx);
   api_checkvalidindex(L, p);
+  // 把idx后面的数据往前挪
   while (++p < L->top) setobjs2s(L, p-1, p);
   L->top--;
   lua_unlock(L);
@@ -482,19 +487,25 @@ LUA_API const char *lua_pushfstring (lua_State *L, const char *fmt, ...) {
   return ret;
 }
 
-
+// 向栈中push一个C函数,n是upval的数量
 LUA_API void lua_pushcclosure (lua_State *L, lua_CFunction fn, int n) {
   Closure *cl;
   lua_lock(L);
   luaC_checkGC(L);
   api_checknelems(L, n);
+  // 创建一个closure指针
   cl = luaF_newCclosure(L, n, getcurrenv(L));
+  // 记录函数指针
   cl->c.f = fn;
+  // 首先将栈空出n个位置来存放参数
   L->top -= n;
+  // 初始化upval存放的位置
   while (n--)
     setobj2n(L, &cl->c.upvalue[n], L->top+n);
+  // 将closure指针push到栈中
   setclvalue(L, L->top, cl);
   lua_assert(iswhite(obj2gco(cl)));
+  // 栈指针加1
   api_incr_top(L);
   lua_unlock(L);
 }
@@ -530,7 +541,8 @@ LUA_API int lua_pushthread (lua_State *L) {
 ** get functions (Lua -> stack)
 */
 
-
+// gettable会调用到luaV_gettable,这样如果在本身没找到,还会根据__index方法到基类中查找
+// 而raw系列只会在自己上面查找
 LUA_API void lua_gettable (lua_State *L, int idx) {
   StkId t;
   lua_lock(L);
@@ -540,7 +552,7 @@ LUA_API void lua_gettable (lua_State *L, int idx) {
   lua_unlock(L);
 }
 
-
+// 从一个table中(idx所在)查找key对应的值, 找到值存放在top - 1中返回
 LUA_API void lua_getfield (lua_State *L, int idx, const char *k) {
   StkId t;
   TValue key;
@@ -548,12 +560,14 @@ LUA_API void lua_getfield (lua_State *L, int idx, const char *k) {
   t = index2adr(L, idx);
   api_checkvalidindex(L, t);
   setsvalue(L, &key, luaS_new(L, k));
+  // 查找key对应的值, 找到存放到top中
   luaV_gettable(L, t, &key, L->top);
   api_incr_top(L);
   lua_unlock(L);
 }
 
-
+// 从idx存放的表中,根据top - 1存放的field名称查找表成员,并且将结果push到top - 1的栈中
+// raw系列只会在自己上面查找,因为它调用的是luaH_get
 LUA_API void lua_rawget (lua_State *L, int idx) {
   StkId t;
   lua_lock(L);
@@ -641,7 +655,7 @@ LUA_API void lua_getfenv (lua_State *L, int idx) {
 ** set functions (stack -> Lua)
 */
 
-
+// 向idx索引的表中,插入key为top - 2,val为top - 1的数据,完事了之后top - 2把k/v退栈
 LUA_API void lua_settable (lua_State *L, int idx) {
   StkId t;
   lua_lock(L);
@@ -653,15 +667,18 @@ LUA_API void lua_settable (lua_State *L, int idx) {
   lua_unlock(L);
 }
 
-
+// 将k与idx的值对应, 换句话说,比如用table[k]找到的是idx的值
 LUA_API void lua_setfield (lua_State *L, int idx, const char *k) {
   StkId t;
   TValue key;
   lua_lock(L);
   api_checknelems(L, 1);
+  // 首先寻找idx对应的值
   t = index2adr(L, idx);
   api_checkvalidindex(L, t);
+  // 分配一个字符串,存放k值
   setsvalue(L, &key, luaS_new(L, k));
+  // 将key的值为top - 1的值,将它们的对应关系写到t中(t一般是个table)
   luaV_settable(L, t, &key, L->top - 1);
   L->top--;  /* pop value */
   lua_unlock(L);
@@ -778,6 +795,7 @@ LUA_API void lua_call (lua_State *L, int nargs, int nresults) {
   lua_lock(L);
   api_checknelems(L, nargs+1);
   checkresults(L, nargs, nresults);
+  // 当前top指针后退nargs + 1个位置得到函数指针
   func = L->top - (nargs+1);
   luaD_call(L, func, nresults);
   adjustresults(L, nresults);
@@ -903,34 +921,42 @@ LUA_API int lua_gc (lua_State *L, int what, int data) {
   g = G(L);
   switch (what) {
     case LUA_GCSTOP: {
+      // 停止GC, 把阙值标记为一个无限大的量, 这样就无法自动GC了
       g->GCthreshold = MAX_LUMEM;
       break;
     }
     case LUA_GCRESTART: {
+      // GC重新开始, 将阙值定为当前内存值
       g->GCthreshold = g->totalbytes;
       break;
     }
     case LUA_GCCOLLECT: {
+      // 全回收 不管三七二十一
       luaC_fullgc(L);
       break;
     }
     case LUA_GCCOUNT: {
       /* GC values are expressed in Kbytes: #bytes/2^10 */
+      // 换算成KBytes
       res = cast_int(g->totalbytes >> 10);
       break;
     }
     case LUA_GCCOUNTB: {
+      // 换算成bit
       res = cast_int(g->totalbytes & 0x3ff);
       break;
     }
     case LUA_GCSTEP: {
+      // 首先换算成byte
       lu_mem a = (cast(lu_mem, data) << 10);
       if (a <= g->totalbytes)
         g->GCthreshold = g->totalbytes - a;
       else
         g->GCthreshold = 0;
       while (g->GCthreshold <= g->totalbytes) {
+    	  // 当当前内存数据还是大于所要求的阙值时,就一直进行回收操作
         luaC_step(L);
+        // GC停止了, 返回错误
         if (g->gcstate == GCSpause) {  /* end of cycle? */
           res = 1;  /* signal it */
           break;

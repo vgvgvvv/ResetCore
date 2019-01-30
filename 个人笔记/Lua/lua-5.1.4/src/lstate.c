@@ -41,19 +41,26 @@ typedef struct LG {
 
 static void stack_init (lua_State *L1, lua_State *L) {
   /* initialize CallInfo array */
+  // 创建CallInfo数组
   L1->base_ci = luaM_newvector(L, BASIC_CI_SIZE, CallInfo);
   L1->ci = L1->base_ci;
   L1->size_ci = BASIC_CI_SIZE;
   L1->end_ci = L1->base_ci + L1->size_ci - 1;
   /* initialize stack array */
+  // 创建TValue数组
   L1->stack = luaM_newvector(L, BASIC_STACK_SIZE + EXTRA_STACK, TValue);
   L1->stacksize = BASIC_STACK_SIZE + EXTRA_STACK;
   L1->top = L1->stack;
   L1->stack_last = L1->stack+(L1->stacksize - EXTRA_STACK)-1;
   /* initialize first ci */
+  // 没看懂这个下面几句什么意思
   L1->ci->func = L1->top;
+  // 这里的作用是把当前top所在区域的值set成nil,然后top++
+  // 在top++之前,从上一句代码可以看出,top指向的位置是L1->ci->func,也就是把L1->ci->func set为nil
   setnilvalue(L1->top++);  /* `function' entry for this `ci' */
+  // 执行这句调用之后, base = top = stack + 1, 但是base是存放什么值的呢??
   L1->base = L1->ci->base = L1->top;
+  // 这里的意思是,每个lua函数最开始预留LUA_MINSTACK个栈位置,不够的时候再增加,见luaD_checkstack函数
   L1->ci->top = L1->top + LUA_MINSTACK;
 }
 
@@ -70,12 +77,16 @@ static void freestack (lua_State *L, lua_State *L1) {
 static void f_luaopen (lua_State *L, void *ud) {
   global_State *g = G(L);
   UNUSED(ud);
+  // 初始化堆栈
   stack_init(L, L);  /* init stack */
+  // 初始化全局表
   sethvalue(L, gt(L), luaH_new(L, 0, 2));  /* table of globals */
+  // 初始化寄存器
   sethvalue(L, registry(L), luaH_new(L, 0, 2));  /* registry */
   luaS_resize(L, MINSTRTABSIZE);  /* initial size of string table */
   luaT_init(L);
   luaX_init(L);
+  // 初始化not enough memory这个字符串并且标记为不可回收
   luaS_fix(luaS_newliteral(L, MEMERRMSG));
   g->GCthreshold = 4*g->totalbytes;
 }

@@ -31,16 +31,20 @@ int luaZ_fill (ZIO *z) {
   return char2int(*(z->p++));
 }
 
-
+// 向前预读一个数据
 int luaZ_lookahead (ZIO *z) {
   if (z->n == 0) {
+	// 如果当前缓冲区没有元素可读,则继续从输入中读取数据
     if (luaZ_fill(z) == EOZ)
+      // 如果没有数据可读了
       return EOZ;
     else {
+      // 否则,读到了数据,则将指针和计数器加1
       z->n++;  /* luaZ_fill removed first byte; put back it */
       z->p--;
     }
   }
+  // OK了,将它作为字符返回
   return char2int(*z->p);
 }
 

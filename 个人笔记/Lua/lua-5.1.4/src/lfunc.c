@@ -29,13 +29,14 @@ Closure *luaF_newCclosure (lua_State *L, int nelems, Table *e) {
   return c;
 }
 
-
+// 创建一个lua函数调用, nelems是该函数的upval数量
 Closure *luaF_newLclosure (lua_State *L, int nelems, Table *e) {
   Closure *c = cast(Closure *, luaM_malloc(L, sizeLclosure(nelems)));
   luaC_link(L, obj2gco(c), LUA_TFUNCTION);
   c->l.isC = 0;
   c->l.env = e;
   c->l.nupvalues = cast_byte(nelems);
+  // 首先将upval数组置空
   while (nelems--) c->l.upvals[nelems] = NULL;
   return c;
 }
@@ -44,6 +45,7 @@ Closure *luaF_newLclosure (lua_State *L, int nelems, Table *e) {
 UpVal *luaF_newupval (lua_State *L) {
   UpVal *uv = luaM_new(L, UpVal);
   luaC_link(L, obj2gco(uv), LUA_TUPVAL);
+  // 初始时uv->v指向uv->u.value（此时是closed状态）
   uv->v = &uv->u.value;
   setnilvalue(uv->v);
   return uv;
@@ -67,6 +69,7 @@ UpVal *luaF_findupval (lua_State *L, StkId level) {
   uv = luaM_new(L, UpVal);  /* not found: create a new one */
   uv->tt = LUA_TUPVAL;
   uv->marked = luaC_white(g);
+  // 有值则指向level（此时是open状态）
   uv->v = level;  /* current value lives in the stack */
   uv->next = *pp;  /* chain it in the proper position */
   *pp = obj2gco(uv);
@@ -78,7 +81,7 @@ UpVal *luaF_findupval (lua_State *L, StkId level) {
   return uv;
 }
 
-
+// 从uvhead链表中删除
 static void unlinkupval (UpVal *uv) {
   lua_assert(uv->u.l.next->u.l.prev == uv && uv->u.l.prev->u.l.next == uv);
   uv->u.l.next->u.l.prev = uv->u.l.prev;  /* remove from `uvhead' list */
@@ -101,11 +104,17 @@ void luaF_close (lua_State *L, StkId level) {
     lua_assert(!isblack(o) && uv->v != &uv->u.value);
     L->openupval = uv->next;  /* remove from `open' list */
     if (isdead(g, o))
+      // 如果upval已经死了，直接删除
       luaF_freeupval(L, uv);  /* free upvalue */
     else {
+      // 从uvhead链表中删除
       unlinkupval(uv);
+      // 将所指向的值保存在value中,表示这个upval已经close了
+      // 为什么需要保存这个值呢?因为后面可能还会被引用到,这一点当前还是未知的
       setobj(L, &uv->u.value, uv->v);
+      // v指向value
       uv->v = &uv->u.value;  /* now current value lives here */
+      // 将这个upval链接到gcroot链表中
       luaC_linkupval(L, uv);  /* link upvalue into `gcroot' list */
     }
   }

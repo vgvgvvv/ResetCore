@@ -108,7 +108,7 @@ LUALIB_API int luaL_checkoption (lua_State *L, int narg, const char *def,
                        lua_pushfstring(L, "invalid option " LUA_QS, name));
 }
 
-
+// 创建一个meta表,放入registry中,该表在top - 1中
 LUALIB_API int luaL_newmetatable (lua_State *L, const char *tname) {
   lua_getfield(L, LUA_REGISTRYINDEX, tname);  /* get registry.name */
   if (!lua_isnil(L, -1))  /* name already in use? */
@@ -225,7 +225,7 @@ LUALIB_API int luaL_callmeta (lua_State *L, int obj, const char *event) {
   return 1;
 }
 
-
+// 向lib中注册函数,libname是比如"table"这样的字符串, l中存放的是table的子函数,如sort
 LUALIB_API void (luaL_register) (lua_State *L, const char *libname,
                                 const luaL_Reg *l) {
   luaI_openlib(L, libname, l, 0);
@@ -238,30 +238,45 @@ static int libsize (const luaL_Reg *l) {
   return size;
 }
 
-
+// 打开或者注册一个库
 LUALIB_API void luaI_openlib (lua_State *L, const char *libname,
                               const luaL_Reg *l, int nup) {
   if (libname) {
+	// 以下代码是将函数库名字注册到REGISTRY表中,已注册的库会放在_LOADED表中
     int size = libsize(l);
     /* check whether lib already exists */
+    // 首先从registry中获得_LOADED表, 返回后top - 1是_LOADED表(如果找到的话)
     luaL_findtable(L, LUA_REGISTRYINDEX, "_LOADED", 1);
+    // 其次从_LOADED表尝试查找libname库
     lua_getfield(L, -1, libname);  /* get _LOADED[libname] */
     if (!lua_istable(L, -1)) {  /* not found? */
+      // 没找到, 把刚才的查找结果pop出来
       lua_pop(L, 1);  /* remove previous result */
       /* try global variable (and create one if it does not exist) */
+      // 从global表中查找, 如果有则存在冲突了,否则新创建一个表同时放在global表中
       if (luaL_findtable(L, LUA_GLOBALSINDEX, libname, size) != NULL)
         luaL_error(L, "name conflict for module " LUA_QS, libname);
+      // 走到这一步说明在_G中没有找到库名,同时新建一个G[libname]的表在top - 1
+      // 把G[libname]表的数值压入栈中
       lua_pushvalue(L, -1);
+      // 此时top -3是registry[_LOADED]表
+      // 以下这一步之后, G[libname] = _LOADED[libname] = new table
       lua_setfield(L, -3, libname);  /* _LOADED[libname] = new table */
     }
+    // 把LOADED表删除
     lua_remove(L, -2);  /* remove _LOADED table */
+    // 把保存这个库的表push到栈中
     lua_insert(L, -(nup+1));  /* move library table to below upvalues */
   }
+  // 逐个将库中的函数注册进库中
   for (; l->name; l++) {
     int i;
+    // 插入upvalue到栈中
     for (i=0; i<nup; i++)  /* copy upvalues to the top */
       lua_pushvalue(L, -nup);
+    // push待注册的C函数到栈中
     lua_pushcclosure(L, l->func, nup);
+    // 注册该函数
     lua_setfield(L, -(nup+2), l->name);
   }
   lua_pop(L, nup);  /* remove upvalues */
@@ -353,28 +368,40 @@ LUALIB_API const char *luaL_gsub (lua_State *L, const char *s, const char *p,
   return lua_tostring(L, -1);
 }
 
-
+// 在idx存放的table中查找域fname的table成员,找到返回fname, 找不到返回NULL,同时新建一个表存放到top - 1是值所在
 LUALIB_API const char *luaL_findtable (lua_State *L, int idx,
                                        const char *fname, int szhint) {
   const char *e;
+  // 首先把最上层的表push到栈中
   lua_pushvalue(L, idx);
   do {
+    // 以'.'来划分表,找到上一层的表继续找下一层,以此类推
     e = strchr(fname, '.');
     if (e == NULL) e = fname + strlen(fname);
+    // push field名称到栈中
     lua_pushlstring(L, fname, e - fname);
+    // 此时top - 2是上一层表的数据, 查找表成员
     lua_rawget(L, -2);
     if (lua_isnil(L, -1)) {  /* no such field? */
+      // 如果没有这个域
       lua_pop(L, 1);  /* remove this nil */
+      // 创建一个新表并且push到栈中
       lua_createtable(L, 0, (*e == '.' ? 1 : szhint)); /* new table for field */
+      // 将域名push到栈中
       lua_pushlstring(L, fname, e - fname);
+      // 将上上一步中lua_createtable创建的表push到栈中
       lua_pushvalue(L, -2);
+      // 此时top - 4是父table的index,将父table[fname] = 新表
       lua_settable(L, -4);  /* set new table into field */
     }
     else if (!lua_istable(L, -1)) {  /* field has a non-table value? */
+      // 找到了但不是table
       lua_pop(L, 2);  /* remove table and value */
       return fname;  /* return problematic part of the name */
     }
+    // 走到这一步就是找到了一个table,继续下一个查找
     lua_remove(L, -2);  /* remove previous table */
+    // 到这一步时, top - 1是table的值
     fname = e + 1;
   } while (*e == '.');
   return NULL;
@@ -485,14 +512,17 @@ LUALIB_API int luaL_ref (lua_State *L, int t) {
     lua_pop(L, 1);  /* remove from stack */
     return LUA_REFNIL;  /* `nil' has a unique fixed reference */
   }
+  // 首先从表的数组部分的FREELIST_REF取下一个元素
   lua_rawgeti(L, t, FREELIST_REF);  /* get first free element */
   ref = (int)lua_tointeger(L, -1);  /* ref = t[FREELIST_REF] */
   lua_pop(L, 1);  /* remove it from stack */
   if (ref != 0) {  /* any free element? */
+    // 不为0的情况下说明是可用的数据，将t[FREELIST_REF]指向这个元素的下一个元素
     lua_rawgeti(L, t, ref);  /* remove it from list */
     lua_rawseti(L, t, FREELIST_REF);  /* (t[FREELIST_REF] = t[ref]) */
   }
   else {  /* no free elements */
+    // 否则就是没有可用元素了，直接以表的数组部分大小来作为新的索引数据
     ref = (int)lua_objlen(L, t);
     ref++;  /* create new reference */
   }
@@ -503,6 +533,9 @@ LUALIB_API int luaL_ref (lua_State *L, int t) {
 
 LUALIB_API void luaL_unref (lua_State *L, int t, int ref) {
   if (ref >= 0) {
+    // 将ref归还给freelist
+    // 假设原来的链表是：t[FREELIST_REF] = t[a]
+    // 那么归还之后就是：t[FREELIST_REF] = t[ref] = t[a]
     t = abs_index(L, t);
     lua_rawgeti(L, t, FREELIST_REF);
     lua_rawseti(L, t, ref);  /* t[ref] = t[FREELIST_REF] */
@@ -553,23 +586,32 @@ LUALIB_API int luaL_loadfile (lua_State *L, const char *filename) {
   LoadF lf;
   int status, readstatus;
   int c;
+  // 保存存储文件名的栈索引
   int fnameindex = lua_gettop(L) + 1;  /* index of filename on the stack */
   lf.extraline = 0;
   if (filename == NULL) {
+	// 如果没有输入文件则以标准输入为输入,压栈
     lua_pushliteral(L, "=stdin");
     lf.f = stdin;
   }
   else {
+	// 否则存储文件名,压栈
     lua_pushfstring(L, "@%s", filename);
     lf.f = fopen(filename, "r");
     if (lf.f == NULL) return errfile(L, "open", fnameindex);
   }
+  // 无论何种情况的输入,最终输入文件名都会保存在lua栈的fnameindex位置,所以提前保存了下来
+  // 读第一个字符
   c = getc(lf.f);
   if (c == '#') {  /* Unix exec. file? */
+	// 如果是#开始,则表示是lua注释
     lf.extraline = 1;
+    // 一直读,忽略这一行
     while ((c = getc(lf.f)) != EOF && c != '\n') ;  /* skip first line */
+    // 如果是换行符则继续读下一个字符
     if (c == '\n') c = getc(lf.f);
   }
+  // 如果是二进制文件,则重新以二进制格式打开
   if (c == LUA_SIGNATURE[0] && filename) {  /* binary file? */
     lf.f = freopen(filename, "rb", lf.f);  /* reopen in binary mode */
     if (lf.f == NULL) return errfile(L, "reopen", fnameindex);
@@ -577,7 +619,9 @@ LUALIB_API int luaL_loadfile (lua_State *L, const char *filename) {
    while ((c = getc(lf.f)) != EOF && c != LUA_SIGNATURE[0]) ;
     lf.extraline = 0;
   }
+  // 反退一个字符
   ungetc(c, lf.f);
+  // 这里lua_tostring(L, -1)取到的就是前面存储的输入文件名
   status = lua_load(L, getF, &lf, lua_tostring(L, -1));
   readstatus = ferror(lf.f);
   if (filename) fclose(lf.f);  /* close file (even in case of errors) */
@@ -585,6 +629,7 @@ LUALIB_API int luaL_loadfile (lua_State *L, const char *filename) {
     lua_settop(L, fnameindex);  /* ignore results from `lua_load' */
     return errfile(L, "read", fnameindex);
   }
+  // 最后把存放文件名的索引从栈中删除
   lua_remove(L, fnameindex);
   return status;
 }

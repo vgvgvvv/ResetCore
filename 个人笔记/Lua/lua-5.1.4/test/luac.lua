@@ -1,7 +1,23 @@
--- bare-bones luac in Lua
--- usage: lua luac.lua file.lua
+-- print
+print("a")  -- string
+print(1)    -- number
 
-assert(arg[1]~=nil and arg[2]==nil,"usage: lua luac.lua file.lua")
-f=assert(io.open("luac.out","wb"))
-assert(f:write(string.dump(assert(loadfile(arg[1])))))
-assert(f:close())
+-- global
+b = true
+print(b)
+
+-- local
+local a = true
+print(a)
+
+-- table
+local t = {}
+t["1"] = "foo"
+t[1] = "a"
+print(t["1"])
+print(t[1])
+
+function fun1()
+    print("1")
+end
+fun1()

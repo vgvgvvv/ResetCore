@@ -36,6 +36,7 @@ void luaT_init (lua_State *L) {
     "__concat", "__call"
   };
   int i;
+  // 初始化meta method
   for (i=0; i<TM_N; i++) {
     G(L)->tmname[i] = luaS_new(L, luaT_eventname[i]);
     luaS_fix(G(L)->tmname[i]);  /* never collect these names */
@@ -49,8 +50,10 @@ void luaT_init (lua_State *L) {
 */
 const TValue *luaT_gettm (Table *events, TMS event, TString *ename) {
   const TValue *tm = luaH_getstr(events, ename);
+  // 这里这个条件是什么原因??
   lua_assert(event <= TM_EQ);
   if (ttisnil(tm)) {  /* no tag method? */
+	// 如果没有这个meta method，那么标记上，避免下一次再次进入这个函数
     events->flags |= cast_byte(1u<<event);  /* cache this fact */
     return NULL;
   }

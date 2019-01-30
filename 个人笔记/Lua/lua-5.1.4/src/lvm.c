@@ -31,7 +31,7 @@
 /* limit for table tag-method chains (to avoid loops) */
 #define MAXTAGLOOP	100
 
-
+// value转换成数字
 const TValue *luaV_tonumber (const TValue *obj, TValue *n) {
   lua_Number num;
   if (ttisnumber(obj)) return obj;
@@ -43,7 +43,7 @@ const TValue *luaV_tonumber (const TValue *obj, TValue *n) {
     return NULL;
 }
 
-
+// 数字转换成字符串
 int luaV_tostring (lua_State *L, StkId obj) {
   if (!ttisnumber(obj))
     return 0;
@@ -56,7 +56,7 @@ int luaV_tostring (lua_State *L, StkId obj) {
   }
 }
 
-
+// ????????????
 static void traceexec (lua_State *L, const Instruction *pc) {
   lu_byte mask = L->hookmask;
   const Instruction *oldpc = L->savedpc;
@@ -76,7 +76,7 @@ static void traceexec (lua_State *L, const Instruction *pc) {
   }
 }
 
-
+// 调用某函数,最后将结果放在res中
 static void callTMres (lua_State *L, StkId res, const TValue *f,
                         const TValue *p1, const TValue *p2) {
   ptrdiff_t result = savestack(L, res);
@@ -92,7 +92,7 @@ static void callTMres (lua_State *L, StkId res, const TValue *f,
 }
 
 
-
+// 调用某函数,但是没有结果,这与callTMres不同
 static void callTM (lua_State *L, const TValue *f, const TValue *p1,
                     const TValue *p2, const TValue *p3) {
   setobj2s(L, L->top, f);  /* push function */
@@ -104,42 +104,50 @@ static void callTM (lua_State *L, const TValue *f, const TValue *p1,
   luaD_call(L, L->top - 4, 0);
 }
 
-
+// 在一个table中查找key对应的值, 找到存放到val中
 void luaV_gettable (lua_State *L, const TValue *t, TValue *key, StkId val) {
   int loop;
+  // 函数外层以MAXTAGLOOP做为计数,防止死循环
   for (loop = 0; loop < MAXTAGLOOP; loop++) {
     const TValue *tm;
     if (ttistable(t)) {  /* `t' is a table? */
       Table *h = hvalue(t);
-      const TValue *res = luaH_get(h, key); /* do a primitive get */
-      if (!ttisnil(res) ||  /* result is no nil? */
-          (tm = fasttm(L, h->metatable, TM_INDEX)) == NULL) { /* or no TM? */
+      // 首先尝试在表中查找这个key
+      const TValue *res = luaH_get(h, key); /* do a primitive get */      
+      if (!ttisnil(res) ||  /* result is no nil? */ // 如果结果不是nil
+          (tm = fasttm(L, h->metatable, TM_INDEX)) == NULL) { /* or no TM? */ // 在结果为nil的时候如果metable为nil
         setobj2s(L, val, res);
         return;
       }
       /* else will try the tag method */
     }
+    // 来查这个表的meta表, 如果不存在则报错
     else if (ttisnil(tm = luaT_gettmbyobj(L, t, TM_INDEX)))
       luaG_typeerror(L, t, "index");
+    // 如果是一个函数则直接调用这个函数
     if (ttisfunction(tm)) {
       callTMres(L, val, tm, t, key);
       return;
     }
-    t = tm;  /* else repeat with `tm' */ 
+    // 否则继续找
+    t = tm;  /* else repeat with `tm' */
   }
   luaG_runerror(L, "loop in gettable");
 }
 
-
+// 为什么这个操作需要放在lvm也就是虚拟机相关代码的部分呢??
 void luaV_settable (lua_State *L, const TValue *t, TValue *key, StkId val) {
   int loop;
   for (loop = 0; loop < MAXTAGLOOP; loop++) {
     const TValue *tm;
     if (ttistable(t)) {  /* `t' is a table? */
+      // 如果t是一个表, 首先获取它的hash部分
       Table *h = hvalue(t);
+      //
       TValue *oldval = luaH_set(L, h, key); /* do a primitive set */
       if (!ttisnil(oldval) ||  /* result is no nil? */
           (tm = fasttm(L, h->metatable, TM_NEWINDEX)) == NULL) { /* or no TM? */
+    	// 替换原来的旧值
         setobj2t(L, oldval, val);
         luaC_barriert(L, h, val);
         return;
@@ -582,7 +590,9 @@ void luaV_execute (lua_State *L, int nexeccalls) {
       case OP_CALL: {
         int b = GETARG_B(i);
         int nresults = GETARG_C(i) - 1;
+        // 如果传入参数数量不为0, 则这是top地址,由它开始后面紧跟着都是函数参数
         if (b != 0) L->top = ra+b;  /* else previous instruction set top */
+        // 保存当前pc
         L->savedpc = pc;
         switch (luaD_precall(L, ra, nresults)) {
           case PCRLUA: {
@@ -720,10 +730,15 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         Proto *p;
         Closure *ncl;
         int nup, j;
+        // Bx中存放的是在上层函数proto数组中的索引
         p = cl->p->p[GETARG_Bx(i)];
         nup = p->nups;
         ncl = luaF_newLclosure(L, nup, cl->env);
         ncl->l.p = p;
+        // 紧跟着CLOSURE指令的是MOVE或者GETUPVAL指令
+        // 如果是GETUPVAL, 则从上层函数的upval中寻找upval
+        // 如果是MOVE, 则从
+        // 特别注意这里pc指针每次循环都递增了
         for (j=0; j<nup; j++, pc++) {
           if (GET_OPCODE(*pc) == OP_GETUPVAL)
             ncl->l.upvals[j] = cl->upvals[GETARG_B(*pc)];
@@ -732,6 +747,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
             ncl->l.upvals[j] = luaF_findupval(L, base + GETARG_B(*pc));
           }
         }
+        // 将创建好的closure存放到ra中
         setclvalue(L, ra, ncl);
         Protect(luaC_checkGC(L));
         continue;

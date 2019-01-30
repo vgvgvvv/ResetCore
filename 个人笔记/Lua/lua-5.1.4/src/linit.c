@@ -30,8 +30,13 @@ static const luaL_Reg lualibs[] = {
 LUALIB_API void luaL_openlibs (lua_State *L) {
   const luaL_Reg *lib = lualibs;
   for (; lib->func; lib++) {
+	// 向函数栈push函数结构体
     lua_pushcfunction(L, lib->func);
+    // 向函数栈push库名(这里似乎没有必要push名字进去)
     lua_pushstring(L, lib->name);
+    // 调用注册的C函数, 也就是上面的一堆luaopen_*函数
+    // 问题: 为什么这里不直接调用呢?非得压入lua栈中调用?
+    // 传入1的原因是要跳过上一步压入的函数名,0的意思是这些函数全都返回值为0即没有返回值
     lua_call(L, 1, 0);
   }
 }

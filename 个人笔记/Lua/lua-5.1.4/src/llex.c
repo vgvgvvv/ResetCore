@@ -44,13 +44,14 @@ const char *const luaX_tokens [] = {
     NULL
 };
 
-
+// 保存同时读下一个字符
 #define save_and_next(ls) (save(ls, ls->current), next(ls))
 
-
+// 保存读取到的字符到buffer中
 static void save (LexState *ls, int c) {
   Mbuffer *b = ls->buff;
   if (b->n + 1 > b->buffsize) {
+    // 尺寸不够则重新扩充内存
     size_t newsize;
     if (b->buffsize >= MAX_SIZET/2)
       luaX_lexerror(ls, "lexical element too long", 0);
@@ -63,6 +64,7 @@ static void save (LexState *ls, int c) {
 
 void luaX_init (lua_State *L) {
   int i;
+  // 初始化lua关键字字符串,注意到并不保存它们,只是在StringTable中保存下来并且标记为不可回收
   for (i=0; i<NUM_RESERVED; i++) {
     TString *ts = luaS_new(L, luaX_tokens[i]);
     luaS_fix(ts);  /* reserved words are never collected */
@@ -82,6 +84,7 @@ const char *luaX_token2str (LexState *ls, int token) {
                               luaO_pushfstring(ls->L, "%c", token);
   }
   else
+    // 保留关键字
     return luaX_tokens[token-FIRST_RESERVED];
 }
 
@@ -145,6 +148,7 @@ void luaX_setinput (lua_State *L, LexState *ls, ZIO *z, TString *source) {
   ls->lastline = 1;
   ls->source = source;
   luaZ_resizebuffer(ls->L, ls->buff, LUA_MINBUFFER);  /* initialize buffer */
+  // 提前预读第一个字符到current中
   next(ls);  /* read first char */
 }
 
@@ -335,6 +339,7 @@ static int llex (LexState *ls, SemInfo *seminfo) {
     switch (ls->current) {
       case '\n':
       case '\r': {
+    	// 读到换行符
         inclinenumber(ls);
         continue;
       }
@@ -425,6 +430,7 @@ static int llex (LexState *ls, SemInfo *seminfo) {
           } while (isalnum(ls->current) || ls->current == '_');
           ts = luaX_newstring(ls, luaZ_buffer(ls->buff),
                                   luaZ_bufflen(ls->buff));
+          // 如果是保留字
           if (ts->tsv.reserved > 0)  /* reserved word? */
             return ts->tsv.reserved - 1 + FIRST_RESERVED;
           else {
@@ -442,18 +448,20 @@ static int llex (LexState *ls, SemInfo *seminfo) {
   }
 }
 
-
+// 词法分析器读入下一个字符
 void luaX_next (LexState *ls) {
   ls->lastline = ls->linenumber;
   if (ls->lookahead.token != TK_EOS) {  /* is there a look-ahead token? */
+	// 当前如果有预读数据,则使用预读数据为当前数据,同时置预读数据为EOS
     ls->t = ls->lookahead;  /* use this one */
     ls->lookahead.token = TK_EOS;  /* and discharge it */
   }
   else
+	// 否则读入下一个数据
     ls->t.token = llex(ls, &ls->t.seminfo);  /* read next token */
 }
 
-
+// 预读一个数据
 void luaX_lookahead (LexState *ls) {
   lua_assert(ls->lookahead.token == TK_EOS);
   ls->lookahead.token = llex(ls, &ls->lookahead.seminfo);

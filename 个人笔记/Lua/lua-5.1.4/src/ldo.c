@@ -107,7 +107,7 @@ void luaD_throw (lua_State *L, int errcode) {
   }
 }
 
-
+// 任何需要保护jmp的调用,都要用这个函数保护
 int luaD_rawrunprotected (lua_State *L, Pfunc f, void *ud) {
   struct lua_longjmp lj;
   lj.status = 0;
@@ -165,11 +165,13 @@ void luaD_growstack (lua_State *L, int n) {
     luaD_reallocstack(L, L->stacksize + n);
 }
 
-
+// 增长ci数组的size
 static CallInfo *growCI (lua_State *L) {
   if (L->size_ci > LUAI_MAXCALLS)  /* overflow while handling overflow? */
+	// 过大了
     luaD_throw(L, LUA_ERRERR);
   else {
+	// 加大一倍
     luaD_reallocCI(L, 2*L->size_ci);
     if (L->size_ci > LUAI_MAXCALLS)
       luaG_runerror(L, "stack overflow");
@@ -204,12 +206,14 @@ void luaD_callhook (lua_State *L, int event, int line) {
   }
 }
 
-
+// 根据函数的参数数量调整base和top指针位置
 static StkId adjust_varargs (lua_State *L, Proto *p, int actual) {
   int i;
+  // numparams是函数的参数数量
   int nfixargs = p->numparams;
   Table *htab = NULL;
   StkId base, fixed;
+  // 把没有赋值的函数参数值置nil
   for (; actual < nfixargs; ++actual)
     setnilvalue(L->top++);
 #if defined(LUA_COMPAT_VARARG)
@@ -226,7 +230,9 @@ static StkId adjust_varargs (lua_State *L, Proto *p, int actual) {
 #endif
   /* move fixed parameters to final position */
   fixed = L->top - actual;  /* first fixed argument */
+  // base指针指向最后一个函数参数的位置
   base = L->top;  /* final position of first argument */
+  // OK, 逐个把函数传入的参数挪到局部变量处, 并且把原来传入的参数置nil
   for (i=0; i<nfixargs; i++) {
     setobjs2s(L, L->top++, fixed+i);
     setnilvalue(fixed+i);
@@ -260,14 +266,17 @@ static StkId tryfuncTM (lua_State *L, StkId func) {
   ((L->ci == L->end_ci) ? growCI(L) : \
    (condhardstacktests(luaD_reallocCI(L, L->size_ci)), ++L->ci))
 
-
+// 函数调用的预处理, func是函数closure所在位置, nresults是返回值数量
 int luaD_precall (lua_State *L, StkId func, int nresults) {
   LClosure *cl;
   ptrdiff_t funcr;
   if (!ttisfunction(func)) /* `func' is not a function? */
     func = tryfuncTM(L, func);  /* check the `function' tag method */
+  // 首先计算函数指针距离stack的偏移量
   funcr = savestack(L, func);
+  // 获取closure指针
   cl = &clvalue(func)->l;
+  // 保存PC
   L->ci->savedpc = L->savedpc;
   if (!cl->isC) {  /* Lua function? prepare its call */
     CallInfo *ci;
@@ -285,11 +294,14 @@ int luaD_precall (lua_State *L, StkId func, int nresults) {
       base = adjust_varargs(L, p, nargs);
       func = restorestack(L, funcr);  /* previous call may change the stack */
     }
+    // 存放新的函数信息
+    // 首先从callinfo数组中分配出一个新的callinfo
     ci = inc_ci(L);  /* now `enter' new function */
     ci->func = func;
     L->base = ci->base = base;
     ci->top = L->base + p->maxstacksize;
     lua_assert(ci->top <= L->stack_last);
+    // 改变代码执行的路径
     L->savedpc = p->code;  /* starting point */
     ci->tailcalls = 0;
     ci->nresults = nresults;
@@ -307,20 +319,25 @@ int luaD_precall (lua_State *L, StkId func, int nresults) {
     CallInfo *ci;
     int n;
     luaD_checkstack(L, LUA_MINSTACK);  /* ensure minimum stack size */
+    // 从CallInfo数组中返回一个CallInfo指针
     ci = inc_ci(L);  /* now `enter' new function */
+    // 根据之前保存的偏移量从栈中得到函数地址
     ci->func = restorestack(L, funcr);
     L->base = ci->base = ci->func + 1;
     ci->top = L->top + LUA_MINSTACK;
     lua_assert(ci->top <= L->stack_last);
+    // 期待返回多少个返回值
     ci->nresults = nresults;
     if (L->hookmask & LUA_MASKCALL)
       luaD_callhook(L, LUA_HOOKCALL, -1);
     lua_unlock(L);
+    // 调用C函数
     n = (*curr_func(L)->c.f)(L);  /* do the actual call */
     lua_lock(L);
     if (n < 0)  /* yielding? */
       return PCRYIELD;
     else {
+      // 调用结束之后的处理
       luaD_poscall(L, L->top - n);
       return PCRC;
     }
@@ -338,25 +355,31 @@ static StkId callrethooks (lua_State *L, StkId firstResult) {
   return restorestack(L, fr);
 }
 
-
+// 结束完一次函数调用(无论是C还是lua函数)的处理, firstResult是函数第一个返回值的地址
 int luaD_poscall (lua_State *L, StkId firstResult) {
   StkId res;
   int wanted, i;
   CallInfo *ci;
   if (L->hookmask & LUA_MASKRET)
     firstResult = callrethooks(L, firstResult);
+  // 得到当时的CallInfo指针
   ci = L->ci--;
   res = ci->func;  /* res == final position of 1st result */
+  // 本来需要有多少返回值
   wanted = ci->nresults;
+  // 把base和savepc指针置回调用前的位置
   L->base = (ci - 1)->base;  /* restore base */
   L->savedpc = (ci - 1)->savedpc;  /* restore savedpc */
   /* move results to correct place */
+  // 返回值压入栈中
   for (i = wanted; i != 0 && firstResult < L->top; i--)
     setobjs2s(L, res++, firstResult++);
+  // 剩余的返回值置nil
   while (i-- > 0)
     setnilvalue(res++);
+  // 可以将top指针置回调用之前的位置了
   L->top = res;
-  return (wanted - LUA_MULTRET);  /* 0 iff wanted == LUA_MULTRET */
+  return (wanted - LUA_MULTRET);  /* 0 if wanted == LUA_MULTRET */
 }
 
 
@@ -367,6 +390,7 @@ int luaD_poscall (lua_State *L, StkId firstResult) {
 ** function position.
 */ 
 void luaD_call (lua_State *L, StkId func, int nResults) {
+  // 函数调用栈数量+1, 判断函数调用栈是不是过长
   if (++L->nCcalls >= LUAI_MAXCCALLS) {
     if (L->nCcalls == LUAI_MAXCCALLS)
       luaG_runerror(L, "C stack overflow");
@@ -375,6 +399,7 @@ void luaD_call (lua_State *L, StkId func, int nResults) {
   }
   if (luaD_precall(L, func, nResults) == PCRLUA)  /* is a Lua function? */
     luaV_execute(L, 1);  /* call it */
+  // 调用完毕, 函数调用栈-1
   L->nCcalls--;
   luaC_checkGC(L);
 }
@@ -384,11 +409,13 @@ static void resume (lua_State *L, void *ud) {
   StkId firstArg = cast(StkId, ud);
   CallInfo *ci = L->ci;
   if (L->status == 0) {  /* start coroutine? */
+	  // 协程第一次运行的情况
     lua_assert(ci == L->base_ci && firstArg > L->base);
     if (luaD_precall(L, firstArg - 1, LUA_MULTRET) != PCRLUA)
       return;
   }
   else {  /* resuming from previous yield */
+	  // 从之前的状态中恢复
     lua_assert(L->status == LUA_YIELD);
     L->status = 0;
     if (!f_isLua(ci)) {  /* `common' yield? */
@@ -417,13 +444,17 @@ static int resume_error (lua_State *L, const char *msg) {
 LUA_API int lua_resume (lua_State *L, int nargs) {
   int status;
   lua_lock(L);
+  // 检查状态
   if (L->status != LUA_YIELD && (L->status != 0 || L->ci != L->base_ci))
       return resume_error(L, "cannot resume non-suspended coroutine");
+  // 函数调用层次太多
   if (L->nCcalls >= LUAI_MAXCCALLS)
     return resume_error(L, "C stack overflow");
   luai_userstateresume(L, nargs);
   lua_assert(L->errfunc == 0);
+  // 调用之前递增函数调用层次
   L->baseCcalls = ++L->nCcalls;
+  // 以保护模式调用函数
   status = luaD_rawrunprotected(L, resume, L->top - nargs);
   if (status != 0) {  /* error? */
     L->status = cast_byte(status);  /* mark thread as `dead' */
@@ -434,6 +465,7 @@ LUA_API int lua_resume (lua_State *L, int nargs) {
     lua_assert(L->nCcalls == L->baseCcalls);
     status = L->status;
   }
+  // 减少调用层次
   --L->nCcalls;
   lua_unlock(L);
   return status;
@@ -451,9 +483,10 @@ LUA_API int lua_yield (lua_State *L, int nresults) {
   return -1;
 }
 
-
+// 带错误保护的函数调用
 int luaD_pcall (lua_State *L, Pfunc func, void *u,
                 ptrdiff_t old_top, ptrdiff_t ef) {
+  // 调用之前保存调用前的ci地址和top地址,用于可能发生的错误恢复
   int status;
   unsigned short oldnCcalls = L->nCcalls;
   ptrdiff_t old_ci = saveci(L, L->ci);
@@ -461,7 +494,9 @@ int luaD_pcall (lua_State *L, Pfunc func, void *u,
   ptrdiff_t old_errfunc = L->errfunc;
   L->errfunc = ef;
   status = luaD_rawrunprotected(L, func, u);
+  // 如果status不为0,则表示有错误发生
   if (status != 0) {  /* an error occurred? */
+	  // 将保存的ci和top取出来恢复
     StkId oldtop = restorestack(L, old_top);
     luaF_close(L, oldtop);  /* close eventual pending closures */
     luaD_seterrorobj(L, status, oldtop);
@@ -482,8 +517,11 @@ int luaD_pcall (lua_State *L, Pfunc func, void *u,
 ** Execute a protected parser.
 */
 struct SParser {  /* data to `f_parser' */
+  // 读入数据的缓冲区
   ZIO *z;
+  // 缓存当前扫描数据的缓冲区
   Mbuffer buff;  /* buffer to be used by the scanner */
+  // 源文件的文件名
   const char *name;
 };
 
@@ -492,8 +530,10 @@ static void f_parser (lua_State *L, void *ud) {
   Proto *tf;
   Closure *cl;
   struct SParser *p = cast(struct SParser *, ud);
+  // 预读入第一个字符
   int c = luaZ_lookahead(p->z);
   luaC_checkGC(L);
+  // 根据之前预读的数据来决定下面的分析采用哪个函数
   tf = ((c == LUA_SIGNATURE[0]) ? luaU_undump : luaY_parser)(L, p->z,
                                                              &p->buff, p->name);
   cl = luaF_newLclosure(L, tf->nups, hvalue(gt(L)));

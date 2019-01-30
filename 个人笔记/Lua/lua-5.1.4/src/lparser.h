@@ -34,11 +34,16 @@ typedef enum {
   VVARARG	/* info = instruction pc */
 } expkind;
 
+// 存放表达式的数据结构
 typedef struct expdesc {
+  // 表达式类型
   expkind k;
+  // 保存表达式信息的联合体
   union {
-    struct { int info, aux; } s;
-    lua_Number nval;
+    struct { // info 和aux里面存储的数据信息，根据不同的表达式类型有区分，见前面expkind的注释
+    	int info,
+    	aux; } s;
+    lua_Number nval;  // 类型为数字的时候存储具体的数据
   } u;
   int t;  /* patch list of `exit when true' */
   int f;  /* patch list of `exit when false' */
@@ -64,6 +69,7 @@ typedef struct FuncState {
   struct BlockCnt *bl;  /* chain of current blocks */
   int pc;  /* next position to code (equivalent to `ncode') */
   int lasttarget;   /* `pc' of last `jump target' */
+  // 这里存放的是所有空悬,也就是没有确定好跳转位置的pc链表
   int jpc;  /* list of pending jumps to `pc' */
   int freereg;  /* first free register */
   int nk;  /* number of elements in `k' */

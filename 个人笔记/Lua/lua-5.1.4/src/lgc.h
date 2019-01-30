@@ -55,28 +55,39 @@
 #define WHITE1BIT	1
 #define BLACKBIT	2
 #define FINALIZEDBIT	3
+// 弱key
 #define KEYWEAKBIT	3
+// 弱值
 #define VALUEWEAKBIT	4
+// 标记这个GC对象不可回收
 #define FIXEDBIT	5
 #define SFIXEDBIT	6
+// 两种白色的或
 #define WHITEBITS	bit2mask(WHITE0BIT, WHITE1BIT)
 
-
+// 将mark位与两个白色位进行比较，只要其中一个置位就是白色的
 #define iswhite(x)      test2bits((x)->gch.marked, WHITE0BIT, WHITE1BIT)
+// 将mark位与黑色位进行比较
 #define isblack(x)      testbit((x)->gch.marked, BLACKBIT)
+// 既不是白色，也不是黑色
 #define isgray(x)	(!isblack(x) && !iswhite(x))
-
+// 不是当前的白色
 #define otherwhite(g)	(g->currentwhite ^ WHITEBITS)
+
+// 如果结点的白色是otherwhite，那么就是一个死结点
+// 这个函数都是在mark阶段过后使用的,所以此时的otherwhite其实就是本次GC的白色
 #define isdead(g,v)	((v)->gch.marked & otherwhite(g) & WHITEBITS)
 
+// 将节点mark为白色,同时清除黑色/灰色等
 #define changewhite(x)	((x)->gch.marked ^= WHITEBITS)
 #define gray2black(x)	l_setbit((x)->gch.marked, BLACKBIT)
 
 #define valiswhite(x)	(iscollectable(x) && iswhite(gcvalue(x)))
 
+// 返回当前的白色
 #define luaC_white(g)	cast(lu_byte, (g)->currentwhite & WHITEBITS)
 
-
+// 如果大于阙值,就启动一次GC
 #define luaC_checkGC(L) { \
   condhardstacktests(luaD_reallocstack(L, L->stacksize - EXTRA_STACK - 1)); \
   if (G(L)->totalbytes >= G(L)->GCthreshold) \
@@ -86,6 +97,7 @@
 #define luaC_barrier(L,p,v) { if (valiswhite(v) && isblack(obj2gco(p)))  \
 	luaC_barrierf(L,obj2gco(p),gcvalue(v)); }
 
+// 回退成黑色
 #define luaC_barriert(L,t,v) { if (valiswhite(v) && isblack(obj2gco(t)))  \
 	luaC_barrierback(L,t); }
 

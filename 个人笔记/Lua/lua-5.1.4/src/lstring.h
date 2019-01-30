@@ -21,6 +21,7 @@
 #define luaS_newliteral(L, s)	(luaS_newlstr(L, "" s, \
                                  (sizeof(s)/sizeof(char))-1))
 
+// 标记这个GC对象不可回收
 #define luaS_fix(s)	l_setbit((s)->tsv.marked, FIXEDBIT)
 
 LUAI_FUNC void luaS_resize (lua_State *L, int newsize);

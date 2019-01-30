@@ -26,7 +26,7 @@
 #include "ltable.h"
 
 
-
+// 在函数调用,或者可变参数的情况下允许多返回值
 #define hasmultret(k)		((k) == VCALL || (k) == VVARARG)
 
 #define getlocvar(fs, i)	((fs)->f->locvars[(fs)->actvar[i]])
@@ -76,7 +76,7 @@ static void errorlimit (FuncState *fs, int limit, const char *what) {
   luaX_lexerror(fs->ls, msg, 0);
 }
 
-
+// 如果当前的字符为c,则读入下一个字符并且返回1;否则返回0
 static int testnext (LexState *ls, int c) {
   if (ls->t.token == c) {
     luaX_next(ls);
@@ -113,7 +113,7 @@ static void check_match (LexState *ls, int what, int who, int where) {
   }
 }
 
-
+// 返回当前字符串,同时读入下一个token
 static TString *str_checkname (LexState *ls) {
   TString *ts;
   check(ls, TK_NAME);
@@ -122,7 +122,7 @@ static TString *str_checkname (LexState *ls) {
   return ts;
 }
 
-
+// 初始化表达式为指定类型, 参数i是表达式附加信息
 static void init_exp (expdesc *e, expkind k, int i) {
   e->f = e->t = NO_JUMP;
   e->k = k;
@@ -139,14 +139,18 @@ static void checkname(LexState *ls, expdesc *e) {
   codestring(ls, e, str_checkname(ls));
 }
 
-
+// 注册局部变量
 static int registerlocalvar (LexState *ls, TString *varname) {
   FuncState *fs = ls->fs;
   Proto *f = fs->f;
   int oldsize = f->sizelocvars;
+  // 存储局部变量的数组扩大
   luaM_growvector(ls->L, f->locvars, fs->nlocvars, f->sizelocvars,
                   LocVar, SHRT_MAX, "too many local variables");
+  // 将扩大的部分置NULL
   while (oldsize < f->sizelocvars) f->locvars[oldsize++].varname = NULL;
+  // 存放新的局部变量
+  // ????? 为什么locvars属于proto,而nlocvars属于funcstate管理???
   f->locvars[fs->nlocvars].varname = varname;
   luaC_objbarrier(ls->L, f, varname);
   return fs->nlocvars++;
@@ -156,9 +160,10 @@ static int registerlocalvar (LexState *ls, TString *varname) {
 #define new_localvarliteral(ls,v,n) \
   new_localvar(ls, luaX_newstring(ls, "" v, (sizeof(v)/sizeof(char))-1), n)
 
-
+// 分配新的局部变量
 static void new_localvar (LexState *ls, TString *name, int n) {
   FuncState *fs = ls->fs;
+  // 判断局部变量的数量不超过LUAI_MAXVARS
   luaY_checklimit(fs, fs->nactvar+n+1, LUAI_MAXVARS, "local variables");
   fs->actvar[fs->nactvar+n] = cast(unsigned short, registerlocalvar(ls, name));
 }
@@ -179,10 +184,11 @@ static void removevars (LexState *ls, int tolevel) {
     getlocvar(fs, --fs->nactvar).endpc = fs->pc;
 }
 
-
+// 根据传入的变量名字查找upval, 如果查找不到,则新建一个保存之.函数返回index
 static int indexupvalue (FuncState *fs, TString *name, expdesc *v) {
   int i;
   Proto *f = fs->f;
+  // 首先查找当前的upval数组
   int oldsize = f->sizeupvalues;
   for (i=0; i<f->nups; i++) {
     if (fs->upvalues[i].k == v->k && fs->upvalues[i].info == v->u.s.info) {
@@ -190,20 +196,25 @@ static int indexupvalue (FuncState *fs, TString *name, expdesc *v) {
       return i;
     }
   }
+  // 走到这里表示是一个新的upval,则新分配空间来存放
   /* new one */
+  // 检查是否超过upvalue的数量限制
   luaY_checklimit(fs, f->nups + 1, LUAI_MAXUPVALUES, "upvalues");
   luaM_growvector(fs->L, f->upvalues, f->nups, f->sizeupvalues,
                   TString *, MAX_INT, "");
+  // 将多出来的那些UpValue置为NULL
   while (oldsize < f->sizeupvalues) f->upvalues[oldsize++] = NULL;
+  // 保存这个新的UpValue
   f->upvalues[f->nups] = name;
   luaC_objbarrier(fs->L, f, name);
   lua_assert(v->k == VLOCAL || v->k == VUPVAL);
+  // 在upvalues数组中保存这个值的信息和类型
   fs->upvalues[f->nups].k = cast_byte(v->k);
   fs->upvalues[f->nups].info = cast_byte(v->u.s.info);
   return f->nups++;
 }
 
-
+// 传入函数状态FuncState指针, 搜索局部变量, 搜索到则返回在locvars中的索引位置
 static int searchvar (FuncState *fs, TString *n) {
   int i;
   for (i=fs->nactvar-1; i >= 0; i--) {
@@ -213,66 +224,88 @@ static int searchvar (FuncState *fs, TString *n) {
   return -1;  /* not found */
 }
 
-
+// 标记一个upval
 static void markupval (FuncState *fs, int level) {
   BlockCnt *bl = fs->bl;
+  // 一直寻找到对应层次的BlockCnt指针
   while (bl && bl->nactvar > level) bl = bl->previous;
+  // 设置为1表示该block中有数据做为upval被别的地方引用到
   if (bl) bl->upval = 1;
 }
 
-
+// 搜索变量的辅助函数,只有可能三种类型:VGLOBAL(全局变量),VLOCAL(局部变量),VUPVAL(upvalue)
+// 参数base：1表示在本层函数环境中进行的查找，0表示在上层进行的查找
 static int singlevaraux (FuncState *fs, TString *n, expdesc *var, int base) {
   if (fs == NULL) {  /* no more levels? */
+	  // 如果没有在任何函数中, 那么是全局变量
     init_exp(var, VGLOBAL, NO_REG);  /* default is global variable */
     return VGLOBAL;
   }
   else {
+	// 在当前层搜索该变量
     int v = searchvar(fs, n);  /* look up at current level */
     if (v >= 0) {
+      // 如果找到了,那么说明是局部变量
       init_exp(var, VLOCAL, v);
+      // base为0表示不是在当前层搜索到的变量,所以要将这个变量作为upval
       if (!base)
         markupval(fs, v);  /* local will be used as an upval */
       return VLOCAL;
     }
     else {  /* not found at current level; try upper one */
+      // 递归调用singlevaraux,寻找该FuncState的前FuncState
       if (singlevaraux(fs->prev, n, var, 0) == VGLOBAL)
         return VGLOBAL;
+      // 走到这里,说明递归调用返回了都没有找到,或者找到了但不是VGLOBAL变量,于是在upval数组中寻找,并且置类型为upval了
+      // 于是调用indexupvalue寻找upvalue,注意这里不见得一定是UPVAL,也可能是LOCAL
+      // 如果在同级的FuncState中找到该变量为那个FuncState的局部变量时则为LOCAL
       var->u.s.info = indexupvalue(fs, n, var);  /* else was LOCAL or UPVAL */
+      // 无论如何,在本级是upval
       var->k = VUPVAL;  /* upvalue in this level */
       return VUPVAL;
     }
   }
 }
 
-
+// 一个新的变量
 static void singlevar (LexState *ls, expdesc *var) {
+  // 返回当前字符串,同时读入下一个token
   TString *varname = str_checkname(ls);
   FuncState *fs = ls->fs;
+  // 检查一个变量的类型
   if (singlevaraux(fs, varname, var, 1) == VGLOBAL)
+	// 如果是全局变量, 那么要分配一个全局名称
     var->u.s.info = luaK_stringK(fs, varname);  /* info points to global name */
 }
 
-
+// 调整赋值语句, nvars是=号左边表达式数量, nexps是=号右边表达式数量, e是表达式
 static void adjust_assign (LexState *ls, int nvars, int nexps, expdesc *e) {
   FuncState *fs = ls->fs;
   int extra = nvars - nexps;
-  if (hasmultret(e->k)) {
+  if (hasmultret(e->k)) { // 允许多返回值的情况
+    // 为什么这里要加1???
     extra++;  /* includes call itself */
     if (extra < 0) extra = 0;
+    // ?????
     luaK_setreturns(fs, e, extra);  /* last exp. provides the difference */
+    // 如果extra > 1,那么需要预留足够的空间来保存=号左边的参数
     if (extra > 1) luaK_reserveregs(fs, extra-1);
   }
   else {
+	// 如果表达式e不是空表达式,那么要把最后这个表达式set到栈中
     if (e->k != VVOID) luaK_exp2nextreg(fs, e);  /* close last expression */
+    // extra就是没有右值的变量,比如a,b=2,其中b就是没有右值的变量,这些全都要置nil
     if (extra > 0) {
       int reg = fs->freereg;
+      // 从寄存器数组中保留extra个寄存器
       luaK_reserveregs(fs, extra);
+      // 将这些全部置nil
       luaK_nil(fs, reg, extra);
     }
   }
 }
 
-
+// 判断是否函数嵌套调用层太多了
 static void enterlevel (LexState *ls) {
   if (++ls->L->nCcalls > LUAI_MAXCCALLS)
 	luaX_lexerror(ls, "chunk has too many syntax levels", 0);
@@ -306,7 +339,7 @@ static void leaveblock (FuncState *fs) {
   luaK_patchtohere(fs, bl->breaklist);
 }
 
-
+// 向全局CLOSURE数组新增一个CLOSURE
 static void pushclosure (LexState *ls, FuncState *func, expdesc *v) {
   FuncState *fs = ls->fs;
   Proto *f = fs->f;
@@ -317,8 +350,10 @@ static void pushclosure (LexState *ls, FuncState *func, expdesc *v) {
   while (oldsize < f->sizep) f->p[oldsize++] = NULL;
   f->p[fs->np++] = func->f;
   luaC_objbarrier(ls->L, f, func->f);
+  // 初始化表达式v为closure
   init_exp(v, VRELOCABLE, luaK_codeABx(fs, OP_CLOSURE, 0, fs->np-1));
   for (i=0; i<func->f->nups; i++) {
+	// 这里要区别是local还是upval
     OpCode o = (func->upvalues[i].k == VLOCAL) ? OP_MOVE : OP_GETUPVAL;
     luaK_codeABC(fs, o, 0, func->upvalues[i].info, 0);
   }
@@ -329,6 +364,7 @@ static void open_func (LexState *ls, FuncState *fs) {
   lua_State *L = ls->L;
   Proto *f = luaF_newproto(L);
   fs->f = f;
+  // 这里把当前的fs指针,和ls已有的fs指针连在一起形成链表
   fs->prev = ls->fs;  /* linked list of funcstates */
   fs->ls = ls;
   fs->L = L;
@@ -343,9 +379,11 @@ static void open_func (LexState *ls, FuncState *fs) {
   fs->nactvar = 0;
   fs->bl = NULL;
   f->source = ls->source;
+  // 看不懂是啥意思
   f->maxstacksize = 2;  /* registers 0/1 are always valid */
   fs->h = luaH_new(L, 0, 0);
   /* anchor table of constants and prototype (to avoid being collected) */
+  // 在lua栈中压入fs->h和f,为什么要这么做呢???哦哦,上面注释已经说了:to avoid being collected,避免被GC
   sethvalue2s(L, L->top, fs->h);
   incr_top(L);
   setptvalue2s(L, L->top, f);
@@ -358,6 +396,7 @@ static void close_func (LexState *ls) {
   FuncState *fs = ls->fs;
   Proto *f = fs->f;
   removevars(ls, 0);
+  // 为什么要加上这一句return调用？难道是因为要处理某些情况没有返回值的情况么？
   luaK_ret(fs, 0, 0);  /* final return */
   luaM_reallocvector(L, f->code, f->sizecode, fs->pc, Instruction);
   f->sizecode = fs->pc;
@@ -379,14 +418,16 @@ static void close_func (LexState *ls) {
   if (fs) anchor_token(ls);
 }
 
-
+// 分析一个lua源代码文件的主函数
 Proto *luaY_parser (lua_State *L, ZIO *z, Mbuffer *buff, const char *name) {
   struct LexState lexstate;
   struct FuncState funcstate;
   lexstate.buff = buff;
   luaX_setinput(L, &lexstate, z, luaS_new(L, name));
   open_func(&lexstate, &funcstate);
+  // 这是为什么呢?
   funcstate.f->is_vararg = VARARG_ISVARARG;  /* main func. is always vararg */
+  // 读入字符
   luaX_next(&lexstate);  /* read first token */
   chunk(&lexstate);
   check(&lexstate, TK_EOS);
@@ -414,7 +455,7 @@ static void field (LexState *ls, expdesc *v) {
   luaK_indexed(fs, v, &key);
 }
 
-
+// 生成index到v中
 static void yindex (LexState *ls, expdesc *v) {
   /* index -> '[' expr ']' */
   luaX_next(ls);  /* skip the '[' */
@@ -499,6 +540,7 @@ static void constructor (LexState *ls, expdesc *t) {
   /* constructor -> ?? */
   FuncState *fs = ls->fs;
   int line = ls->linenumber;
+  // newtable指令,注意参数都为0,记录下该指令的PC后面再填充
   int pc = luaK_codeABC(fs, OP_NEWTABLE, 0, 0, 0);
   struct ConsControl cc;
   cc.na = cc.nh = cc.tostore = 0;
@@ -550,6 +592,7 @@ static void parlist (LexState *ls) {
     do {
       switch (ls->t.token) {
         case TK_NAME: {  /* param -> NAME */
+          // 局部变量
           new_localvar(ls, str_checkname(ls), nparams++);
           break;
         }
@@ -567,8 +610,11 @@ static void parlist (LexState *ls) {
       }
     } while (!f->is_vararg && testnext(ls, ','));
   }
+  // 调整局部变量数量
   adjustlocalvars(ls, nparams);
+  // 得到函数参数数量
   f->numparams = cast_byte(fs->nactvar - (f->is_vararg & VARARG_HASARG));
+  // 为函数参数保留足够的局部变量位置
   luaK_reserveregs(fs, fs->nactvar);  /* reserve register for parameters */
 }
 
@@ -576,36 +622,46 @@ static void parlist (LexState *ls) {
 static void body (LexState *ls, expdesc *e, int needself, int line) {
   /* body ->  `(' parlist `)' chunk END */
   FuncState new_fs;
+  // 这里初始化了FuncState结构体,注意到将new_fs与之前的FuncState结构体链接在一起
   open_func(ls, &new_fs);
   new_fs.f->linedefined = line;
+  // 读入(号
   checknext(ls, '(');
+  // 是否需要self指针
   if (needself) {
     new_localvarliteral(ls, "self", 0);
     adjustlocalvars(ls, 1);
   }
+  // 读入参数列表
   parlist(ls);
+  // 读入)号
   checknext(ls, ')');
   chunk(ls);
   new_fs.f->lastlinedefined = ls->linenumber;
   check_match(ls, TK_END, TK_FUNCTION, line);
   close_func(ls);
+  // 从pushclosure返回之后，e为closure类型的表达式
   pushclosure(ls, &new_fs, e);
 }
 
-
+// 构造表达式列表,返回值是表达式的数量
+// 如果是表达式列表，则依次dump到寄存器中
 static int explist1 (LexState *ls, expdesc *v) {
   /* explist1 -> expr { `,' expr } */
   int n = 1;  /* at least one expression */
   expr(ls, v);
+  // 当下一个token是,号时，继续读入下一个token
   while (testnext(ls, ',')) {
+	// 讲当前表达式dump到寄存器中，同时将寄存器索引加1
     luaK_exp2nextreg(ls->fs, v);
+    // 继续读入表达式
     expr(ls, v);
     n++;
   }
   return n;
 }
 
-
+// 这里传入的f是函数名解析出来之后的数据
 static void funcargs (LexState *ls, expdesc *f) {
   FuncState *fs = ls->fs;
   expdesc args;
@@ -640,6 +696,7 @@ static void funcargs (LexState *ls, expdesc *f) {
     }
   }
   lua_assert(f->k == VNONRELOC);
+  // 这里传入的f是函数名解析出来之后的数据,因此base存放的是函数名的解析地址
   base = f->u.s.info;  /* base register for call */
   if (hasmultret(args.k))
     nparams = LUA_MULTRET;  /* open call */
@@ -648,6 +705,7 @@ static void funcargs (LexState *ls, expdesc *f) {
       luaK_exp2nextreg(fs, &args);  /* close last argument */
     nparams = fs->freereg - (base+1);
   }
+  // 这里的OP_CALL为2,是先考虑无返回值的情况,后面还会根据返回值进行调整
   init_exp(f, VCALL, luaK_codeABC(fs, OP_CALL, base, nparams+1, 2));
   luaK_fixline(fs, line);
   fs->freereg = base+1;  /* call remove function and arguments and leaves
@@ -663,11 +721,12 @@ static void funcargs (LexState *ls, expdesc *f) {
 ** =======================================================================
 */
 
-
+// 读取一个表达式或者一个变量
 static void prefixexp (LexState *ls, expdesc *v) {
   /* prefixexp -> NAME | '(' expr ')' */
   switch (ls->t.token) {
     case '(': {
+      // 如果以(开头,则是一个表达式
       int line = ls->linenumber;
       luaX_next(ls);
       expr(ls, v);
@@ -676,6 +735,7 @@ static void prefixexp (LexState *ls, expdesc *v) {
       return;
     }
     case TK_NAME: {
+      // 是变量
       singlevar(ls, v);
       return;
     }
@@ -686,12 +746,14 @@ static void prefixexp (LexState *ls, expdesc *v) {
   }
 }
 
-
+// primaryexp是从哪里来的?啥时候需要它???
 static void primaryexp (LexState *ls, expdesc *v) {
   /* primaryexp ->
         prefixexp { `.' NAME | `[' exp `]' | `:' NAME funcargs | funcargs } */
   FuncState *fs = ls->fs;
+  // 读取一个变量或者一个表达式
   prefixexp(ls, v);
+  // 后面也许紧跟着".", "[", ":", "(", "{"
   for (;;) {
     switch (ls->t.token) {
       case '.': {  /* field */
@@ -714,6 +776,8 @@ static void primaryexp (LexState *ls, expdesc *v) {
         break;
       }
       case '(': case TK_STRING: case '{': {  /* funcargs */
+        // print{1} 调用一个table
+        // print"x" 调用一个STRING
         luaK_exp2nextreg(fs, v);
         funcargs(ls, v);
         break;
@@ -775,6 +839,7 @@ static void simpleexp (LexState *ls, expdesc *v) {
 }
 
 
+
 static UnOpr getunopr (int op) {
   switch (op) {
     case TK_NOT: return OPR_NOT;
@@ -806,7 +871,7 @@ static BinOpr getbinopr (int op) {
   }
 }
 
-
+// 这里用数字太不好了
 static const struct {
   lu_byte left;  /* left priority for each binary operator */
   lu_byte right; /* right priority */
@@ -838,6 +903,7 @@ static BinOpr subexpr (LexState *ls, expdesc *v, unsigned int limit) {
   else simpleexp(ls, v);
   /* expand while operators have priorities higher than `limit' */
   op = getbinopr(ls->t.token);
+  // 左边的操作符优先级比较高,说明可以先进行左结合的计算
   while (op != OPR_NOBINOPR && priority[op].left > limit) {
     expdesc v2;
     BinOpr nextop;
@@ -852,8 +918,9 @@ static BinOpr subexpr (LexState *ls, expdesc *v, unsigned int limit) {
   return op;  /* return first untreated operator */
 }
 
-
+// 读取表达式的主函数
 static void expr (LexState *ls, expdesc *v) {
+  // 传入0的意思是最开始优先级是0,因为没有前一个表达式
   subexpr(ls, v, 0);
 }
 
@@ -867,7 +934,7 @@ static void expr (LexState *ls, expdesc *v) {
 ** =======================================================================
 */
 
-
+// 是不是紧跟着有block
 static int block_follow (int token) {
   switch (token) {
     case TK_ELSE: case TK_ELSEIF: case TK_END:
@@ -927,12 +994,13 @@ static void check_conflict (LexState *ls, struct LHS_assign *lh, expdesc *v) {
   }
 }
 
-
+// 赋值表达式的处理， 传入的lh，是=号左边的表达式
 static void assignment (LexState *ls, struct LHS_assign *lh, int nvars) {
   expdesc e;
   check_condition(ls, VLOCAL <= lh->v.k && lh->v.k <= VINDEXED,
                       "syntax error");
   if (testnext(ls, ',')) {  /* assignment -> `,' primaryexp assignment */
+	// 如果下一个token是","那么说明是多赋值的情况,继续通过primaryexp函数读入下一个参数,将它串联进当前的LHS_assign链表中
     struct LHS_assign nv;
     nv.prev = lh;
     primaryexp(ls, &nv.v);
@@ -940,14 +1008,17 @@ static void assignment (LexState *ls, struct LHS_assign *lh, int nvars) {
       check_conflict(ls, lh, &nv.v);
     luaY_checklimit(ls->fs, nvars, LUAI_MAXCCALLS - ls->L->nCcalls,
                     "variables in assignment");
+    // 搞定了之后nvars+1再次调用assignment函数,可以看到assignment函数是递归调用,其递归的层数和"="号左边的表达式数量一致.
     assignment(ls, &nv, nvars+1);
   }
   else {  /* assignment -> `=' explist1 */
     int nexps;
     checknext(ls, '=');
+    // e中存放的是最后一个表达式
     nexps = explist1(ls, &e);
-    if (nexps != nvars) {
+    if (nexps != nvars) { // "="号左右两边表达式数量不一致,需要做一些调整
       adjust_assign(ls, nvars, nexps, &e);
+      // 如果=号右边的式子更多,那么其实多出来的那部分数据是要被抛弃的,所以可以回收这部分的栈空间
       if (nexps > nvars)
         ls->fs->freereg -= nexps - nvars;  /* remove extra values */
     }
@@ -961,7 +1032,7 @@ static void assignment (LexState *ls, struct LHS_assign *lh, int nvars) {
   luaK_storevar(ls->fs, &lh->v, &e);
 }
 
-
+// 返回v.f
 static int cond (LexState *ls) {
   /* cond -> exp */
   expdesc v;
@@ -1054,6 +1125,7 @@ static void forbody (LexState *ls, int base, int line, int nvars, int isnum) {
   enterblock(fs, &bl, 0);  /* scope for declared variables */
   adjustlocalvars(ls, nvars);
   luaK_reserveregs(fs, nvars);
+  // 循环体
   block(ls);
   leaveblock(fs);  /* end of scope for declared variables */
   luaK_patchtohere(fs, prep);
@@ -1067,10 +1139,14 @@ static void forbody (LexState *ls, int base, int line, int nvars, int isnum) {
 static void fornum (LexState *ls, TString *varname, int line) {
   /* fornum -> NAME = exp1,exp1[,exp1] forbody */
   FuncState *fs = ls->fs;
+  // 在此之前,保存freereg值, 因为后面的三句new_localvarliteral提前占用了位置
+  // 后面调用exp1提取的时候分别将freereg值+1,因此现在保留的base就是这三个与循环有关的变量的起始位置
   int base = fs->freereg;
+  // 先占用三个寄存器位置,分别存放index,limit, step局部变量
   new_localvarliteral(ls, "(for index)", 0);
   new_localvarliteral(ls, "(for limit)", 1);
   new_localvarliteral(ls, "(for step)", 2);
+  // 存放循环变量
   new_localvar(ls, varname, 3);
   checknext(ls, '=');
   exp1(ls);  /* initial value */
@@ -1130,6 +1206,7 @@ static void forstat (LexState *ls, int line) {
 static int test_then_block (LexState *ls) {
   /* test_then_block -> [IF | ELSEIF] cond THEN block */
   int condexit;
+  // 读入下一个数据
   luaX_next(ls);  /* skip IF or ELSEIF */
   condexit = cond(ls);
   checknext(ls, TK_THEN);
@@ -1137,12 +1214,14 @@ static int test_then_block (LexState *ls) {
   return condexit;
 }
 
-
+/*
+ * ifstat -> IF cond THEN block {ELSEIF cond THEN block} [ELSE block] END
+ */
 static void ifstat (LexState *ls, int line) {
-  /* ifstat -> IF cond THEN block {ELSEIF cond THEN block} [ELSE block] END */
   FuncState *fs = ls->fs;
   int flist;
   int escapelist = NO_JUMP;
+  // 这一句调用完毕之后,flist是悬空的,需要后面进行回填,因为不知道false的跳转位置
   flist = test_then_block(ls);  /* IF cond THEN block */
   while (ls->t.token == TK_ELSEIF) {
     luaK_concat(fs, &escapelist, luaK_jump(fs));
@@ -1150,13 +1229,16 @@ static void ifstat (LexState *ls, int line) {
     flist = test_then_block(ls);  /* ELSEIF cond THEN block */
   }
   if (ls->t.token == TK_ELSE) {
+    // 生成一个悬空的跳转语句, 将它加入escapelist的跳转链表中
     luaK_concat(fs, &escapelist, luaK_jump(fs));
+    // 使用返回的flist修正悬空链表中的第一个悬空结点
     luaK_patchtohere(fs, flist);
     luaX_next(ls);  /* skip ELSE (after patch, for correct line info) */
     block(ls);  /* `else' part */
   }
   else
     luaK_concat(fs, &escapelist, flist);
+  // 使用escapelist链表来修正jpc
   luaK_patchtohere(fs, escapelist);
   check_match(ls, TK_END, TK_IF, line);
 }
@@ -1181,26 +1263,32 @@ static void localstat (LexState *ls) {
   int nvars = 0;
   int nexps;
   expdesc e;
+  // 将,号分隔的局部变量全部分配好
   do {
     new_localvar(ls, str_checkname(ls), nvars++);
   } while (testnext(ls, ','));
+  // 如果下一个符号是=号,则生成 表达式列表
   if (testnext(ls, '='))
     nexps = explist1(ls, &e);
   else {
+	// 如果没有=号,则当前表达式是空表达式
     e.k = VVOID;
     nexps = 0;
   }
+  // nvars是=号左边变量的数量, nexps是=号右边表达式的数量,如果两者有差值则要调整
   adjust_assign(ls, nvars, nexps, &e);
   adjustlocalvars(ls, nvars);
 }
 
 
+// 存放函数名到表达式v中, 返回needself表示是否需要self指针
 static int funcname (LexState *ls, expdesc *v) {
   /* funcname -> NAME {field} [`:' NAME] */
   int needself = 0;
   singlevar(ls, v);
   while (ls->t.token == '.')
     field(ls, v);
+  // 有:号的情况下,需要self指针
   if (ls->t.token == ':') {
     needself = 1;
     field(ls, v);
@@ -1213,9 +1301,13 @@ static void funcstat (LexState *ls, int line) {
   /* funcstat -> FUNCTION funcname body */
   int needself;
   expdesc v, b;
+  // 略过"function"关键字,读入函数名token
   luaX_next(ls);  /* skip FUNCTION */
+  // v存放的是函数名对应的exp
   needself = funcname(ls, &v);
+  // b存放的是函数体对应的exp，函数体的类型是closure
   body(ls, &b, needself, line);
+  // 这里把v = b,也就是将函数名与函数体对应上的处理，同样也要区分是local,global等情况
   luaK_storevar(ls->fs, &v, &b);
   luaK_fixline(ls->fs, line);  /* definition `happens' in the first line */
 }
@@ -1225,26 +1317,32 @@ static void exprstat (LexState *ls) {
   /* stat -> func | assignment */
   FuncState *fs = ls->fs;
   struct LHS_assign v;
+  // 取出第一个表达式
   primaryexp(ls, &v.v);
   if (v.v.k == VCALL)  /* stat -> func */
     SETARG_C(getcode(fs, &v.v), 1);  /* call statement uses no results */
   else {  /* stat -> assignment */
+	// 此时是赋值情况
     v.prev = NULL;
     assignment(ls, &v, 1);
   }
 }
 
-
+// 处理return指令
 static void retstat (LexState *ls) {
   /* stat -> RETURN explist */
   FuncState *fs = ls->fs;
   expdesc e;
   int first, nret;  /* registers with returned values */
+  // 略过return关键字，读入下一个token
   luaX_next(ls);  /* skip RETURN */
+  // 如果紧跟着是END表示函数结束，或者是;，这两种情况都是没有返回值
   if (block_follow(ls->t.token) || ls->t.token == ';')
     first = nret = 0;  /* return no values */
   else {
+	// 读入表达式列表，返回值是表达式列表的表达式数量
     nret = explist1(ls, &e);  /* optional return values */
+    // 如果是函数调用或者可变参数
     if (hasmultret(e.k)) {
       luaK_setmultret(fs, &e);
       if (e.k == VCALL && nret == 1) {  /* tail call? */
@@ -1255,6 +1353,7 @@ static void retstat (LexState *ls) {
       nret = LUA_MULTRET;  /* return all values */
     }
     else {
+      // 如果表达式列表中仅有一个表达式
       if (nret == 1)  /* only one single value? */
         first = luaK_exp2anyreg(fs, &e);
       else {
@@ -1264,10 +1363,13 @@ static void retstat (LexState *ls) {
       }
     }
   }
+  // first是起始寄存器索引，nret是数量
   luaK_ret(fs, first, nret);
 }
 
-
+/*
+ * statement -> ifstat | whilestat | DO block END | forstat ...
+ */
 static int statement (LexState *ls) {
   int line = ls->linenumber;  /* may be needed for error messages */
   switch (ls->t.token) {
@@ -1331,6 +1433,7 @@ static void chunk (LexState *ls) {
     testnext(ls, ';');
     lua_assert(ls->fs->f->maxstacksize >= ls->fs->freereg &&
                ls->fs->freereg >= ls->fs->nactvar);
+    // 调整freereg
     ls->fs->freereg = ls->fs->nactvar;  /* free registers */
   }
   leavelevel(ls);

@@ -510,6 +510,7 @@ static void setfenv (lua_State *L) {
       lua_getinfo(L, "f", &ar) == 0 ||  /* get calling function */
       lua_iscfunction(L, -1))
     luaL_error(L, LUA_QL("module") " not called from a Lua function");
+  // 此时-2位置是当前模块的函数
   lua_pushvalue(L, -2);
   lua_setfenv(L, -2);
   lua_pop(L, 1);
@@ -529,39 +530,53 @@ static void dooptions (lua_State *L, int n) {
 static void modinit (lua_State *L, const char *modname) {
   const char *dot;
   lua_pushvalue(L, -1);
+  // 该module的表_M成员指向自己
   lua_setfield(L, -2, "_M");  /* module._M = module */
   lua_pushstring(L, modname);
+  // 初始化_NAME成员
   lua_setfield(L, -2, "_NAME");
   dot = strrchr(modname, '.');  /* look for last dot in module name */
   if (dot == NULL) dot = modname;
   else dot++;
   /* set _PACKAGE as package name (full module name minus last part) */
   lua_pushlstring(L, modname, dot - modname);
+  // 初始化_PACKAGE成员
   lua_setfield(L, -2, "_PACKAGE");
 }
 
-
+// module(module_name, package.seeall等参数)
 static int ll_module (lua_State *L) {
+  // 获得模块名
   const char *modname = luaL_checkstring(L, 1);
+  // 下面两句获得_LOADED表,所以这里预先得到_LOADED表的位置
   int loaded = lua_gettop(L) + 1;  /* index of _LOADED table */
+  // 获得_LOADED表
   lua_getfield(L, LUA_REGISTRYINDEX, "_LOADED");
+  // 在_LOADED表中查询模块是否已经存在
   lua_getfield(L, loaded, modname);  /* get _LOADED[modname] */
   if (!lua_istable(L, -1)) {  /* not found? */
+    // 如果没有查询到,把前面的查询结果弹出栈中
     lua_pop(L, 1);  /* remove previous result */
+    // 在_G表中查询,如果_G表也没有就创建并且压入栈中
     /* try global variable (and create one if it does not exist) */
     if (luaL_findtable(L, LUA_GLOBALSINDEX, modname, 1) != NULL)
       return luaL_error(L, "name conflict for module " LUA_QS, modname);
+    // 此时栈顶位置是新增加的表
     lua_pushvalue(L, -1);
+    // 存入新的表
     lua_setfield(L, loaded, modname);  /* _LOADED[modname] = new table */
   }
   /* check whether table already has a _NAME field */
+  // 在新的表中查询_NAME字段
   lua_getfield(L, -1, "_NAME");
   if (!lua_isnil(L, -1))  /* is table an initialized module? */
     lua_pop(L, 1);
   else {  /* no; initialize it */
     lua_pop(L, 1);
+    // 没有则初始化
     modinit(L, modname);
   }
+  // 此时-1位置是_LOADED[modname],也就是模块对应的表
   lua_pushvalue(L, -1);
   setfenv(L);
   dooptions(L, loaded - 1);
@@ -629,6 +644,7 @@ LUALIB_API int luaopen_package (lua_State *L) {
   /* create new type _LOADLIB */
   luaL_newmetatable(L, "_LOADLIB");
   lua_pushcfunction(L, gctm);
+  // _LOADLIB["__gc"] = gctm
   lua_setfield(L, -2, "__gc");
   /* create `package' table */
   luaL_register(L, LUA_LOADLIBNAME, pk_funcs);
@@ -636,6 +652,7 @@ LUALIB_API int luaopen_package (lua_State *L) {
   lua_getfield(L, -1, "loadlib");
   lua_setfield(L, LUA_GLOBALSINDEX, "loadlib");
 #endif
+  // 不明白下面两句是啥含义
   lua_pushvalue(L, -1);
   lua_replace(L, LUA_ENVIRONINDEX);
   /* create `loaders' table */
@@ -653,11 +670,13 @@ LUALIB_API int luaopen_package (lua_State *L) {
                      LUA_EXECDIR "\n" LUA_IGMARK);
   lua_setfield(L, -2, "config");
   /* set field `loaded' */
+  // 把registry表的_LOADED成员与_G["loaded"]成员一起.
   luaL_findtable(L, LUA_REGISTRYINDEX, "_LOADED", 2);
   lua_setfield(L, -2, "loaded");
   /* set field `preload' */
   lua_newtable(L);
   lua_setfield(L, -2, "preload");
+  // require和module函数都放在G表里
   lua_pushvalue(L, LUA_GLOBALSINDEX);
   luaL_register(L, NULL, ll_funcs);  /* open lib into global table */
   lua_pop(L, 1);
