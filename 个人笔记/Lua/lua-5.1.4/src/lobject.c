@@ -23,7 +23,7 @@
 #include "lvm.h"
 
 
-
+//空值常量
 const TValue luaO_nilobject_ = {{NULL}, LUA_TNIL};
 
 

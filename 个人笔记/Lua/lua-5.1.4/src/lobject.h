@@ -95,6 +95,7 @@ typedef struct lua_TValue {
 #define tsvalue(o)	(&rawtsvalue(o)->tsv)
 #define rawuvalue(o)	check_exp(ttisuserdata(o), &(o)->value.gc->u)
 #define uvalue(o)	(&rawuvalue(o)->uv)
+//获取TValue中的clousure值
 #define clvalue(o)	check_exp(ttisfunction(o), &(o)->value.gc->cl)
 #define hvalue(o)	check_exp(ttistable(o), &(o)->value.gc->h)
 #define bvalue(o)	check_exp(ttisboolean(o), (o)->value.b)
@@ -157,7 +158,7 @@ typedef struct lua_TValue {
 
 
 
-
+//将obj2赋给obj1
 #define setobj(L,obj1,obj2) \
   { const TValue *o2=(obj2); TValue *o1=(obj1); \
     o1->value = o2->value; o1->tt=o2->tt; \
@@ -317,8 +318,9 @@ typedef union Closure {
   LClosure l;
 } Closure;
 
-
+//是否是C函数
 #define iscfunction(o)	(ttype(o) == LUA_TFUNCTION && clvalue(o)->c.isC)
+//是否是Lua函数
 #define isLfunction(o)	(ttype(o) == LUA_TFUNCTION && !clvalue(o)->c.isC)
 
 

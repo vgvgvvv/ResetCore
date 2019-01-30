@@ -61,6 +61,7 @@ typedef LUAI_UACNUMBER l_uacNumber;
 
 #define lua_assert(c)		((void)0)
 #define check_exp(c,e)		(e)
+//在开启 LUA_USE_APICHECK 时会调用assert
 #define api_check		luai_apicheck
 
 #endif

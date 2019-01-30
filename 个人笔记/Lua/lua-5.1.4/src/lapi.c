@@ -30,48 +30,66 @@
 #include "lvm.h"
 
 
-
+//Lua版本信息
 const char lua_ident[] =
   "$Lua: " LUA_RELEASE " " LUA_COPYRIGHT " $\n"
   "$Authors: " LUA_AUTHORS " $\n"
   "$URL: www.lua.org $\n";
 
 
-
+//检查元素数量是否大于栈空间
 #define api_checknelems(L, n)	api_check(L, (n) <= (L->top - L->base))
 
+//检查是否为空值
 #define api_checkvalidindex(L, i)	api_check(L, (i) != luaO_nilobject)
 
+//增加LuaState栈空间
 #define api_incr_top(L)   {api_check(L, L->top < L->ci->top); L->top++;}
 
-
+//将栈索引转为具体的值
 static TValue *index2adr (lua_State *L, int idx) {
   if (idx > 0) {
-	// 如果idx > 0,则从栈中base为基础位置取元素
+	  // 如果idx > 0,则从栈中base为基础位置取元素
     TValue *o = L->base + (idx - 1);
+    // 检查范围
     api_check(L, idx <= L->ci->top - L->base);
-    if (o >= L->top) return cast(TValue *, luaO_nilobject);
-    else return o;
+    // 如果指针位置大于顶部则返回空值
+    if (o >= L->top) {
+      return cast(TValue *, luaO_nilobject);
+    }
+    else {
+      return o;
+    }
   }
+  //注册表的情况
   else if (idx > LUA_REGISTRYINDEX) {
-	// 如果LUA_REGISTRYINDEX > idx < 0,则从栈中top为基础位置取元素
+	  // 如果LUA_REGISTRYINDEX > idx < 0,则从栈中top为基础位置取元素
     api_check(L, idx != 0 && -idx <= L->top - L->base);
+    // 类似于从栈顶倒着数，例如getvalue(L, -2)，就是top-2的那个值，最终结果不能小于0
     return L->top + idx;
   }
-  else switch (idx) {  /* pseudo-indices */
-    case LUA_REGISTRYINDEX: return registry(L);
-    case LUA_ENVIRONINDEX: {
-      Closure *func = curr_func(L);
-      sethvalue(L, &L->env, func->c.env);
-      return &L->env;
-    }
-    case LUA_GLOBALSINDEX: return gt(L);
-    default: {
-      Closure *func = curr_func(L);
-      idx = LUA_GLOBALSINDEX - idx;
-      return (idx <= func->c.nupvalues)
-                ? &func->c.upvalue[idx-1]
-                : cast(TValue *, luaO_nilobject);
+  else {
+    switch (idx) {  /* pseudo-indices 伪索引 */
+      // 注册表的情况 返回global_State中的注册表
+      case LUA_REGISTRYINDEX: return registry(L);
+      // 环境索引，返回当前的环境
+      case LUA_ENVIRONINDEX: {
+        Closure *func = curr_func(L);// 获取当前函数
+        sethvalue(L, &L->env, func->c.env);// 获取函数的环境
+        return &L->env;// 返回当前环境
+      }
+      // 全局索引，返回全局表
+      case LUA_GLOBALSINDEX: return gt(L);
+      default: {
+        //获取当前函数
+        Closure *func = curr_func(L);
+        //从全局索引往下数，则又是从1开始
+        idx = LUA_GLOBALSINDEX - idx;
+        //如果数量小于上值的数量则返回上值否则返回空
+        return (idx <= func->c.nupvalues)
+                  ? &func->c.upvalue[idx-1]
+                  : cast(TValue *, luaO_nilobject);
+      }
     }
   }
 }
@@ -79,9 +97,10 @@ static TValue *index2adr (lua_State *L, int idx) {
 // 获取当前环境表
 static Table *getcurrenv (lua_State *L) {
   if (L->ci == L->base_ci)  /* no enclosing function? */
-	// 如果当前不在任何函数中,那个使用全局表
+	  // 如果当前不在任何函数中,那个使用全局表
     return hvalue(gt(L));  /* use global table as environment */
   else {
+    //返回函数环境
     Closure *func = curr_func(L);
     return func->c.env;
   }
@@ -89,26 +108,42 @@ static Table *getcurrenv (lua_State *L) {
 
 
 void luaA_pushobject (lua_State *L, const TValue *o) {
+  //给栈顶赋值
   setobj2s(L, L->top, o);
+  //栈顶指针加 1
   api_incr_top(L);
 }
 
-
+/** 
+ * 确保堆栈上至少有 n 个额外空位。 
+ * 如果不能把堆栈扩展到相应的尺寸，函数返回假。 
+ * 失败的原因包括将把栈扩展到比固定最大尺寸还大 （至少是几千个元素）或分配内存失败。 
+ * 这个函数永远不会缩小堆栈； 如果堆栈已经比需要的大了，那么就保持原样。
+ * [-0, +0, –]
+ */
 LUA_API int lua_checkstack (lua_State *L, int size) {
   int res = 1;
   lua_lock(L);
-  if (size > LUAI_MAXCSTACK || (L->top - L->base + size) > LUAI_MAXCSTACK)
+  //先检查栈溢出
+  if (size > LUAI_MAXCSTACK || (L->top - L->base + size) > LUAI_MAXCSTACK) {
     res = 0;  /* stack overflow */
+  }
   else if (size > 0) {
     luaD_checkstack(L, size);
-    if (L->ci->top < L->top + size)
+    //调整调用栈顶
+    if (L->ci->top < L->top + size){
       L->ci->top = L->top + size;
+    }
   }
   lua_unlock(L);
   return res;
 }
 
-
+/**
+ * 交换同一个状态机下不同线程中的值。
+ * 这个函数会从 from 的栈上弹出 n 个值， 然后把它们压入 to 的栈上。
+ * [-?, +?, –]
+ */
 LUA_API void lua_xmove (lua_State *from, lua_State *to, int n) {
   int i;
   if (from == to) return;
@@ -130,7 +165,10 @@ LUA_API void lua_setlevel (lua_State *from, lua_State *to) {
   to->nCcalls = from->nCcalls;
 }
 
-
+/**
+ * 设置一个新的 panic 函数，并返回之前设置的那个。 （参见 §4.6）。
+ * [-0, +0, –]
+ */
 LUA_API lua_CFunction lua_atpanic (lua_State *L, lua_CFunction panicf) {
   lua_CFunction old;
   lua_lock(L);
@@ -140,12 +178,18 @@ LUA_API lua_CFunction lua_atpanic (lua_State *L, lua_CFunction panicf) {
   return old;
 }
 
-
+/**
+ * 创建一条新线程，并将其压栈， 并返回维护这个线程的 lua_State 指针。 
+ * 这个函数返回的新线程共享原线程的全局环境， 但是它有独立的运行栈。
+ * 没有显式的函数可以用来关闭或销毁掉一个线程。 线程跟其它 Lua 对象一样是垃圾收集的条目之一。
+ */ 
 LUA_API lua_State *lua_newthread (lua_State *L) {
   lua_State *L1;
   lua_lock(L);
   luaC_checkGC(L);
+  //创建新的线程返回这个线程的lua_state
   L1 = luaE_newthread(L);
+  //将这个luastate压入栈顶
   setthvalue(L, L->top, L1);
   api_incr_top(L);
   lua_unlock(L);
@@ -159,7 +203,10 @@ LUA_API lua_State *lua_newthread (lua_State *L) {
 ** basic stack manipulation
 */
 
-
+/**
+ * 返回栈顶元素的索引。 因为索引是从 1 开始编号的， 
+ * 所以这个结果等于栈上的元素个数； 特别指出，0 表示栈为空。
+ */
 LUA_API int lua_gettop (lua_State *L) {
   return cast_int(L->top - L->base);
 }

@@ -730,6 +730,8 @@ static int str_gsub (lua_State *L) {
 /* }====================================================== */
 
 
+#pragma region StringFormat
+
 /* maximum size of each formatted item (> len(format('%99.99f', -1e308))) */
 #define MAX_ITEM	512
 /* valid flags in a format specification */
@@ -868,6 +870,8 @@ static int str_format (lua_State *L) {
   luaL_pushresult(&b);
   return 1;
 }
+
+#pragma endregion String Format
 
 
 static const luaL_Reg strlib[] = {

@@ -44,21 +44,25 @@ typedef struct stringtable {
 
 /*
 ** informations about a call
+** 调用信息
 */
 typedef struct CallInfo {
-  StkId base;  /* base for this function */
-  StkId func;  /* function index in the stack */
-  StkId	top;  /* top for this function */
+  StkId base;  /* base for this function */ //函数栈底
+  StkId func;  /* function index in the stack */ //函数在栈中的位置
+  StkId	top;  /* top for this function */ //函数栈顶
   const Instruction *savedpc;
   int nresults;  /* expected number of results from this function */
   int tailcalls;  /* number of tail calls lost under this entry */
 } CallInfo;
 
 
-
+//获取当前函数
 #define curr_func(L)	(clvalue(L->ci->func))
+//获取callinfo的函数
 #define ci_func(ci)	(clvalue((ci)->func))
+//获取callinfo是否为Lua函数
 #define f_isLua(ci)	(!ci_func(ci)->c.isC)
+//获取callinfo是否为Lua函数，会检查是否是function类型
 #define isLua(ci)	(ttisfunction((ci)->func) && f_isLua(ci))
 
 
@@ -114,8 +118,10 @@ struct lua_State {
   const Instruction *savedpc;  /* `savedpc' of current function */
   StkId stack_last;  /* last free slot in the stack */
   StkId stack;  /* stack base */
-  CallInfo *end_ci;  /* points after end of ci array*/
-  CallInfo *base_ci;  /* array of CallInfo's */
+
+  CallInfo *end_ci;  /* points after end of ci array CallInfo数组的尾部指针 */
+  CallInfo *base_ci;  /* array of CallInfo's CallInfo数组的头指针 */
+
   int stacksize;
   int size_ci;  /* size of array `base_ci' */
   unsigned short nCcalls;  /* number of nested C calls */
@@ -125,7 +131,7 @@ struct lua_State {
   int basehookcount;
   int hookcount;
   lua_Hook hook;
-  TValue l_gt;  /* table of globals */
+  TValue l_gt;  /* table of globals 全局表 */
   TValue env;  /* temporary place for environments */
   GCObject *openupval;  /* list of open upvalues in this stack */
   GCObject *gclist;
@@ -133,7 +139,7 @@ struct lua_State {
   ptrdiff_t errfunc;  /* current error handling function (stack index) */
 };
 
-
+//获取全局状态机
 #define G(L)	(L->l_G)
 
 

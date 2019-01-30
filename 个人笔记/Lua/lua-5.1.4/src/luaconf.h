@@ -719,6 +719,7 @@ union luai_Cast { double l_d; long l_l; };
 @@ luai_userstate* allow user-specific actions on threads.
 ** CHANGE them if you defined LUAI_EXTRASPACE and need to do something
 ** extra when a thread is created/deleted/resumed/yielded.
+** 在线程创建时可以插入我们自己的额外操作
 */
 #define luai_userstateopen(L)		((void)L)
 #define luai_userstateclose(L)		((void)L)
