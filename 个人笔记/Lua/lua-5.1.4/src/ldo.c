@@ -267,6 +267,7 @@ static StkId tryfuncTM (lua_State *L, StkId func) {
    (condhardstacktests(luaD_reallocCI(L, L->size_ci)), ++L->ci))
 
 // 函数调用的预处理, func是函数closure所在位置, nresults是返回值数量
+// 
 int luaD_precall (lua_State *L, StkId func, int nresults) {
   LClosure *cl;
   ptrdiff_t funcr;
@@ -485,6 +486,9 @@ LUA_API int lua_yield (lua_State *L, int nresults) {
 }
 
 // 带错误保护的函数调用
+/**
+ * TODO:带错误保护的函数调用 
+ */
 int luaD_pcall (lua_State *L, Pfunc func, void *u,
                 ptrdiff_t old_top, ptrdiff_t ef) {
   // 调用之前保存调用前的ci地址和top地址,用于可能发生的错误恢复

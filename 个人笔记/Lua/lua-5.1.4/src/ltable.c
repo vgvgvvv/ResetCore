@@ -560,7 +560,10 @@ TValue *luaH_set (lua_State *L, Table *t, const TValue *key) {
 	// 如果存在值, 则返回值
     return cast(TValue *, p);
   else {
-    if (ttisnil(key)) luaG_runerror(L, "table index is nil");
+    //key如果是空的
+    if (ttisnil(key)) 
+      luaG_runerror(L, "table index is nil");
+    //key是Nan
     else if (ttisnumber(key) && luai_numisnan(nvalue(key)))
       luaG_runerror(L, "table index is NaN");
     // 否则分配一个以key为key的新值

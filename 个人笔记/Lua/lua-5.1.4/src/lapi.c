@@ -954,6 +954,7 @@ LUA_API int lua_setfenv (lua_State *L, int idx) {
       uvalue(o)->env = hvalue(L->top - 1);
       break;
     case LUA_TTHREAD:
+      //设置全局表
       sethvalue(L, gt(thvalue(o)), hvalue(L->top - 1));
       break;
     default:
@@ -974,10 +975,11 @@ LUA_API int lua_setfenv (lua_State *L, int idx) {
 
 #pragma region `load' and `call' functions (run Lua code)
 
+//如果返回值的数量为LUA_MULTRET，则将调用栈的顶设置为当前栈顶，也就是所有返回值压入栈
 #define adjustresults(L,nres) \
     { if (nres == LUA_MULTRET && L->top >= L->ci->top) L->ci->top = L->top; }
 
-
+//如果返回值的数量为LUA_MULTRET，检查调用栈顶和栈顶之差必须大于返回值数量与参数数量之差
 #define checkresults(L,na,nr) \
      api_check(L, (nr) == LUA_MULTRET || (L->ci->top - L->top >= (nr) - (na)))
 	
@@ -1004,14 +1006,36 @@ struct CallS {  /* data to `f_call' */
   int nresults;
 };
 
-
+/**
+ * 调用Calls中的函数
+ */
 static void f_call (lua_State *L, void *ud) {
   struct CallS *c = cast(struct CallS *, ud);
   luaD_call(L, c->func, c->nresults);
 }
 
 
-
+/**
+ * 以保护模式调用一个函数。
+ * nargs 和 nresults 的含义与 lua_call 中的相同。 如果在调用过程中没有发生错误， lua_pcall 的行为和 lua_call 完全一致。 
+ * 但是，如果有错误发生的话， lua_pcall 会捕获它， 然后把唯一的值（错误消息）压栈，然后返回错误码。 
+ * 同 lua_call 一样， lua_pcall 总是把函数本身和它的参数从栈上移除。
+ * 如果 msgh 是 0 ， 返回在栈顶的错误消息就和原始错误消息完全一致。 
+ * 否则， msgh 就被当成是 错误处理函数 在栈上的索引位置。 （在当前的实现里，这个索引不能是伪索引。） 
+ * 在发生运行时错误时， 这个函数会被调用而参数就是错误消息。 错误处理函数的返回值将被 lua_pcall 作为错误消息返回在堆栈上。
+ * 典型的用法中，错误处理函数被用来给错误消息加上更多的调试信息， 比如栈跟踪信息。 这些信息在 lua_pcall 返回后， 
+ * 由于栈已经展开，所以收集不到了。
+ * 
+ * lua_pcall 函数会返回下列常数 （定义在 lua.h 内）中的一个：
+ * 
+ * LUA_OK (0): 成功。
+ * LUA_ERRRUN: 运行时错误。
+ * LUA_ERRMEM: 内存分配错误。对于这种错，Lua 不会调用错误处理函数。
+ * LUA_ERRERR: 在运行错误处理函数时发生的错误。
+ * LUA_ERRGCMM: 在运行 __gc 元方法时发生的错误。 （这个错误和被调用的函数无关。）
+ * 
+ * [-(nargs + 1), +(nresults|1), –]
+ */
 LUA_API int lua_pcall (lua_State *L, int nargs, int nresults, int errfunc) {
   struct CallS c;
   int status;
@@ -1024,9 +1048,12 @@ LUA_API int lua_pcall (lua_State *L, int nargs, int nresults, int errfunc) {
   else {
     StkId o = index2adr(L, errfunc);
     api_checkvalidindex(L, o);
+    //保存栈的位置
     func = savestack(L, o);
   }
+  //获取函数位置
   c.func = L->top - (nargs+1);  /* function to be called */
+  //获取result的数量
   c.nresults = nresults;
   status = luaD_pcall(L, f_call, &c, savestack(L, c.func), func);
   adjustresults(L, nresults);

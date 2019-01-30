@@ -146,6 +146,9 @@ void luaV_gettable (lua_State *L, const TValue *t, TValue *key, StkId val) {
 }
 
 // 为什么这个操作需要放在lvm也就是虚拟机相关代码的部分呢??
+/**
+ * 设置table值
+ */
 void luaV_settable (lua_State *L, const TValue *t, TValue *key, StkId val) {
   int loop;
   for (loop = 0; loop < MAXTAGLOOP; loop++) {
@@ -155,9 +158,9 @@ void luaV_settable (lua_State *L, const TValue *t, TValue *key, StkId val) {
       Table *h = hvalue(t);
       //
       TValue *oldval = luaH_set(L, h, key); /* do a primitive set */
-      if (!ttisnil(oldval) ||  /* result is no nil? */
+      if (!ttisnil(oldval) ||  /* result is no nil? 如果原来没有值就调用__newindex元方法 */
           (tm = fasttm(L, h->metatable, TM_NEWINDEX)) == NULL) { /* or no TM? */
-    	// 替换原来的旧值
+    	  // 替换原来的旧值
         setobj2t(L, oldval, val);
         luaC_barriert(L, h, val);
         return;
