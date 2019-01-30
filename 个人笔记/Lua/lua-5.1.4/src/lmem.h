@@ -15,6 +15,7 @@
 
 #define MEMERRMSG	"not enough memory"
 
+//TODO:函数内存申请部分
 
 #define luaM_reallocv(L,b,on,n,e) \
 	((cast(size_t, (n)+1) <= MAX_SIZET/(e)) ?  /* +1 to avoid warnings */ \

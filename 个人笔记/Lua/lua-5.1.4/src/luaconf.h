@@ -520,8 +520,10 @@
 */
 #define LUA_NUMBER_SCAN		"%lf"
 #define LUA_NUMBER_FMT		"%.14g"
+//利用sprintf将数字转换为字符串
 #define lua_number2str(s,n)	sprintf((s), LUA_NUMBER_FMT, (n))
 #define LUAI_MAXNUMBER2STR	32 /* 16 digits, sign, point, and \0 */
+//直接通过C函数转
 #define lua_str2number(s,p)	strtod((s), (p))
 
 
@@ -537,9 +539,12 @@
 #define luai_nummod(a,b)	((a) - floor((a)/(b))*(b))
 #define luai_numpow(a,b)	(pow(a,b))
 #define luai_numunm(a)		(-(a))
+//number equal
 #define luai_numeq(a,b)		((a)==(b))
+//number less than
 #define luai_numlt(a,b)		((a)<(b))
 #define luai_numle(a,b)		((a)<=(b))
+//数字为Nan
 #define luai_numisnan(a)	(!luai_numeq((a), (a)))
 #endif
 

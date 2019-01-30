@@ -74,7 +74,9 @@ static TString *newlstr (lua_State *L, const char *str, size_t l,
   return ts;
 }
 
-
+/**
+ * 分配一个新的字符串
+ */
 TString *luaS_newlstr (lua_State *L, const char *str, size_t l) {
   GCObject *o;
   unsigned int h = cast(unsigned int, l);  /* seed */

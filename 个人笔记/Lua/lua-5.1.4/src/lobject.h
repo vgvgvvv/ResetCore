@@ -87,20 +87,30 @@ typedef struct lua_TValue {
 #define ttislightuserdata(o)	(ttype(o) == LUA_TLIGHTUSERDATA)
 
 /* Macros to access values */
+//获取TValue的类型
 #define ttype(o)	((o)->tt)
+//获取GCObject的指针
 #define gcvalue(o)	check_exp(iscollectable(o), (o)->value.gc)
+//获取lightuserdata
 #define pvalue(o)	check_exp(ttislightuserdata(o), (o)->value.p)
+//获取TValue中的number
 #define nvalue(o)	check_exp(ttisnumber(o), (o)->value.n)
+//获取TValue中的字符串TString
 #define rawtsvalue(o)	check_exp(ttisstring(o), &(o)->value.gc->ts)
+//获取TString中的tsv（TableStringValue）
 #define tsvalue(o)	(&rawtsvalue(o)->tsv)
+//获取GCObject中的UData
 #define rawuvalue(o)	check_exp(ttisuserdata(o), &(o)->value.gc->u)
+//获取UData中的uv 也就是实际的UserData
 #define uvalue(o)	(&rawuvalue(o)->uv)
 //获取TValue中的clousure值
 #define clvalue(o)	check_exp(ttisfunction(o), &(o)->value.gc->cl)
+//获取TValue中的table值
 #define hvalue(o)	check_exp(ttistable(o), &(o)->value.gc->h)
+//获取TValue的bool值
 #define bvalue(o)	check_exp(ttisboolean(o), (o)->value.b)
 #define thvalue(o)	check_exp(ttisthread(o), &(o)->value.gc->th)
-
+//获取栈顶的值 判断是否为false
 #define l_isfalse(o)	(ttisnil(o) || (ttisboolean(o) && bvalue(o) == 0))
 
 /*
@@ -158,7 +168,7 @@ typedef struct lua_TValue {
 
 
 
-//将obj2赋给obj1
+//将*obj2赋给*obj1
 #define setobj(L,obj1,obj2) \
   { const TValue *o2=(obj2); TValue *o1=(obj1); \
     o1->value = o2->value; o1->tt=o2->tt; \
@@ -207,8 +217,9 @@ typedef union TString {
   } tsv;
 } TString;
 
-
+//将TString转为const char*
 #define getstr(ts)	cast(const char *, (ts) + 1)
+//将TString转为const char*
 #define svalue(o)       getstr(rawtsvalue(o))
 
 
@@ -294,6 +305,12 @@ typedef struct UpVal {
 /*
 ** Closures
 */
+
+/**
+ * isC        是否是C function
+ * nupvalues  upvalue的数量
+ * gclist     TODO:GCList
+ */
 
 #define ClosureHeader \
 	CommonHeader; lu_byte isC; lu_byte nupvalues; GCObject *gclist; \

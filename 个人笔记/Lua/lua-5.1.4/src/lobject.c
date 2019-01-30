@@ -68,7 +68,9 @@ int luaO_log2 (unsigned int x) {
 
 }
 
-
+/**
+ * 比较对象是否相等
+ */
 int luaO_rawequalObj (const TValue *t1, const TValue *t2) {
   if (ttype(t1) != ttype(t2)) return 0;
   else switch (ttype(t1)) {
@@ -86,11 +88,12 @@ int luaO_rawequalObj (const TValue *t1, const TValue *t2) {
   }
 }
 
-
+//字符串转number
 int luaO_str2d (const char *s, lua_Number *result) {
   char *endptr;
   *result = lua_str2number(s, &endptr);
   if (endptr == s) return 0;  /* conversion failed */
+  //16进制的情况
   if (*endptr == 'x' || *endptr == 'X')  /* maybe an hexadecimal constant? */
     *result = cast_num(strtoul(s, &endptr, 16));
   if (*endptr == '\0') return 1;  /* most common case */
@@ -107,11 +110,15 @@ static void pushstr (lua_State *L, const char *str) {
 }
 
 
-/* this function handles only `%d', `%c', %f, %p, and `%s' formats */
+/* this function handles only '%d', '%c', '%f', '%p', and '%s' formats */
+/**
+ * 推入经过format的字符串
+ */
 const char *luaO_pushvfstring (lua_State *L, const char *fmt, va_list argp) {
   int n = 1;
   pushstr(L, "");
   for (;;) {
+    //循环搜索%号出现的地方
     const char *e = strchr(fmt, '%');
     if (e == NULL) break;
     setsvalue2s(L, L->top, luaS_newlstr(L, fmt, e-fmt));

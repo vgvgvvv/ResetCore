@@ -383,11 +383,12 @@ int luaD_poscall (lua_State *L, StkId firstResult) {
 }
 
 
-/*
+/**
 ** Call a function (C or Lua). The function to be called is at *func.
 ** The arguments are on the stack, right after the function.
 ** When returns, all the results are on the stack, starting at the original
 ** function position.
+*  TODO:luaD_call调用过程
 */ 
 void luaD_call (lua_State *L, StkId func, int nResults) {
   // 函数调用栈数量+1, 判断函数调用栈是不是过长

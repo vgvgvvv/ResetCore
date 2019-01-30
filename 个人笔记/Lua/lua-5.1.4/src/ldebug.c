@@ -592,7 +592,7 @@ void luaG_aritherror (lua_State *L, const TValue *p1, const TValue *p2) {
   luaG_typeerror(L, p2, "perform arithmetic on");
 }
 
-
+//在比较时出现的报错
 int luaG_ordererror (lua_State *L, const TValue *p1, const TValue *p2) {
   const char *t1 = luaT_typenames[ttype(p1)];
   const char *t2 = luaT_typenames[ttype(p2)];
@@ -627,7 +627,9 @@ void luaG_errormsg (lua_State *L) {
   luaD_throw(L, LUA_ERRRUN);
 }
 
-
+/**
+ * 报错 使用format的字符串
+ */
 void luaG_runerror (lua_State *L, const char *fmt, ...) {
   va_list argp;
   va_start(argp, fmt);

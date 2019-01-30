@@ -60,6 +60,7 @@ typedef LUAI_UACNUMBER l_uacNumber;
 #else
 
 #define lua_assert(c)		((void)0)
+//在开启LUA_USE_APICHECK 时会调用assert(c)
 #define check_exp(c,e)		(e)
 //在开启 LUA_USE_APICHECK 时会调用assert
 #define api_check		luai_apicheck
@@ -106,10 +107,10 @@ typedef lu_int32 Instruction;
 #define LUA_MINBUFFER	32
 #endif
 
-
+//TODO:lock与unlock的用法
 #ifndef lua_lock
 #define lua_lock(L)     ((void) 0) 
-#define lua_unlock(L)   ((void) 0)
+#define lua_unlock(L)   ((void) 0) 
 #endif
 
 #ifndef luai_threadyield

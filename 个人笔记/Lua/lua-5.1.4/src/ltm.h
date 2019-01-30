@@ -14,6 +14,7 @@
 /*
 * WARNING: if you change the order of this enumeration,
 * grep "ORDER TM"
+* 元表中元方法的tag
 */
 typedef enum {
   TM_INDEX,

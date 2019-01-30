@@ -1,0 +1,7 @@
+{
+    "todohighlight.include": [
+        "**/*.c",
+        "**/*.h",
+        "**/*.md"
+    ]
+}

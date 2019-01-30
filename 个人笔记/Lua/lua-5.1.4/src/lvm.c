@@ -34,7 +34,9 @@
 // value转换成数字
 const TValue *luaV_tonumber (const TValue *obj, TValue *n) {
   lua_Number num;
+  //是number就直接返回
   if (ttisnumber(obj)) return obj;
+  //string转number
   if (ttisstring(obj) && luaO_str2d(svalue(obj), &num)) {
     setnvalue(n, num);
     return n;
@@ -45,9 +47,11 @@ const TValue *luaV_tonumber (const TValue *obj, TValue *n) {
 
 // 数字转换成字符串
 int luaV_tostring (lua_State *L, StkId obj) {
+  //不是number的时候就转换失败
   if (!ttisnumber(obj))
     return 0;
   else {
+    //number转字符串
     char s[LUAI_MAXNUMBER2STR];
     lua_Number n = nvalue(obj);
     lua_number2str(s, n);
@@ -83,7 +87,9 @@ static void callTMres (lua_State *L, StkId res, const TValue *f,
   setobj2s(L, L->top, f);  /* push function */
   setobj2s(L, L->top+1, p1);  /* 1st argument */
   setobj2s(L, L->top+2, p2);  /* 2nd argument */
+  //保证用充足的位置
   luaD_checkstack(L, 3);
+  //top+3
   L->top += 3;
   luaD_call(L, L->top - 3, 1);
   res = restorestack(L, result);
@@ -104,7 +110,11 @@ static void callTM (lua_State *L, const TValue *f, const TValue *p1,
   luaD_call(L, L->top - 4, 0);
 }
 
-// 在一个table中查找key对应的值, 找到存放到val中
+/**
+ * 在一个table中查找key对应的值, 找到存放到val中
+ * 会进行递归查找
+ * 同时会调用元表
+ */
 void luaV_gettable (lua_State *L, const TValue *t, TValue *key, StkId val) {
   int loop;
   // 函数外层以MAXTAGLOOP做为计数,防止死循环
@@ -176,7 +186,9 @@ static int call_binTM (lua_State *L, const TValue *p1, const TValue *p2,
   return 1;
 }
 
-
+/**
+ * 获取表中元方法，如果相同则返回 否则返回空
+ */
 static const TValue *get_compTM (lua_State *L, Table *mt1, Table *mt2,
                                   TMS event) {
   const TValue *tm1 = fasttm(L, mt1, event);
@@ -190,52 +202,71 @@ static const TValue *get_compTM (lua_State *L, Table *mt1, Table *mt2,
   return NULL;
 }
 
-
+//调用元方法比较
 static int call_orderTM (lua_State *L, const TValue *p1, const TValue *p2,
                          TMS event) {
+  //获取元方法
   const TValue *tm1 = luaT_gettmbyobj(L, p1, event);
   const TValue *tm2;
+  //找不到返回-1
   if (ttisnil(tm1)) return -1;  /* no metamethod? */
   tm2 = luaT_gettmbyobj(L, p2, event);
+  //比较元方法是否相同，不相同就返回-1
   if (!luaO_rawequalObj(tm1, tm2))  /* different metamethods? */
     return -1;
+  //调用元方法进行比较
   callTMres(L, L->top, tm1, p1, p2);
   return !l_isfalse(L->top);
 }
 
-
+/**
+ * 比较两个TString
+ */
 static int l_strcmp (const TString *ls, const TString *rs) {
+  //获取各自的长度
   const char *l = getstr(ls);
   size_t ll = ls->tsv.len;
   const char *r = getstr(rs);
   size_t lr = rs->tsv.len;
+
   for (;;) {
+    //使用strcoll比较字符串
     int temp = strcoll(l, r);
     if (temp != 0) return temp;
     else {  /* strings are equal up to a `\0' */
+      //查看谁先结束
       size_t len = strlen(l);  /* index of first `\0' in both strings */
       if (len == lr)  /* r is finished? */
         return (len == ll) ? 0 : 1;
       else if (len == ll)  /* l is finished? */
         return -1;  /* l is smaller than r (because r is not finished) */
       /* both strings longer than `len'; go on comparing (after the `\0') */
+      //如果都没结束，则从最后再来一遍比较流程
       len++;
       l += len; ll -= len; r += len; lr -= len;
     }
   }
 }
 
-
+//判断两个值的大小
 int luaV_lessthan (lua_State *L, const TValue *l, const TValue *r) {
   int res;
+  //不同类型不允许比较 直接报错
   if (ttype(l) != ttype(r))
     return luaG_ordererror(L, l, r);
+  //比较数字
   else if (ttisnumber(l))
     return luai_numlt(nvalue(l), nvalue(r));
-  else if (ttisstring(l))
+  //比较字符串
+  else if (ttisstring(l)){
+    //使用自定义的方法比较TString
     return l_strcmp(rawtsvalue(l), rawtsvalue(r)) < 0;
-  else if ((res = call_orderTM(L, l, r, TM_LT)) != -1)
+  }
+  //调用元方法比较
+  else if ((res = call_orderTM(L, l, r, TM_LT)) != -1){
     return res;
+  }
+  //比较错误
   return luaG_ordererror(L, l, r);
 }
 
@@ -260,25 +291,37 @@ int luaV_equalval (lua_State *L, const TValue *t1, const TValue *t2) {
   const TValue *tm;
   lua_assert(ttype(t1) == ttype(t2));
   switch (ttype(t1)) {
+    //两个nil一定相等
     case LUA_TNIL: return 1;
+    //数字比较
     case LUA_TNUMBER: return luai_numeq(nvalue(t1), nvalue(t2));
+    //比较bool
     case LUA_TBOOLEAN: return bvalue(t1) == bvalue(t2);  /* true must be 1 !! */
+    //比较指针
     case LUA_TLIGHTUSERDATA: return pvalue(t1) == pvalue(t2);
+    //比较userdata
     case LUA_TUSERDATA: {
+      //比较指针，如果一样就是相等的
       if (uvalue(t1) == uvalue(t2)) return 1;
+      //尝试获取Equal元方法
       tm = get_compTM(L, uvalue(t1)->metatable, uvalue(t2)->metatable,
                          TM_EQ);
       break;  /* will try TM */
     }
     case LUA_TTABLE: {
+      //比较指针，如果一样就是相等的
       if (hvalue(t1) == hvalue(t2)) return 1;
       tm = get_compTM(L, hvalue(t1)->metatable, hvalue(t2)->metatable, TM_EQ);
       break;  /* will try TM */
     }
+    //直接比较GCObject的指针
     default: return gcvalue(t1) == gcvalue(t2);
   }
+  //如果不存在或者没有相同的Equal元方法，则一定不相等
   if (tm == NULL) return 0;  /* no TM? */
+  //调用相等的函数
   callTMres(L, L->top, tm, t1, t2);  /* call TM */
+  //获得最终结果
   return !l_isfalse(L->top);
 }
 

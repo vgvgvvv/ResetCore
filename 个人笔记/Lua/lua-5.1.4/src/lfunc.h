@@ -10,10 +10,11 @@
 
 #include "lobject.h"
 
-
+//一个CClosure以及n个参数的内存大小
 #define sizeCclosure(n)	(cast(int, sizeof(CClosure)) + \
                          cast(int, sizeof(TValue)*((n)-1)))
 
+//一个LClosure以及n个参数的内存大小
 #define sizeLclosure(n)	(cast(int, sizeof(LClosure)) + \
                          cast(int, sizeof(TValue *)*((n)-1)))
 

@@ -100,14 +100,20 @@ typedef struct global_State {
   TValue l_registry;
   struct lua_State *mainthread;
   UpVal uvhead;  /* head of double-linked list of all open upvalues */
+  //基础类型的元方法
   struct Table *mt[NUM_TAGS];  /* metatables for basic types */
+  // 内置元方法的名字数组
   TString *tmname[TM_N];  /* array with tag-method names */
 } global_State;
 
 
-/*
-** `per thread' state
-*/
+/**
+ * `per thread' state
+ * 
+ * stack结构
+ * base与top之间为当前函数的调用栈
+ * stackbase xxxx base xxxx top xxxx stack_last
+ */
 struct lua_State {
   CommonHeader;
   lu_byte status;
@@ -116,6 +122,7 @@ struct lua_State {
   global_State *l_G;
   CallInfo *ci;  /* call info for current function */
   const Instruction *savedpc;  /* `savedpc' of current function */
+
   StkId stack_last;  /* last free slot in the stack */
   StkId stack;  /* stack base */
 
@@ -172,6 +179,7 @@ union GCObject {
 #define gco2th(o)	check_exp((o)->gch.tt == LUA_TTHREAD, &((o)->th))
 
 /* macro to convert any Lua object into a GCObject */
+//LuaObject转成GCObject
 #define obj2gco(v)	(cast(GCObject *, (v)))
 
 

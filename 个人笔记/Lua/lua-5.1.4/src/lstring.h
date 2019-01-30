@@ -17,6 +17,7 @@
 
 #define sizeudata(u)	(sizeof(union Udata)+(u)->len)
 
+//分配一个新的字符串
 #define luaS_new(L, s)	(luaS_newlstr(L, s, strlen(s)))
 #define luaS_newliteral(L, s)	(luaS_newlstr(L, "" s, \
                                  (sizeof(s)/sizeof(char))-1))

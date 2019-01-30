@@ -33,9 +33,13 @@
 /*
 ** pseudo-indices
 */
+//注册表索引
 #define LUA_REGISTRYINDEX	(-10000)
+//全局环境索引
 #define LUA_ENVIRONINDEX	(-10001)
+//全局表索引
 #define LUA_GLOBALSINDEX	(-10002)
+//上值索引
 #define lua_upvalueindex(i)	(LUA_GLOBALSINDEX-(i))
 
 
