@@ -182,6 +182,7 @@ LUA_API lua_CFunction lua_atpanic (lua_State *L, lua_CFunction panicf) {
  * 创建一条新线程，并将其压栈， 并返回维护这个线程的 lua_State 指针。 
  * 这个函数返回的新线程共享原线程的全局环境， 但是它有独立的运行栈。
  * 没有显式的函数可以用来关闭或销毁掉一个线程。 线程跟其它 Lua 对象一样是垃圾收集的条目之一。
+ * [-0, +0, –]
  */ 
 LUA_API lua_State *lua_newthread (lua_State *L) {
   lua_State *L1;
@@ -211,7 +212,12 @@ LUA_API int lua_gettop (lua_State *L) {
   return cast_int(L->top - L->base);
 }
 
-
+/**
+ * 参数允许传入任何索引以及 0 。 它将把堆栈的栈顶设为这个索引。 
+ * 如果新的栈顶比原来的大， 超出部分的新元素将被填为 nil 。 
+ * 如果 index 为 0 ， 把栈上所有元素移除。
+ * [-?, +?, –]
+ */ 
 LUA_API void lua_settop (lua_State *L, int idx) {
   lua_lock(L);
   if (idx >= 0) {
