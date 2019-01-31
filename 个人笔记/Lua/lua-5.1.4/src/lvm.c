@@ -328,7 +328,7 @@ int luaV_equalval (lua_State *L, const TValue *t1, const TValue *t2) {
   return !l_isfalse(L->top);
 }
 
-
+//TODO:连接栈上的字符串
 void luaV_concat (lua_State *L, int total, int last) {
   do {
     StkId top = L->base + last + 1;
@@ -336,8 +336,9 @@ void luaV_concat (lua_State *L, int total, int last) {
     if (!(ttisstring(top-2) || ttisnumber(top-2)) || !tostring(L, top-1)) {
       if (!call_binTM(L, top-2, top-1, top-2, TM_CONCAT))
         luaG_concaterror(L, top-2, top-1);
-    } else if (tsvalue(top-1)->len == 0)  /* second op is empty? */
+    } else if (tsvalue(top-1)->len == 0) { /* second op is empty? */
       (void)tostring(L, top - 2);  /* result is first op (as string) */
+    } 
     else {
       /* at least two string values; get as many as possible */
       size_t tl = tsvalue(top-1)->len;

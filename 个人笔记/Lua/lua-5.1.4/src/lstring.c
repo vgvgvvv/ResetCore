@@ -100,8 +100,10 @@ TString *luaS_newlstr (lua_State *L, const char *str, size_t l) {
 
 Udata *luaS_newudata (lua_State *L, size_t s, Table *e) {
   Udata *u;
+  //块过大
   if (s > MAX_SIZET - sizeof(Udata))
     luaM_toobig(L);
+  //
   u = cast(Udata *, luaM_malloc(L, s + sizeof(Udata)));
   u->uv.marked = luaC_white(G(L));  /* is not finalized */
   u->uv.tt = LUA_TUSERDATA;
@@ -109,7 +111,7 @@ Udata *luaS_newudata (lua_State *L, size_t s, Table *e) {
   u->uv.metatable = NULL;
   u->uv.env = e;
   /* chain it on udata list (after main thread) */
-  // 这样让udata链接在mainthread之后，一定是整个GC链表的最后
+  // TODO:这样让udata链接在mainthread之后，一定是整个GC链表的最后
   u->uv.next = G(L)->mainthread->next;
   G(L)->mainthread->next = obj2gco(u);
   return u;

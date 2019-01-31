@@ -108,7 +108,9 @@ static Table *getcurrenv (lua_State *L) {
   }
 }
 
-
+/**
+ * 向栈中推入object
+ */
 void luaA_pushobject (lua_State *L, const TValue *o) {
   //给栈顶赋值
   setobj2s(L, L->top, o);
@@ -973,7 +975,7 @@ LUA_API int lua_setfenv (lua_State *L, int idx) {
 ** `load' and `call' functions (run Lua code)
 */
 
-#pragma region `load' and `call' functions (run Lua code)
+#pragma region //load and call functions (run Lua code)
 
 //如果返回值的数量为LUA_MULTRET，则将调用栈的顶设置为当前栈顶，也就是所有返回值压入栈
 #define adjustresults(L,nres) \
@@ -1128,13 +1130,13 @@ LUA_API int  lua_status (lua_State *L) {
   return L->status;
 }
 
-#pragma endregion `load' and `call' functions (run Lua code)
+#pragma endregion //`load' and `call' functions (run Lua code)
 
 /*
 ** Garbage-collection function
 */
 
-#pragma region Garbage-collection function
+#pragma region //Garbage-collection function
 
 LUA_API int lua_gc (lua_State *L, int what, int data) {
   int res = 0;
@@ -1208,8 +1210,12 @@ LUA_API int lua_gc (lua_State *L, int what, int data) {
 ** miscellaneous functions
 */
 
-#pragma region miscellaneous functions
+#pragma region //miscellaneous functions
 
+/**
+ * 以栈顶的值作为错误对象，抛出一个 Lua 错误。 这个函数将做一次长跳转，所以一定不会返回 （参见 luaL_error）。
+ * [-1, +0, v]
+ */
 LUA_API int lua_error (lua_State *L) {
   lua_lock(L);
   api_checknelems(L, 1);
@@ -1218,13 +1224,19 @@ LUA_API int lua_error (lua_State *L) {
   return 0;  /* to avoid warnings */
 }
 
-
+/**
+ * 从栈顶弹出一个键， 然后把索引指定的表中的一个键值对压栈 （弹出的键之后的 “下一” 对）。 
+ * 如果表中以无更多元素， 那么 lua_next 将返回 0 （什么也不压栈）。
+ */
 LUA_API int lua_next (lua_State *L, int idx) {
   StkId t;
   int more;
   lua_lock(L);
+  //检出table
   t = index2adr(L, idx);
   api_check(L, ttistable(t));
+  //检查是否有下一个
+  //TODO:lua table部分阅读
   more = luaH_next(L, hvalue(t), L->top - 1);
   if (more) {
     api_incr_top(L);
@@ -1239,20 +1251,27 @@ LUA_API int lua_next (lua_State *L, int idx) {
 LUA_API void lua_concat (lua_State *L, int n) {
   lua_lock(L);
   api_checknelems(L, n);
+  //如果有两个或以上字符串则连接
   if (n >= 2) {
     luaC_checkGC(L);
     luaV_concat(L, n, cast_int(L->top - L->base) - 1);
     L->top -= (n-1);
   }
+  //如果没有任何字符串就创建一个新的字符串
   else if (n == 0) {  /* push empty string */
     setsvalue2s(L, L->top, luaS_newlstr(L, "", 0));
     api_incr_top(L);
   }
+  //否则什么都不做
   /* else n == 1; nothing to do */
   lua_unlock(L);
 }
 
-
+/**
+ * 返回给定状态机的内存分配器函数。 
+ * 如果 ud 不是 NULL ， Lua 把设置内存分配函数时设置的那个指针置入 *ud 。
+ * [-0, +0, –]
+ */
 LUA_API lua_Alloc lua_getallocf (lua_State *L, void **ud) {
   lua_Alloc f;
   lua_lock(L);
@@ -1262,7 +1281,10 @@ LUA_API lua_Alloc lua_getallocf (lua_State *L, void **ud) {
   return f;
 }
 
-
+/**
+ * 把指定状态机的分配器函数换成带上用户数据 ud 的 f 。
+ * [-0, +0, –]
+ */
 LUA_API void lua_setallocf (lua_State *L, lua_Alloc f, void *ud) {
   lua_lock(L);
   G(L)->ud = ud;
@@ -1270,7 +1292,10 @@ LUA_API void lua_setallocf (lua_State *L, lua_Alloc f, void *ud) {
   lua_unlock(L);
 }
 
-
+/**
+ * 这个函数分配一块指定大小的内存块， 把内存块地址作为一个完全用户数据压栈， 并返回这个地址。 宿主程序可以随意使用这块内存。
+ * [-0, +1, e]
+ */
 LUA_API void *lua_newuserdata (lua_State *L, size_t size) {
   Udata *u;
   lua_lock(L);
@@ -1284,25 +1309,37 @@ LUA_API void *lua_newuserdata (lua_State *L, size_t size) {
 
 
 
-
+/**
+ * 尝试获取函数的上值
+ */
 static const char *aux_upvalue (StkId fi, int n, TValue **val) {
   Closure *f;
   if (!ttisfunction(fi)) return NULL;
   f = clvalue(fi);
+  //C函数的情况
   if (f->c.isC) {
     if (!(1 <= n && n <= f->c.nupvalues)) return NULL;
     *val = &f->c.upvalue[n-1];
+    //C函数都是空串
     return "";
   }
+  //Lua函数的情况
   else {
     Proto *p = f->l.p;
     if (!(1 <= n && n <= p->sizeupvalues)) return NULL;
     *val = f->l.upvals[n-1]->v;
+    //返回Upvalue的名字
     return getstr(p->upvalues[n-1]);
   }
 }
 
-
+/**
+ * 获取一个闭包的上值信息。 （对于 Lua 函数，上值是函数需要使用的外部局部变量， 因此这些变量被包含在闭包中。） 
+ * lua_getupvalue 获取第 n 个上值， 把这个上值的值压栈， 并且返回它的名字。 funcindex 指向闭包在栈上的位置。 
+ * （ 因为上值在整个函数中都有效，所以它们没有特别的次序。 因此，它们以字母次序来编号。）
+ * 当索引号比上值数量大的时候， 返回 NULL（而且不会压入任何东西）。 对于 C 函数，所有上值的名字都是空串 ""。
+ * [-0, +(0|1), –]
+ */
 LUA_API const char *lua_getupvalue (lua_State *L, int funcindex, int n) {
   const char *name;
   TValue *val;
@@ -1316,17 +1353,25 @@ LUA_API const char *lua_getupvalue (lua_State *L, int funcindex, int n) {
   return name;
 }
 
-
+/**
+ * 设置闭包上值的值。 它把栈顶的值弹出并赋于上值并返回上值的名字。 
+ * 参数 funcindex 与 n 和 lua_getupvalue 中的一样 （参见 lua_getupvalue ）。
+ * 当索引大于上值的数量时，返回 NULL （什么也不弹出）。
+ * [-(0|1), +0, –]
+ */
 LUA_API const char *lua_setupvalue (lua_State *L, int funcindex, int n) {
   const char *name;
   TValue *val;
   StkId fi;
   lua_lock(L);
+  //获取函数
   fi = index2adr(L, funcindex);
   api_checknelems(L, 1);
+  //获取上值
   name = aux_upvalue(fi, n, &val);
   if (name) {
     L->top--;
+    //将栈顶设到upvalue
     setobj(L, val, L->top);
     luaC_barrier(L, clvalue(fi), L->top);
   }
@@ -1334,4 +1379,4 @@ LUA_API const char *lua_setupvalue (lua_State *L, int funcindex, int n) {
   return name;
 }
 
-#pragma endregion miscellaneous functions
+#pragma endregion //miscellaneous functions

@@ -14,14 +14,16 @@
 #include "lzio.h"
 
 
-
+//长跳转
 struct lua_longjmp;  /* defined in ldo.c */
 
 
 /* table of globals */
+//全局表
 #define gt(L)	(&L->l_gt)
 
 /* registry */
+//注册表
 #define registry(L)	(&G(L)->l_registry)
 
 
@@ -51,8 +53,8 @@ typedef struct CallInfo {
   StkId func;  /* function index in the stack */ //函数在栈中的位置
   StkId	top;  /* top for this function */ //函数栈顶
   const Instruction *savedpc;
-  int nresults;  /* expected number of results from this function */
-  int tailcalls;  /* number of tail calls lost under this entry */
+  int nresults;  /* expected number of results from this function */ //返回结果的数量
+  int tailcalls;  /* number of tail calls lost under this entry */  //尾调用数量
 } CallInfo;
 
 
@@ -155,12 +157,12 @@ struct lua_State {
 */
 union GCObject {
   GCheader gch;
-  union TString ts;
-  union Udata u;
-  union Closure cl;
-  struct Table h;
-  struct Proto p;
-  struct UpVal uv;
+  union TString ts;     //字符串
+  union Udata u;        //userdata
+  union Closure cl;     //闭包
+  struct Table h;       //表
+  struct Proto p;       //proto
+  struct UpVal uv;      //upvalue
   struct lua_State th;  /* thread */
 };
 

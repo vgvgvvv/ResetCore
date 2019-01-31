@@ -103,7 +103,9 @@ int luaO_str2d (const char *s, lua_Number *result) {
 }
 
 
-
+/**
+ * 往栈里压入string
+ */
 static void pushstr (lua_State *L, const char *str) {
   setsvalue2s(L, L->top, luaS_new(L, str));
   incr_top(L);
@@ -175,7 +177,9 @@ const char *luaO_pushvfstring (lua_State *L, const char *fmt, va_list argp) {
   return svalue(L->top - 1);
 }
 
-
+/**
+ * 同上一个函数
+ */
 const char *luaO_pushfstring (lua_State *L, const char *fmt, ...) {
   const char *msg;
   va_list argp;
@@ -185,7 +189,9 @@ const char *luaO_pushfstring (lua_State *L, const char *fmt, ...) {
   return msg;
 }
 
-
+/**
+ * TODO:luaO_chunkid不知道是干嘛的
+ */
 void luaO_chunkid (char *out, const char *source, size_t bufflen) {
   if (*source == '=') {
     strncpy(out, source+1, bufflen);  /* remove first char */

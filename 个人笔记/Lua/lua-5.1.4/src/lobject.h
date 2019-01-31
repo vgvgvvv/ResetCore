@@ -31,15 +31,20 @@
 
 
 /*
-** Union of all collectable objects
-*/
+ * Union of all collectable objects
+ * 可回收类型的头
+ */
 typedef union GCObject GCObject;
 
 
 /*
-** Common Header for all collectable objects (in macro form, to be
-** included in other objects)
-*/
+ * Common Header for all collectable objects (in macro form, to be
+ * included in other objects)
+ * 
+ * next   GCObject的指针
+ * tt     数据类型
+ * marked 垃圾回收标志
+ */
 #define CommonHeader	GCObject *next; lu_byte tt; lu_byte marked
 
 
@@ -57,17 +62,20 @@ typedef struct GCheader {
 ** Union of all Lua values
 */
 typedef union {
-  GCObject *gc;
-  void *p;
-  lua_Number n;
-  int b;
+  GCObject *gc;   //可回收对象
+  void *p;        //指针
+  lua_Number n;   //数字
+  int b;          //bool类型
 } Value;
 
 
-/*
-** Tagged Values
-*/
-
+/**
+ * Tagged Values
+ * 自省的Value
+ * 
+ * value  具体值
+ * tt     数据类型
+ */
 #define TValuefields	Value value; int tt
 
 typedef struct lua_TValue {
@@ -127,40 +135,49 @@ typedef struct lua_TValue {
 /* Macros to set values */
 #define setnilvalue(obj) ((obj)->tt=LUA_TNIL)
 
+//设置number
 #define setnvalue(obj,x) \
   { TValue *i_o=(obj); i_o->value.n=(x); i_o->tt=LUA_TNUMBER; }
 
+//设置lightuserdata
 #define setpvalue(obj,x) \
   { TValue *i_o=(obj); i_o->value.p=(x); i_o->tt=LUA_TLIGHTUSERDATA; }
 
+//设置bool
 #define setbvalue(obj,x) \
   { TValue *i_o=(obj); i_o->value.b=(x); i_o->tt=LUA_TBOOLEAN; }
 
+//设置string
 #define setsvalue(L,obj,x) \
   { TValue *i_o=(obj); \
     i_o->value.gc=cast(GCObject *, (x)); i_o->tt=LUA_TSTRING; \
     checkliveness(G(L),i_o); }
 
+//设置userdata
 #define setuvalue(L,obj,x) \
   { TValue *i_o=(obj); \
     i_o->value.gc=cast(GCObject *, (x)); i_o->tt=LUA_TUSERDATA; \
     checkliveness(G(L),i_o); }
 
+//设置thread
 #define setthvalue(L,obj,x) \
   { TValue *i_o=(obj); \
     i_o->value.gc=cast(GCObject *, (x)); i_o->tt=LUA_TTHREAD; \
     checkliveness(G(L),i_o); }
 
+//设置closure
 #define setclvalue(L,obj,x) \
   { TValue *i_o=(obj); \
     i_o->value.gc=cast(GCObject *, (x)); i_o->tt=LUA_TFUNCTION; \
     checkliveness(G(L),i_o); }
 
+//设置table
 #define sethvalue(L,obj,x) \
   { TValue *i_o=(obj); \
     i_o->value.gc=cast(GCObject *, (x)); i_o->tt=LUA_TTABLE; \
     checkliveness(G(L),i_o); }
 
+//设置proto
 #define setptvalue(L,obj,x) \
   { TValue *i_o=(obj); \
     i_o->value.gc=cast(GCObject *, (x)); i_o->tt=LUA_TPROTO; \
@@ -204,16 +221,17 @@ typedef struct lua_TValue {
 typedef TValue *StkId;  /* index to stack elements */
 
 
-/*
-** String headers for string table
-*/
+/**
+ * String headers for string table
+ * 表示字符串的头
+ */
 typedef union TString {
-  L_Umaxalign dummy;  /* ensures maximum alignment for strings */
+  L_Umaxalign dummy;    //保证了内存对齐  /* ensures maximum alignment for strings */
   struct {
-    CommonHeader;
-    lu_byte reserved;
-    unsigned int hash;
-    size_t len;
+    CommonHeader;       //GC 类型头
+    lu_byte reserved;   //是否是保留字
+    unsigned int hash;  //字符串的hash值
+    size_t len;         //字符串长度
   } tsv;
 } TString;
 
@@ -225,12 +243,12 @@ typedef union TString {
 
 // 这里为什么需要使用union类型？
 typedef union Udata {
-  L_Umaxalign dummy;  /* ensures maximum alignment for `local' udata */
+  L_Umaxalign dummy;        //保证内存对齐  /* ensures maximum alignment for `local' udata */
   struct {
-    CommonHeader;
-    struct Table *metatable;
-    struct Table *env;
-    size_t len;
+    CommonHeader;           //GC头
+    struct Table *metatable;//metatable
+    struct Table *env;      //环境
+    size_t len;             //userdata的长度
   } uv;
 } Udata;
 
@@ -242,16 +260,20 @@ typedef union Udata {
 */
 // 存放函数原型的数据结构
 typedef struct Proto {
-  CommonHeader;
+  CommonHeader; //GC头
+  //函数需要使用的常量
   TValue *k;  /* constants used by the function */
   // 存放函数体的opcode
   Instruction *code;
   // 在这个函数中定义的函数
   struct Proto **p;  /* functions defined inside the function */
+  //代码行号信息
   int *lineinfo;  /* map from opcodes to source lines */
   // 存放局部变量的数组
   struct LocVar *locvars;  /* information about local variables */
+  //上值的名字
   TString **upvalues;  /* upvalue names */
+  //
   TString  *source;
   int sizeupvalues;
   int sizek;  /* size of `k' */
@@ -276,6 +298,7 @@ typedef struct Proto {
 
 // 存放局部变量的结构体
 typedef struct LocVar {
+  //局部变量名
   TString *varname;
   int startpc;  /* first point where variable is active */
   int endpc;    /* first point where variable is dead */
