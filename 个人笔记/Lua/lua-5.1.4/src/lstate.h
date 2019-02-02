@@ -30,15 +30,16 @@ struct lua_longjmp;  /* defined in ldo.c */
 /* extra stack space to handle TM calls and some other extras */
 #define EXTRA_STACK   5
 
-
+//初始栈大小
 #define BASIC_CI_SIZE           8
 
 #define BASIC_STACK_SIZE        (2*LUA_MINSTACK)
 
 
-
+//字符串表
 typedef struct stringtable {
   GCObject **hash;
+  //数量大小
   lu_int32 nuse;  /* number of elements */
   int size;       // hash桶数组大小
 } stringtable;
@@ -49,12 +50,18 @@ typedef struct stringtable {
 ** 调用信息
 */
 typedef struct CallInfo {
-  StkId base;  /* base for this function */ //函数栈底
-  StkId func;  /* function index in the stack */ //函数在栈中的位置
-  StkId	top;  /* top for this function */ //函数栈顶
+  //函数栈底
+  StkId base;  /* base for this function */ 
+  //函数在栈中的位置
+  StkId func;  /* function index in the stack */ 
+  //函数栈顶
+  StkId	top;  /* top for this function */ 
+  //TODO:保存的dpc
   const Instruction *savedpc;
-  int nresults;  /* expected number of results from this function */ //返回结果的数量
-  int tailcalls;  /* number of tail calls lost under this entry */  //尾调用数量
+  //返回结果的数量
+  int nresults;  /* expected number of results from this function */ 
+  //尾调用数量
+  int tailcalls;  /* number of tail calls lost under this entry */  
 } CallInfo;
 
 
@@ -73,6 +80,7 @@ typedef struct CallInfo {
 */
 typedef struct global_State {
   stringtable strt;  /* hash table for strings */
+  //申请内存的函数指针
   lua_Alloc frealloc;  /* function to reallocate memory */
   void *ud;         /* auxiliary data to `frealloc' */
   lu_byte currentwhite;
@@ -85,6 +93,7 @@ typedef struct global_State {
   GCObject *weak;  /* list of weak tables (to be cleared) */
   // 所有有GC方法的udata都放在tmudata链表中
   GCObject *tmudata;  /* last element of list of userdata to be GC */
+  //用于字符串连接的缓冲buffer
   Mbuffer buff;  /* temporary buffer for string concatentation */
   // 一个阈值，当这个totalbytes大于这个阈值时进行自动GC
   lu_mem GCthreshold;
@@ -119,13 +128,20 @@ typedef struct global_State {
 struct lua_State {
   CommonHeader;
   lu_byte status;
+  //当前第一个空闲的栈位置
   StkId top;  /* first free slot in the stack */
+  //当前函数调用栈底
   StkId base;  /* base of current function */
+  //全局表
   global_State *l_G;
+  //当前callinfo的栈
   CallInfo *ci;  /* call info for current function */
+  //当前函数的dpc
   const Instruction *savedpc;  /* `savedpc' of current function */
 
+  //全局栈的最后一个位置
   StkId stack_last;  /* last free slot in the stack */
+  //是一个Tvalue数组
   StkId stack;  /* stack base */
 
   CallInfo *end_ci;  /* points after end of ci array CallInfo数组的尾部指针 */
@@ -142,6 +158,7 @@ struct lua_State {
   lua_Hook hook;
   TValue l_gt;  /* table of globals 全局表 */
   TValue env;  /* temporary place for environments */
+  //该栈中的upvaluelist
   GCObject *openupval;  /* list of open upvalues in this stack */
   GCObject *gclist;
   struct lua_longjmp *errorJmp;  /* current error recover point */
@@ -168,16 +185,25 @@ union GCObject {
 
 
 /* macros to convert a GCObject into a specific value */
+//gcobject -> Tstring
 #define rawgco2ts(o)	check_exp((o)->gch.tt == LUA_TSTRING, &((o)->ts))
+//gcobject -> Tstring.tsv
 #define gco2ts(o)	(&rawgco2ts(o)->tsv)
+//gcobject -> userdata
 #define rawgco2u(o)	check_exp((o)->gch.tt == LUA_TUSERDATA, &((o)->u))
+//gcobject -> userdata.uv
 #define gco2u(o)	(&rawgco2u(o)->uv)
+//gcobejct -> closure
 #define gco2cl(o)	check_exp((o)->gch.tt == LUA_TFUNCTION, &((o)->cl))
+//gcobject -> table
 #define gco2h(o)	check_exp((o)->gch.tt == LUA_TTABLE, &((o)->h))
+//gcobject -> proto
 #define gco2p(o)	check_exp((o)->gch.tt == LUA_TPROTO, &((o)->p))
+//gcobject -> upvalue
 #define gco2uv(o)	check_exp((o)->gch.tt == LUA_TUPVAL, &((o)->uv))
 #define ngcotouv(o) \
 	check_exp((o) == NULL || (o)->gch.tt == LUA_TUPVAL, &((o)->uv))
+//gcobject -> thread
 #define gco2th(o)	check_exp((o)->gch.tt == LUA_TTHREAD, &((o)->th))
 
 /* macro to convert any Lua object into a GCObject */

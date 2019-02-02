@@ -61,7 +61,7 @@ static void save (LexState *ls, int c) {
   b->buffer[b->n++] = cast(char, c);
 }
 
-
+//初始化关键字
 void luaX_init (lua_State *L) {
   int i;
   // 初始化lua关键字字符串,注意到并不保存它们,只是在StringTable中保存下来并且标记为不可回收

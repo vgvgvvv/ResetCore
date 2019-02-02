@@ -147,7 +147,7 @@ void luaV_gettable (lua_State *L, const TValue *t, TValue *key, StkId val) {
 
 // 为什么这个操作需要放在lvm也就是虚拟机相关代码的部分呢??
 /**
- * 设置table值
+ * 设置table值,同时会调用元表
  */
 void luaV_settable (lua_State *L, const TValue *t, TValue *key, StkId val) {
   int loop;
@@ -289,7 +289,9 @@ static int lessequal (lua_State *L, const TValue *l, const TValue *r) {
   return luaG_ordererror(L, l, r);
 }
 
-
+/**
+ * 判断两个值是否相等
+ */
 int luaV_equalval (lua_State *L, const TValue *t1, const TValue *t2) {
   const TValue *tm;
   lua_assert(ttype(t1) == ttype(t2));
@@ -395,20 +397,28 @@ static void Arith (lua_State *L, StkId ra, const TValue *rb,
 
 #define runtime_check(L, c)	{ if (!(c)) break; }
 
+//获取寄存器A在栈中的位置
 #define RA(i)	(base+GETARG_A(i))
 /* to be used after possible stack reallocation */
+//获取寄存器B在栈中的位置
 #define RB(i)	check_exp(getBMode(GET_OPCODE(i)) == OpArgR, base+GETARG_B(i))
+//获取寄存器C在栈中的位置
 #define RC(i)	check_exp(getCMode(GET_OPCODE(i)) == OpArgR, base+GETARG_C(i))
+//获取常量B，如果是常量则从Proto中的k链表获取，否则则取表中内容
 #define RKB(i)	check_exp(getBMode(GET_OPCODE(i)) == OpArgK, \
 	ISK(GETARG_B(i)) ? k+INDEXK(GETARG_B(i)) : base+GETARG_B(i))
+//获取常量C，如果是常量则从Proto中的k链表获取，否则则取表中内容
 #define RKC(i)	check_exp(getCMode(GET_OPCODE(i)) == OpArgK, \
 	ISK(GETARG_C(i)) ? k+INDEXK(GETARG_C(i)) : base+GETARG_C(i))
+
+//获取Bx寄存器 先判断是否为常数
+//k为proto中的k，也就是常量列表
 #define KBx(i)	check_exp(getBMode(GET_OPCODE(i)) == OpArgK, k+GETARG_Bx(i))
 
 
 #define dojump(L,pc,i)	{(pc) += (i); luai_threadyield(L);}
 
-
+//先存下当前指令位置，最后将状态机函数栈设为基础栈
 #define Protect(x)	{ L->savedpc = pc; {x;}; base = L->base; }
 
 
@@ -424,20 +434,29 @@ static void Arith (lua_State *L, StkId ra, const TValue *rb,
       }
 
 
-
+/**
+ * lua虚拟机循环，就是执行一个代码块时的过程
+ * 里面包含了所有的opcode实现
+ */
 void luaV_execute (lua_State *L, int nexeccalls) {
   LClosure *cl;
   StkId base;
   TValue *k;
+  //指令指针
   const Instruction *pc;
+  //入口点
  reentry:  /* entry point */
   lua_assert(isLua(L->ci));
   pc = L->savedpc;
+  //获取当前callinfo中的的lua闭包
   cl = &clvalue(L->ci->func)->l;
+  //设置base为当前的函数栈底
   base = L->base;
+  //获取需要的常量
   k = cl->p->k;
   /* main loop of interpreter */
   for (;;) {
+    //获取下一个指令
     const Instruction i = *pc++;
     StkId ra;
     if ((L->hookmask & (LUA_MASKLINE | LUA_MASKCOUNT)) &&
@@ -456,19 +475,23 @@ void luaV_execute (lua_State *L, int nexeccalls) {
     lua_assert(L->top == L->ci->top || luaG_checkopenop(i));
     switch (GET_OPCODE(i)) {
       case OP_MOVE: {
+        //获取RB放入RA
         setobjs2s(L, ra, RB(i));
         continue;
       }
       case OP_LOADK: {
+        //将常量放入RA
         setobj2s(L, ra, KBx(i));
         continue;
       }
       case OP_LOADBOOL: {
+        //将bool放入RA
         setbvalue(ra, GETARG_B(i));
         if (GETARG_C(i)) pc++;  /* skip next instruction (if C) */
         continue;
       }
       case OP_LOADNIL: {
+        //将rb到ra直接的所有值置空
         TValue *rb = RB(i);
         do {
           setnilvalue(rb--);
@@ -476,7 +499,9 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         continue;
       }
       case OP_GETUPVAL: {
+        //rb为upvalue的index
         int b = GETARG_B(i);
+        //设置给ra
         setobj2s(L, ra, cl->upvals[b]->v);
         continue;
       }
@@ -485,10 +510,12 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         TValue *rb = KBx(i);
         sethvalue(L, &g, cl->env);
         lua_assert(ttisstring(rb));
+        //保护模式
         Protect(luaV_gettable(L, &g, rb, ra));
         continue;
       }
       case OP_GETTABLE: {
+        //RB为table RKC为常量key ra为结果
         Protect(luaV_gettable(L, RB(i), RKC(i), ra));
         continue;
       }
@@ -496,16 +523,21 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         TValue g;
         sethvalue(L, &g, cl->env);
         lua_assert(ttisstring(KBx(i)));
+        //Bx为key，ra为value，g为函数table
         Protect(luaV_settable(L, &g, KBx(i), ra));
         continue;
       }
       case OP_SETUPVAL: {
+        //B为upvalue的index
         UpVal *uv = cl->upvals[GETARG_B(i)];
+        //将ra设置到upvalue中
         setobj(L, uv->v, ra);
+        //垃圾回收设置
         luaC_barrier(L, uv, ra);
         continue;
       }
       case OP_SETTABLE: {
+        //ra为表 rkb为key rkc为值
         Protect(luaV_settable(L, ra, RKB(i), RKC(i)));
         continue;
       }

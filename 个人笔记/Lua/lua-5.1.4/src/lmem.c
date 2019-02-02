@@ -42,11 +42,12 @@
 
 #define MINSIZEARRAY	4
 
-
+//重新申请内存块
 void *luaM_growaux_ (lua_State *L, void *block, int *size, size_t size_elems,
                      int limit, const char *errormsg) {
   void *newblock;
   int newsize;
+  //对限制的判断
   if (*size >= limit/2) {  /* cannot double it? */
     if (*size >= limit)  /* cannot grow even a little? */
       luaG_runerror(L, errormsg);
@@ -54,15 +55,19 @@ void *luaM_growaux_ (lua_State *L, void *block, int *size, size_t size_elems,
   }
   else {
     newsize = (*size)*2;
+    //不能小于最小的尺寸
     if (newsize < MINSIZEARRAY)
       newsize = MINSIZEARRAY;  /* minimum size */
   }
+  //重新申请内存块
   newblock = luaM_reallocv(L, block, *size, newsize, size_elems);
   *size = newsize;  /* update only when everything else is OK */
   return newblock;
 }
 
-
+/**
+ * 申请内存过大时自动调用的函数
+ */
 void *luaM_toobig (lua_State *L) {
   luaG_runerror(L, "memory allocation error: block too big");
   return NULL;  /* to avoid warnings */
@@ -70,16 +75,19 @@ void *luaM_toobig (lua_State *L) {
 
 
 
-/*
-** generic allocation routine.
-*/
+/**
+ * generic allocation routine.
+ * 所有申请内存的入口
+ */
 void *luaM_realloc_ (lua_State *L, void *block, size_t osize, size_t nsize) {
   global_State *g = G(L);
   lua_assert((osize == 0) == (block == NULL));
+  //申请内存
   block = (*g->frealloc)(g->ud, block, osize, nsize);
   if (block == NULL && nsize > 0)
     luaD_throw(L, LUA_ERRMEM);
   lua_assert((nsize == 0) == (block == NULL));
+  //重新设置内存大小
   g->totalbytes = (g->totalbytes - osize) + nsize;
   return block;
 }

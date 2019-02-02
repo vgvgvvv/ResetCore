@@ -668,19 +668,26 @@ LUALIB_API int (luaL_loadstring) (lua_State *L, const char *s) {
 
 /* }====================================================== */
 
-
+/**
+ * 默认申请函数
+ */
 static void *l_alloc (void *ud, void *ptr, size_t osize, size_t nsize) {
   (void)ud;
   (void)osize;
+  //如果新尺寸为0则释放
   if (nsize == 0) {
     free(ptr);
     return NULL;
   }
-  else
+  else{
+    //否则重申请内存
     return realloc(ptr, nsize);
+  }
 }
 
-
+/**
+ * 默认中断函数
+ */
 static int panic (lua_State *L) {
   (void)L;  /* to avoid warnings */
   fprintf(stderr, "PANIC: unprotected error in call to Lua API (%s)\n",
@@ -688,7 +695,9 @@ static int panic (lua_State *L) {
   return 0;
 }
 
-
+/**
+ * 一般我们所使用的申请虚拟机
+ */
 LUALIB_API lua_State *luaL_newstate (void) {
   lua_State *L = lua_newstate(l_alloc, NULL);
   if (L) lua_atpanic(L, &panic);

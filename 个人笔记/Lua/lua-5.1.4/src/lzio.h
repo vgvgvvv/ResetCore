@@ -21,6 +21,7 @@ typedef struct Zio ZIO;
 
 #define zgetc(z)  (((z)->n--)>0 ?  char2int(*(z)->p++) : luaZ_fill(z))
 
+//字符串使用的缓冲buffer
 typedef struct Mbuffer {
   char *buffer;
   size_t n;

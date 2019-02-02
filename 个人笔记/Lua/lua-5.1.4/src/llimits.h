@@ -83,15 +83,17 @@ typedef LUAI_UACNUMBER l_uacNumber;
 
 
 
-/*
-** type for virtual-machine instructions
-** must be an unsigned with (at least) 4 bytes (see details in lopcodes.h)
-*/
+/**
+ * type for virtual-machine instructions
+ * must be an unsigned with (at least) 4 bytes (see details in lopcodes.h)
+ * 虚拟机指令，必须要32位也就是4bytes
+ */
 typedef lu_int32 Instruction;
 
 
 
 /* maximum stack for a Lua function */
+//lua函数的最大栈大小
 #define MAXSTACK	250
 
 

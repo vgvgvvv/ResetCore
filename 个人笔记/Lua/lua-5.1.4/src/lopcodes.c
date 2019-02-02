@@ -12,7 +12,7 @@
 
 
 /* ORDER OP */
-
+//opcode名字
 const char *const luaP_opnames[NUM_OPCODES+1] = {
   "MOVE",
   "LOADK",
@@ -55,7 +55,8 @@ const char *const luaP_opnames[NUM_OPCODES+1] = {
   NULL
 };
 
-
+//定义了opocode的模式 使用8位储存
+//xx xx
 #define opmode(t,a,b,c,m) (((t)<<7) | ((a)<<6) | ((b)<<4) | ((c)<<2) | (m))
 
 // Tmode为1表示是逻辑测试类语句

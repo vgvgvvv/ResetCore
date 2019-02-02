@@ -133,6 +133,7 @@ typedef struct lua_TValue {
 
 
 /* Macros to set values */
+//将某个值设为空
 #define setnilvalue(obj) ((obj)->tt=LUA_TNIL)
 
 //设置number
@@ -217,7 +218,7 @@ typedef struct lua_TValue {
 #define iscollectable(o)	(ttype(o) >= LUA_TSTRING)
 
 
-
+//实际就是TValue的地址
 typedef TValue *StkId;  /* index to stack elements */
 
 
@@ -314,7 +315,8 @@ typedef struct UpVal {
   CommonHeader;
   TValue *v;  /* points to stack or to its own value */
   union {
-	// 当这个upval被close时,保存upval的值,后面可能还会被引用到
+	  // 当这个upval被close时,保存upval的值,后面可能还会被引用到
+    // TODO:为啥要存关闭后的upvalue值？是不是关闭的时候有可能其他地方还会引用？
     TValue value;  /* the value (when closed) */
     // 当这个upval还在open状态时,以下链表串连在openupval链表中
     struct {  /* double linked list (when open) */
