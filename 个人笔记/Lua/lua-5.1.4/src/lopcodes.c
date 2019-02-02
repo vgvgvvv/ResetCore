@@ -56,6 +56,7 @@ const char *const luaP_opnames[NUM_OPCODES+1] = {
 };
 
 //定义了opocode的模式 使用8位储存
+//在输出bytes的print.c以及生成代码的lcode.c中会使用到
 //xx xx
 #define opmode(t,a,b,c,m) (((t)<<7) | ((a)<<6) | ((b)<<4) | ((c)<<2) | (m))
 

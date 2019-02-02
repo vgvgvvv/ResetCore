@@ -189,9 +189,10 @@ static void LoadHeader(LoadState* S)
  IF (memcmp(h,s,LUAC_HEADERSIZE)!=0, "bad header");
 }
 
-/*
-** load precompiled chunk
-*/
+/**
+ * load precompiled chunk
+ * 解析二进制代码块
+ */
 Proto* luaU_undump (lua_State* L, ZIO* Z, Mbuffer* buff, const char* name)
 {
  LoadState S;

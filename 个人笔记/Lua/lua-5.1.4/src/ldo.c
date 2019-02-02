@@ -530,6 +530,9 @@ struct SParser {  /* data to `f_parser' */
   const char *name;
 };
 
+/**
+ * 解析传入的buffer
+ */
 static void f_parser (lua_State *L, void *ud) {
   int i;
   Proto *tf;
@@ -537,25 +540,34 @@ static void f_parser (lua_State *L, void *ud) {
   struct SParser *p = cast(struct SParser *, ud);
   // 预读入第一个字符
   int c = luaZ_lookahead(p->z);
+  //检查GC
   luaC_checkGC(L);
   // 根据之前预读的数据来决定下面的分析采用哪个函数
+  // 解析二进制代码块或者是源代码，最终得到一个Proto
   tf = ((c == LUA_SIGNATURE[0]) ? luaU_undump : luaY_parser)(L, p->z,
                                                              &p->buff, p->name);
+  //新建闭包
   cl = luaF_newLclosure(L, tf->nups, hvalue(gt(L)));
   cl->l.p = tf;
-  for (i = 0; i < tf->nups; i++)  /* initialize eventual upvalues */
+  for (i = 0; i < tf->nups; i++) { /* initialize eventual upvalues */
     cl->l.upvals[i] = luaF_newupval(L);
+  } 
+  //闭包入栈
   setclvalue(L, L->top, cl);
   incr_top(L);
 }
 
 
 int luaD_protectedparser (lua_State *L, ZIO *z, const char *name) {
+  //初始化SParser
   struct SParser p;
   int status;
   p.z = z; p.name = name;
+  //初始化buffer
   luaZ_initbuffer(L, &p.buff);
+  //调用parser对代码进行解析
   status = luaD_pcall(L, f_parser, &p, savestack(L, L->top), L->errfunc);
+  //释放buffer
   luaZ_freebuffer(L, &p.buff);
   return status;
 }

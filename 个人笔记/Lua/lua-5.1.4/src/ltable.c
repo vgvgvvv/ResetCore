@@ -408,8 +408,11 @@ static void rehash (lua_State *L, Table *t, const TValue *ek) {
 // 新分配table
 Table *luaH_new (lua_State *L, int narray, int nhash) {
   Table *t = luaM_new(L, Table);
+  //GC相关
   luaC_link(L, obj2gco(t), LUA_TTABLE);
+  //初始化metatable
   t->metatable = NULL;
+  //TODO:这个flag是干啥的
   t->flags = cast_byte(~0);
   /* temporary values (kept only if some malloc fails) */
   t->array = NULL;

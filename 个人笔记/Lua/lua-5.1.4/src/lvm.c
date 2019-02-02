@@ -415,13 +415,13 @@ static void Arith (lua_State *L, StkId ra, const TValue *rb,
 //k为proto中的k，也就是常量列表
 #define KBx(i)	check_exp(getBMode(GET_OPCODE(i)) == OpArgK, k+GETARG_Bx(i))
 
-
+//跳转i个字节码
 #define dojump(L,pc,i)	{(pc) += (i); luai_threadyield(L);}
 
 //先存下当前指令位置，最后将状态机函数栈设为基础栈
 #define Protect(x)	{ L->savedpc = pc; {x;}; base = L->base; }
 
-
+//如果都是数字，则直接加，否则尝试调用元表进行相加
 #define arith_op(op,tm) { \
         TValue *rb = RKB(i); \
         TValue *rc = RKC(i); \
@@ -456,7 +456,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
   k = cl->p->k;
   /* main loop of interpreter */
   for (;;) {
-    //获取下一个指令
+    //当前指令
     const Instruction i = *pc++;
     StkId ra;
     if ((L->hookmask & (LUA_MASKLINE | LUA_MASKCOUNT)) &&
@@ -544,17 +544,21 @@ void luaV_execute (lua_State *L, int nexeccalls) {
       case OP_NEWTABLE: {
         int b = GETARG_B(i);
         int c = GETARG_C(i);
+        //初始化table，rb为数组尺寸，rc为hash尺寸，结果赋给ra
         sethvalue(L, ra, luaH_new(L, luaO_fb2int(b), luaO_fb2int(c)));
         Protect(luaC_checkGC(L));
         continue;
       }
       case OP_SELF: {
         StkId rb = RB(i);
+        //ra为table，+1则是ra的下一个位置
         setobjs2s(L, ra+1, rb);
+        //TODO:从表rb中获取元素c并且赋给ra，用法还是不是很清楚
         Protect(luaV_gettable(L, rb, RKC(i), ra));
         continue;
       }
       case OP_ADD: {
+        //如果都是数字，则直接加，否则尝试调用元表进行相加,下面的数值运算同理
         arith_op(luai_numadd, TM_ADD);
         continue;
       }
@@ -595,6 +599,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         continue;
       }
       case OP_LEN: {
+        //根据不同类型去长度
         const TValue *rb = RB(i);
         switch (ttype(rb)) {
           case LUA_TTABLE: {
@@ -617,15 +622,18 @@ void luaV_execute (lua_State *L, int nexeccalls) {
       case OP_CONCAT: {
         int b = GETARG_B(i);
         int c = GETARG_C(i);
+        //连接字符串
         Protect(luaV_concat(L, c-b+1, c); luaC_checkGC(L));
         setobjs2s(L, RA(i), base+b);
         continue;
       }
       case OP_JMP: {
+        //跳转sBx个字节码
         dojump(L, pc, GETARG_sBx(i));
         continue;
       }
       case OP_EQ: {
+        //if ((RK(B) == RK(C)) ~= A) then PC++
         TValue *rb = RKB(i);
         TValue *rc = RKC(i);
         Protect(
@@ -636,6 +644,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         continue;
       }
       case OP_LT: {
+        //if ((RK(B) < RK(C)) ~= A) then PC++
         Protect(
           if (luaV_lessthan(L, RKB(i), RKC(i)) == GETARG_A(i))
             dojump(L, pc, GETARG_sBx(*pc));
@@ -644,6 +653,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         continue;
       }
       case OP_LE: {
+        //if ((RK(B) <= RK(C)) ~= A) then PC++
         Protect(
           if (lessequal(L, RKB(i), RKC(i)) == GETARG_A(i))
             dojump(L, pc, GETARG_sBx(*pc));
@@ -652,12 +662,14 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         continue;
       }
       case OP_TEST: {
+        //if not (R(A) <=> C) then PC++
         if (l_isfalse(ra) != GETARG_C(i))
           dojump(L, pc, GETARG_sBx(*pc));
         pc++;
         continue;
       }
       case OP_TESTSET: {
+        //if (R(B) <=> C) then R(A) := R(B) else PC++
         TValue *rb = RB(i);
         if (l_isfalse(rb) != GETARG_C(i)) {
           setobjs2s(L, ra, rb);
@@ -667,17 +679,22 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         continue;
       }
       case OP_CALL: {
+        //获取参数数量
         int b = GETARG_B(i);
+        //获取结果数量
         int nresults = GETARG_C(i) - 1;
         // 如果传入参数数量不为0, 则这是top地址,由它开始后面紧跟着都是函数参数
         if (b != 0) L->top = ra+b;  /* else previous instruction set top */
         // 保存当前pc
         L->savedpc = pc;
+        //调用在ra上的函数
         switch (luaD_precall(L, ra, nresults)) {
+          //TODO:不同的返回类型 PCRLUA
           case PCRLUA: {
             nexeccalls++;
             goto reentry;  /* restart luaV_execute over new Lua function */
           }
+          //TODO:不同的返回类型PCRC
           case PCRC: {
             /* it was a C function (`precall' called it); adjust results */
             if (nresults >= 0) L->top = L->ci->top;
@@ -690,6 +707,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         }
       }
       case OP_TAILCALL: {
+        //TODO:尾调用
         int b = GETARG_B(i);
         if (b != 0) L->top = ra+b;  /* else previous instruction set top */
         L->savedpc = pc;
@@ -722,6 +740,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         }
       }
       case OP_RETURN: {
+        //TODO:返回
         int b = GETARG_B(i);
         if (b != 0) L->top = ra+b-1;
         if (L->openupval) luaF_close(L, base);
@@ -737,11 +756,15 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         }
       }
       case OP_FORLOOP: {
+        //获取step
         lua_Number step = nvalue(ra+2);
+        //更新index
         lua_Number idx = luai_numadd(nvalue(ra), step); /* increment index */
+        //获取index
         lua_Number limit = nvalue(ra+1);
         if (luai_numlt(0, step) ? luai_numle(idx, limit)
                                 : luai_numle(limit, idx)) {
+          //调回循环头，设置index
           dojump(L, pc, GETARG_sBx(i));  /* jump back */
           setnvalue(ra, idx);  /* update internal index... */
           setnvalue(ra+3, idx);  /* ...and external index */
@@ -749,6 +772,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         continue;
       }
       case OP_FORPREP: {
+        //TODO:初始化数字for循环
         const TValue *init = ra;
         const TValue *plimit = ra+1;
         const TValue *pstep = ra+2;
@@ -764,6 +788,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         continue;
       }
       case OP_TFORLOOP: {
+        //TODO:一般形式的for循环
         StkId cb = ra + 3;  /* call base */
         setobjs2s(L, cb+2, ra+2);
         setobjs2s(L, cb+1, ra+1);
@@ -780,6 +805,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         continue;
       }
       case OP_SETLIST: {
+        //TODO:设置表的一系列数组元素
         int n = GETARG_B(i);
         int c = GETARG_C(i);
         int last;
@@ -806,6 +832,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         continue;
       }
       case OP_CLOSURE: {
+        //TODO:创建函数原型的闭包
         Proto *p;
         Closure *ncl;
         int nup, j;
@@ -832,6 +859,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         continue;
       }
       case OP_VARARG: {
+        //TODO:可变参数
         int b = GETARG_B(i) - 1;
         int j;
         CallInfo *ci = L->ci;

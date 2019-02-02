@@ -77,8 +77,11 @@ typedef LUAI_UACNUMBER l_uacNumber;
 #define cast(t, exp)	((t)(exp))
 #endif
 
+//强转为byte
 #define cast_byte(i)	cast(lu_byte, (i))
+//强转为bytes
 #define cast_num(i)	cast(lua_Number, (i))
+//强转为int
 #define cast_int(i)	cast(int, (i))
 
 

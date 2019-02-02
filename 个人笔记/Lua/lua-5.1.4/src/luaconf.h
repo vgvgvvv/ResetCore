@@ -532,17 +532,27 @@
 */
 #if defined(LUA_CORE)
 #include <math.h>
+//普通相加
 #define luai_numadd(a,b)	((a)+(b))
+//普通相减
 #define luai_numsub(a,b)	((a)-(b))
+//普通相乘
 #define luai_nummul(a,b)	((a)*(b))
+//普通相除
 #define luai_numdiv(a,b)	((a)/(b))
+//普通取模
 #define luai_nummod(a,b)	((a) - floor((a)/(b))*(b))
+//普通取幂
 #define luai_numpow(a,b)	(pow(a,b))
+//普通取负
 #define luai_numunm(a)		(-(a))
 //number equal
+//普通等于
 #define luai_numeq(a,b)		((a)==(b))
 //number less than
+//普通少于
 #define luai_numlt(a,b)		((a)<(b))
+//普通少于等于
 #define luai_numle(a,b)		((a)<=(b))
 //数字为Nan
 #define luai_numisnan(a)	(!luai_numeq((a), (a)))
