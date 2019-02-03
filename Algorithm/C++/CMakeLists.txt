@@ -34,7 +34,8 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 ##############
 
 file(GLOB_RECURSE cpp_11_feature_src
-        unit_tests/cpp11_feature/*.cpp)
+        unit_tests/cpp11_feature/*.cpp
+        unit_tests/learning_c/*.cpp)
 
 add_executable(runUnitTests
         unit_tests/algorithm_tests/test_vector.cpp

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/unit_tests/cpp11_feature/Chapter3.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/unit_tests/learning_c/test_setjmp.cpp" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/utility/string_util.cpp" charset="GB2312" />
     <file url="file://$PROJECT_DIR$/utility/string_util.h" charset="GB2312" />
     <file url="PROJECT" charset="GBK" />
