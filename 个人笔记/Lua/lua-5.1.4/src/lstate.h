@@ -143,9 +143,11 @@ struct lua_State {
   StkId stack_last;  /* last free slot in the stack */
   //是一个Tvalue数组
   StkId stack;  /* stack base */
-
-  CallInfo *end_ci;  /* points after end of ci array CallInfo数组的尾部指针 */
-  CallInfo *base_ci;  /* array of CallInfo's CallInfo数组的头指针 */
+  
+  //CallInfo数组的尾部指针
+  CallInfo *end_ci;  /* points after end of ci array  */
+  //CallInfo数组的头指针
+  CallInfo *base_ci;  /* array of CallInfo's  */
 
   int stacksize;
   int size_ci;  /* size of array `base_ci' */

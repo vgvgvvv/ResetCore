@@ -22,9 +22,12 @@
 #define incr_top(L) {luaD_checkstack(L,1); L->top++;}
 
 #define savestack(L,p)		((char *)(p) - (char *)L->stack)
+//恢复栈位置
 #define restorestack(L,n)	((TValue *)((char *)L->stack + (n)))
 
+//获取栈位置
 #define saveci(L,p)		((char *)(p) - (char *)L->base_ci)
+//恢复ci栈位置
 #define restoreci(L,n)		((CallInfo *)((char *)L->base_ci + (n)))
 
 

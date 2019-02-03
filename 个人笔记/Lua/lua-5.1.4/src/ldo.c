@@ -71,6 +71,7 @@ void luaD_seterrorobj (lua_State *L, int errcode, StkId oldtop) {
 static void restore_stack_limit (lua_State *L) {
   lua_assert(L->stack_last - L->stack == L->stacksize - EXTRA_STACK - 1);
   if (L->size_ci > LUAI_MAXCALLS) {  /* there was an overflow? */
+    //正在使用的栈内容数量
     int inuse = cast_int(L->ci - L->base_ci);
     if (inuse + 1 < LUAI_MAXCALLS)  /* can `undo' overflow? */
       luaD_reallocCI(L, LUAI_MAXCALLS);
@@ -148,12 +149,16 @@ void luaD_reallocstack (lua_State *L, int newsize) {
   correctstack(L, oldstack);
 }
 
-
+/**
+ * 重新申请callinfo尺寸
+ */
 void luaD_reallocCI (lua_State *L, int newsize) {
+  //头指针
   CallInfo *oldci = L->base_ci;
   luaM_reallocvector(L, L->base_ci, L->size_ci, newsize, CallInfo);
   L->size_ci = newsize;
   L->ci = (L->ci - oldci) + L->base_ci;
+  //更新尾尾指针
   L->end_ci = L->base_ci + L->size_ci - 1;
 }
 
@@ -494,11 +499,15 @@ int luaD_pcall (lua_State *L, Pfunc func, void *u,
   // 调用之前保存调用前的ci地址和top地址,用于可能发生的错误恢复
   int status;
   unsigned short oldnCcalls = L->nCcalls;
+  //获取callinfo在栈上的位置
   ptrdiff_t old_ci = saveci(L, L->ci);
   lu_byte old_allowhooks = L->allowhook;
   ptrdiff_t old_errfunc = L->errfunc;
   L->errfunc = ef;
+
+  //此处包含的是不包含保护的直接调用
   status = luaD_rawrunprotected(L, func, u);
+
   // 如果status不为0,则表示有错误发生
   if (status != 0) {  /* an error occurred? */
 	  // 将保存的ci和top取出来恢复
