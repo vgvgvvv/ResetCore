@@ -603,18 +603,23 @@ int luaG_ordererror (lua_State *L, const TValue *p1, const TValue *p2) {
   return 0;
 }
 
-
+/**
+ * 添加源码堆栈信息
+ */
 static void addinfo (lua_State *L, const char *msg) {
   CallInfo *ci = L->ci;
   if (isLua(ci)) {  /* is Lua code? */
     char buff[LUA_IDSIZE];  /* add file:line information */
     int line = currentline(L, ci);
+    //获取源码堆栈信息
     luaO_chunkid(buff, getstr(getluaproto(ci)->source), LUA_IDSIZE);
     luaO_pushfstring(L, "%s:%d: %s", buff, line, msg);
   }
 }
 
-
+/**
+ * 抛出错误异常
+ */
 void luaG_errormsg (lua_State *L) {
   if (L->errfunc != 0) {  /* is there an error handling function? */
     //保存当前错误函数
@@ -628,11 +633,12 @@ void luaG_errormsg (lua_State *L) {
     // 调用错误函数
     luaD_call(L, L->top - 2, 1);  /* call it */
   }
+  //抛出错误异常
   luaD_throw(L, LUA_ERRRUN);
 }
 
 /**
- * 报错 使用format的字符串
+ * 报错 使用format的字符串，最终会抛出异常
  */
 void luaG_runerror (lua_State *L, const char *fmt, ...) {
   va_list argp;

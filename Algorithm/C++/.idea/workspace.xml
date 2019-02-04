@@ -8,8 +8,8 @@
       <config projectName="ReAlgorithm" targetName="runUnitTests" />
       <config projectName="ReAlgorithm" targetName="ReAlgorithm" />
       <config projectName="ReAlgorithm" targetName="gtest" />
-      <config projectName="ReAlgorithm" targetName="gtest_main" />
       <config projectName="ReAlgorithm" targetName="algorithm" />
+      <config projectName="ReAlgorithm" targetName="gtest_main" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -19,20 +19,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f7b71b9-6400-49d3-96e7-0ae5f0ba3eaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/unit_tests/learning_c/test_setjmp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/LearningC/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/LearningC/.idea/LearningC.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/LearningC/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/LearningC/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/LearningC/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/LearningC/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/LearningC/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/LearningC/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/LearningC/src/library.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C/LearningC/test/test_setjmp.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit_tests/learning_c/test_setjmp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/learning_c/test_setjmp.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,11 +34,12 @@
     <session id="1015425858">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -70,7 +59,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="15995" />
+          <entry key="cpp" value="15997" />
           <entry key="h" value="22" />
           <entry key="txt" value="293" />
         </counts>
@@ -79,7 +68,7 @@
         <counts>
           <entry key="CMakeLists.txt" value="279" />
           <entry key="Doxygen file" value="420" />
-          <entry key="ObjectiveC" value="15597" />
+          <entry key="ObjectiveC" value="15599" />
           <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
@@ -192,8 +181,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/unit_tests/learning_c/test_setjmp.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="375">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -257,7 +246,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,6 +268,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -417,7 +406,8 @@
       <workItem from="1544094363109" duration="19000" />
       <workItem from="1544095141062" duration="13000" />
       <workItem from="1544628891829" duration="603000" />
-      <workItem from="1549187994936" duration="242000" />
+      <workItem from="1549187994936" duration="893000" />
+      <workItem from="1549248835180" duration="539000" />
     </task>
     <servers />
   </component>
@@ -454,18 +444,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38826000" />
+    <option name="totallyTimeSpent" value="40016000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3311874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3343983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969216" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3253012" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3253012" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,9 +537,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="202" column="13" selection-start-line="202" selection-start-column="13" selection-end-line="202" selection-end-column="13" />
-          <folding>
-            <element signature="e#47#71#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -560,9 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="34" />
-          <folding>
-            <element signature="e#39#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -580,9 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
           <caret line="306" column="37" selection-start-line="306" selection-start-column="37" selection-end-line="306" selection-end-column="37" />
-          <folding>
-            <element signature="e#39#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -590,9 +571,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="102" column="6" selection-start-line="102" selection-start-column="6" selection-end-line="102" selection-end-column="6" />
-          <folding>
-            <element signature="e#47#71#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -601,9 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="e#39#63#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,9 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="34" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <element signature="e#47#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -636,8 +608,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/unit_tests/learning_c/test_setjmp.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="375">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
         </state>
       </provider>
     </entry>

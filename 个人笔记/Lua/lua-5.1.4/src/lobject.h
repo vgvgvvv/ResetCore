@@ -286,7 +286,9 @@ typedef struct Proto {
   int lastlinedefined;
   GCObject *gclist;
   lu_byte nups;  /* number of upvalues */
+  //需求的参数个数
   lu_byte numparams;
+  //是否为变长参数
   lu_byte is_vararg;
   lu_byte maxstacksize;
 } Proto;

@@ -635,7 +635,9 @@ union luai_Cast { double l_d; long l_l; };
 /* default handling with long jumps */
 //TODO:长跳转处理
 #define LUAI_THROW(L,c)	longjmp((c)->b, 1)
+//通过setjmp模拟try
 #define LUAI_TRY(L,c,a)	if (setjmp((c)->b) == 0) { a }
+//就是setjmp中的jmpbuf
 #define luai_jmpbuf	jmp_buf
 
 #endif

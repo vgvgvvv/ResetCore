@@ -84,8 +84,10 @@ void *luaM_realloc_ (lua_State *L, void *block, size_t osize, size_t nsize) {
   lua_assert((osize == 0) == (block == NULL));
   //申请内存
   block = (*g->frealloc)(g->ud, block, osize, nsize);
-  if (block == NULL && nsize > 0)
+  if (block == NULL && nsize > 0){
+    //抛出异常
     luaD_throw(L, LUA_ERRMEM);
+  }
   lua_assert((nsize == 0) == (block == NULL));
   //重新设置内存大小
   g->totalbytes = (g->totalbytes - osize) + nsize;

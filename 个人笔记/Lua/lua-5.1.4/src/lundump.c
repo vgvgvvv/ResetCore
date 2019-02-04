@@ -36,6 +36,7 @@ typedef struct {
 static void error(LoadState* S, const char* why)
 {
  luaO_pushfstring(S->L,"%s: %s in precompiled chunk",S->name,why);
+ //语法错误，抛出异常
  luaD_throw(S->L,LUA_ERRSYNTAX);
 }
 #endif

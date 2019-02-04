@@ -687,16 +687,18 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         if (b != 0) L->top = ra+b;  /* else previous instruction set top */
         // 保存当前pc
         L->savedpc = pc;
-        //调用在ra上的函数
+        //调用在ra上的函数，precall
         switch (luaD_precall(L, ra, nresults)) {
-          //TODO:不同的返回类型 PCRLUA
+          //如果调用的是lua函数
           case PCRLUA: {
+            //进入vm循环再来一次
             nexeccalls++;
             goto reentry;  /* restart luaV_execute over new Lua function */
           }
-          //TODO:不同的返回类型PCRC
+          //如果调用的是C函数则适配返回值在栈中的位置
           case PCRC: {
             /* it was a C function (`precall' called it); adjust results */
+            //如果有返回值就把top设为callinfo的顶部
             if (nresults >= 0) L->top = L->ci->top;
             base = L->base;
             continue;
@@ -708,6 +710,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
       }
       case OP_TAILCALL: {
         //TODO:尾调用
+        //获取返回值数量
         int b = GETARG_B(i);
         if (b != 0) L->top = ra+b;  /* else previous instruction set top */
         L->savedpc = pc;
@@ -719,7 +722,9 @@ void luaV_execute (lua_State *L, int nexeccalls) {
             int aux;
             StkId func = ci->func;
             StkId pfunc = (ci+1)->func;  /* previous function index */
-            if (L->openupval) luaF_close(L, ci->base);
+            if (L->openupval) {
+              luaF_close(L, ci->base);
+            }
             L->base = ci->base = ci->func + ((ci+1)->base - pfunc);
             for (aux = 0; pfunc+aux < L->top; aux++)  /* move frame down */
               setobjs2s(L, func+aux, pfunc+aux);
@@ -731,6 +736,7 @@ void luaV_execute (lua_State *L, int nexeccalls) {
             goto reentry;
           }
           case PCRC: {  /* it was a C function (`precall' called it) */
+            //C函数的情况，precall中已经调用过了
             base = L->base;
             continue;
           }
@@ -740,15 +746,19 @@ void luaV_execute (lua_State *L, int nexeccalls) {
         }
       }
       case OP_RETURN: {
-        //TODO:返回
+        //rb存的是返回值数量
         int b = GETARG_B(i);
+        //设置top位置
         if (b != 0) L->top = ra+b-1;
         if (L->openupval) luaF_close(L, base);
         L->savedpc = pc;
+        //结束调用，将结果压入堆栈
         b = luaD_poscall(L, ra);
+        //调用层级减一，如果已经是0则直接返回
         if (--nexeccalls == 0)  /* was previous function running `here'? */
           return;  /* no: return */
         else {  /* yes: continue its execution */
+          //返回上一个调用，并且继续lua调用
           if (b) L->top = L->ci->top;
           lua_assert(isLua(L->ci));
           lua_assert(GET_OPCODE(*((L->ci)->savedpc - 1)) == OP_CALL);

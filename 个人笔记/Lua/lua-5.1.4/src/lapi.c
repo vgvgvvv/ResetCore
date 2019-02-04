@@ -1041,8 +1041,10 @@ static void f_call (lua_State *L, void *ud) {
 LUA_API int lua_pcall (lua_State *L, int nargs, int nresults, int errfunc) {
   struct CallS c;
   int status;
+  //错误函数的栈位置
   ptrdiff_t func;
   lua_lock(L);
+  //检查参数数量
   api_checknelems(L, nargs+1);
   checkresults(L, nargs, nresults);
   if (errfunc == 0)
@@ -1057,7 +1059,9 @@ LUA_API int lua_pcall (lua_State *L, int nargs, int nresults, int errfunc) {
   c.func = L->top - (nargs+1);  /* function to be called */
   //获取result的数量
   c.nresults = nresults;
+  //尝试调用函数
   status = luaD_pcall(L, f_call, &c, savestack(L, c.func), func);
+  
   adjustresults(L, nresults);
   lua_unlock(L);
   return status;

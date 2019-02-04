@@ -12,7 +12,7 @@
 #include "lstate.h"
 #include "lzio.h"
 
-
+//检查栈空间是够够，如果不够则增长栈空间
 #define luaD_checkstack(L,n)	\
   if ((char *)L->stack_last - (char *)L->top <= (n)*(int)sizeof(TValue)) \
     luaD_growstack(L, n); \
@@ -21,6 +21,7 @@
 
 #define incr_top(L) {luaD_checkstack(L,1); L->top++;}
 
+//保存值在栈中的位置
 #define savestack(L,p)		((char *)(p) - (char *)L->stack)
 //恢复栈位置
 #define restorestack(L,n)	((TValue *)((char *)L->stack + (n)))
@@ -32,8 +33,11 @@
 
 
 /* results from luaD_precall */
+//已初始化Lua函数调用
 #define PCRLUA		0	/* initiated a call to a Lua function */
+//已经调用完C函数
 #define PCRC		1	/* did a call to a C function */
+//是否是yield状态
 #define PCRYIELD	2	/* C funtion yielded */
 
 

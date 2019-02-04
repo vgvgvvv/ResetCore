@@ -41,25 +41,31 @@
 
 
 /* chain list of long jump buffers */
+//用于长跳转
 struct lua_longjmp {
   struct lua_longjmp *previous;
+  //luai_jmpbuff
   luai_jmpbuf b;
+  //状态码
   volatile int status;  /* error code */
 };
 
-
+//不同的错误方式使用不同的处理方式
 void luaD_seterrorobj (lua_State *L, int errcode, StkId oldtop) {
   switch (errcode) {
     case LUA_ERRMEM: {
+      //往栈里面压入错误信息
       setsvalue2s(L, oldtop, luaS_newliteral(L, MEMERRMSG));
       break;
     }
     case LUA_ERRERR: {
+      //
       setsvalue2s(L, oldtop, luaS_newliteral(L, "error in error handling"));
       break;
     }
     case LUA_ERRSYNTAX:
     case LUA_ERRRUN: {
+      //运行错误在放在栈顶
       setobjs2s(L, oldtop, L->top - 1);  /* error message on current top */
       break;
     }
@@ -67,7 +73,7 @@ void luaD_seterrorobj (lua_State *L, int errcode, StkId oldtop) {
   L->top = oldtop + 1;
 }
 
-
+//恢复栈大小到最大限制值以下
 static void restore_stack_limit (lua_State *L) {
   lua_assert(L->stack_last - L->stack == L->stacksize - EXTRA_STACK - 1);
   if (L->size_ci > LUAI_MAXCALLS) {  /* there was an overflow? */
@@ -78,7 +84,7 @@ static void restore_stack_limit (lua_State *L) {
   }
 }
 
-
+//重置stack
 static void resetstack (lua_State *L, int status) {
   L->ci = L->base_ci;
   L->base = L->ci->base;
@@ -91,17 +97,23 @@ static void resetstack (lua_State *L, int status) {
   L->errorJmp = NULL;
 }
 
-
+/**
+ * 抛出异常
+ */
 void luaD_throw (lua_State *L, int errcode) {
+  //如果有跳跃点，则跳回
   if (L->errorJmp) {
     L->errorJmp->status = errcode;
     LUAI_THROW(L, L->errorJmp);
   }
+  //否则退出进程
   else {
+    //获取错误码
     L->status = cast_byte(errcode);
     if (G(L)->panic) {
       resetstack(L, errcode);
       lua_unlock(L);
+      //运行panic
       G(L)->panic(L);
     }
     exit(EXIT_FAILURE);
@@ -112,6 +124,7 @@ void luaD_throw (lua_State *L, int errcode) {
 int luaD_rawrunprotected (lua_State *L, Pfunc f, void *ud) {
   struct lua_longjmp lj;
   lj.status = 0;
+  //记录上一个长跳转的点
   lj.previous = L->errorJmp;  /* chain new error handler */
   L->errorJmp = &lj;
   LUAI_TRY(L, &lj,
@@ -123,13 +136,17 @@ int luaD_rawrunprotected (lua_State *L, Pfunc f, void *ud) {
 
 /* }====================================================== */
 
-
+//在伸缩栈大小后修正数据栈的位置
+//因为在realloc之后的头指针位置可能会发生改变
 static void correctstack (lua_State *L, TValue *oldstack) {
   CallInfo *ci;
   GCObject *up;
   L->top = (L->top - oldstack) + L->stack;
-  for (up = L->openupval; up != NULL; up = up->gch.next)
+  //修正upvalue的位置
+  for (up = L->openupval; up != NULL; up = up->gch.next){
     gco2uv(up)->v = (gco2uv(up)->v - oldstack) + L->stack;
+  }
+  //修正callinfo中的栈位置
   for (ci = L->base_ci; ci <= L->ci; ci++) {
     ci->top = (ci->top - oldstack) + L->stack;
     ci->base = (ci->base - oldstack) + L->stack;
@@ -138,7 +155,9 @@ static void correctstack (lua_State *L, TValue *oldstack) {
   L->base = (L->base - oldstack) + L->stack;
 }
 
-
+/**
+ * 伸缩栈大小
+ */
 void luaD_reallocstack (lua_State *L, int newsize) {
   TValue *oldstack = L->stack;
   int realsize = newsize + 1 + EXTRA_STACK;
@@ -162,7 +181,9 @@ void luaD_reallocCI (lua_State *L, int newsize) {
   L->end_ci = L->base_ci + L->size_ci - 1;
 }
 
-
+/**
+ * 栈的增长方式总是x2，如果不够则添加上不够的部分
+ */
 void luaD_growstack (lua_State *L, int n) {
   if (n <= L->stacksize)  /* double size is enough? */
     luaD_reallocstack(L, 2*L->stacksize);
@@ -173,11 +194,12 @@ void luaD_growstack (lua_State *L, int n) {
 // 增长ci数组的size
 static CallInfo *growCI (lua_State *L) {
   if (L->size_ci > LUAI_MAXCALLS)  /* overflow while handling overflow? */
-	// 过大了
+	  // 过大了
     luaD_throw(L, LUA_ERRERR);
   else {
-	// 加大一倍
+	  // 加大一倍
     luaD_reallocCI(L, 2*L->size_ci);
+    //如果过大则栈溢出
     if (L->size_ci > LUAI_MAXCALLS)
       luaG_runerror(L, "stack overflow");
   }
@@ -211,7 +233,9 @@ void luaD_callhook (lua_State *L, int event, int line) {
   }
 }
 
-// 根据函数的参数数量调整base和top指针位置
+/**
+ * 根据函数的参数数量调整base和top指针位置
+ */
 static StkId adjust_varargs (lua_State *L, Proto *p, int actual) {
   int i;
   // numparams是函数的参数数量
@@ -250,23 +274,34 @@ static StkId adjust_varargs (lua_State *L, Proto *p, int actual) {
   return base;
 }
 
-
+/**
+ * 尝试获取call的元方法,并且插入栈中
+ */
 static StkId tryfuncTM (lua_State *L, StkId func) {
+  //获取元方法
   const TValue *tm = luaT_gettmbyobj(L, func, TM_CALL);
   StkId p;
+  //保存函数在栈中的位置
   ptrdiff_t funcr = savestack(L, func);
-  if (!ttisfunction(tm))
-    luaG_typeerror(L, func, "call");
+  //如果元方法不是一个方法则报错
+  if (!ttisfunction(tm)){
+      luaG_typeerror(L, func, "call");
+  }
   /* Open a hole inside the stack at `func' */
-  for (p = L->top; p > func; p--) setobjs2s(L, p, p-1);
+  //在栈中func的后面再加入一个空格
+  for (p = L->top; p > func; p--) {
+    setobjs2s(L, p, p-1);
+  }
   incr_top(L);
+  //恢复栈
   func = restorestack(L, funcr);  /* previous call may change stack */
+  //这是要调用的新方法
   setobj2s(L, func, tm);  /* tag method is the new function to be called */
   return func;
 }
 
 
-
+//返回一个车新的callinfo，如果目前已经不够用了就增长ci数组长度
 #define inc_ci(L) \
   ((L->ci == L->end_ci) ? growCI(L) : \
    (condhardstacktests(luaD_reallocCI(L, L->size_ci)), ++L->ci))
@@ -276,25 +311,33 @@ static StkId tryfuncTM (lua_State *L, StkId func) {
 int luaD_precall (lua_State *L, StkId func, int nresults) {
   LClosure *cl;
   ptrdiff_t funcr;
-  if (!ttisfunction(func)) /* `func' is not a function? */
+  /* `func' is not a function? */
+  if (!ttisfunction(func)) {
+    //检查元方法
     func = tryfuncTM(L, func);  /* check the `function' tag method */
+  }
   // 首先计算函数指针距离stack的偏移量
   funcr = savestack(L, func);
   // 获取closure指针
   cl = &clvalue(func)->l;
-  // 保存PC
+  // 保存PC位置
   L->ci->savedpc = L->savedpc;
+  //Lua函数则准备调用
   if (!cl->isC) {  /* Lua function? prepare its call */
     CallInfo *ci;
     StkId st, base;
     Proto *p = cl->p;
+    //检查栈空间
     luaD_checkstack(L, p->maxstacksize);
+    //保存函数位置
     func = restorestack(L, funcr);
+    //非变长参数，根据参数数量来压入参数
     if (!p->is_vararg) {  /* no varargs? */
       base = func + 1;
       if (L->top > base + p->numparams)
         L->top = base + p->numparams;
     }
+    //变长参数，将所有的参数都压入
     else {  /* vararg function */
       int nargs = cast_int(L->top - func) - 1;
       base = adjust_varargs(L, p, nargs);
@@ -303,17 +346,24 @@ int luaD_precall (lua_State *L, StkId func, int nresults) {
     // 存放新的函数信息
     // 首先从callinfo数组中分配出一个新的callinfo
     ci = inc_ci(L);  /* now `enter' new function */
+    //初始化callinfo
     ci->func = func;
     L->base = ci->base = base;
     ci->top = L->base + p->maxstacksize;
+    //不允许栈溢出
     lua_assert(ci->top <= L->stack_last);
     // 改变代码执行的路径
     L->savedpc = p->code;  /* starting point */
+    //尾调用为0
     ci->tailcalls = 0;
     ci->nresults = nresults;
-    for (st = L->top; st < ci->top; st++)
+    //保证函数栈的空闲位置始终为nil
+    for (st = L->top; st < ci->top; st++){
       setnilvalue(st);
+    }
+    //栈空闲位置设置为callinfo顶
     L->top = ci->top;
+    //TODO:hook相关
     if (L->hookmask & LUA_MASKCALL) {
       L->savedpc++;  /* hooks assume 'pc' is already incremented */
       luaD_callhook(L, LUA_HOOKCALL, -1);
@@ -321,6 +371,7 @@ int luaD_precall (lua_State *L, StkId func, int nresults) {
     }
     return PCRLUA;
   }
+  //C函数则直接调用
   else {  /* if is a C function, call it */
     CallInfo *ci;
     int n;
@@ -361,7 +412,10 @@ static StkId callrethooks (lua_State *L, StkId firstResult) {
   return restorestack(L, fr);
 }
 
-// 结束完一次函数调用(无论是C还是lua函数)的处理, firstResult是函数第一个返回值的地址
+/**
+ * 结束完一次函数调用(无论是C还是lua函数)的处理, firstResult是函数第一个返回值的地址
+ * 获取调用方的堆栈并且将返回值压入调用方的堆栈
+ */
 int luaD_poscall (lua_State *L, StkId firstResult) {
   StkId res;
   int wanted, i;
@@ -378,11 +432,13 @@ int luaD_poscall (lua_State *L, StkId firstResult) {
   L->savedpc = (ci - 1)->savedpc;  /* restore savedpc */
   /* move results to correct place */
   // 返回值压入栈中
-  for (i = wanted; i != 0 && firstResult < L->top; i--)
+  for (i = wanted; i != 0 && firstResult < L->top; i--){
     setobjs2s(L, res++, firstResult++);
+  }
   // 剩余的返回值置nil
-  while (i-- > 0)
+  while (i-- > 0){
     setnilvalue(res++);
+  }
   // 可以将top指针置回调用之前的位置了
   L->top = res;
   return (wanted - LUA_MULTRET);  /* 0 if wanted == LUA_MULTRET */
@@ -399,19 +455,27 @@ int luaD_poscall (lua_State *L, StkId firstResult) {
 void luaD_call (lua_State *L, StkId func, int nResults) {
   // 函数调用栈数量+1, 判断函数调用栈是不是过长
   if (++L->nCcalls >= LUAI_MAXCCALLS) {
-    if (L->nCcalls == LUAI_MAXCCALLS)
+    if (L->nCcalls == LUAI_MAXCCALLS){
       luaG_runerror(L, "C stack overflow");
-    else if (L->nCcalls >= (LUAI_MAXCCALLS + (LUAI_MAXCCALLS>>3)))
+    }
+    else if (L->nCcalls >= (LUAI_MAXCCALLS + (LUAI_MAXCCALLS>>3))){
       luaD_throw(L, LUA_ERRERR);  /* error while handing stack error */
+    }
   }
-  if (luaD_precall(L, func, nResults) == PCRLUA)  /* is a Lua function? */
+  /* is a Lua function? */
+  if (luaD_precall(L, func, nResults) == PCRLUA)  {
+    //如果是lua函数则进入虚拟机字节码解析循环
     luaV_execute(L, 1);  /* call it */
+  }
   // 调用完毕, 函数调用栈-1
   L->nCcalls--;
+  //检查GC
   luaC_checkGC(L);
 }
 
-
+/**
+ * 从yield状态中返回
+ */
 static void resume (lua_State *L, void *ud) {
   StkId firstArg = cast(StkId, ud);
   CallInfo *ci = L->ci;
@@ -438,7 +502,9 @@ static void resume (lua_State *L, void *ud) {
   luaV_execute(L, cast_int(L->ci - L->base_ci));
 }
 
-
+/**
+ * resume错误
+ */
 static int resume_error (lua_State *L, const char *msg) {
   L->top = L->ci->base;
   setsvalue2s(L, L->top, luaS_new(L, msg));
@@ -447,7 +513,9 @@ static int resume_error (lua_State *L, const char *msg) {
   return LUA_ERRRUN;
 }
 
-
+/**
+ * lua的resume操作
+ */
 LUA_API int lua_resume (lua_State *L, int nargs) {
   int status;
   lua_lock(L);
@@ -478,12 +546,15 @@ LUA_API int lua_resume (lua_State *L, int nargs) {
   return status;
 }
 
-
+/**
+ * lua进行yield操作
+ */
 LUA_API int lua_yield (lua_State *L, int nresults) {
   luai_userstateyield(L, nresults);
   lua_lock(L);
-  if (L->nCcalls > L->baseCcalls)
+  if (L->nCcalls > L->baseCcalls){
     luaG_runerror(L, "attempt to yield across metamethod/C-call boundary");
+  }
   L->base = L->top - nresults;  /* protect stack slots below */
   L->status = LUA_YIELD;
   lua_unlock(L);
@@ -503,6 +574,7 @@ int luaD_pcall (lua_State *L, Pfunc func, void *u,
   ptrdiff_t old_ci = saveci(L, L->ci);
   lu_byte old_allowhooks = L->allowhook;
   ptrdiff_t old_errfunc = L->errfunc;
+  //保存错误函数
   L->errfunc = ef;
 
   //此处包含的是不包含保护的直接调用
@@ -512,7 +584,9 @@ int luaD_pcall (lua_State *L, Pfunc func, void *u,
   if (status != 0) {  /* an error occurred? */
 	  // 将保存的ci和top取出来恢复
     StkId oldtop = restorestack(L, old_top);
+    //清理栈
     luaF_close(L, oldtop);  /* close eventual pending closures */
+    //将错误压栈
     luaD_seterrorobj(L, status, oldtop);
     L->nCcalls = oldnCcalls;
     L->ci = restoreci(L, old_ci);
@@ -566,7 +640,9 @@ static void f_parser (lua_State *L, void *ud) {
   incr_top(L);
 }
 
-
+/**
+ * 使用进行保护的解析
+ */
 int luaD_protectedparser (lua_State *L, ZIO *z, const char *name) {
   //初始化SParser
   struct SParser p;

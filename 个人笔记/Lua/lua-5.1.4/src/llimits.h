@@ -123,9 +123,9 @@ typedef lu_int32 Instruction;
 #endif
 
 
-/*
-** macro to control inclusion of some hard tests on stack reallocation
-*/ 
+/**
+ * macro to control inclusion of some hard tests on stack reallocation
+ */ 
 #ifndef HARDSTACKTESTS
 #define condhardstacktests(x)	((void)0)
 #else

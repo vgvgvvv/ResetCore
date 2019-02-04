@@ -127,6 +127,7 @@ typedef struct global_State {
  */
 struct lua_State {
   CommonHeader;
+  //当前的调用状态
   lu_byte status;
   //当前第一个空闲的栈位置
   StkId top;  /* first free slot in the stack */
@@ -143,16 +144,19 @@ struct lua_State {
   StkId stack_last;  /* last free slot in the stack */
   //是一个Tvalue数组
   StkId stack;  /* stack base */
-  
+
   //CallInfo数组的尾部指针
   CallInfo *end_ci;  /* points after end of ci array  */
   //CallInfo数组的头指针
   CallInfo *base_ci;  /* array of CallInfo's  */
 
   int stacksize;
+  //Callinfo数组的大小
   int size_ci;  /* size of array `base_ci' */
-  unsigned short nCcalls;  /* number of nested C calls */
-  unsigned short baseCcalls;  /* nested C calls when resuming coroutine */
+  /* number of nested C calls */
+  unsigned short nCcalls;  
+  /* nested C calls when resuming coroutine */
+  unsigned short baseCcalls;  
   lu_byte hookmask;
   lu_byte allowhook;
   int basehookcount;
