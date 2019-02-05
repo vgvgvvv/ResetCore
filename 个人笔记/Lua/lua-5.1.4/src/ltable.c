@@ -64,9 +64,10 @@
 #define hashpointer(t,p)	hashmod(t, IntPoint(p))
 
 
-/*
-** number of ints inside a lua_Number
-*/
+/**
+ * number of ints inside a lua_Number
+ * 一个number里面可以包含几个int
+ */
 #define numints		cast_int(sizeof(lua_Number)/sizeof(int))
 
 

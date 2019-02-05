@@ -2,9 +2,9 @@
 
 在阅读源码的过程中，发现strlib给空字符串添加了元表，
 如下：
+
 ```c
 static void createmetatable (lua_State *L) {
- 
   lua_createtable(L, 0, 1);         /* create metatable for strings */     // table
   lua_pushliteral(L, "");           /* dummy string */  // table ""
   lua_pushvalue(L, -2);             // table "" table

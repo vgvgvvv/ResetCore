@@ -519,12 +519,15 @@ static int resume_error (lua_State *L, const char *msg) {
 LUA_API int lua_resume (lua_State *L, int nargs) {
   int status;
   lua_lock(L);
-  // 检查状态
-  if (L->status != LUA_YIELD && (L->status != 0 || L->ci != L->base_ci))
+  // 检查状态,如果不是YIELD
+  if (L->status != LUA_YIELD && (L->status != 0 || L->ci != L->base_ci)){
       return resume_error(L, "cannot resume non-suspended coroutine");
+  }
   // 函数调用层次太多
-  if (L->nCcalls >= LUAI_MAXCCALLS)
+  if (L->nCcalls >= LUAI_MAXCCALLS){
     return resume_error(L, "C stack overflow");
+  }
+  //自定义操作
   luai_userstateresume(L, nargs);
   lua_assert(L->errfunc == 0);
   // 调用之前递增函数调用层次
@@ -550,11 +553,14 @@ LUA_API int lua_resume (lua_State *L, int nargs) {
  * lua进行yield操作
  */
 LUA_API int lua_yield (lua_State *L, int nresults) {
+  //自定义操作
   luai_userstateyield(L, nresults);
   lua_lock(L);
+  //
   if (L->nCcalls > L->baseCcalls){
     luaG_runerror(L, "attempt to yield across metamethod/C-call boundary");
   }
+  //
   L->base = L->top - nresults;  /* protect stack slots below */
   L->status = LUA_YIELD;
   lua_unlock(L);

@@ -19,8 +19,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f7b71b9-6400-49d3-96e7-0ae5f0ba3eaf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_tests/learning_c/test_setjmp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/unit_tests/learning_c/test_setjmp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../个人笔记/Lua/readinglua/string扩展方法.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../个人笔记/Lua/readinglua/string扩展方法.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +33,7 @@
     <session id="1015425858">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />

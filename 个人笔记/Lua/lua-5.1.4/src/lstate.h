@@ -40,6 +40,7 @@ struct lua_longjmp;  /* defined in ldo.c */
 typedef struct stringtable {
   GCObject **hash;
   //数量大小
+  //元素的数量
   lu_int32 nuse;  /* number of elements */
   int size;       // hash桶数组大小
 } stringtable;
