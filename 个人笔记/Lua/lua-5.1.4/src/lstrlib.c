@@ -163,7 +163,7 @@ static int str_dump (lua_State *L) {
 ** =======================================================
 */
 
-#pragma region 模式匹配
+#pragma region //模式匹配
 
 #define CAP_UNFINISHED	(-1)
 #define CAP_POSITION	(-2)
@@ -725,12 +725,12 @@ static int str_gsub (lua_State *L) {
   return 2;
 }
 
-#pragma endregion 模式匹配
+#pragma endregion //模式匹配
 
 /* }====================================================== */
 
 
-#pragma region StringFormat
+#pragma region //StringFormat
 
 /* maximum size of each formatted item (> len(format('%99.99f', -1e308))) */
 #define MAX_ITEM	512
@@ -871,7 +871,7 @@ static int str_format (lua_State *L) {
   return 1;
 }
 
-#pragma endregion String Format
+#pragma endregion //String Format
 
 
 static const luaL_Reg strlib[] = {

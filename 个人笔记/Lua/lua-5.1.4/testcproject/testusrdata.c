@@ -103,17 +103,17 @@ int luaopen_testuserdata(lua_State* L)
   return 1;
 }
 
-int main(){
-  char *file = NULL;
-  file = "my.lua";
-
-  lua_State *L = lua_open();
-  luaL_openlibs(L);
-  luaopen_testuserdata(L);
-  if (luaL_dofile(L, file)) {
-    printf("error: %s\n", lua_tostring(L, -1));
-  }
-
-  return 0;
-}
+//int main(){
+//  char *file = NULL;
+//  file = "my.lua";
+//
+//  lua_State *L = lua_open();
+//  luaL_openlibs(L);
+//  luaopen_testuserdata(L);
+//  if (luaL_dofile(L, file)) {
+//    printf("error: %s\n", lua_tostring(L, -1));
+//  }
+//
+//  return 0;
+//}
 
