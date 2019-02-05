@@ -8,7 +8,7 @@
 PLAT= none
 
 CC= clang
-CFLAGS= -O2 -Wall $(MYCFLAGS)
+CFLAGS= -O2 -Wall $(MYCFLAGS) -g
 AR= ar rcu
 RANLIB= ranlib
 RM= rm -f

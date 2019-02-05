@@ -1,2 +1,1 @@
-local p = {}
-p[1] = "12"
+dofile("testyield.lua")
