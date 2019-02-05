@@ -208,7 +208,7 @@ LUA_API lua_State *lua_newthread (lua_State *L) {
 ** basic stack manipulation
 */
 
-#pragma region basic stack manipulation
+
 
 /**
  * 返回栈顶元素的索引。 因为索引是从 1 开始编号的， 
@@ -327,13 +327,13 @@ LUA_API void lua_pushvalue (lua_State *L, int idx) {
   lua_unlock(L);
 }
 
-#pragma endregion basic stack manipulation
+
 
 /*
 ** access functions (stack -> C)
 */
 
-#pragma region access functions
+
 
 /**
  * 返回给定有效索引处值的类型， 当索引无效（或无法访问）时则返回 LUA_TNONE。 
@@ -576,13 +576,13 @@ LUA_API const void *lua_topointer (lua_State *L, int idx) {
   }
 }
 
-#pragma endregion access functions
+
 
 /*
 ** push functions (C -> stack)
 */
 
-#pragma region push function
+
 
 LUA_API void lua_pushnil (lua_State *L) {
   lua_lock(L);
@@ -704,13 +704,13 @@ LUA_API int lua_pushthread (lua_State *L) {
   return (G(L)->mainthread == L);
 }
 
-#pragma endregion push function
+
 
 /*
 ** get functions (Lua -> stack)
 */
 
-#pragma region get function
+
 
 // gettable会调用到luaV_gettable,这样如果在本身没找到,还会根据__index方法到基类中查找
 // 而raw系列只会在自己上面查找
@@ -839,13 +839,13 @@ LUA_API void lua_getfenv (lua_State *L, int idx) {
   lua_unlock(L);
 }
 
-#pragma endregion get function
+
 
 /*
 ** set functions (stack -> Lua)
 */
 
-#pragma region set function
+
 
 // 向idx索引的表中,插入key为top - 2,val为top - 1的数据,完事了之后top - 2把k/v退栈
 LUA_API void lua_settable (lua_State *L, int idx) {
@@ -969,13 +969,13 @@ LUA_API int lua_setfenv (lua_State *L, int idx) {
   return res;
 }
 
-#pragma endregion setfunction
+
 
 /*
 ** `load' and `call' functions (run Lua code)
 */
 
-#pragma region //load and call functions (run Lua code)
+
 
 //如果返回值的数量为LUA_MULTRET，则将调用栈的顶设置为当前栈顶，也就是所有返回值压入栈
 #define adjustresults(L,nres) \
@@ -1134,13 +1134,13 @@ LUA_API int  lua_status (lua_State *L) {
   return L->status;
 }
 
-#pragma endregion //`load' and `call' functions (run Lua code)
+
 
 /*
 ** Garbage-collection function
 */
 
-#pragma region //Garbage-collection function
+
 
 LUA_API int lua_gc (lua_State *L, int what, int data) {
   int res = 0;
@@ -1208,13 +1208,13 @@ LUA_API int lua_gc (lua_State *L, int what, int data) {
   return res;
 }
 
-#pragma endregion Garbage-collection function
+
 
 /*
 ** miscellaneous functions
 */
 
-#pragma region //miscellaneous functions
+
 
 /**
  * 以栈顶的值作为错误对象，抛出一个 Lua 错误。 这个函数将做一次长跳转，所以一定不会返回 （参见 luaL_error）。
@@ -1383,4 +1383,3 @@ LUA_API const char *lua_setupvalue (lua_State *L, int funcindex, int n) {
   return name;
 }
 
-#pragma endregion //miscellaneous functions
