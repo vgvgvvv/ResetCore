@@ -487,6 +487,12 @@ static const luaL_Reg base_funcs[] = {
 static const char *const statnames[] =
     {"running", "suspended", "normal", "dead"};
 
+/**
+ * 获取协程状态
+ * @param L
+ * @param co
+ * @return
+ */
 static int costatus (lua_State *L, lua_State *co) {
   if (L == co) return CO_RUN;
   switch (lua_status(co)) {
@@ -496,7 +502,7 @@ static int costatus (lua_State *L, lua_State *co) {
       lua_Debug ar;
       if (lua_getstack(co, 0, &ar) > 0)  /* does it have frames? */
         return CO_NOR;  /* it is running */
-      else if (lua_gettop(co) == 0)
+      else if (lua_gettop(co) == 0)//栈上为空，则为死协程
           return CO_DEAD;
       else
         return CO_SUS;  /* initial state */
@@ -527,9 +533,12 @@ static int auxresume (lua_State *L, lua_State *co, int narg) {
     return -1;  /* error flag */
   }
   // 把参数移动到当前协程的栈上
+  // 参数从L移到co上
   lua_xmove(L, co, narg);
   // 设置调用栈层次
+  // L的调用层次移动到co上
   lua_setlevel(L, co);
+  //在co上做具体的事情
   status = lua_resume(co, narg);
   if (status == 0 || status == LUA_YIELD) {
     int nres = lua_gettop(co);
@@ -546,9 +555,11 @@ static int auxresume (lua_State *L, lua_State *co, int narg) {
 
 
 static int luaB_coresume (lua_State *L) {
+  //获得协程
   lua_State *co = lua_tothread(L, 1);
   int r;
   luaL_argcheck(L, co, 1, "coroutine expected");
+  //实际执行resume的地方
   r = auxresume(L, co, lua_gettop(L) - 1);
   // 判断resume的结果
   if (r < 0) {
@@ -580,7 +591,11 @@ static int luaB_auxwrap (lua_State *L) {
   return r;
 }
 
-
+/**
+ * 创建新协程，实际上和创建状态机没区别
+ * @param L
+ * @return
+ */
 static int luaB_cocreate (lua_State *L) {
   lua_State *NL = lua_newthread(L);
   luaL_argcheck(L, lua_isfunction(L, 1) && !lua_iscfunction(L, 1), 1,

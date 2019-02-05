@@ -482,6 +482,7 @@ static void resume (lua_State *L, void *ud) {
   if (L->status == 0) {  /* start coroutine? */
 	  // 协程第一次运行的情况
     lua_assert(ci == L->base_ci && firstArg > L->base);
+    //如果调用不是Lua函数则直接返回，否则进入调用循环
     if (luaD_precall(L, firstArg - 1, LUA_MULTRET) != PCRLUA)
       return;
   }

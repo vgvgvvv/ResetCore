@@ -80,7 +80,13 @@ LUA_API int lua_gethookcount (lua_State *L) {
   return L->basehookcount;
 }
 
-
+/**
+ * 获取栈
+ * @param L
+ * @param level
+ * @param ar
+ * @return
+ */
 LUA_API int lua_getstack (lua_State *L, int level, lua_Debug *ar) {
   int status;
   CallInfo *ci;
