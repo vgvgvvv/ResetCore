@@ -11,11 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8a2b5dd-e961-4a41-8aee-e72c19d84ef4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lbaselib.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/lbaselib.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ldebug.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ldebug.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ldo.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ldo.c" afterDir="false" />
-    </list>
+    <list default="true" id="a8a2b5dd-e961-4a41-8aee-e72c19d84ef4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +24,7 @@
     <session id="210434892">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="2" />
@@ -40,14 +36,14 @@
           <entry key="README" value="1" />
           <entry key="c" value="15" />
           <entry key="h" value="5" />
-          <entry key="lua" value="1" />
+          <entry key="lua" value="2" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CMakeLists.txt" value="1" />
-          <entry key="Lua" value="1" />
+          <entry key="Lua" value="2" />
           <entry key="Makefile" value="2" />
           <entry key="ObjectiveC" value="20" />
           <entry key="PLAIN_TEXT" value="3" />
@@ -76,15 +72,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/my.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ldo.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2">
@@ -93,13 +80,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ldo.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
               <caret line="560" column="30" selection-start-line="560" selection-start-column="30" selection-end-line="560" selection-end-column="30" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/testyield.lua">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -184,9 +176,9 @@
       <find>lua_setlevel</find>
       <find>lua_xmove</find>
       <find>setlevel</find>
-      <find>lua_yield</find>
       <find>YIELD</find>
       <find>coresu</find>
+      <find>lua_yield</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -218,8 +210,8 @@
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="989" />
+    <option name="width" value="1440" />
+    <option name="height" value="814" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -315,19 +307,19 @@
       <option name="presentableId" value="Default" />
       <updated>1549365415590</updated>
       <workItem from="1549365418518" duration="400000" />
-      <workItem from="1549365840410" duration="7793000" />
+      <workItem from="1549365840410" duration="8402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8193000" />
+    <option name="totallyTimeSpent" value="8802000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="989" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="814" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944258" visible="true" weight="0.25239617" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.5005574" side_tool="true" visible="true" weight="0.25239617" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49861497" visible="true" weight="0.3390558" />
+      <window_info id="Structure" order="1" sideWeight="0.50138503" side_tool="true" visible="true" weight="0.3390558" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -516,6 +508,9 @@
           <caret line="560" column="30" selection-start-line="560" selection-start-column="30" selection-end-line="560" selection-end-column="30" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/testyield.lua">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
