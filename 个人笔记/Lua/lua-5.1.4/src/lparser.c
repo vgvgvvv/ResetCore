@@ -362,6 +362,7 @@ static void pushclosure (LexState *ls, FuncState *func, expdesc *v) {
 
 static void open_func (LexState *ls, FuncState *fs) {
   lua_State *L = ls->L;
+  //申请新的proto
   Proto *f = luaF_newproto(L);
   fs->f = f;
   // 这里把当前的fs指针,和ls已有的fs指针连在一起形成链表
@@ -422,10 +423,14 @@ static void close_func (LexState *ls) {
 Proto *luaY_parser (lua_State *L, ZIO *z, Mbuffer *buff, const char *name) {
   struct LexState lexstate;
   struct FuncState funcstate;
+  //设置buff
   lexstate.buff = buff;
+  //设置token输入
   luaX_setinput(L, &lexstate, z, luaS_new(L, name));
+  //打开函数
   open_func(&lexstate, &funcstate);
   // 这是为什么呢?
+  //主函数总是变长参数
   funcstate.f->is_vararg = VARARG_ISVARARG;  /* main func. is always vararg */
   // 读入字符
   luaX_next(&lexstate);  /* read first token */
@@ -1367,10 +1372,11 @@ static void retstat (LexState *ls) {
   luaK_ret(fs, first, nret);
 }
 
-/*
+/**
  * statement -> ifstat | whilestat | DO block END | forstat ...
  */
 static int statement (LexState *ls) {
+  //记录当前行数
   int line = ls->linenumber;  /* may be needed for error messages */
   switch (ls->t.token) {
     case TK_IF: {  /* stat -> ifstat */
@@ -1423,7 +1429,9 @@ static int statement (LexState *ls) {
   }
 }
 
-
+/**
+ * chunk入口
+ */
 static void chunk (LexState *ls) {
   /* chunk -> { stat [`;'] } */
   int islast = 0;

@@ -12,13 +12,15 @@
 
 #include "lmem.h"
 
-
+//zio的末尾
 #define EOZ	(-1)			/* end of stream */
 
 typedef struct Zio ZIO;
 
+//把char转换为int
 #define char2int(c)	cast(int, cast(unsigned char, (c)))
 
+//先检查是否读完了，如果读完直接移动指针，否则读取当前buffer指针
 #define zgetc(z)  (((z)->n--)>0 ?  char2int(*(z)->p++) : luaZ_fill(z))
 
 //字符串使用的缓冲buffer
@@ -56,10 +58,14 @@ LUAI_FUNC int luaZ_lookahead (ZIO *z);
 /* --------- Private Part ------------------ */
 
 struct Zio {
+  //还未读取的bytes数
   size_t n;			/* bytes still unread */
+  //当前buffer的指针
   const char *p;		/* current position in buffer */
+  //读取block时使用的函数
   lua_Reader reader;
   void* data;			/* additional data */
+  //给reader所使用的Luastate
   lua_State *L;			/* Lua state (for reader) */
 };
 

@@ -56,9 +56,9 @@ typedef struct lua_State lua_State;
 typedef int (*lua_CFunction) (lua_State *L);
 
 
-/*
-** functions that read/write blocks when loading/dumping Lua chunks
-*/
+/**
+ * functions that read/write blocks when loading/dumping Lua chunks
+ */
 typedef const char * (*lua_Reader) (lua_State *L, void *ud, size_t *sz);
 
 typedef int (*lua_Writer) (lua_State *L, const void* p, size_t sz, void* ud);

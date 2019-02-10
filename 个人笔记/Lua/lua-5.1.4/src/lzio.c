@@ -23,11 +23,15 @@ int luaZ_fill (ZIO *z) {
   lua_State *L = z->L;
   const char *buff;
   lua_unlock(L);
+  //读取block
   buff = z->reader(L, z->data, &size);
   lua_lock(L);
   if (buff == NULL || size == 0) return EOZ;
+  //未读数量减少
   z->n = size - 1;
+  //位置变为buffer
   z->p = buff;
+  //返回buffer指针并移动到下一位
   return char2int(*(z->p++));
 }
 

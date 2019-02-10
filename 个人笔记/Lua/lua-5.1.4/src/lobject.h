@@ -390,6 +390,7 @@ typedef struct Node {
 typedef struct Table {
   CommonHeader;
   //1<<p means tagmethod(p) is not present
+  //通过位移的方式表示没有这个元方法
   lu_byte flags;  /* 1<<p means tagmethod(p) is not present */ 
   //log2 of size of `node' array
   lu_byte lsizenode;  /* log2 of size of `node' array */

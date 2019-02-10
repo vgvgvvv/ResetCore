@@ -24,12 +24,12 @@
 #include "lzio.h"
 
 
-
+//获取下一个字符
 #define next(ls) (ls->current = zgetc(ls->z))
 
 
 
-
+//是否进入下一行
 #define currIsNewline(ls)	(ls->current == '\n' || ls->current == '\r')
 
 
@@ -139,13 +139,21 @@ static void inclinenumber (LexState *ls) {
 
 
 void luaX_setinput (lua_State *L, LexState *ls, ZIO *z, TString *source) {
+  //设置浮点符号
   ls->decpoint = '.';
+  //设置当前的LuaState
   ls->L = L;
+  //没有下一个token
   ls->lookahead.token = TK_EOS;  /* no look-ahead token */
+  //设置输入流
   ls->z = z;
+  //添加函数State
   ls->fs = NULL;
+  //设置行号
   ls->linenumber = 1;
+  //
   ls->lastline = 1;
+  //源码
   ls->source = source;
   luaZ_resizebuffer(ls->L, ls->buff, LUA_MINBUFFER);  /* initialize buffer */
   // 提前预读第一个字符到current中
@@ -334,8 +342,10 @@ static void read_string (LexState *ls, int del, SemInfo *seminfo) {
 
 
 static int llex (LexState *ls, SemInfo *seminfo) {
+  //重置读取的buffer
   luaZ_resetbuffer(ls->buff);
   for (;;) {
+    //开始循环获取token
     switch (ls->current) {
       case '\n':
       case '\r': {
@@ -452,13 +462,14 @@ static int llex (LexState *ls, SemInfo *seminfo) {
 void luaX_next (LexState *ls) {
   ls->lastline = ls->linenumber;
   if (ls->lookahead.token != TK_EOS) {  /* is there a look-ahead token? */
-	// 当前如果有预读数据,则使用预读数据为当前数据,同时置预读数据为EOS
+	  // 当前如果有预读数据,则使用预读数据为当前数据,同时置预读数据为EOS
     ls->t = ls->lookahead;  /* use this one */
     ls->lookahead.token = TK_EOS;  /* and discharge it */
   }
-  else
-	// 否则读入下一个数据
+  else{
+    // 否则读入下一个数据
     ls->t.token = llex(ls, &ls->t.seminfo);  /* read next token */
+  }
 }
 
 // 预读一个数据

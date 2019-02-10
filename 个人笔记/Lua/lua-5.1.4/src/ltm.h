@@ -38,10 +38,11 @@ typedef enum {
 } TMS;
 
 
-
+//通过flag判断是否是否没有这个元方法
 #define gfasttm(g,et,e) ((et) == NULL ? NULL : \
   ((et)->flags & (1u<<(e))) ? NULL : luaT_gettm(et, e, (g)->tmname[e]))
 
+//快速获取元方法
 #define fasttm(l,et,e)	gfasttm(G(l), et, e)
 
 LUAI_DATA const char *const luaT_typenames[];

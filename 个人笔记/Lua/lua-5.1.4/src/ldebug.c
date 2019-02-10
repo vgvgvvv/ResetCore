@@ -32,15 +32,17 @@
 
 static const char *getfuncname (lua_State *L, CallInfo *ci, const char **name);
 
-
+//获取当前的pc计数器
 static int currentpc (lua_State *L, CallInfo *ci) {
+  //如果不是lua函数则返回-1
   if (!isLua(ci)) return -1;  /* function is not a Lua function? */
+  //获取当前callinfo
   if (ci == L->ci)
     ci->savedpc = L->savedpc;
   return pcRel(ci->savedpc, ci_func(ci)->l.p);
 }
 
-
+//获取当前行
 static int currentline (lua_State *L, CallInfo *ci) {
   int pc = currentpc(L, ci);
   if (pc < 0)
@@ -50,10 +52,12 @@ static int currentline (lua_State *L, CallInfo *ci) {
 }
 
 
-/*
-** this function can be called asynchronous (e.g. during a signal)
-*/
+/**
+ * this function can be called asynchronous (e.g. during a signal)
+ * 设置hook
+ */
 LUA_API int lua_sethook (lua_State *L, lua_Hook func, int mask, int count) {
+  //如果funcNULL或者mask是0则是关闭hook的意思
   if (func == NULL || mask == 0) {  /* turn off hooks? */
     mask = 0;
     func = NULL;
@@ -65,17 +69,17 @@ LUA_API int lua_sethook (lua_State *L, lua_Hook func, int mask, int count) {
   return 1;
 }
 
-
+//获取hook
 LUA_API lua_Hook lua_gethook (lua_State *L) {
   return L->hook;
 }
 
-
+//获取hook调用的时机
 LUA_API int lua_gethookmask (lua_State *L) {
   return L->hookmask;
 }
 
-
+//获取hook的数量
 LUA_API int lua_gethookcount (lua_State *L) {
   return L->basehookcount;
 }
@@ -109,7 +113,7 @@ LUA_API int lua_getstack (lua_State *L, int level, lua_Debug *ar) {
   return status;
 }
 
-
+//获取callinfo中的proto数据结构
 static Proto *getluaproto (CallInfo *ci) {
   return (isLua(ci) ? ci_func(ci)->l.p : NULL);
 }
@@ -562,6 +566,7 @@ static const char *getfuncname (lua_State *L, CallInfo *ci, const char **name) {
 
 
 /* only ANSI way to check whether a pointer points to an array */
+//检查Tvalue是否在栈上
 static int isinstack (CallInfo *ci, const TValue *o) {
   StkId p;
   for (p = ci->base; p < ci->top; p++)

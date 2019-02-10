@@ -64,6 +64,7 @@ typedef struct FuncState {
   Proto *f;  /* current function header */
   Table *h;  /* table to find (and reuse) elements in `k' */
   struct FuncState *prev;  /* enclosing function */
+  //词法状态机
   struct LexState *ls;  /* lexical state */
   struct lua_State *L;  /* copy of the Lua state */
   struct BlockCnt *bl;  /* chain of current blocks */
@@ -71,6 +72,7 @@ typedef struct FuncState {
   int lasttarget;   /* `pc' of last `jump target' */
   // 这里存放的是所有空悬,也就是没有确定好跳转位置的pc链表
   int jpc;  /* list of pending jumps to `pc' */
+  //第一个空闲的注册器
   int freereg;  /* first free register */
   int nk;  /* number of elements in `k' */
   int np;  /* number of elements in `p' */

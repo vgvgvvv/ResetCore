@@ -53,16 +53,25 @@ typedef struct Token {
 
 // 保存词法分析状态的数据结构
 typedef struct LexState {
+  //当前character
   int current;  /* current character (charint) */
+  //行数
   int linenumber;  /* input line counter */
+  //上一个token所在的行
   int lastline;  /* line of last token `consumed' */
+  //当前token
   Token t;  /* current token */
+  //look ahead token
   Token lookahead;  /* look ahead token */
   struct FuncState *fs;  /* `FuncState' is private to the parser */
   struct lua_State *L;
+  //输入流
   ZIO *z;  /* input stream */
+  //token的buffer
   Mbuffer *buff;  /* buffer for tokens */
+  //源文件名
   TString *source;  /* current source name */
+  //小数点
   char decpoint;  /* locale decimal point */
 } LexState;
 

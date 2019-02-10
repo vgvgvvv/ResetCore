@@ -13,8 +13,10 @@
 
 #define pcRel(pc, p)	(cast(int, (pc) - (p)->code) - 1)
 
+//获取行信息
 #define getline(f,pc)	(((f)->lineinfo) ? (f)->lineinfo[pc] : 0)
 
+//重置hook指针
 #define resethookcount(L)	(L->hookcount = L->basehookcount)
 
 
