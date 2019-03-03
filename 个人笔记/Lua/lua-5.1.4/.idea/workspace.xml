@@ -13,10 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8a2b5dd-e961-4a41-8aee-e72c19d84ef4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/extension/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extension/lhotfix.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extension/lhotfix.c" beforeDir="false" afterPath="$PROJECT_DIR$/extension/lhotfix.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +58,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="8" />
-          <entry key="c" value="477" />
+          <entry key="c" value="513" />
           <entry key="lua" value="46" />
           <entry key="txt" value="203" />
         </counts>
@@ -68,10 +66,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="171" />
-          <entry key="Doxygen file" value="5" />
+          <entry key="Doxygen file" value="7" />
           <entry key="Lua" value="46" />
           <entry key="Makefile" value="8" />
-          <entry key="ObjectiveC" value="472" />
+          <entry key="ObjectiveC" value="506" />
           <entry key="PLAIN_TEXT" value="32" />
         </counts>
       </usages-collector>
@@ -121,7 +119,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lbaselib.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="-74">
               <caret line="650" column="12" selection-start-line="650" selection-start-column="12" selection-end-line="650" selection-end-column="12" />
               <folding>
                 <element signature="e#124#142#0" expanded="true" />
@@ -134,29 +132,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/extension/lhotfix.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+            <state relative-caret-position="412">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding>
                 <element signature="e#37#53#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lualib.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lua.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -297,8 +277,8 @@
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.testlua" />
-      <item itemvalue="Makefile.lua" />
       <item itemvalue="Application.lua_extesion" />
+      <item itemvalue="Makefile.lua" />
     </list>
     <recent_temporary>
       <list>
@@ -318,12 +298,12 @@
       <updated>1549365415590</updated>
       <workItem from="1549365418518" duration="400000" />
       <workItem from="1549365840410" duration="8402000" />
-      <workItem from="1551630777557" duration="1343000" />
+      <workItem from="1551630777557" duration="1467000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10145000" />
+    <option name="totallyTimeSpent" value="10269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1080" extended-state="0" />
@@ -528,7 +508,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lbaselib.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="-74">
           <caret line="650" column="12" selection-start-line="650" selection-start-column="12" selection-end-line="650" selection-end-column="12" />
           <folding>
             <element signature="e#124#142#0" expanded="true" />
@@ -546,8 +526,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/extension/lhotfix.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" column="53" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+        <state relative-caret-position="412">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding>
             <element signature="e#37#53#0" expanded="true" />
           </folding>
