@@ -1,0 +1,6 @@
+# 调试lua堆栈
+
+当我们打断点的时候基本上只能看到lua的一个函数调用lua C API的情况，而无法看到实际lua代码。
+事实上通过获取lua_State中的*ci我们可以获取当前的callinfo，callinfo中的func就是当前函数的TValue。
+func我们获取其中的cl，也就是closure，其中我们可以获得proto数据结构，也就是函数本身的信息，
+在proto里面我们可以看到source这个变量，这个变量其实就是包含了lua的debug信息，帮助我们调试。
