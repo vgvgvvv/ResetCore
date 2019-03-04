@@ -13,8 +13,571 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8a2b5dd-e961-4a41-8aee-e72c19d84ef4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Algorithm/C++/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Algorithm/C++/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extension/lhotfix.c" beforeDir="false" afterPath="$PROJECT_DIR$/extension/lhotfix.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C#/SourceCode/List.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C++/EffectiveC++/Effect C++ 读书笔记——Chapter2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C++/EffectiveC++/Effect C++ 读书笔记——大纲.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C++/EffectiveC++/Effective C++ 读书笔记 —— Chapter3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C++/EffectiveC++/Effective C++ 读书笔记 —— Chapter4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C++/EffectiveC++/Effective C++ 读书笔记 —— Chapter5.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C++/EffectiveC++/Effective C++ 读书笔记 —— Chapter6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C++/EffectiveC++/Effective C++ 读书笔记 —— Chapter8.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C++/EffectiveC++/Effective C++ 读书笔记 —— Chapter9.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C++/EffectiveC++/Effective C++ 读书笔记——Chapter1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C++/EffectiveC++/Effecttive C++ 读书笔记 —— Chapter7.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/C/LearningC/test_setjmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/GoLang/Learning/.idea/Learning.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/GoLang/Learning/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/GoLang/Learning/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/GoLang/Learning/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/GoLang/Learning/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/GoLang/Learning/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/GoLang/Learning/HelloWorld.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/GoLang/Learning/out.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/bluequad-print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/bluequad.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/changes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/ext_c_api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/ext_ffi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/ext_ffi_api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/ext_ffi_semantics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/ext_ffi_tutorial.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/ext_jit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/extensions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/img/contact.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/install.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/luajit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/running.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/doc/status.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/dynasm/dasm_arm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/dynasm/dasm_arm.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/dynasm/dasm_mips.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/dynasm/dasm_mips.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/dynasm/dasm_ppc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/dynasm/dasm_ppc.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/dynasm/dasm_proto.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/dynasm/dasm_x64.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/dynasm/dasm_x86.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/dynasm/dasm_x86.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/dynasm/dynasm.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/etc/luajit.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/etc/luajit.pc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/Makefile.dep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/host/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/host/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/host/buildvm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/host/buildvm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/host/buildvm_asm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/host/buildvm_fold.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/host/buildvm_lib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/host/buildvm_peobj.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/host/genminilua.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/host/minilua.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/jit/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/jit/bc.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/jit/bcsave.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/jit/dis_arm.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/jit/dis_mips.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/jit/dis_mipsel.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/jit/dis_ppc.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/jit/dis_x64.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/jit/dis_x86.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/jit/dump.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/jit/v.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lauxlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_aux.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_base.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_bit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_debug.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_ffi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_init.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_io.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_jit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_math.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_os.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_package.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_string.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lib_table.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj.supp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_alloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_alloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_api.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_arch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_asm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_asm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_asm_arm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_asm_mips.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_asm_ppc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_asm_x86.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_bc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_bc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_bcdump.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_bcread.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_bcwrite.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_carith.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_carith.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ccall.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ccall.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ccallback.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ccallback.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_cconv.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_cconv.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_cdata.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_cdata.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_char.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_char.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_clib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_clib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_cparse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_cparse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_crecord.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_crecord.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ctype.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ctype.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_debug.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_debug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_def.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_dispatch.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_dispatch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_emit_arm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_emit_mips.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_emit_ppc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_emit_x86.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_err.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_err.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_errmsg.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ff.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ffrecord.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ffrecord.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_frame.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_func.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_func.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_gc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_gc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_gdbjit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_gdbjit.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ir.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ir.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_ircall.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_iropt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_jit.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_lex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_lex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_lib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_lib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_load.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_mcode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_mcode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_meta.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_meta.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_obj.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_obj.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_opt_dce.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_opt_fold.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_opt_loop.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_opt_mem.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_opt_narrow.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_opt_sink.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_opt_split.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_parse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_parse.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_record.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_record.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_snap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_snap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_state.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_state.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_str.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_str.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_strscan.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_strscan.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_tab.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_tab.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_target.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_target_arm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_target_mips.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_target_ppc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_target_x86.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_trace.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_trace.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_traceerr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_udata.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_udata.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_vm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_vmevent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_vmevent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lj_vmmath.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/ljamalg.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lua.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lua.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/luaconf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/luajit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/luajit.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/lualib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/msvcbuild.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/ps4build.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/psvitabuild.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/vm_arm.dasc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/vm_mips.dasc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/vm_ppc.dasc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/vm_ppcspe.dasc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/vm_x86.dasc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/LuaJIT-2.0.5/src/xedkbuild.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中Table的实现.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中动态类型的实现.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中动态类型的实现/2019-01-13-14-25-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中动态类型的实现/2019-01-13-14-25-12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中动态类型的实现/2019-01-13-14-25-23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中动态类型的实现/2019-01-13-14-25-34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中动态类型的实现/2019-01-13-14-25-45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中动态类型的实现/2019-01-13-14-25-55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中动态类型的实现/2019-01-13-14-26-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中动态类型的实现/WX20171021-000121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中动态类型的实现/WX20171021-000813.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现/2019-01-13-14-32-44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现/2019-01-13-14-32-56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现/2019-01-13-14-33-05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现/2019-01-13-14-34-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现/2019-01-13-14-34-19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现/2019-01-13-14-34-33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现/2019-01-13-14-34-42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现/2019-01-13-14-34-56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现/2019-01-13-14-35-07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现/2019-01-13-14-35-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/Lua的设计与实现/Lua中字符串的实现/2019-01-13-14-35-38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/.idea/lua-5.1.4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/COPYRIGHT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/HISTORY" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/INSTALL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/amazon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/contents.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/cover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/lua.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/lua.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/lua.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/luac.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/luac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/manual.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/manual.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/doc/readme.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/etc/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/etc/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/etc/all.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/etc/lua.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/etc/lua.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/etc/lua.pc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/etc/luavs.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/etc/min.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/etc/noparser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/etc/strict.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/extension/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/extension/lhotfix.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lapi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lapi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lauxlib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lauxlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lbaselib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lcode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lcode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/ldblib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/ldebug.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/ldebug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/ldo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/ldo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/ldump.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lfunc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lfunc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lgc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lgc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/linit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/liolib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/llex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/llex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/llimits.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lmathlib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lmem.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lmem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/loadlib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lobject.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lopcodes.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lopcodes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/loslib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lparser.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lparser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lstate.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lstate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lstring.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lstring.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lstrlib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/ltable.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/ltable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/ltablib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/ltm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/ltm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lua.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lua.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/luac.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/luaconf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lualib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lundump.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lundump.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lvm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lvm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lzio.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/lzio.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/src/print.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/bisect.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/cf.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/echo.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/env.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/factorial.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/fib.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/fibfor.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/globals.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/hello.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/life.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/luac.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/my.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/printf.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/readonly.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/sieve.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/sort.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/table.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/testNan.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/teststring.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/testyield.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/trace-calls.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/trace-globals.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/test/xd.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/testcproject/test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/lua-5.1.4/testcproject/testusrdata.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/readinglua/2019-02-02-17-32-20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/readinglua/Lua字节码.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/readinglua/Lua源码阅读顺序.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/readinglua/string扩展方法.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/readinglua/判断数字是否为Nan的方法.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/readinglua/调试lua堆栈.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/readingluajit/luajit文件.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/tolua++中文参考手册【完整翻译】.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Lua/在Lua中使用类Unity协程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/DSL在项目中的应用：用DSL高效组织游戏情节.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/DSL在项目中的应用：用DSL高效组织游戏情节/14EEE25F-255C-48A8-806B-FC7CA4C1DFA1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/DSL在项目中的应用：用DSL高效组织游戏情节/219F966E-AE43-436B-942E-39A9265522B2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/DSL在项目中的应用：用DSL高效组织游戏情节/2A93D4CE-BDD2-4FF3-AE93-0FF4CD5D489E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/DSL在项目中的应用：用DSL高效组织游戏情节/7EE3F3A3-9575-4E88-A39A-6F34F1E1DAA2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/DSL在项目中的应用：用DSL高效组织游戏情节/D3A9B432-1E13-4360-9731-7C366815F379.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/RO资源管理分享.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/Unity协程原理.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/Unity图文混排——读读EmojiText顺便吐槽下.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/Unity图文混排——读读EmojiText顺便吐槽下/021BACFA-01D1-454F-9C92-EFFE5CE54996.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/Unity图文混排——读读EmojiText顺便吐槽下/1C4C4AD3-C1C1-4FCB-B070-18F57E3C7236.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/Unity图文混排——读读EmojiText顺便吐槽下/81071071-1A50-4E5F-BAA0-95A63BBDE048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/Unity图文混排——读读EmojiText顺便吐槽下/923381B0-AAFE-49F6-ABEB-0B02D0395570.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/Unity图文混排——读读EmojiText顺便吐槽下/95FEC0BD-56C7-43E0-AE80-F1A24DBC78ED.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/Unity图文混排——读读EmojiText顺便吐槽下/9674BFDC-6E8C-47F5-B2BE-EB3A1F9FCF9F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/Unity图文混排——读读EmojiText顺便吐槽下/DB09D0B7-F6F8-4FB9-B431-3D74348E9AF0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/Unity图文混排——读读EmojiText顺便吐槽下/F6EC204C-9DD1-4C04-BF91-B57E142EC937.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/又见Rx——Rx via UniRx.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/又见Rx——Rx via UniRx/4B9C9C9F-12EA-46E8-85DB-5A0AF7982B49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/又见Rx——Rx via UniRx/7AF8319A-96A4-4938-BF88-4835CBF26D87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/002F03F2-568A-4841-91E2-5DC34F1827F9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/0C4AAC16-99FC-4196-9F5C-A3E609254DA6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/3C5BACAA-B501-4FDC-8C10-1E60A6D5C9D1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/5776256C-1708-4F41-B9AA-6FFAB930A55C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/66CDF02D-0F74-4D7E-B94F-C53C9DA60888.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/6FBD805A-1FB3-42A2-B935-2CE0CF049279.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/84ADC0F6-8A03-4FBA-BAE4-73B5C95E0575.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/88DE722A-FC24-4993-B394-E7EE5D1E7613.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/8E6F7E49-8F85-4ACC-9A91-4EA6593CB609.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/A2E85A9C-9D83-4E9C-BF02-E8E4DA4FC1FA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/A96E4AB5-5061-4755-AB0B-FC4F18908E8E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/C950EB91-E40C-4442-8307-967607B9D10A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/DC955241-EBA2-44B1-872E-FC0F4C70322B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染① 简单通过Projector进行投影/E9191D7F-4A04-42F6-98F2-32F2322132F6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染② 通过深度贴图渲染阴影.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染② 通过深度贴图渲染阴影/038AF202-4470-4FEE-A784-13B3BEF4158F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染② 通过深度贴图渲染阴影/3C2B0FBA-509E-4815-9608-089D50A1C3FE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染② 通过深度贴图渲染阴影/6C07DBDE-A264-43AE-ABD0-39B6241B86E7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染② 通过深度贴图渲染阴影/796CAD13-EA81-43C8-86D4-4F8BC7780F65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染② 通过深度贴图渲染阴影/824256A9-4745-4C8A-826C-E4B1A6CB0E82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染② 通过深度贴图渲染阴影/88962836-41FA-4C5F-A3C9-0FE9119CA98F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染② 通过深度贴图渲染阴影/BBFBCCFF-BDBB-4097-8855-E2AA155DF92F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/实时阴影渲染② 通过深度贴图渲染阴影/EABB969E-DC2B-4A41-9023-16ADF615858A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/096A9F95-1426-44F4-BCE3-2592A04607E2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/1CC8AC68-68A1-460B-B06B-BFE8CEB67166.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/1EF8845E-7912-477C-B43C-0F62CFAF4D7B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/2A406223-274D-4AEF-90F9-9A9796C600A5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/4686EF0C-0863-4774-9317-ACEF92EBB79D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/4A977517-A557-4518-A4A3-C900120455C1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/561CD54A-B4FA-4301-8A81-E3B45FD136B8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/621BDACC-080C-49C0-8DE7-E070BA51A779.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/87468A64-306A-4486-ABB0-BA00B0D99873.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/88EC33E5-0DBD-4539-B084-ACBCF7213F55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/8F51D7E7-2A4C-4277-979E-6D8769DB9DD1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/90590C92-8015-4541-9B3C-306E3A0F8307.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/90CAFA27-2F9F-466E-9B62-DAEFFB145FCC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/94FAF815-BB50-4AD1-B432-E46CD1D2AACD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/B45C822C-11B2-4BA8-801E-4A6990D61882.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/B830E7EE-CCCB-4189-8397-35B46A533688.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/C0AE5611-95CD-435D-9551-BEE213D030AD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/C605B74F-D87B-4456-A7ED-7981D0054610.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/CC266CA4-C145-426B-8EA4-ACF2DD4E070C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/D9009E76-94B7-4FBB-B45C-67C0D736BAC1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/EF967C17-B220-4BB4-BB1D-ECC22B4E9E31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之事件系统初探/FB225F9D-5A70-4B93-91F8-AFAFDC53AA4D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/158A7D96-FE89-4B28-8185-524503B331C0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/22E1DF72-9532-49B5-A608-5D1DB4B74012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/399DC385-32D0-43F3-AF80-E861006D80E1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/48B4689E-52B2-4547-827A-EEAEFEF1FB9F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/4C339D55-835A-42E2-BA09-0ECFD862B0FD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/4F11FA18-04FF-40BF-BB6C-E17E1360AFEF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/5B1DAC54-A031-4132-8329-D395D9367DAA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/7047BE90-C80C-43E6-8894-ADD5EF9E8B25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/7428BCDB-5366-4FE0-813C-53CCFE0EC6BE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/76C95939-6014-48B7-BB05-979CC318F946.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/9EBF9456-E0D2-4936-AE5A-92AE6C243353.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/A0C5CC04-47EC-47B6-9075-73E265E4F4DE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/A27B2279-B6E5-4B80-90E4-60F7DA825EC2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/A9409719-0D28-47DB-9ABF-C53FD50BDE9A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/AF1C8EC8-D3BE-4723-AF2F-E88E59D3A6AE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/B269DC38-A71D-4FB6-9406-BE46FDE72426.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/B2A6C9CC-C90D-49B3-B9B4-686851A839C6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/BB78F933-CFF1-4077-8CC9-BDB360616081.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/BCFDE1DA-2F59-4CB6-B402-42FF17C71DEB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/C4BC606D-6A6B-4C7B-8D15-C7AEBE7329EB.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/Unity/深入UGUI源码之绘制初探/E8C5A596-4A25-419B-A2AD-FDEB1F854FC7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/其他/打造facebook/《打造Facebook》 读书笔记.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/其他/打造facebook/《打造Facebook》 读书笔记/D8C84B3C-F986-48A4-A29C-4E3C20F7D593.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/其他/打造facebook/打造facebook.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/其他/打造facebook/打造facebook/ACDBBE02-3A47-45EE-BF85-2A0841735912.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/其他/打造facebook/打造facebook/D8C84B3C-F986-48A4-A29C-4E3C20F7D593.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Android Memory Management.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/033E1BB7-017F-441F-A170-5B4AB609401E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/0CEF0AFE-93C1-4463-8823-1BDF1D1327C8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/1FD65C21-7E8A-42C7-AF92-E87227E5834B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/259E90D9-440D-4A17-90C7-0D8BB3C454AD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/2C41DED6-345A-4208-881B-BC0079C3ABED.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/301BD2CD-0481-4EFC-B33E-9C92C55929E6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/33B032D8-CFFD-43F9-A6A8-9CFDE8261F91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/342C6A14-76B9-4997-8D18-CE07C70A5C17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/558584BB-E96B-402B-8D68-794365E0EB7F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/6189CBA2-35C1-4D5A-940A-1A689267453B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/6C7386BC-B147-41E6-8D76-A62B4286105D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/704741A8-47C8-45F2-81E9-EA895630EEC1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/7E7C1203-D679-4ADA-A5F9-8D8386AFBFBE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/808B3F78-E191-4815-A4DC-AB55A47F8877.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/8C4E0772-DA0C-42F3-8958-1E2996492641.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/8DFA2875-62FF-4126-A4F6-990F499485D2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/9610F4C1-A3F9-4C1C-B174-CF8BC3CB447E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/9893072B-E9C0-4336-9901-1DF9AA004CD9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/A03CBE1C-359A-4844-B1CD-C8F8EF67ED7E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/A0E63A98-166C-44E1-AE1A-846A239523F3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/A1A26946-3B86-4A0B-88B4-D4DAE1A0AAC0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/A821E014-631D-4216-B047-974A5CAF1B97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/BF440333-0F9D-4E3D-9A83-CA37CD9E3747.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/D1AA4080-D180-4C10-A3B4-742DABD2C70E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/DFD7FAB7-0C1E-4B31-B996-A2651A7359F6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/E4784159-DFF0-4E81-BD59-C396CF5B3E9D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding Android memory usage (Google IO '18)/E6973542-D2E8-4EB2-8DEF-62672E089802.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding iOS Memory (WiP).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/原生开发/原生开发/Understanding iOS Memory (WiP)/DE826600-3158-4269-8227-3F84D9F8E035.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/工具/Vim/Vim速查.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/工程设计/本地化管理系列/1.多地区管理.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/工程设计/本地化管理系列/2.多语言管理.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/工程设计/本地化管理系列/3.多地区代码注入.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/工程设计/本地化管理系列/4.分支管理(旧).md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/工程设计/本地化管理系列/5.多地区相关问题解答.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/工程设计/本地化管理系列/6.SDK管理.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/工程设计/本地化管理系列/会议想法.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/工程设计/本地化管理系列/地区版本管理构想.vsdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/工程设计/本地化管理系列/多地区管理（新）.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/工程设计/本地化管理系列/多地区管理（新）.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/数据结构与算法/第一章/2018-12-09-01-15-52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/数据结构与算法/第一章/2018-12-09-01-20-42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/数据结构与算法/第一章/2018-12-09-14-37-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/数据结构与算法/第一章/第一章.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/汇编/汇编语言/test.S" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/汇编/汇编语言/寄存器.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ①.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ①/2DE98BBB-9A0C-417D-BDC9-784994590C1A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ①/AEDCCB79-1CDC-4A46-9645-F4EBD33C748F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ②.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ③.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ③/34B43B8B-D4D3-4FEE-8050-E6706E297B91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ③/37BB1555-C6F2-415D-9B8C-F9D6A48A079C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ③/538DBACF-5878-46CE-A3A3-0A1D9365F4DE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ③/6C23CB82-6F1F-4953-BABB-F4C9C4686204.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ③/81BFB70D-2CFB-43D3-B392-DBC63DECFE1C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ③/8BAF0F0C-8791-450F-8D6C-41464A5561AD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ③/99A39AC5-E2D4-4215-B389-79BE4F41F4A4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ③/D778C9E5-FEE9-4494-AF36-F2619EF121BF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/1E64340C-2287-4CB5-B998-E58BF5EA8ADF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/22E007FF-B3CC-4B77-95FC-CE1F6773E518.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/25204EBC-8A44-47AF-BBC6-9465989919D6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/2A647128-782A-40BB-809F-5B09E78B61BF.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/4BBB0996-FA3A-4281-994B-7EF82FE37CEE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/6E8D5E45-0AFD-4DD1-B07E-14C4C98B3FC7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/8342DDE0-B474-47C8-8985-5C881A622D53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/A11B0E63-8EDF-46FA-BF06-F4939D684457.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/AC1D9280-50B5-4E19-93BE-768FE231EF8E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/BEF9F8B2-0247-4A17-ADA3-3B894F9503F2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/C9358894-6E5A-4EFE-8E1A-B8C1E1BCF09A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/D1D8D4C5-C6FF-4C22-8B68-5986EF29F5B8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/DAEFEA0A-4815-4E35-84FD-3E58B41951F8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/DD5C1F1B-72EA-42E5-986A-545BF3FD35FA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/FD2EB64B-4205-4F8C-ACA7-6B549D4EDCB8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/FD908872-39DC-43F9-BAC1-AFF92354EDF1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ④/FDDD5B99-168C-4AD5-8924-027BEA129BB4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ⑤.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ⑤/B852277E-DB22-4DAC-84DC-E381F7914BBC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/渲染/Write PBR In Unity/Physically Based Rendering Algorithms A Comprehensive Study In Unity3D ⑥.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/游戏引擎/游戏引擎构架/游戏中所需的三维数学.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/游戏引擎/游戏引擎构架/游戏引擎构架 读书笔记 专业工具.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/游戏引擎/游戏引擎构架/游戏引擎构架 读书笔记 引擎基本分层.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/游戏引擎/游戏引擎构架/游戏引擎架构 读书笔记 游戏软件工程基础.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/游戏引擎/游戏引擎构架/游戏支持系统.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/游戏引擎/简单看看Unity源码中的Behavior系统.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/知识面整理/知识面整理.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/网络编程/帧同步概念——客户端部分.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/网络编程/帧同步概念——客户端部分/0F95628B-9B6C-4CCB-8AA4-B4BA97913A2B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/网络编程/帧同步概念——客户端部分/12D4EAA1-19EE-4F4C-8FCF-7692A5ED8565.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/网络编程/帧同步概念——客户端部分/C0624DF7-E16B-46B8-B27A-97872E6BC01F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/网络编程/帧同步概念——客户端部分/D6C87AB2-BA96-4DF6-8A8C-93E481D0542B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/网络编程/帧同步概念——客户端部分/F699A35C-0BD4-40BE-9B61-3D6C59E7E1CD.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../个人笔记/读书笔记/编码：隐匿在计算机软硬件背后的语言/读书笔记.md" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,69 +637,38 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-703054820">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="c" value="2" />
+          <entry key="gitignore" value="1" />
+          <entry key="h" value="1" />
+          <entry key="txt" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="2" />
+          <entry key="ObjectiveC" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcproject/test.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/my.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="21" selection-start-column="21" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lauxlib.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lauxlib.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="230" column="14" selection-start-line="230" selection-start-column="2" selection-end-line="230" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lbaselib.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-74">
-              <caret line="650" column="12" selection-start-line="650" selection-start-column="12" selection-end-line="650" selection-end-column="12" />
-              <folding>
-                <element signature="e#124#142#0" expanded="true" />
-                <element signature="e#239#255#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/extension/lhotfix.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-              <folding>
-                <element signature="e#37#53#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="433">
+              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -202,8 +734,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2560" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -212,18 +744,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="TestLua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lua-5.1.4" type="462c0819:PsiDirectoryNode" />
+              <item name="Lua-5.1.4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TestLua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lua-5.1.4" type="462c0819:PsiDirectoryNode" />
+              <item name="extension" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,19 +830,20 @@
       <workItem from="1549365418518" duration="400000" />
       <workItem from="1549365840410" duration="8402000" />
       <workItem from="1551630777557" duration="1467000" />
+      <workItem from="1551672882016" duration="842000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10269000" />
+    <option name="totallyTimeSpent" value="11111000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49778435" visible="true" weight="0.19062749" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49778435" visible="true" weight="0.19408602" />
       <window_info id="Structure" order="1" sideWeight="0.5022157" side_tool="true" weight="0.19102462" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="LuaCheck" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32970297" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32998884" />
@@ -317,8 +855,8 @@
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32998884" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.32970297" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.35132274" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -417,13 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lapi.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2850">
-          <caret line="150" column="13" selection-start-line="150" selection-start-column="13" selection-end-line="150" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/testyield.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -445,6 +976,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/COPYRIGHT">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lua.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lualib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testcproject/test.c">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -462,47 +1010,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/COPYRIGHT">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extension/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lua.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lauxlib.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        <state relative-caret-position="756">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lauxlib.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
+        <state relative-caret-position="4830">
           <caret line="230" column="14" selection-start-line="230" selection-start-column="2" selection-end-line="230" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lbaselib.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
+        <state relative-caret-position="1659">
           <caret line="650" column="12" selection-start-line="650" selection-start-column="12" selection-end-line="650" selection-end-column="12" />
           <folding>
             <element signature="e#124#142#0" expanded="true" />
@@ -511,20 +1035,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lualib.h">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="35" />
+        <state relative-caret-position="429">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lapi.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lapi.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="150" column="13" selection-start-line="150" selection-start-column="13" selection-end-line="150" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extension/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extension/lhotfix.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding>
-            <element signature="e#37#53#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="433">
+          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
         </state>
       </provider>
     </entry>
