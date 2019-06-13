@@ -1,4 +1,5 @@
 ﻿using System;
+using NUnit.Framework;
 using UnityEngine;
 
 namespace CSLearning.SpecialGenerics
@@ -21,5 +22,6 @@ namespace CSLearning.SpecialGenerics
             testAct = testAct ?? defaultAct;
             testAct(this, arg);
         }
+
     }
 }
