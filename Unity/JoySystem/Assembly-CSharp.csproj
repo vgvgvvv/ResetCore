@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BDCC044B-5B73-06D1-4793-E5230D02CE85}</ProjectGuid>
+    <ProjectGuid>{4DE0C7E0-CEDB-F7F0-DBB3-DCF619965412}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,32 +60,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\IDrawGizmo.cs" />
-    <Compile Include="Assets\Math.cs" />
-    <Compile Include="Assets\PngMaker.cs" />
-    <Compile Include="Assets\RayTracing\Camera.cs" />
-    <Compile Include="Assets\RayTracing\HitInfo.cs" />
-    <Compile Include="Assets\RayTracing\Material\Material.cs" />
-    <Compile Include="Assets\RayTracing\Ray.cs" />
-    <Compile Include="Assets\RayTracing\RayTracer.cs" />
-    <Compile Include="Assets\RayTracing\Renderer\Ball.cs" />
-    <Compile Include="Assets\RayTracing\Renderer\RayTraceRenderer.cs" />
-    <Compile Include="Assets\RayTracing\World.cs" />
-    <Compile Include="Assets\Tests\WorldDebugger.cs" />
+    <Compile Include="Assets\Scripts\JobHandler.cs" />
+    <Compile Include="Assets\Scripts\MyJob.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Projects/ResetCore/Unity/PlayRayTrace/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Projects/ResetCore/Unity/JoySystem/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/Projects/ResetCore/Unity/PlayRayTrace/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/Projects/ResetCore/Unity/JoySystem/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>E:/Projects/ResetCore/Unity/PlayRayTrace/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>E:/Projects/ResetCore/Unity/JoySystem/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Projects/ResetCore/Unity/PlayRayTrace/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/Projects/ResetCore/Unity/JoySystem/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>E:/Projects/ResetCore/Unity/PlayRayTrace/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>E:/Projects/ResetCore/Unity/JoySystem/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/Softwares/Unity2018.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -289,13 +279,13 @@
       <HintPath>E:/Softwares/Unity2018.3.7f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>E:/Projects/ResetCore/Unity/PlayRayTrace/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>E:/Projects/ResetCore/Unity/JoySystem/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>E:/Projects/ResetCore/Unity/PlayRayTrace/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>E:/Projects/ResetCore/Unity/JoySystem/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>E:/Projects/ResetCore/Unity/PlayRayTrace/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>E:/Projects/ResetCore/Unity/JoySystem/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>E:/Softwares/Unity2018.3.7f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
