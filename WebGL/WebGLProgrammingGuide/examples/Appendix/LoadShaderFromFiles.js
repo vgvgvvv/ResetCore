@@ -90,7 +90,7 @@ function readShaderFile(gl, fileName, shader) {
 
   request.onreadystatechange = function() {
     if (request.readyState === 4 && request.status !== 404) { 
-	onReadShader(gl, request.responseText, shader); 
+	    onReadShader(gl, request.responseText, shader); 
     }
   }
   request.open('GET', fileName, true); // Create a request to acquire the file
