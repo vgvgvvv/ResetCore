@@ -3,8 +3,7 @@ using System.Net.Sockets;
 using System;
 using System.Diagnostics;
 using System.Net;
-using ReFrame.Util.Context;
-using ReFrame.Util.Debug;
+using ReFrame.Util;
 
 namespace ReFrame.Network {
     public class TcpSocket {

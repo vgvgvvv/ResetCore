@@ -1,5 +1,5 @@
 ﻿using System;
-using ReFrame.Util.Debug;
+using ReFrame.Util;
 using UnityEngine;
 
 namespace Reframe.Unity.Utility
