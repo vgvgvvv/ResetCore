@@ -1,31 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TaskSequence
 {
     public class BaseTask
     {
-        
-    }
-
-    public class EntryTask : BaseTask
-    {
-        
-    }
-
-    public class ContainerTask : BaseTask
-    {
-        
-    }
-
-    public class ActionTask : BaseTask
-    {
-        
-    }
-
-    public class BatTask : ActionTask
-    {
-        public string BatPath;
+        public string Name;
+        public string AppPath;
         public string Args;
         public string WorkDirectory;
+        public string Comment;
+        public string SubTaskName;
+
+        public virtual void Run(Action callback)
+        {
+            callback();
+        }
     }
+
+    
 }

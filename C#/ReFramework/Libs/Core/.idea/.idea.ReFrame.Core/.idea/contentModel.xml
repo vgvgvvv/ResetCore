@@ -127,9 +127,11 @@
         <e p="BaseTask.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="TaskQueue.cs" t="Include" />
         <e p="TaskSequence.csproj" t="IncludeRecursive" />
       </e>
       <e p="UnitTest" t="IncludeRecursive">
@@ -139,6 +141,9 @@
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
         <e p="Tests.cs" t="Include" />
+        <e p="TestTaskSequence" t="Include">
+          <e p="test_task_seq.json" t="Include" />
+        </e>
         <e p="UnitTest.csproj" t="IncludeRecursive" />
       </e>
     </e>

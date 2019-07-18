@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LitJSON, Version=0.13.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\LitJson.0.13.0\lib\net45\LitJSON.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -41,6 +44,16 @@
   <ItemGroup>
     <Compile Include="BaseTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaskQueue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReFrame.Util\ReFrame.Util.csproj">
+      <Project>{be370819-9de9-42a6-8bf8-b3195db0a752}</Project>
+      <Name>ReFrame.Util</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

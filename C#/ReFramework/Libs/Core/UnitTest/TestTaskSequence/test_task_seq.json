@@ -1,0 +1,10 @@
+﻿[
+  {
+    "Name" : "Test",
+    "AppPath" : "cmd.exe",
+    "Args" : "",
+    "WorkDirectory" : "",
+    "Comment" : "",
+    "SubTaskName" : ""
+  } 
+]

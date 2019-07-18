@@ -10,93 +10,93 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="XmlSerialize.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReFrame.Util/Parser/XmlSerialize.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="35" column="11" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="35" selection-end-column="11" />
-              <folding>
-                <marker date="1563350948015" expanded="true" signature="6:31" ph="..." />
-                <marker date="1563350948015" expanded="true" signature="55:953" ph="{...}" />
-                <marker date="1563350948015" expanded="true" signature="97:951" ph="{...}" />
-                <marker date="1563350948015" expanded="true" signature="104:945" ph="/* private static Func&lt;XmlElement, T&gt; _readFunc = DefaultReadFunc; ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReFrame.Network.csproj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReFrame.Network/ReFrame.Network.csproj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseTask.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TaskSequence/BaseTask.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-              <folding>
-                <marker date="1563351214029" expanded="true" signature="37:420" ph="{...}" />
-                <marker date="1563351214029" expanded="true" signature="65:86" ph="{...}" />
-                <marker date="1563351214029" expanded="true" signature="125:146" ph="{...}" />
-                <marker date="1563351214029" expanded="true" signature="189:210" ph="{...}" />
-                <marker date="1563351214029" expanded="true" signature="250:271" ph="{...}" />
-                <marker date="1563351214029" expanded="true" signature="310:418" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskSequence.csproj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TaskSequence/TaskSequence.csproj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionQueue.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/ActionQueue.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="982">
-              <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-              <folding>
-                <marker date="1516984152904" expanded="false" signature="6:73" ph="..." />
-                <marker date="1516984152904" expanded="true" signature="99:2638" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="106:167" ph="/// 即时触发式行为队列，入队的同时就开始调用 ... " />
-                <marker date="1516984152904" expanded="true" signature="196:2636" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="368:419" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="429:2468" ph="主要逻辑" />
-                <marker date="1516984152904" expanded="true" signature="450:603" ph="/// 插入行为，用户可以控制下一个行为在该的行为中调用的位置。 ... " />
-                <marker date="1516984152904" expanded="true" signature="665:1129" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="702:886" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="788:870" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="903:1094" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="1186:1268" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="1303:1581" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="1349:1455" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="1472:1571" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="1591:1738" ph="/// 插入行为（下个动作流程自动加到该动作的后面） ... " />
-                <marker date="1516984152904" expanded="true" signature="1792:2284" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="1829:2027" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="1915:2011" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="2044:2249" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="2350:2448" ph="{...}" />
-                <marker date="1516984152904" expanded="true" signature="2507:2630" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="BaseTask.cs" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/TaskSequence/BaseTask.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+                  <folding>
+                    <marker date="1563430583421" expanded="true" signature="6:47" ph="..." />
+                    <marker date="1563430583421" expanded="true" signature="71:403" ph="{...}" />
+                    <marker date="1563430583421" expanded="true" signature="99:395" ph="{...}" />
+                    <marker date="1563430583421" expanded="true" signature="345:389" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TaskQueue.cs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/TaskSequence/TaskQueue.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="720">
+                  <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="34" />
+                  <folding>
+                    <marker date="1563430810528" expanded="true" signature="6:101" ph="..." />
+                    <marker date="1563430810528" expanded="true" signature="125:1014" ph="{...}" />
+                    <marker date="1563430810528" expanded="true" signature="154:1012" ph="{...}" />
+                    <marker date="1563430810528" expanded="true" signature="380:754" ph="{...}" />
+                    <marker date="1563430810528" expanded="true" signature="620:705" ph="{...}" />
+                    <marker date="1563430810528" expanded="true" signature="855:949" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ActionQueue.cs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/ActionQueue.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+                  <folding>
+                    <marker date="1516984152904" expanded="true" signature="6:73" ph="..." />
+                    <marker date="1516984152904" expanded="true" signature="99:2638" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="106:167" ph="/// 即时触发式行为队列，入队的同时就开始调用 ... " />
+                    <marker date="1516984152904" expanded="true" signature="196:2636" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="368:419" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="429:2468" ph="主要逻辑" />
+                    <marker date="1516984152904" expanded="true" signature="450:603" ph="/// 插入行为，用户可以控制下一个行为在该的行为中调用的位置。 ... " />
+                    <marker date="1516984152904" expanded="true" signature="665:1129" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="702:886" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="788:870" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="903:1094" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="1186:1268" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="1303:1581" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="1349:1455" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="1472:1571" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="1591:1738" ph="/// 插入行为（下个动作流程自动加到该动作的后面） ... " />
+                    <marker date="1516984152904" expanded="true" signature="1792:2284" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="1829:2027" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="1915:2011" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="2044:2249" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="2350:2448" ph="{...}" />
+                    <marker date="1516984152904" expanded="true" signature="2507:2630" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="test_task_seq.json" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/UnitTest/TestTaskSequence/test_task_seq.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="160">
+                  <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                  <folding>
+                    <marker date="1563430685742" expanded="true" signature="4:143" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ReFrame.Network/Session/TcpSession.cs" root0="FORCE_HIGHLIGHTING" />
@@ -117,6 +117,8 @@
     <setting file="file://$PROJECT_DIR$/ReFrame.Network/Bootstrap/ClientBootstrap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Trigger/Core/TriggerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Reframe.Unity/Utility/UnityDebuger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UnitTest/TestTaskSequence/test_task_seq.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TaskSequence/TaskQueue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UnitTest/Tests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Util/Context/Context.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ReFrame.Network/Socket/UdpSocket.cs" root0="FORCE_HIGHLIGHTING" />
@@ -138,8 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ReFrame.Util/Utility/ActionQueue.cs" />
-        <option value="$PROJECT_DIR$/ReFrame.Network/Context/Reciver.cs" />
         <option value="$PROJECT_DIR$/ReFrame.Network/Session/TcpSocket.cs" />
         <option value="$PROJECT_DIR$/ReFrame.Network/Context/Sender.cs" />
         <option value="$PROJECT_DIR$/ReFrame.Network/Session/Pipeline.cs" />
@@ -188,7 +188,9 @@
         <option value="$PROJECT_DIR$/ReFrame.Network/Socket/UdpSocket.cs" />
         <option value="$PROJECT_DIR$/ReFrame.Util/Parser/XmlSerialize.cs" />
         <option value="$PROJECT_DIR$/TaskSequence/Class1.cs" />
+        <option value="$PROJECT_DIR$/UnitTest/TestTaskSequence/test_task_seq.json" />
         <option value="$PROJECT_DIR$/TaskSequence/BaseTask.cs" />
+        <option value="$PROJECT_DIR$/TaskSequence/TaskQueue.cs" />
       </list>
     </option>
   </component>
@@ -242,6 +244,10 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="SearchEverywhereHistoryKey" value="tcps&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/ReFrame.Network/Socket/TcpSocket.cs&#10;tcp&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/ReFrame.Network/Session/TcpSession.cs&#10;Isessionout&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/ReFrame.Network/Session/ISessionOutboundInvoker.cs&#10;inbound&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/ReFrame.Network/Handler/ISessionInboundHandler.cs&#10;object&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/ReFrame.Core/Base/RObject.cs&#10;de&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/ReFrame.Network/Session/DefaultSessionPipeline.cs&#10;conte&#9;FILE&#9;file:///Users/dongchen/Documents/ResetCore/C#/ReFramework/Libs/Core/ReFrame.Network/Session/ISessionContext.cs" />
+    <property name="RiderNuGetCacheManager.AutoClear.global-packages" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.temp" value="1" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -277,12 +283,12 @@
       <workItem from="1517241373794" duration="829000" />
       <workItem from="1517329470635" duration="205000" />
       <workItem from="1543593493803" duration="337000" />
-      <workItem from="1563350807777" duration="710000" />
+      <workItem from="1563350807777" duration="3900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31266000" />
+    <option name="totallyTimeSpent" value="34456000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -298,51 +304,28 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.08941345" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4873035" sideWeight="0.49642345" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="leetcode" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4873035" sideWeight="0.49642345" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="leetcode" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22478157" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5647403" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22478157" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4873035" sideWeight="0.5035765" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903265" sideWeight="0.08941345" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4873035" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27110156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4873035" sideWeight="0.5028612" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -392,16 +375,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ReFrame.Network/Context/IPresentation.cs" />
-    <entry file="file://$PROJECT_DIR$/ReFrame.Network/Context/Reciver.cs" />
-    <entry file="file://$PROJECT_DIR$/ReFrame.Network/Socket/SocketEnum.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReFrame.Network/Context/Sender.cs" />
     <entry file="file://$PROJECT_DIR$/ReFrame.Network/Handler/SessionInitializer.cs" />
     <entry file="file://$PROJECT_DIR$/ReFrame.Network/Session/DefualtSessionFactory.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -474,13 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UnitTest/Tests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -787,6 +753,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TaskSequence/TaskSequence.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ReFrame.Util/Parser/XmlSerialize.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
@@ -800,12 +774,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Network/ReFrame.Network.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Core/ReFrame.Core.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTest/Tests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <marker date="1517082439603" expanded="false" signature="6:115" ph="..." />
+            <marker date="1517082439603" expanded="true" signature="135:675" ph="{...}" />
+            <marker date="1517082439603" expanded="true" signature="178:673" ph="{...}" />
+            <marker date="1517082439603" expanded="true" signature="232:667" ph="{...}" />
+            <marker date="1517082439603" expanded="true" signature="436:558" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReFrame.Util/ReFrame.Util.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTest/TestTaskSequence/test_task_seq.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1563430685742" expanded="true" signature="4:143" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ReFrame.Util/Utility/ActionQueue.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="982">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
           <folding>
-            <marker date="1516984152904" expanded="false" signature="6:73" ph="..." />
+            <marker date="1516984152904" expanded="true" signature="6:73" ph="..." />
             <marker date="1516984152904" expanded="true" signature="99:2638" ph="{...}" />
             <marker date="1516984152904" expanded="true" signature="106:167" ph="/// 即时触发式行为队列，入队的同时就开始调用 ... " />
             <marker date="1516984152904" expanded="true" signature="196:2636" ph="{...}" />
@@ -831,33 +853,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReFrame.Network/ReFrame.Network.csproj">
+    <entry file="file://$PROJECT_DIR$/TaskSequence/TaskQueue.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TaskSequence/TaskSequence.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="720">
+          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <marker date="1563430810528" expanded="true" signature="6:101" ph="..." />
+            <marker date="1563430810528" expanded="true" signature="125:1014" ph="{...}" />
+            <marker date="1563430810528" expanded="true" signature="154:1012" ph="{...}" />
+            <marker date="1563430810528" expanded="true" signature="380:754" ph="{...}" />
+            <marker date="1563430810528" expanded="true" signature="620:705" ph="{...}" />
+            <marker date="1563430810528" expanded="true" signature="855:949" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TaskSequence/BaseTask.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="420">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
           <folding>
-            <marker date="1563351214029" expanded="true" signature="37:420" ph="{...}" />
-            <marker date="1563351214029" expanded="true" signature="65:86" ph="{...}" />
-            <marker date="1563351214029" expanded="true" signature="125:146" ph="{...}" />
-            <marker date="1563351214029" expanded="true" signature="189:210" ph="{...}" />
-            <marker date="1563351214029" expanded="true" signature="250:271" ph="{...}" />
-            <marker date="1563351214029" expanded="true" signature="310:418" ph="{...}" />
+            <marker date="1563430583421" expanded="true" signature="6:47" ph="..." />
+            <marker date="1563430583421" expanded="true" signature="71:403" ph="{...}" />
+            <marker date="1563430583421" expanded="true" signature="99:395" ph="{...}" />
+            <marker date="1563430583421" expanded="true" signature="345:389" ph="{...}" />
           </folding>
         </state>
       </provider>
