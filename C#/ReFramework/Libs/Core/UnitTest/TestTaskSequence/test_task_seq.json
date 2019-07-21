@@ -1,10 +1,14 @@
-﻿[
+[
   {
-    "Name" : "Test",
-    "AppPath" : "cmd.exe",
-    "Args" : "",
-    "WorkDirectory" : "",
-    "Comment" : "",
-    "SubTaskName" : ""
-  } 
-]
+    "Name": "Test",
+    "Args": "dir",
+    "WorkDirectory": "",
+    "Comment": "显示目录"
+  },
+  {
+    "Name": "Test",
+    "Args": "echo hello",
+    "WorkDirectory": "",
+    "Comment": "输出Hello"
+  }
+] 

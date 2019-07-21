@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestTaskSequence\TaskSeqTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReFrame.Core\ReFrame.Core.csproj">
@@ -58,11 +59,16 @@
       <Project>{be370819-9de9-42a6-8bf8-b3195db0a752}</Project>
       <Name>ReFrame.Util</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TaskSequence\TaskSequence.csproj">
+      <Project>{ce1ac12b-21f2-40b7-946f-ec9d952134be}</Project>
+      <Name>TaskSequence</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="TestTaskSequence\test_task_seq.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
