@@ -3,3 +3,9 @@
 //
 
 #include "PolicyClass.h"
+
+int main(){
+    TestManager<Test, OpNewCreator2> Test;
+    Test.Create();
+    return 0;
+}

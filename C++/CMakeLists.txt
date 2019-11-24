@@ -19,6 +19,10 @@ add_subdirectory(Util)
 add_subdirectory(ReMath)
 add_subdirectory(Test)
 
+add_subdirectory(LearnCpp/Macro)
+add_subdirectory(LearnCpp/Template)
+add_subdirectory(LearnCpp/ModernCpp)
+
 include_directories(Util)
 include_directories(ECS)
 include_directories(ReMath/sources)

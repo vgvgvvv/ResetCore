@@ -2,14 +2,18 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="ResetCore" targetName="TestFMod" />
+      <config projectName="ResetCore" targetName="MacroBase" />
       <config projectName="ResetCore" targetName="TestToLuapp" />
-      <config projectName="ResetCore" targetName="ResetCore.Util" />
       <config projectName="ResetCore" targetName="Test" />
-      <config projectName="ResetCore" targetName="ReMath" />
       <config projectName="ResetCore" targetName="ResetCore.ECS" />
-      <config projectName="ResetCore" targetName="TestEmbedMono" />
+      <config projectName="ResetCore" targetName="Max" />
       <config projectName="ResetCore" targetName="sdl01_hello_world" />
+      <config projectName="ResetCore" targetName="Stack1" />
+      <config projectName="ResetCore" targetName="PolicyClass" />
+      <config projectName="ResetCore" targetName="TestFMod" />
+      <config projectName="ResetCore" targetName="ResetCore.Util" />
+      <config projectName="ResetCore" targetName="ReMath" />
+      <config projectName="ResetCore" targetName="TestEmbedMono" />
       <config projectName="ResetCore" targetName="TestXml" />
     </generated>
   </component>
@@ -20,13 +24,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7557ff0-045b-41ff-a493-8cc52ffdaf20" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../Algorithm/C++/utility/string_util.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Algorithm/C++/utility/string_util.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/C++/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorithm/C++/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/C++/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorithm/C++/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/.idea/.idea.ReFrame.Core/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/.idea/.idea.ReFrame.Core/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/Reframe.Unity/obj/Debug/Reframe.Unity.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/Reframe.Unity/obj/Debug/Reframe.Unity.csprojResolveAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.csprojResolveAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/UnitTest/obj/Debug/UnitTest.csprojResolveAssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnCpp/Macro/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnCpp/Macro/FunctionLikeReserve.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnCpp/Macro/ObjectLikeReserve.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnCpp/ModernCpp/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnCpp/ModernCpp/PolicyClasses/PolicyClass.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LearnCpp/ModernCpp/PolicyClasses/PolicyClass.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/.vs/ReFrame.Core/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../C#/ReFramework/Libs/Core/.vs/ReFrame.Core/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../D3D/ReD3D/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/Common/Application.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/Common/Application.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/Common/ApplicationContext.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/Common/ApplicationContext.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/Common/Common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/Common/Input.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/Common/Input.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/Common/Window.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/Common/Window.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/ReD3D.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/ReD3D.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../D3D/ReD3D/ReD3D/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenGL/LearnOpenGL/ReGL/ReGL/ReGL.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenGL/LearnOpenGL/ReGL/ReGL/ReGL.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenGL/LearnOpenGL/ReGL/ReGLTest/ReGLTest.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenGL/LearnOpenGL/ReGL/ReGLTest/ReGLTest.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OpenGL/LearnOpenGL/ReGL/ReGLTest/ReGLTest.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../OpenGL/LearnOpenGL/ReGL/ReGLTest/ReGLTest.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WebGL/LearnWebGL/.idea/FirstWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../WebGL/LearnWebGL/.idea/FirstWeb.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-win32/" />
@@ -62,95 +84,128 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-934130988">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cpp" value="4" />
+          <entry key="h" value="1" />
+          <entry key="txt" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CMakeLists.txt" value="7" />
+          <entry key="ObjectiveC" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cpp" value="554" />
+          <entry key="h" value="17" />
+          <entry key="txt" value="136" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CMakeLists.txt" value="136" />
+          <entry key="ObjectiveC" value="571" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/TestEmbedMono/TestEmbedMono.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="460">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECS/ComponentId.hpp">
+        <entry file="file://$PROJECT_DIR$/LearnCpp/Template/note/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+            <state relative-caret-position="100">
+              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LearnCpp/ModernCpp/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="85" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LearnCpp/ModernCpp/PolicyClasses/PolicyClass.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LearnCpp/ModernCpp/PolicyClasses/PolicyClass.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="751">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="e#143#155#0" expanded="true" />
+                <element signature="e#296#308#0" expanded="true" />
+                <element signature="e#449#497#0" expanded="true" />
+                <element signature="e#468#475#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LearnCpp/Template/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ECS/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+            <state relative-caret-position="120">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECS/Entity.hpp">
+        <entry file="file://$PROJECT_DIR$/Test/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="40">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECS/IComponent.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECS/ISystem.hpp">
+        <entry file="file://$PROJECT_DIR$/LearnCpp/Template/note/chapter2/max.hpp">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ECS/SystemContainer.cpp">
+        <entry file="file://$PROJECT_DIR$/LearnCpp/Template/note/chapter2/max.cpp">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ECS/SystemContainer.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-              <folding>
-                <element signature="e#511#523#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test/TestToLuapp/TestToLuapp.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-              <folding>
-                <element signature="e#38#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -183,7 +238,6 @@
         <option value="$PROJECT_DIR$/Util/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Test/TestXml.cpp" />
         <option value="$PROJECT_DIR$/Test/TestXml/test.xml" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Test/TestXml/TestXml.cpp" />
         <option value="$PROJECT_DIR$/Test/TestFMod/TestFmod.cpp" />
         <option value="$PROJECT_DIR$/Test/TestToLuapp/TestLua.lua" />
@@ -194,6 +248,13 @@
         <option value="$PROJECT_DIR$/Test/TestSDL/Class1/HelloWorld.cpp" />
         <option value="$PROJECT_DIR$/Test/TestEmbedMono/TestEmbedMono.cpp" />
         <option value="$PROJECT_DIR$/Test/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/LearnCpp/Macro/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/LearnCpp/Macro/MacroBase.cpp" />
+        <option value="$PROJECT_DIR$/LearnCpp/Macro/ObjectLikeReserve.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/LearnCpp/ModernCpp/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/LearnCpp/ModernCpp/PolicyClasses/PolicyClass.h" />
+        <option value="$PROJECT_DIR$/LearnCpp/ModernCpp/PolicyClasses/PolicyClass.cpp" />
       </list>
     </option>
   </component>
@@ -204,48 +265,31 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="820" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2844" />
+    <option name="y" value="-17" />
+    <option name="width" value="1294" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ResetCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C++" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ResetCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C++" type="462c0819:PsiDirectoryNode" />
-              <item name="ECS" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="F:/Projects/Github/examples-master" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\ResetCore\C++\LearnCpp\ModernCpp" />
+      <recent name="E:\Projects\ResetCore\C++\LearnCpp\Macro" />
       <recent name="$PROJECT_DIR$/Includes/Common" />
       <recent name="$PROJECT_DIR$/Test/TestEmbedMono" />
       <recent name="$PROJECT_DIR$/Libs/MACOS" />
-      <recent name="$PROJECT_DIR$/Includes/SDL" />
-      <recent name="$PROJECT_DIR$/Libs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Test/TestXml" />
@@ -263,8 +307,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestEmbedMono">
+  <component name="RunManager" selected="Application.PolicyClass">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MacroBase" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ResetCore" TARGET_NAME="MacroBase" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ResetCore" RUN_TARGET_NAME="MacroBase">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Max" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ResetCore" TARGET_NAME="Max" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ResetCore" RUN_TARGET_NAME="Max">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PolicyClass" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ResetCore" TARGET_NAME="PolicyClass" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ResetCore" RUN_TARGET_NAME="PolicyClass">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -280,6 +339,11 @@
       </method>
     </configuration>
     <configuration name="ResetCore.Util" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ResetCore" TARGET_NAME="ResetCore.Util" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stack1" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ResetCore" TARGET_NAME="Stack1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ResetCore" RUN_TARGET_NAME="Stack1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -375,6 +439,10 @@
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.ResetCore.ECS" />
+      <item itemvalue="Application.MacroBase" />
+      <item itemvalue="Application.PolicyClass" />
+      <item itemvalue="Application.Max" />
+      <item itemvalue="Application.Stack1" />
       <item itemvalue="Application.ReMath" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.TestEmbedMono" />
@@ -410,30 +478,35 @@
       <workItem from="1532805076882" duration="2334000" />
       <workItem from="1542471795261" duration="388000" />
       <workItem from="1543598817893" duration="88000" />
+      <workItem from="1567188150034" duration="851000" />
+      <workItem from="1567189105594" duration="2586000" />
+      <workItem from="1572170557231" duration="1271000" />
+      <workItem from="1573831332313" duration="2645000" />
+      <workItem from="1574441114152" duration="16000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36849000" />
+    <option name="totallyTimeSpent" value="44218000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="2552" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29613733" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20745543" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32827586" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32785088" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="CMake" order="8" weight="0.32827586" />
+      <window_info anchor="bottom" id="CMake" order="8" weight="0.32785088" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32889965" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32827586" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32785088" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -450,69 +523,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/deque" />
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory" />
-    <entry file="file://$PROJECT_DIR$/Util/ObjectPool.hpp" />
-    <entry file="file://$PROJECT_DIR$/Util/ObjectPool.cpp" />
-    <entry file="file://$PROJECT_DIR$/Util/TypeDefine.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/Singleton.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/NonCopyable.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/File.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/Delegate.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/Log/Log.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/Log/Log.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/File.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Libs/pugixml/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/ReMath/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -589,30 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/TestXml/TestXml.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="2" selection-start-column="2" selection-end-column="2" />
-          <folding>
-            <element signature="e#38#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test/TestToLuapp/TestToLuapp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-          <folding>
-            <element signature="e#38#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -623,37 +613,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ECS/ComponentId.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
+        <state relative-caret-position="260">
           <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ECS/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ECS/Entity.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="220">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ECS/IComponent.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="280">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
@@ -664,12 +640,114 @@
     <entry file="file://$PROJECT_DIR$/ECS/SystemContainer.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Test/TestToLuapp/TestToLuapp.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ECS/SystemContainer.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="520">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/Template/note/chapter3/Stack.hpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/Template/note/chapter3/Stack.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/Macro/MacroBase.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/Macro/ObjectLikeReserve.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/Macro/FunctionLikeReserve.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/Macro/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/Template/note/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/ModernCpp/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="85" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/ModernCpp/PolicyClasses/PolicyClass.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/Template/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECS/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/Template/note/chapter2/max.hpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/Template/note/chapter2/max.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LearnCpp/ModernCpp/PolicyClasses/PolicyClass.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
-            <element signature="e#511#523#0" expanded="true" />
+            <element signature="e#143#155#0" expanded="true" />
+            <element signature="e#296#308#0" expanded="true" />
+            <element signature="e#449#497#0" expanded="true" />
+            <element signature="e#468#475#0" expanded="true" />
           </folding>
         </state>
       </provider>
