@@ -9,5 +9,8 @@
     <ClCompile Include="test\FirstTest.cpp">
       <Filter>test</Filter>
     </ClCompile>
+    <ClCompile Include="test\Swap.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
