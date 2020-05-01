@@ -1,11 +1,12 @@
-const {BrowserWindow, Menu, app, shell, dialog} = require('electron')
+const {BrowserWindow, Menu, app, shell, dialog, ipcMain } = require('electron')
 
 let template = [{
     label: 'File',
     submenu:[{
         label: 'Open',
-        click:()=>{
+        click:(item, focusedWindow)=>{
             console.log('hello open')
+            focusedWindow.webContents.send('show-chart')
         }
     }]
 }]

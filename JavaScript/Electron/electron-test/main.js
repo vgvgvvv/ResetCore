@@ -1,14 +1,17 @@
 const path = require('path')
 const glob = require('glob')
 
+
 const {app, BrowserWindow} = require('electron')
+
+let win = null
 
 function main(){
 
     loadDemos()
 
     function createWindow(){
-        let win = new BrowserWindow({
+        win = new BrowserWindow({
             width: 800,
             height: 600,
             webPreferences:{
@@ -17,8 +20,12 @@ function main(){
         })
     
     
-        win.loadFile('index.html')
+        win.loadURL(path.join('file://', __dirname, '/index.html'))
     
+        win.webContents.openDevTools()
+
+        win.webContents.send('show-chart')
+
         win.on('closed', () => {
             mainWindow = null
         })
