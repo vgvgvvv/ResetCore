@@ -9,6 +9,8 @@ find_library(GLEW REQUIRED)
 find_library(GLFW REQUIRED)
 find_library(glm REQUIRED)
 
+include_directories(/usr/local/include)
+
 set(AllLib
         GLEW
         GLFW
@@ -31,7 +33,7 @@ file(GLOB_RECURSE utility
         src/utility/*.hpp)
 
 
-#===========target==============
+#===========target==============a
 add_library(ReGL
         ${3rd}
         ${common}

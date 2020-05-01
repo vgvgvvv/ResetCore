@@ -1,0 +1,7 @@
+build/*
+!build/templates
+bin/*
+!bin/media/
+*.lib
+/.idea/
+/cmake-build-debug/
