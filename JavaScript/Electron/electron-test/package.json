@@ -1,0 +1,14 @@
+{
+  "name": "electron-test",
+  "version": "1.0.0",
+  "description": "my test project",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "dieseldong",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.2.5"
+  }
+}
