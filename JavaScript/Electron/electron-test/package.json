@@ -9,6 +9,9 @@
   "author": "dieseldong",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^8.2.5"
+    "electron": "^5.0.1"
+  },
+  "dependencies": {
+    "glob": "^7.1.6"
   }
 }
