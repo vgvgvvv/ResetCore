@@ -1,0 +1,26 @@
+{
+  "name": "ue4-memreport-shower",
+  "version": "1.0.0",
+  "description": "ue4 memreport shower",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@www.resetoter.work:root/ue4-memreport-shower.git"
+  },
+  "keywords": [
+    "ue4",
+    "memreport"
+  ],
+  "author": "dieseldong",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.1"
+  },
+  "dependencies": {
+    "glob": "^7.1.6",
+    "marked": "^1.0.0"
+  }
+}

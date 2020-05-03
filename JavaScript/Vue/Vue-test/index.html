@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />   
+    </head>
+    <body>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="node_modules/marked/marked.min.js"></script>
+        <div id="notebook">
+            <section class="main">
+                <textarea v-model="content"></textarea>
+            </section>
+
+            <aside class="preview" v-html="notePreview">
+            </aside>
+        </div>
+        <script src="render-process/page.js"></script>
+    </body>
+</html>
